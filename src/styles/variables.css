@@ -1,3 +1,13 @@
 :root {
-  --var: #000;
+  --color-blue: #2c39f2;
+  --color-red: #ff1553;
+  --color-black: #000000;
+  --color-black-light: #282828;
+  --color-white: #ffffff;
+  --color-gray: #f7f7f7;
+
+  --font-size-basic: 18px;
+  --font-line-basic: 26px;
+  --font-letter-spacing-basic: -0.1px;
+  --font-weight-basic: 200;
 }

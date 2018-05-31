@@ -1,19 +1,39 @@
 @font-face {
-  font-family: "gotham pro";
-  font-weight: 400;
+  font-family: "plex";
+  font-weight: 200;
   font-display: fallback;
   font-style: normal;
   src:
-    url("../fonts/gotham-pro.woff2") format("woff2"),
-    url("../fonts/gotham-pro.woff") format("woff");
+    url("../fonts/ibmplexsans-light.woff2") format("woff2"),
+    url("../fonts/ibmplexsans-light.woff") format("woff");
 }
 
 @font-face {
-  font-family: "gotham pro";
-  font-weight: 700;
+  font-family: "plex";
+  font-weight: 200;
+  font-display: fallback;
+  font-style: italic;
+  src:
+    url("../fonts/ibmplexsans-light-italic.woff2") format("woff2"),
+    url("../fonts/ibmplexsans-light-italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "plex";
+  font-weight: 600;
   font-display: fallback;
   font-style: normal;
   src:
-    url("../fonts/gotham-pro-bold.woff2") format("woff2"),
-    url("../fonts/gotham-pro-bold.woff") format("woff");
+    url("../fonts/ibmplexsans-semi-bold.woff2") format("woff2"),
+    url("../fonts/ibmplexsans-semi-bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "plex";
+  font-weight: 600;
+  font-display: fallback;
+  font-style: italic;
+  src:
+    url("../fonts/ibmplexsans-semi-bold-italic.woff2") format("woff2"),
+    url("../fonts/ibmplexsans-semi-bold-italic.woff") format("woff");
 }

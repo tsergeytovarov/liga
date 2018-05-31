@@ -1,1 +1,8 @@
-
+body {
+  color: var(--color-black);
+  font-family: "plex", Arial, sans-serif;
+  font-size: var(--font-size-basic);
+  line-height: var(--font-line-basic);
+  letter-spacing: var(--font-letter-spacing-basic);
+  font-weight: var(--font-weight-basic);
+}

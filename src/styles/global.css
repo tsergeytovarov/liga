@@ -5,4 +5,14 @@ body {
   line-height: var(--font-line-basic);
   letter-spacing: var(--font-letter-spacing-basic);
   font-weight: var(--font-weight-basic);
+
+  border: var(--body-border-width) solid var(--color-blue);
+
+  min-height: 500px;
+  height: calc(100vh - var(--body-border-width));
+}
+
+.container {
+  max-width: 990px;
+  margin: 0 auto;
 }

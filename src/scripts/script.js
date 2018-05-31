@@ -1,0 +1,3 @@
+window.script = (() => {
+
+})(document);

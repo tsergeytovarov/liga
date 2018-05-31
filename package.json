@@ -1,0 +1,29 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build",
+    "test": "editorconfig-cli && gulp build && ls dest"
+  },
+  "dependencies": {
+    "@htmlacademy/editorconfig-cli": "^1.0.0",
+    "autoprefixer": "^8.0.0",
+    "browser-sync": "^2.18.2",
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-rsync": "0.0.8",
+    "gulp-svgmin": "^1.2.4",
+    "postcss-preset-env": "^5.1.0"
+  },
+  "editorconfig-cli": [
+    "src/*.html",
+    "src/**/*.css",
+    "src/**/*.svg"
+  ],
+  "devDependencies": {}
+}

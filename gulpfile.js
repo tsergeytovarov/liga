@@ -10,6 +10,8 @@ const plumber = require('gulp-plumber');
 const concat = require('gulp-concat');
 const jsmin = require('gulp-jsmin');
 const postcssPresetEnv = require('postcss-preset-env');
+const imagemin = require("gulp-imagemin");
+const webp = require('gulp-webp');
 
 // HTML
 
@@ -58,6 +60,33 @@ gulp.task('svg', () => {
   return gulp.src('src/images/**/*.svg')
     .pipe(svgmin())
     .pipe(gulp.dest('dest/images'));
+});
+
+gulp.task('webp', function () {
+  return gulp
+    .src('src/img/**/*.{png,jpg}')
+    .pipe(
+      webp({
+        quality: 90,
+      })
+    )
+    .pipe(gulp.dest('dest/img'));
+});
+
+gulp.task('images', function () {
+  return gulp
+    .src('src/img/**/*.{png,jpg,gif}')
+    .pipe(
+      imagemin([
+        magemin.optipng({
+          optimizationLevel: 3,
+        }),
+        imagemin.jpegtran({
+          progressive: true,
+        }),
+      ])
+    )
+    .pipe(gulp.dest('dest/img'));
 });
 
 // Copy

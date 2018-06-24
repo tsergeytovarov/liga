@@ -1,8 +1,9 @@
 :root {
   --color-blue: #2c39f2;
-  --color-red: #ff1553;
+  --color-pink: #ff1553;
   --color-black: #000000;
   --color-black-light: #282828;
+  --color-text-light: #777777;
   --color-white: #ffffff;
   --color-gray: #f7f7f7;
 
@@ -12,4 +13,7 @@
   --font-weight-basic: 200;
 
   --body-border-width: 8px;
+  --set-font-family-plex: "plex", "Arial", sans-serif;
 }
+
+@custom-media --desktop-width (min-width: 1024px);

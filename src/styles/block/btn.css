@@ -1,0 +1,33 @@
+.btn {
+  min-height: 45px;
+  padding: 11px 6px;
+  font-weight: calc(var(--font-weight-basic) * 3);
+  font-size: calc(var(--font-size-basic) - 2px);
+  font-family: var(--set-font-family-plex);
+  text-align: center;
+  color: var(--color-black);
+  text-decoration: none;
+  letter-spacing: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.btn:hover {
+  color: var(--color-white);
+  background-color: var(--color-pink);
+}
+
+.btn--blue {
+  color: var(--color-white);
+  background-color: var(--color-blue);
+}
+
+.btn--white {
+  color: var(--color-blue);
+  background-color: var(--color-white);
+}
+
+.btn--black {
+  color: var(--color-white);
+  background-color: var(--color-black);
+}

@@ -34,9 +34,10 @@ gulp.task('css', () => {
     .pipe(concat('style.css'))
     .pipe(postcss([postcssPresetEnv({
       stage: 0
-    })]))
+      })
+      ]))
     .pipe(postcss([autoprefixer]))
-    .pipe(csso())
+    // .pipe(csso())
     .pipe(gulp.dest('dest/styles'))
     .pipe(sync.stream({
       once: true

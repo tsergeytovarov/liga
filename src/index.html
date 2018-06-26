@@ -1,64 +1,242 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <meta name="description" content="">
-
   <!-- <link rel="preload" href="/fonts/" as="font" type="font/woff2">
   <link rel="preload" href="/fonts/" as="font" type="font/woff2"> -->
   <!-- <link rel="icon" href="/favicon.ico">
   <link rel="icon" type="image/png" sizes="228x228" href="/apple-touch-icon.png"> -->
   <link rel="stylesheet" href="/styles/style.css">
+  <link rel="stylesheet" href="styles/style.css">
 
   <title>Liga A</title>
 </head>
-
 <body>
-
-  <header class="header">
-    <a href="#wont" class="button">Заказать</a>
-
-    <a href="#top" class="header__logo">Вернуться наверх</a>
-
-    <div class="header__menu">
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#top" class="nav__link">О нас</a>
-          </li>
-          <li class="nav__item">
-            <a href="#project" class="nav__link">Проекты</a>
-          </li>
-          <li class="nav__item">
-            <a href="#work" class="nav__link">Схема работы</a>
-          </li>
-          <li class="nav__item">
-            <a href="#features" class="nav__link">Преимущества</a>
-          </li>
-          <li class="nav__item">
-            <a href="#team" class="nav__link">Команда</a>
-          </li>
-          <li class="nav__item">
-            <a href="#clients" class="nav__link">Клиенты</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contacts" class="nav__link">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-
-      <a href="tel:88002222222" class="header__telephone">812 337 21 40</a>
-    </div>
-  </header>
-
-  <div class="container">
-
+<header class="header">
+  <a href="#wont" class="button">Заказать</a>
+  <a href="#top" class="header__logo">Вернуться наверх</a>
+  <div class="header__menu">
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#top" class="nav__link">О нас</a></li>
+        <li class="nav__item"><a href="#project" class="nav__link">Проекты</a></li>
+        <li class="nav__item"><a href="#work" class="nav__link">Схема работы</a></li>
+        <li class="nav__item"><a href="#features" class="nav__link">Преимущества</a></li>
+        <li class="nav__item"><a href="#team" class="nav__link">Команда</a></li>
+        <li class="nav__item"><a href="#clients" class="nav__link">Клиенты</a></li>
+        <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
+      </ul>
+    </nav>
+    <a href="tel:88002222222" class="header__telephone">812 337 21 40</a>
   </div>
+</header>
+<footer class="page-footer">
+  <div class="page-footer__wrapper">
+    <div class="page-footer__top-wrapper">
+      <header class="page-footer__header">
+        <h2 class="page-footer__title">
+          Наверняка, для нас есть работенка
+        </h2>
+      </header>
+      <main class="page-footer__main">
+        <form action="" class="page-footer__form" method="post">
+          <div class="page-footer__form-field">
+            <input type="text" class="page-footer__input" id="client-contacts" required placeholder="Телефон или почта">
+            <label for="client-contacts" class="page-footer__label visually-hidden">Только для связи с нами</label>
+            <p class="page-footer__label">Только для связи с нами</p>
+          </div>
+          <div class="page-footer__form-field">
+            <input type="text" class="page-footer__input" id="client-name" required placeholder="Имя">
+            <label for="client-name" class="page-footer__label visually-hidden">Необязательно указывать, но мы его все
+              равно спросим</label>
+            <p class="page-footer__label page-footer__label--no-wrap">Необязательно указывать, но мы его все равно
+              спросим</p>
+          </div>
+          <div class="page-footer__form-field">
+            <textarea type="text" class="page-footer__input" id="client-message" required placeholder="Сообщение"
+                      rows="1"></textarea>
+            <label for="client-message" class="page-footer__label visually-hidden">Чем можем помочь</label>
+            <p class="page-footer__label page-footer__label--third">Чем можем помочь</p>
+          </div>
+          <div class="page-footer__button-field">
+            <button type="submit" class="page-footer__button">Отправить</button>
+            <p class="page-footer__label page-footer__label--fourth">
+              и согласиться с&nbsp;<a href="" class="page-footer__link page-footer__link--policy">политикой
+              конфиденциальности</a>
+            </p>
+            <p class="page-footer__label page-footer__label--fourth page-footer__label--fourth-desktop">
+              и согласиться <br>с <a href="" class="page-footer__link page-footer__link--policy">политикой
+              конфиденциальности</a>
+            </p>
+          </div>
+        </form>
+      </main>
+    </div>
+    <footer class="page-footer__footer">
+      <div class="page-footer__info">
+        <div class="page-footer__info-block">
+          <div class="page-footer__info-block__wrapper">
+            <p class="page-footer__info-text">
+              Если любите читать длинные юридические тексты:
+            </p>
+            <p class="page-footer__info-text page-footer__info-text--legal">
+              <a href="" class="page-footer__link">Реквизиты</a>
+              <span class="page-footer__link-symbol">,</span>
+              <a href="" class="page-footer__link">Юридическая информация</a>
+            </p>
+          </div>
+          <div class="page-footer__social page-footer__social--desktop">
+            <ul class="page-footer__social-list">
+              <li class="page-footer__item">
+                <a href="" class="page-footer__social-link">
+                  <span class="visually-hidden">Facebook</span>
+                  <svg class="page-footer__social-icon" xmlns="http://www.w3.org/2000/svg"
+                       xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="44">
+                    <g fill="none" fill-rule="evenodd">
+                      <path class="icon-shield" fill="#FF1553" fill-rule="nonzero"
+                            d="M0 0v32.8201h.00159L17.9992 44l17.9992-11.1799H36V0z"/>
+                      <path class="icon-picture" fill="#FFF" fill-rule="nonzero"
+                            d="M19 16v-1.78594C19 13.40781 19.17813 13 20.42969 13H22v-3h-2.62031c-3.21094 0-4.27032 1.47188-4.27032 3.99844V16H13v3h2.10938v9H19v-9h2.64375L22 16h-3z"/>
+                    </g>
+                  </svg>
+                </a>
+              </li>
+              <li class="page-footer__item">
+                <a href="" class="page-footer__social-link">
+                  <span class="visually-hidden">Вконтакте</span>
+                  <svg class="page-footer__social-icon" width="36" height="44" xmlns="http://www.w3.org/2000/svg"
+                       xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g fill="none" fill-rule="evenodd">
+                      <path class="icon-shield" fill="#FF1553" fill-rule="nonzero"
+                            d="M0 0v32.8201h.00159L17.9992 44l17.9992-11.1799H36V0z"/>
+                      <path class="icon-picture"
+                            d="M17.14548 25.38438c.63247 0 .63247-.91138.63247-1.26493 0-.63246.63246-1.26493 1.26493-1.26493.63246 0 1.71714 1.08468 2.52986 1.8974.63247.63246.63247.63246 1.26493.63246h1.8974S26 25.33632 26 24.11945c0-.39529-.43324-1.0657-1.8974-2.52986-1.26493-1.26493-1.91384-.6116 0-3.16233 1.16564-1.55334 2.01377-2.96057 1.8683-3.36662-.13914-.3877-3.38116-1.00498-3.7657-.42817-1.26493 1.8974-1.49704 2.36226-1.8974 3.16232-.63246 1.26494-.69507 1.8974-1.26492 1.8974-.57491 0-.63247-1.22761-.63247-1.8974 0-2.09093.30295-3.56963-.63246-3.79479h-1.8974c-1.01827 0-1.8974.63247-1.8974.63247s-.78489.61222-.63246.63246c.18847.0253 1.26493-.26184 1.26493.63247v1.26493s.00569 2.52986-.63247 2.52986c-.63246 0-1.8974-2.52986-3.16233-4.42726-.49648-.74441-.63246-.63246-1.26493-.63246-.678 0-1.2643.02656-1.8974.02656-.63246 0-.71342.40288-.63246.6059 1.26493 3.16233 2.17378 5.14827 4.57715 7.6503 2.20415 2.29522 3.67653 2.4173 4.90983 2.46915.31624.01328 0 0 .63247 0z"
+                            fill="#FFF" fill-rule="nonzero"/>
+                    </g>
+                  </svg>
+                </a>
+              </li>
+              <li class="page-footer__item">
+                <a href="" class="page-footer__social-link">
+                  <span class="visually-hidden">Instagram</span>
+                  <svg width="36" height="44" xmlns="http://www.w3.org/2000/svg"
+                       xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g fill="none" fill-rule="evenodd">
+                      <path class="icon-shield" fill="#FF1553"
+                            d="M0 0v32.8201h.00159L17.9992 44l17.9992-11.1799H36V0z"/>
+                      <path class="icon-picture"
+                            d="M24.83333 22.18889c-.00273 2.01173-1.6327 3.64171-3.64444 3.64444H14.8111c-2.01173-.00273-3.64171-1.6327-3.64444-3.64444V15.8111c.00182-2.01173 1.6327-3.64262 3.64444-3.64444h6.37778c2.01173.00182 3.64262 1.6327 3.64444 3.64444v6.37778zM18 15c-2.20889 0-4 1.79111-4 4 0 2.20889 1.79111 4 4 4 2.20889 0 4-1.79111 4-4 0-2.20889-1.79111-4-4-4zm4.17778-1.06667c-.49067 0-.8889.39823-.8889.8889 0 .49066.39823.88888.8889.88888.49066 0 .88889-.39822.88889-.88889 0-.49066-.39823-.88889-.8889-.88889z"
+                            fill="#FFF"/>
+                    </g>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="page-footer__info-block">
+          <p class="page-footer__info-text">
+            Если любите писать с личной почты:
+          </p>
+          <p class="page-footer__link-block">
+            <a href="" class="page-footer__link">liga_a@gmail.com</a>
+          </p>
+        </div>
+        <div class="page-footer__info-block">
+          <div>
+            <p class="page-footer__info-text">
+              Если надумаете заглянуть в гости:
+            </p>
+            <p class="page-footer__link-block">
+              <a href="" class="page-footer__link page-footer__link--mobile">Санкт-Петербур,<br> ул. Большая Конюшенная
+                19/8</a>
+              <a href="" class="page-footer__link page-footer__link--desktop">Санкт-Петербур, ул. Б. Конюшенная</a>
+            </p>
+          </div>
+          <div class="page-footer__social page-footer__social--mobile">
+            <ul class="page-footer__social-list">
+              <li class="page-footer__item">
+                <a href="" class="page-footer__social-link">
+                  <span class="visually-hidden">Facebook</span>
+                  <svg class="page-footer__social-icon" xmlns="http://www.w3.org/2000/svg"
+                       xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="44">
+                    <g fill="none" fill-rule="evenodd">
+                      <path class="icon-shield" fill="#FF1553" fill-rule="nonzero"
+                            d="M0 0v32.8201h.00159L17.9992 44l17.9992-11.1799H36V0z"/>
+                      <path class="icon-picture" fill="#FFF" fill-rule="nonzero"
+                            d="M19 16v-1.78594C19 13.40781 19.17813 13 20.42969 13H22v-3h-2.62031c-3.21094 0-4.27032 1.47188-4.27032 3.99844V16H13v3h2.10938v9H19v-9h2.64375L22 16h-3z"/>
+                    </g>
+                  </svg>
+                </a>
+              </li>
+              <li class="page-footer__item">
+                <a href="" class="page-footer__social-link">
+                  <span class="visually-hidden">Вконтакте</span>
+                  <svg class="page-footer__social-icon" width="36" height="44" xmlns="http://www.w3.org/2000/svg"
+                       xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g fill="none" fill-rule="evenodd">
+                      <path class="icon-shield" fill="#FF1553" fill-rule="nonzero"
+                            d="M0 0v32.8201h.00159L17.9992 44l17.9992-11.1799H36V0z"/>
+                      <path class="icon-picture"
+                            d="M17.14548 25.38438c.63247 0 .63247-.91138.63247-1.26493 0-.63246.63246-1.26493 1.26493-1.26493.63246 0 1.71714 1.08468 2.52986 1.8974.63247.63246.63247.63246 1.26493.63246h1.8974S26 25.33632 26 24.11945c0-.39529-.43324-1.0657-1.8974-2.52986-1.26493-1.26493-1.91384-.6116 0-3.16233 1.16564-1.55334 2.01377-2.96057 1.8683-3.36662-.13914-.3877-3.38116-1.00498-3.7657-.42817-1.26493 1.8974-1.49704 2.36226-1.8974 3.16232-.63246 1.26494-.69507 1.8974-1.26492 1.8974-.57491 0-.63247-1.22761-.63247-1.8974 0-2.09093.30295-3.56963-.63246-3.79479h-1.8974c-1.01827 0-1.8974.63247-1.8974.63247s-.78489.61222-.63246.63246c.18847.0253 1.26493-.26184 1.26493.63247v1.26493s.00569 2.52986-.63247 2.52986c-.63246 0-1.8974-2.52986-3.16233-4.42726-.49648-.74441-.63246-.63246-1.26493-.63246-.678 0-1.2643.02656-1.8974.02656-.63246 0-.71342.40288-.63246.6059 1.26493 3.16233 2.17378 5.14827 4.57715 7.6503 2.20415 2.29522 3.67653 2.4173 4.90983 2.46915.31624.01328 0 0 .63247 0z"
+                            fill="#FFF" fill-rule="nonzero"/>
+                    </g>
+                  </svg>
+                </a>
+              </li>
+              <li class="page-footer__item">
+                <a href="" class="page-footer__social-link">
+                  <span class="visually-hidden">Instagram</span>
+                  <svg width="36" height="44" xmlns="http://www.w3.org/2000/svg"
+                       xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g fill="none" fill-rule="evenodd">
+                      <path class="icon-shield" fill="#FF1553"
+                            d="M0 0v32.8201h.00159L17.9992 44l17.9992-11.1799H36V0z"/>
+                      <path class="icon-picture"
+                            d="M24.83333 22.18889c-.00273 2.01173-1.6327 3.64171-3.64444 3.64444H14.8111c-2.01173-.00273-3.64171-1.6327-3.64444-3.64444V15.8111c.00182-2.01173 1.6327-3.64262 3.64444-3.64444h6.37778c2.01173.00182 3.64262 1.6327 3.64444 3.64444v6.37778zM18 15c-2.20889 0-4 1.79111-4 4 0 2.20889 1.79111 4 4 4 2.20889 0 4-1.79111 4-4 0-2.20889-1.79111-4-4-4zm4.17778-1.06667c-.49067 0-.8889.39823-.8889.8889 0 .49066.39823.88888.8889.88888.49066 0 .88889-.39822.88889-.88889 0-.49066-.39823-.88889-.8889-.88889z"
+                            fill="#FFF"/>
+                    </g>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="page-footer__designed">
+        <a href="" class="page-footer__link">Дизайн *Shishki</a>
+      </div>
+    </footer>
+  </div>
+</footer>
+<script src="/scripts/script.js"></script>
+<script>
+  function flexibleTextarea(textarea) {
+    let textareaItem = document.getElementById(textarea) || textarea;
+    if (textareaItem) {
+      textareaItem.style.overflow = "hidden";
+      let e = textareaItem.rows = textareaItem.rows > 0 ? textareaItem.rows : 2;
+      textarea = textareaItem.cols = textareaItem.cols > 0 ? textareaItem.cols : 20;
+      var g = RegExp("([^\r\n]{" + textarea + "})([^\r\n])"),
+        f = RegExp("[^\n]{" + textarea + "}\n?$|[^\n]{0," + textarea + "}\n");
+      textareaItem.onkeyup = textareaItem.onkeydown = function () {
+        textareaItem.value = textareaItem.value.replace(g, "$1\r\n$2");
+        for (var c = 0, d = textareaItem.value; d.search(f) >= 0;) {
+          c++;
+          d = d.replace(f, "")
+        }
+        c += 1;
+        if (c < e) c = e;
+        textareaItem.rows = c
+      }
+    }
+  }
 
-  <script src="/scripts/script.js"></script>
+  window.onload = function () {
+    flexibleTextarea('client-message');
+  }
+</script>
 </body>
-
 </html>

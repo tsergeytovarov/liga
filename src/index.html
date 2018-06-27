@@ -19,7 +19,9 @@
     <a href="#wont" class="btn header__btn">Заказать проект</a>
     <a href="#top" class="header__logo">
       <span class="visually-hidden">Вернуться наверх</span>
-      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="51"><g fill-rule="evenodd"><path class="logo-shield" d="M0 0v37.571h.002l19.72 12.799 19.722-12.8h.002V0z"/><path fill="#FFF" d="M12.895 26.483c-.017 1.818 1.714 2.993 3.93 3.012 2.058.018 4.015-.52 5.718-1.919l.036-3.787c-1.107-.263-2.792-.58-4.323-.593-2.691-.023-5.338.813-5.36 3.287m17.936 2.456a4.09 4.09 0 0 0 1.248-.172l-.038 4.177c-1.06.358-2.405.622-3.7.61-2.351-.02-4.12-.861-5.063-2.522-2.27 1.679-4.92 2.666-8.326 2.637-4.317-.038-8.037-2.456-7.996-6.818.052-5.6 5.587-7.297 10.193-7.258a26.26 26.26 0 0 1 5.463.644l.008-.78c.021-2.204-1.788-3.734-5.387-3.765-3.166-.027-6.005.775-8.171 1.583l.051-5.509c1.878-.58 5.388-1.423 8.939-1.392 6.908.06 11.296 2.806 11.228 10.059l-.066 7.023c-.011 1.148.754 1.476 1.617 1.483"/></g></svg>
+      <svg width="40" height="51">
+        <use xlink:href="img/svg.svg#icon-logo-sign" />
+      </svg>
     </a>
   </div>
 </header>
@@ -28,18 +30,18 @@
     <span class="visually-hidden">Меню</span>
   </button>
   <ul class="main-nav__list">
-    <li class="main-nav__item"><a href="#top" class="main-nav__link">О нас</a></li>
-    <li class="main-nav__item"><a href="#project" class="main-nav__link">Проекты</a></li>
-    <li class="main-nav__item"><a href="#work" class="main-nav__link">Схема работы</a></li>
-    <li class="main-nav__item"><a href="#features" class="main-nav__link">Преимущества</a></li>
-    <li class="main-nav__item"><a href="#team" class="main-nav__link">Команда</a></li>
-    <li class="main-nav__item"><a href="#clients" class="main-nav__link">Клиенты</a></li>
-    <li class="main-nav__item"><a href="#contacts" class="main-nav__link">Контакты</a></li>
+    <li class="main-nav__item"><a href="#top" class="main-nav__link active js-scroll-link">О нас</a></li>
+    <li class="main-nav__item"><a href="#project" class="main-nav__link js-scroll-link">Проекты</a></li>
+    <li class="main-nav__item"><a href="#work" class="main-nav__link js-scroll-link">Схема работы</a></li>
+    <li class="main-nav__item"><a href="#features" class="main-nav__link js-scroll-link">Преимущества</a></li>
+    <li class="main-nav__item"><a href="#team" class="main-nav__link js-scroll-link">Команда</a></li>
+    <li class="main-nav__item"><a href="#clients" class="main-nav__link js-scroll-link">Клиенты</a></li>
+    <li class="main-nav__item"><a href="#contacts" class="main-nav__link js-scroll-link">Контакты</a></li>
   </ul>
   <a href="tel:88002222222" class="main-nav__telephone">812 337 21 40</a>
 </nav>
 <main class="page-content">
-  <section class="intro">
+  <section class="intro js-section" id="top">
     <div class="intro__wrapper">
       <h1 class="intro__title">
         <span class="visually-hidden">Лига</span>
@@ -80,18 +82,23 @@
             </li>
             <li class="technologies-list__item">
               <span class="visually-hidden">css</span>
+              <img src="img/logo-css.png" width="38" height="54" alt="" class="technologies-list__item-icon">
             </li>
             <li class="technologies-list__item">
               <span class="visually-hidden">js</span>
+              <img src="img/logo-js.png" width="39" height="54" alt="" class="technologies-list__item-icon">
             </li>
             <li class="technologies-list__item">
               <span class="visually-hidden">github</span>
+              <img src="img/logo-github.png" width="45" height="45" alt="" class="technologies-list__item-icon">
             </li>
             <li class="technologies-list__item">
               <span class="visually-hidden">webpack</span>
+              <img src="img/logo-webpack.png" width="45" height="52" alt="" class="technologies-list__item-icon">
             </li>
             <li class="technologies-list__item">
-              <span class="visually-hidden"></span>
+              <span class="visually-hidden">postcss</span>
+              <img src="img/logo-postcss.png" width="49" height="48" alt="" class="technologies-list__item-icon">
             </li>
           </ul>
           <p class="technologies__label">А также:</p>
@@ -100,8 +107,58 @@
       </div>
     </div>
   </section>
+  <section class="js-section projects" id="project">
+    <div class="projects__wrapper">
+      <h2 class="projects__title">Наверстанного не упустим</h2>
+      <ul class="projects__list">
+        <li class="project-item">
+          <div class="project-item__header">
+            <div class="project-item__info">
+              <a href="#" class="project-item__link">
+                <span>Сайт компании «Миран»</span>
+                <span class="project-item__link-icon">
+                  <svg width="15" height="15">
+                    <use xlink:href="#icon-link-arr" />
+                  </svg>
+                </span>
+              </a>
+              <p class="project-item__descr">Представляется логичным, что максимум традиционно продуцирует интеграл от функции, обращающейся в бесконечность вдоль линии</p>
+            </div>
+            <div class="project-item__time">
+              <span class="project-item__days">183</span>
+              <span class="project-item__label">дня на запуск</span>
+            </div>
+            <div class="project-item__stack">
+              <ul class="stack-list">
+                <li class="stack-list__item">
+                  <span class="visually-hidden">html5</span>
+                  <img src="img/icon-html5.png" width="22" height="25" alt="" class="stack-list__icon">
+                </li>
+                <li class="stack-list__item">
+                  <span class="visually-hidden">html5</span>
+                  <img src="img/icon-html5.png" width="22" height="25" alt="" class="stack-list__icon">
+                </li>
+                <li class="stack-list__item">
+                  <span class="visually-hidden">html5</span>
+                  <img src="img/icon-html5.png" width="22" height="25" alt="" class="stack-list__icon">
+                </li>
+              </ul>
+              <span class="project-item__label">Такой вот стек</span>
+            </div>
+          </div>
+          <div class="project-item__gallery project-gallery">
+            div.project-gallery__
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="js-section" id="work"></section>
+  <section class="js-section" id="features"></section>
+  <section class="js-section" id="team"></section>
+  <section class="js-section" id="clients"></section>
 </main>
-<footer class="page-footer">
+<footer class="page-footer js-section" id="contacts">
   <div class="page-footer__wrapper">
     <div class="page-footer__top-wrapper">
       <header class="page-footer__header">
@@ -291,6 +348,7 @@
     </footer>
   </div>
 </footer>
+<script src="scripts/libs/svg4everybody.min.js"></script>
 <script src="/scripts/script.js"></script>
 <script>
   function flexibleTextarea(textarea) {
@@ -318,6 +376,5 @@
     flexibleTextarea('client-message');
   }
 </script>
-<script src="scripts/libs/svg4everybody.min.js"></script>
 </body>
 </html>

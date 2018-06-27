@@ -3,7 +3,6 @@
   top: 0;
   left: 8px;
   right: 8px;
-  background-color: var(--color-white);
   border-top: var(--body-border-width) solid var(--color-blue);
   z-index: 1;
 }
@@ -47,7 +46,16 @@
   fill: var(--color-pink);
 }
 
+/*.header.full {
+  background-color: var(--color-white);
+}*/
+
 .header.full .header__logo {
   opacity: 1;
   pointer-events: initial;
+}
+
+.header.dark,
+.header.dark .header__btn {
+  background-color: transparent;
 }

@@ -2,6 +2,10 @@
   position: relative;
 }
 
+.video-block video {
+  display: block;
+}
+
 .video-block__btn {
   all: initial;
   position: absolute;

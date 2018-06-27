@@ -10,6 +10,7 @@
 
 .features-list__item {
   margin-right: auto;
+  margin-bottom: 40px;
   max-width: 420px;
 }
 
@@ -18,5 +19,10 @@
 }
 
 .features-list__slogan {
+  margin: 0 0 11px;
   font-weight: 600;
+}
+
+.features-list__descr {
+  margin: 0;
 }

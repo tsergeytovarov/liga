@@ -5,3 +5,21 @@
   line-height: 33px;
   letter-spacing: -0.9px;
 }
+
+.technologies-list {
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.technologies-list__item {
+  position: relative;
+  margin-right: 44px;
+  width: 66px;
+  height: 82px;
+  background-image: url("../img/svg/icon-stack-big.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}

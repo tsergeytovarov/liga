@@ -28,12 +28,14 @@
   margin-left: auto;
   opacity: 0;
   pointer-events: none;
+  transition: opacity 0.3s ease;
 }
 
 .header__logo svg {
   display: block;
   width: 40px;
   height: 51px;
+  fill: var(--color-blue);
 }
 
 .header__logo-icon .logo-shield {
@@ -43,4 +45,9 @@
 
 .header__logo:hover .logo-shield {
   fill: var(--color-pink);
+}
+
+.header.full .header__logo {
+  opacity: 1;
+  pointer-events: initial;
 }

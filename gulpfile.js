@@ -6,12 +6,22 @@ const postcss = require('gulp-postcss');
 const rsync = require('gulp-rsync');
 const sync = require('browser-sync').create();
 const svgmin = require('gulp-svgmin');
+svgstore = require('gulp-svgstore');
 const plumber = require('gulp-plumber');
 const concat = require('gulp-concat');
 const jsmin = require('gulp-jsmin');
 const postcssPresetEnv = require('postcss-preset-env');
 const imagemin = require("gulp-imagemin");
 const webp = require('gulp-webp');
+
+// svg sprite
+
+gulp.task('svg', () => {
+  return gulp.src('src/img/svg/*.svg')
+    .pipe(svgmin())
+    .pipe(svgstore())
+    .pipe(gulp.dest('dest/img'));
+});
 
 // HTML
 
@@ -57,12 +67,6 @@ gulp.task('scripts', () => {
 
 // Images
 
-gulp.task('svg', () => {
-  return gulp.src('src/images/**/*.svg')
-    .pipe(svgmin())
-    .pipe(gulp.dest('dest/images'));
-});
-
 gulp.task('webp', function () {
   return gulp
     .src('src/img/**/*.{png,jpg}')
@@ -99,6 +103,7 @@ gulp.task('copy', () => {
       'src/images/**/*.{jpg,png}',
       '!src/styles/*',
       '!src/scripts/*',
+      'src/scripts/libs/*',
       '!src/**/*.html'
     ], {
       base: 'src'
@@ -124,7 +129,7 @@ gulp.task('server', () => {
 // Watch
 
 gulp.task('watch:svg', () => {
-  return gulp.watch('src/images/**/*.svg', gulp.series('svg'));
+  return gulp.watch('src/img/**/*.svg', gulp.series('svg'));
 });
 
 gulp.task('watch:html', () => {
@@ -143,7 +148,7 @@ gulp.task('watch:copy', () => {
   return gulp.watch([
     'src/*',
     'src/fonts/*',
-    'src/images/**/*.{jpg,png}',
+    'src/img/**/*.{jpg,png}',
     '!src/styles/*',
     '!src/scripts/*',
     '!src/**/*.html'

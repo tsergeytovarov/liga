@@ -1,0 +1,30 @@
+.video-block {
+  position: relative;
+}
+
+.video-block__btn {
+  all: initial;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 88px;
+  height: 88px;
+  background-color: var(--color-white);
+  border-radius: 50%;
+}
+
+.video-block__btn svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: 4px;
+  fill: var(--color-pink);
+  transition: fill 0.3s ease;
+}
+
+.video-block__btn:hover svg,
+.video-block__btn:focus svg {
+  fill: var(--color-black);
+}

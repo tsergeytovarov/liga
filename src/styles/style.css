@@ -6,4 +6,10 @@
 @import "block/page.css";
 @import "block/btn.css";
 @import "block/page-footer.css";
+@import "block/header.css";
+@import "block/main-nav.css";
+@import "block/intro.css";
+@import "block/video-block.css";
+@import "block/features-list.css";
+@import "block/technologies.css";
 @import "block/page-404.css";

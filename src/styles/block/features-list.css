@@ -1,0 +1,22 @@
+.features-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.1px;
+}
+
+.features-list__item {
+  margin-right: auto;
+  max-width: 420px;
+}
+
+.features-list__item:nth-child(even) {
+  margin-right: 0;
+}
+
+.features-list__slogan {
+  font-weight: 600;
+}

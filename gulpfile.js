@@ -143,7 +143,7 @@ gulp.task('watch:copy', () => {
   return gulp.watch([
     'src/*',
     'src/fonts/*',
-    'src/images/**/*.{jpg,png}',
+    'src/img/**/*.{jpg,png}',
     '!src/styles/*',
     '!src/scripts/*',
     '!src/**/*.html'

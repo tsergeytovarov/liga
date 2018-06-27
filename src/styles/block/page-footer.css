@@ -45,6 +45,7 @@
   resize: none;
 }
 
+
 .page-footer .page-footer__label {
   font-size: 15px;
   line-height: 21px;
@@ -114,6 +115,7 @@
   font-size: 15px;
   line-height: 21px;
   margin-bottom: 0;
+  margin-top: 0;
   letter-spacing: 0.1px;
 }
 
@@ -122,8 +124,16 @@
 }
 
 .page-footer__main {
-  margin-bottom: 55px;
   margin-top: 32px;
+}
+
+.page-footer .page-footer__form {
+  margin-bottom: 55px;
+}
+
+.page-footer .page-footer__success {
+  display: none;
+  margin-bottom: 270px;
 }
 
 .page-footer .page-footer__info-text {
@@ -203,6 +213,40 @@
   display: none;
 }
 
+.page-footer .input-error {
+  border-bottom: 2px solid red;
+}
+
+
+.page-footer .error-message {
+  display: none;
+  color: red;
+}
+
+
+.page-footer .error-message.active {
+  display: block;
+}
+
+.page-footer .error-message--server {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: normal;
+  margin: 0;
+  margin-bottom: 16px;
+  margin-top: -9px;
+}
+
+.page-footer__success-message {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: normal;
+  font-weight: 200;
+  margin: 0;
+  margin-bottom: 35px;
+  color: white;
+}
+
 @media (min-width: 1024px) {
   .page-footer {
     position: relative;
@@ -243,7 +287,7 @@
   }
 
   .page-footer .page-footer__form-field:nth-of-type(1) {
-    max-width: 285px;
+    width: 100%;
     margin-bottom: 30px;
   }
 
@@ -253,6 +297,10 @@
 
   .page-footer .page-footer__form-field:nth-of-type(3) {
     margin-bottom: 33px;
+  }
+
+  .page-footer .page-footer__input--mail {
+    max-width: 285px;
   }
 
   .page-footer .page-footer__label {
@@ -265,8 +313,14 @@
 
   .page-footer .page-footer__button-field {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .page-footer .error-message--server {
+    width: 100%;
   }
 
   .page-footer .page-footer__button {
@@ -275,6 +329,22 @@
     max-height: 45px;
     margin-top: 10px;
   }
+
+  .page-footer .page-footer__success {
+    max-width: 400px;
+    margin: 0;
+  }
+
+  .page-footer .page-footer__success-message {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 14px;
+  }
+
+  .page-footer .page-footer__button--success {
+    padding: 9px 29px 11px 31px;
+  }
+
 
   .page-footer .page-footer__label--fourth {
     max-width: 170px;
@@ -377,7 +447,7 @@
   }
 
   .page-footer .page-footer__form-field {
-    width: 512px;
+    width: 514px;
   }
 
   .page-footer .page-footer__label {
@@ -402,7 +472,6 @@
     font-size: 14px;
     max-width: 284px;
     margin-top: 17px;
-    margin-left: 174px;
     letter-spacing: 0.52px;
     margin-right: 47px;
   }

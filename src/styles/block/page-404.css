@@ -1,0 +1,70 @@
+.page-missing {
+  display: flex;
+  align-items: center;
+  height: calc(100vh - var(--body-border-width));
+}
+
+.page-missing .page-missing__wrapper {
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.page-missing .page-missing__title {
+  position: relative;
+  font-size: 46px;
+  line-height: 48px;
+  font-weight: 200;
+  margin: 0;
+}
+
+.page-missing .page-missing__title::after {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/icon-logo-sign.svg");
+  width: 33px;
+  height: 42px;
+  top: -45px;
+  left: 0;
+}
+
+.page-missing .page-missing__link {
+  display: inline-block;
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+  max-width: 240px;
+  background: var(--color-blue);
+  color: var(--color-white);
+  padding: 11px 0 14px 0;
+  font-weight: 200;
+}
+
+.page-missing .page-missing__link:hover {
+  color: var(--color-red);
+}
+
+@media (min-width: 1366px) {
+  .page-missing .page-missing__title {
+    font-size: 70px;
+    line-height: 71px;
+  }
+
+  .page-missing .page-missing__link {
+    font-size: 18px;
+    line-height: 27px;
+    background: transparent;
+    border: transparent;
+    color: var(--color-blue);
+    text-align: left;
+    padding: 0;
+  }
+
+  .page-missing .page-missing__title::after {
+    right: 0;
+    left: unset;
+  }
+
+  .page-missing .page-missing__wrapper {
+    min-width: 400px;
+  }
+}

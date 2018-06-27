@@ -7,8 +7,6 @@ body {
   font-weight: var(--font-weight-basic);
 
   border: var(--body-border-width) solid var(--color-blue);
-
-  min-height: 500px;
   /*height: calc(100vh - var(--body-border-width));*/
 }
 

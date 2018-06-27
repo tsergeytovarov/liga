@@ -5,11 +5,12 @@
   font-size: calc(var(--font-size-basic) - 2px);
   font-family: var(--set-font-family-plex);
   text-align: center;
-  color: var(--color-black);
+  color: var(--color-white);
   text-decoration: none;
   letter-spacing: 0;
-  background-color: transparent;
+  background-color: var(--color-blue);
   border: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .btn:hover {

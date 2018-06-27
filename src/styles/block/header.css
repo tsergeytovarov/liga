@@ -1,0 +1,46 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 8px;
+  right: 8px;
+  background-color: var(--color-white);
+  border-top: var(--body-border-width) solid var(--color-blue);
+  z-index: 1;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: flex-start;
+  padding: 13px 18px;
+}
+
+.header__btn {
+  box-sizing: border-box;
+  padding: 11px 17px 14px 17px;
+  min-width: 172px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.header__logo {
+  margin-left: auto;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.header__logo svg {
+  display: block;
+  width: 40px;
+  height: 51px;
+}
+
+.header__logo-icon .logo-shield {
+  fill: var(--color-blue);
+  transition: fill 0.3s ease;
+}
+
+.header__logo:hover .logo-shield {
+  fill: var(--color-pink);
+}

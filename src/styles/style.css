@@ -5,3 +5,7 @@
 @import "global.css";
 @import "block/page.css";
 @import "block/page-footer.css";
+@import "block/header.css";
+@import "block/main-nav.css";
+@import "block/intro.css";
+@import "block/video-block.css";

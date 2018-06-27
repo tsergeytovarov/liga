@@ -15,23 +15,89 @@
 </head>
 <body>
 <header class="header">
-  <a href="#wont" class="button">Заказать</a>
-  <a href="#top" class="header__logo">Вернуться наверх</a>
-  <div class="header__menu">
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item"><a href="#top" class="nav__link">О нас</a></li>
-        <li class="nav__item"><a href="#project" class="nav__link">Проекты</a></li>
-        <li class="nav__item"><a href="#work" class="nav__link">Схема работы</a></li>
-        <li class="nav__item"><a href="#features" class="nav__link">Преимущества</a></li>
-        <li class="nav__item"><a href="#team" class="nav__link">Команда</a></li>
-        <li class="nav__item"><a href="#clients" class="nav__link">Клиенты</a></li>
-        <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
-      </ul>
-    </nav>
-    <a href="tel:88002222222" class="header__telephone">812 337 21 40</a>
+  <div class="header__wrapper">
+    <a href="#wont" class="btn header__btn">Заказать проект</a>
+    <a href="#top" class="header__logo">
+      <span class="visually-hidden">Вернуться наверх</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="51"><g fill="none" fill-rule="evenodd"><path class="logo-shield" d="M0 0v37.571h.002l19.72 12.799 19.722-12.8h.002V0z"/><path fill="#FFF" d="M12.895 26.483c-.017 1.818 1.714 2.993 3.93 3.012 2.058.018 4.015-.52 5.718-1.919l.036-3.787c-1.107-.263-2.792-.58-4.323-.593-2.691-.023-5.338.813-5.36 3.287m17.936 2.456a4.09 4.09 0 0 0 1.248-.172l-.038 4.177c-1.06.358-2.405.622-3.7.61-2.351-.02-4.12-.861-5.063-2.522-2.27 1.679-4.92 2.666-8.326 2.637-4.317-.038-8.037-2.456-7.996-6.818.052-5.6 5.587-7.297 10.193-7.258a26.26 26.26 0 0 1 5.463.644l.008-.78c.021-2.204-1.788-3.734-5.387-3.765-3.166-.027-6.005.775-8.171 1.583l.051-5.509c1.878-.58 5.388-1.423 8.939-1.392 6.908.06 11.296 2.806 11.228 10.059l-.066 7.023c-.011 1.148.754 1.476 1.617 1.483"/></g></svg>
+    </a>
   </div>
 </header>
+<nav class="main-nav">
+  <button class="main-nav__toggler">
+    <span class="visually-hidden">Меню</span>
+  </button>
+  <ul class="main-nav__list">
+    <li class="main-nav__item"><a href="#top" class="main-nav__link">О нас</a></li>
+    <li class="main-nav__item"><a href="#project" class="main-nav__link">Проекты</a></li>
+    <li class="main-nav__item"><a href="#work" class="main-nav__link">Схема работы</a></li>
+    <li class="main-nav__item"><a href="#features" class="main-nav__link">Преимущества</a></li>
+    <li class="main-nav__item"><a href="#team" class="main-nav__link">Команда</a></li>
+    <li class="main-nav__item"><a href="#clients" class="main-nav__link">Клиенты</a></li>
+    <li class="main-nav__item"><a href="#contacts" class="main-nav__link">Контакты</a></li>
+  </ul>
+  <a href="tel:88002222222" class="main-nav__telephone">812 337 21 40</a>
+</nav>
+<main class="page-content">
+  <section class="intro">
+    <div class="intro__wrapper">
+      <h1 class="intro__title">
+        <span class="visually-hidden">Лига</span>
+        <span class="intro__title-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="173" height="70"><g fill="none" fill-rule="evenodd"><path fill="#000" d="M84.508 33H76v37h8.508V41.513H100V33zm31.486.004l-4.143.004L99 70h8.579l2.185-7.003h12.09L124.025 70H133l-12.88-37-4.126.004zm-.165 10.553l3.869 12.48h-7.763l3.894-12.48zM16.994 33.004l-4.143.004L0 70h8.579l8.25-26.443L25.026 70H34L21.122 33zm41.466.004L47.602 51.845l-1.65 3.554.352-3.21-.018-19.168-8.286.006v36.95h.037V70h7.572l10.844-19.183 1.513-3.31-.27 2.967L57.714 70 66 69.997 65.965 33z"/><path fill="#2C39F2" d="M138 0v32.82h.002L155.5 44l17.498-11.18H173V0z"/><path fill="#FFF" d="M150.2 23.522c-.015 1.639 1.501 2.698 3.442 2.715 1.802.017 3.516-.469 5.006-1.73l.032-3.413c-.97-.237-2.445-.523-3.785-.535-2.357-.02-4.675.733-4.695 2.963m15.707 2.214a3.5 3.5 0 0 0 1.093-.155l-.034 3.765c-.927.323-2.106.56-3.24.55-2.058-.018-3.606-.776-4.433-2.273-1.988 1.513-4.308 2.403-7.29 2.376-3.781-.033-7.038-2.213-7.003-6.145.046-5.049 4.893-6.578 8.926-6.542 1.596.014 3.359.237 4.784.58l.007-.703c.018-1.987-1.566-3.366-4.717-3.394-2.773-.025-5.259.698-7.155 1.427l.044-4.966c1.644-.524 4.718-1.283 7.827-1.255 6.05.054 9.892 2.529 9.833 9.067l-.058 6.331c-.01 1.035.66 1.33 1.416 1.337"/></g></svg>
+        </span>
+      </h1>
+      <div class="intro__content-block">
+        <h2 class="intro__subtitle">фронтенд-аутсорс от выпускников HTML-Academy</h2>
+        <p class="intro__slogan">Мы учим самых сильных выпускников HTML-Academy работать на реальных коммерческих проектах </p>
+      </div>
+      <div class="intro__video video-block">
+        <video width="853" height="482" src="http://mirrors.standaloneinstaller.com/video-sample/jellyfish-25-mbps-hd-hevc.m4v" poster="https://www.srsd.net/images/video-poster.png" autoplay loop></video>
+        <button class="video-block__btn">
+          <span class="visually-hidden">Проиграть видео</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="28"><path  fill-rule="evenodd" d="M24 14L0 28V0z"/></svg>
+        </button>
+      </div>
+      <div class="intro__content-block">
+        <ul class="intro__features features-list">
+          <li class="features-list__item">
+            <p class="features-list__slogan">Отличный результат</p>
+            <p class="features-list__descr">Кинематическое уравнение Эйлера, полностью в соответствии с модифицированным уравнением Эйлера, преобразует альтиметр.</p>
+          </li>
+          <li class="features-list__item">
+            <p class="features-list__slogan">Приемлемый прайс</p>
+            <p class="features-list__descr">Проекция абсолютной угловой скорости на оси системы координат xyz колебательно требует большего внимания к анализу ошибок.</p>
+          </li>
+        </ul>
+        <div class="intro__technologies technologies">
+          <h3 class="technologies__title">Стек</h3>
+          <ul class="technologies-list">
+            <li class="technologies-list__item">
+              <span class="visually-hidden">html</span>
+            </li>
+            <li class="technologies-list__item">
+              <span class="visually-hidden">css</span>
+            </li>
+            <li class="technologies-list__item">
+              <span class="visually-hidden">js</span>
+            </li>
+            <li class="technologies-list__item">
+              <span class="visually-hidden">github</span>
+            </li>
+            <li class="technologies-list__item">
+              <span class="visually-hidden">webpack</span>
+            </li>
+            <li class="technologies-list__item">
+              <span class="visually-hidden"></span>
+            </li>
+          </ul>
+          <p class="technologies__label">А также:</p>
+          <p class="technologies__text">Pug, Jade, Stylus, jQuery, Less, SCSS, PostCSS, Gulp, Grunt, React (JSX + CSS.Modules)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
 <footer class="page-footer">
   <div class="page-footer__wrapper">
     <div class="page-footer__top-wrapper">

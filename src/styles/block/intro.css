@@ -1,0 +1,44 @@
+.intro {
+  padding-top: 110px;
+}
+
+.intro__wrapper {
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-left: 80px;
+  width: 1013px;
+}
+
+.intro__content-block {
+  padding-left: 54px;
+}
+
+.intro__title {
+  margin: 0 0 30px;
+}
+
+.intro__title svg {
+  display: block;
+}
+
+.intro__subtitle {
+  margin: 0;
+  max-width: 615px;
+  font-weight: 300;
+  font-size: 54px;
+  line-height: 57px;
+  text-transform: uppercase;
+  color: var(--color-blue);
+}
+
+.intro__slogan {
+  margin: 0;
+  max-width: 650px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.intro__video {
+  margin-right: 80px;
+}

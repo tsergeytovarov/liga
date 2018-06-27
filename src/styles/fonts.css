@@ -4,8 +4,8 @@
   font-display: fallback;
   font-style: normal;
   src:
-    url("../fonts/ibmplexsans-light.woff2") format("woff2"),
-    url("../fonts/ibmplexsans-light.woff") format("woff");
+    url("../fonts/IBMPlexSansLight.woff2") format("woff2"),
+    url("../fonts/IBMPlexSansLight.woff") format("woff");
 }
 
 @font-face {
@@ -14,8 +14,8 @@
   font-display: fallback;
   font-style: italic;
   src:
-    url("../fonts/ibmplexsans-light-italic.woff2") format("woff2"),
-    url("../fonts/ibmplexsans-light-italic.woff") format("woff");
+    url("../fonts/IBMPlexSansLightItalic.woff2") format("woff2"),
+    url("../fonts/IBMPlexSansLightItalic.woff") format("woff");
 }
 
 @font-face {
@@ -24,8 +24,8 @@
   font-display: fallback;
   font-style: normal;
   src:
-    url("../fonts/ibmplexsans-semi-bold.woff2") format("woff2"),
-    url("../fonts/ibmplexsans-semi-bold.woff") format("woff");
+    url("../fonts/IBMPlexSansSemiBold.woff2") format("woff2"),
+    url("../fonts/IBMPlexSansSemiBold.woff") format("woff");
 }
 
 @font-face {
@@ -34,6 +34,6 @@
   font-display: fallback;
   font-style: italic;
   src:
-    url("../fonts/ibmplexsans-semi-bold-italic.woff2") format("woff2"),
-    url("../fonts/ibmplexsans-semi-bold-italic.woff") format("woff");
+    url("../fonts/IBMPlexSansSemiBoldItalic.woff2") format("woff2"),
+    url("../fonts/IBMPlexSansSemiBoldItalic.woff") format("woff");
 }

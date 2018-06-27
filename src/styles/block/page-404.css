@@ -1,7 +1,7 @@
 .page-missing {
   display: flex;
   align-items: center;
-  height: 100%;
+  height: calc(100vh - var(--body-border-width));
 }
 
 .page-missing .page-missing__wrapper {

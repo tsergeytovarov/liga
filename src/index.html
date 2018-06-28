@@ -8,7 +8,7 @@
   <link rel="preload" href="/fonts/" as="font" type="font/woff2"> -->
   <!-- <link rel="icon" href="/favicon.ico">
   <link rel="icon" type="image/png" sizes="228x228" href="/apple-touch-icon.png"> -->
-  <link rel="stylesheet" href="/styles/style.css">
+  <!-- <link rel="stylesheet" href="/styles/style.css"> -->
   <link rel="stylesheet" href="styles/style.css">
 
   <title>Liga A</title>
@@ -59,7 +59,9 @@
         <video width="853" height="482" src="http://mirrors.standaloneinstaller.com/video-sample/jellyfish-25-mbps-hd-hevc.m4v" poster="img/poster.png" loop></video>
         <button class="video-block__btn">
           <span class="visually-hidden">Проиграть видео</span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="28"><path  fill-rule="evenodd" d="M24 14L0 28V0z"/></svg>
+          <svg width="24" height="28">
+            <use xlink:href="img/svg.svg#triangle" />
+          </svg>
         </button>
       </div>
       <div class="intro__content-block">
@@ -109,51 +111,231 @@
   </section>
   <section class="js-section projects" id="project">
     <div class="projects__wrapper">
-      <h2 class="projects__title">Наверстанного не упустим</h2>
-      <ul class="projects__list">
-        <li class="project-item">
-          <div class="project-item__header">
-            <div class="project-item__info">
-              <a href="#" class="project-item__link">
-                <span>Сайт компании «Миран»</span>
-                <span class="project-item__link-icon">
-                  <svg width="15" height="15">
-                    <use xlink:href="#icon-link-arr" />
-                  </svg>
-                </span>
-              </a>
-              <p class="project-item__descr">Представляется логичным, что максимум традиционно продуцирует интеграл от функции, обращающейся в бесконечность вдоль линии</p>
+      <div class="projects__content">
+        <h2 class="projects__title">Наверстанного не упустим</h2>
+        <ul class="projects__list">
+          <li class="project-item project-item--01">
+            <div class="project-item__header">
+              <div class="project-item__info">
+                <a href="#" class="project-item__link">
+                  <span>Сайт компании «Миран»</span>
+                  <span class="project-item__link-icon">
+                    <img src="img/icon-link.png" width="15" height="15" alt="">
+                  </span>
+                </a>
+                <p class="project-item__descr">Представляется логичным, что максимум традиционно продуцирует интеграл от функции, обращающейся в бесконечность вдоль линии</p>
+              </div>
+              <div class="project-item__time">
+                <span class="project-item__days">183</span>
+                <span class="project-item__label">дня на запуск</span>
+              </div>
+              <div class="project-item__stack">
+                <ul class="stack-list">
+                  <li class="stack-list__item">
+                    <span class="visually-hidden">html5</span>
+                    <img src="img/icon-html5.png" width="22" height="25" alt="" class="stack-list__icon">
+                  </li>
+                  <li class="stack-list__item">
+                    <span class="visually-hidden">html5</span>
+                    <img src="img/icon-html5.png" width="22" height="25" alt="" class="stack-list__icon">
+                  </li>
+                  <li class="stack-list__item">
+                    <span class="visually-hidden">html5</span>
+                    <img src="img/icon-html5.png" width="22" height="25" alt="" class="stack-list__icon">
+                  </li>
+                </ul>
+                <span class="project-item__label">Такой вот стек</span>
+              </div>
             </div>
-            <div class="project-item__time">
-              <span class="project-item__days">183</span>
-              <span class="project-item__label">дня на запуск</span>
+            <div class="project-item__gallery project-gallery">
+              <div class="project-gallery__tablet">
+                <img src="img/project01-t.jpg" width="883" height="500" alt="">
+              </div>
+              <div class="project-gallery__mobile">
+                <div class="project-gallery__mobile-inner">
+                  <img src="img/project01-m.jpg" width="261" height="437" alt="">
+                </div>
+              </div>
             </div>
-            <div class="project-item__stack">
-              <ul class="stack-list">
-                <li class="stack-list__item">
-                  <span class="visually-hidden">html5</span>
-                  <img src="img/icon-html5.png" width="22" height="25" alt="" class="stack-list__icon">
-                </li>
-                <li class="stack-list__item">
-                  <span class="visually-hidden">html5</span>
-                  <img src="img/icon-html5.png" width="22" height="25" alt="" class="stack-list__icon">
-                </li>
-                <li class="stack-list__item">
-                  <span class="visually-hidden">html5</span>
-                  <img src="img/icon-html5.png" width="22" height="25" alt="" class="stack-list__icon">
-                </li>
-              </ul>
-              <span class="project-item__label">Такой вот стек</span>
+          </li>
+          <li class="project-item project-item--02">
+            <div class="project-item__header">
+              <div class="project-item__info">
+                <a href="#" class="project-item__link">
+                  <span>Сайт компании Apla</span>
+                  <span class="project-item__link-icon">
+                    <img src="img/icon-link.png" width="15" height="15" alt="">
+                  </span>
+                </a>
+                <p class="project-item__descr">Представляется логичным, что максимум традиционно продуцирует интеграл от функции, обращающейся в бесконечность вдоль линии</p>
+              </div>
+              <div class="project-item__time">
+                <span class="project-item__days">183</span>
+                <span class="project-item__label">дня на запуск</span>
+              </div>
+              <div class="project-item__stack">
+                <ul class="stack-list">
+                  <li class="stack-list__item">
+                    <span class="visually-hidden">html5</span>
+                    <img src="img/icon-html5.png" width="22" height="25" alt="" class="stack-list__icon">
+                  </li>
+                  <li class="stack-list__item">
+                    <span class="visually-hidden">html5</span>
+                    <img src="img/icon-html5.png" width="22" height="25" alt="" class="stack-list__icon">
+                  </li>
+                </ul>
+                <span class="project-item__label">Такой вот стек</span>
+              </div>
             </div>
-          </div>
-          <div class="project-item__gallery project-gallery">
-            div.project-gallery__
-          </div>
-        </li>
-      </ul>
+            <div class="project-item__gallery project-gallery project-gallery--alternative">
+              <div class="project-gallery__mobile">
+                <div class="project-gallery__mobile-inner">
+                  <img src="img/project02-m.jpg" width="261" height="437" alt="">
+                </div>
+              </div>
+              <div class="project-gallery__tablet">
+                <img src="img/project02-t.jpg" width="883" height="500" alt="">
+              </div>
+            </div>
+          </li>
+          <li class="project-item project-item--03">
+            <div class="project-item__header">
+              <div class="project-item__info">
+                <a href="#" class="project-item__link">
+                  <span>Культурный регион</span>
+                  <span class="project-item__link-icon">
+                    <img src="img/icon-link.png" width="15" height="15" alt="">
+                  </span>
+                </a>
+                <p class="project-item__descr">Представляется логичным, что максимум традиционно продуцирует интеграл от функции, обращающейся в бесконечность вдоль линии</p>
+              </div>
+              <div class="project-item__time">
+                <span class="project-item__days">183</span>
+                <span class="project-item__label">дня на запуск</span>
+              </div>
+              <div class="project-item__stack">
+                <ul class="stack-list">
+                  <li class="stack-list__item">
+                    <span class="visually-hidden">html5</span>
+                    <img src="img/icon-html5.png" width="22" height="25" alt="" class="stack-list__icon">
+                  </li>
+                  <li class="stack-list__item">
+                    <span class="visually-hidden">html5</span>
+                    <img src="img/icon-html5.png" width="22" height="25" alt="" class="stack-list__icon">
+                  </li>
+                  <li class="stack-list__item">
+                    <span class="visually-hidden">html5</span>
+                    <img src="img/icon-html5.png" width="22" height="25" alt="" class="stack-list__icon">
+                  </li>
+                </ul>
+                <span class="project-item__label">Такой вот стек</span>
+              </div>
+            </div>
+            <div class="project-item__gallery project-gallery">
+              <div class="project-gallery__tablet">
+                <img src="img/project03-t.jpg" width="883" height="500" alt="">
+              </div>
+              <div class="project-gallery__mobile">
+                <div class="project-gallery__mobile-inner">
+                  <img src="img/project03-m.jpg" width="261" height="437" alt="">
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
-  <section class="js-section" id="work"></section>
+  <section class="js-section work" id="work">
+    <div class="work__wrapper">
+      <div class="work__content">
+        <h2 class="work__title">Как мы работаем</h2>
+        <p class="work__descr">Интеграл Гамильтона выведен. Геодезическая линия транслирует Наибольший Общий Делитель (НОД). Умножение вектора на число специфицирует стремящийся интеграл.</p>
+      </div>
+    </div>
+    <ol class="work__list steps">
+      <li class="steps__item step">
+        <div class="step__wrapper">
+          <div class="step__content">
+            <div class="step__body">
+              <div class="step__info">
+                <p class="step__headline">Оценка макета от&nbsp;заказчика</p>
+                <p class="step__time">1–2 дня</p>
+              </div>
+              <div class="step__descr">
+                <p class="step__text">Небольшой описание данного этапа, буквально в&nbsp;несколько строк о том, что лежит в основе этого и&nbsp;почему это важно</p>
+              </div>
+            </div>
+            <div class="step__result">Итог: определен стартовый капитал и сроки</div>
+          </div>
+        </div>
+      </li>
+      <li class="steps__item step">
+        <div class="step__wrapper">
+          <div class="step__content">
+            <div class="step__body">
+              <div class="step__info">
+                <p class="step__headline">Согласование договора, сметы и&nbsp;сроков</p>
+                <p class="step__time">1–2 дня</p>
+              </div>
+              <div class="step__descr">
+                <p class="step__text">Гироскопический прибор связывает вибрирующий момент. Управление полётом самолёта, обобщая изложенное, астатично. Волчок заставляет иначе взглянуть на то, что такое гироскопический прибор. Ошибка трансформирует небольшой угол курса.</p>
+              </div>
+            </div>
+            <div class="step__result">Итог: форма договора и смета</div>
+          </div>
+        </div>
+      </li>
+      <li class="steps__item step">
+        <div class="step__wrapper">
+          <div class="step__content">
+            <div class="step__body">
+              <div class="step__info">
+                <p class="step__headline">Подписание, сбор команды </p>
+                <p class="step__time">1 день</p>
+              </div>
+              <div class="step__descr">
+                <p class="step__text">Небольшой описание данного этапа, буквально в&nbsp;несколько строк о том, что лежит в основе этого и&nbsp;почему это важно</p>
+              </div>
+            </div>
+            <div class="step__result">Итог: подписанный договор, ТЗ</div>
+          </div>
+        </div>
+      </li>
+      <li class="steps__item step">
+        <div class="step__wrapper">
+          <div class="step__content">
+            <div class="step__body">
+              <div class="step__info">
+                <p class="step__headline">Техническая реализация проекта</p>
+                <p class="step__time">10—90 дней</p>
+              </div>
+              <div class="step__descr">
+                <p class="step__text">Небольшой описание данного этапа, буквально в&nbsp;несколько строк о том, что лежит в основе этого и&nbsp;почему это важно</p>
+              </div>
+            </div>
+            <div class="step__result">Итог: отчет по каждой итерации</div>
+          </div>
+        </div>
+      </li>
+      <li class="steps__item step">
+        <div class="step__wrapper">
+          <div class="step__content">
+            <div class="step__body">
+              <div class="step__info">
+                <p class="step__headline">Сдача услуги </p>
+                <p class="step__time">1 день</p>
+              </div>
+              <div class="step__descr">
+                <p class="step__text">Небольшой описание данного этапа, буквально в&nbsp;несколько строк о том, что лежит в основе этого и&nbsp;почему это важно</p>
+              </div>
+            </div>
+            <div class="step__result">Итог: полностью рабочий сайт с настроенной CMS и все закрывающие документы</div>
+          </div>
+        </div>
+      </li>
+    </ol>
+  </section>
   <section class="js-section" id="features"></section>
   <section class="js-section" id="team"></section>
   <section class="js-section" id="clients"></section>

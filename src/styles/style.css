@@ -12,4 +12,10 @@
 @import "block/video-block.css";
 @import "block/features-list.css";
 @import "block/technologies.css";
+@import "block/projects.css";
+@import "block/project-item.css";
 @import "block/page-404.css";
+@import "block/stack-list.css";
+@import "block/project-gallery.css";
+@import "block/steps.css";
+@import "block/step.css";

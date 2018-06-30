@@ -1,0 +1,88 @@
+.review-slide {
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  margin-bottom: 44px;
+  padding: 30px 55px;
+  min-height: 280px;
+  color: var(--color-white);
+  background-color: var(--color-blue);
+}
+
+.review-slide::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 44px 44px 0 0;
+  border-color: var(--color-blue) rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
+}
+
+.review-slide__content {
+  flex-grow: 1;
+  box-sizing: border-box;
+  padding-right: 50px;
+}
+
+.review-slide__aside {
+  flex: none;
+  width: 166px;
+}
+
+.review-slide__client {
+  margin: 0 0 4px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+
+  display: none;
+}
+
+.review-slide__text {
+  margin: 0;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.review-slide__author {
+  margin: 0 0 30px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.review-slide__author .name {
+  font-weight: 600;
+}
+
+.review-slide__file {
+  color: var(--color-white);
+}
+
+.review-slide__file-icon {
+  display: block;
+  margin-bottom: 5px;
+  width: 29px;
+  height: 36px;
+}
+
+.review-slide__file-icon svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.review-slide__file-info {
+  margin: 0;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.review-slide__file-info .size {
+  display: block;
+}

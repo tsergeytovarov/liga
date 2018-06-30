@@ -215,9 +215,8 @@
 
 @media (min-width: 1920px) {
   .our-team .our-team__wrapper {
-    padding: 0 375px 0 582px;
+    padding: 35px 375px 115px 582px;
     max-width: 965px;
-    padding-bottom: 100px;
     margin: 0 auto;
   }
 
@@ -233,7 +232,7 @@
     line-height: normal;
     letter-spacing: 0.4px;
     margin: 0;
-    margin-top: 15px;
+    margin-top: 24px;
   }
 
   .our-team .our-team__description {
@@ -266,6 +265,6 @@
   }
 
   .our-team .our-team__second-list {
-    margin-top: 30px;
+    margin-top: 40px;
   }
 }

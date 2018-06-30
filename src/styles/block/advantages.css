@@ -1,0 +1,50 @@
+.advantages {
+  color: var(--color-white);
+  background-color: var(--color-blue);
+  background-image: linear-gradient(to right, var(--color-blue) 0%, var(--color-blue) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%), url("../img/bg-advantages.png");
+  background-repeat: no-repeat, repeat-x;
+  background-size: cover, auto 100%;
+  background-position: left top, right top 0;
+}
+
+.advantages__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0 auto;
+  width: 1134px;
+}
+
+.advantages__content {
+  width: 939px;
+}
+
+.advantages__tabs {
+  display: flex;
+  align-items: center;
+}
+
+.advantages__tab-controls {
+  width: 100%;
+}
+
+.advantages__tab-list {
+  flex: none;
+  width: 39.3%;
+}
+
+.advantages__col {
+  flex: none;
+  width: 60.7%;
+  padding-top: 85px;
+  padding-bottom: 140px;
+  background-color: var(--color-blue);
+}
+
+.advantages__label {
+  margin: 0;
+  margin-bottom: 4px;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 32px;
+}

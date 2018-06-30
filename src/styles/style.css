@@ -3,6 +3,7 @@
 @import "normalize.css";
 @import "typography.css";
 @import "global.css";
+@import "lib/swiper.css";
 @import "block/page.css";
 @import "block/btn.css";
 @import "block/page-footer.css";
@@ -20,3 +21,14 @@
 @import "block/steps.css";
 @import "block/step.css";
 @import "block/our-team.css";
+@import "block/advantages.css";
+@import "block/tab-controls.css";
+@import "block/tabs-list.css";
+@import "block/advantage-tab.css";
+@import "block/reviews.css";
+@import "block/reviews-slider-wrapper.css";
+@import "block/reviews-slider.css";
+@import "block/reviews-slide.css";
+@import "block/clients-slider-wrapper.css";
+@import "block/clients-slider.css";
+@import "block/client-slide.css";

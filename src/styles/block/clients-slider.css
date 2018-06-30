@@ -1,0 +1,10 @@
+.clients-slider-wrapper {
+  padding-bottom: 135px;
+  overflow: hidden;
+}
+
+.clients-slider.swiper-container {
+  margin: 0;
+  width: 227px;
+  overflow: visible;
+}

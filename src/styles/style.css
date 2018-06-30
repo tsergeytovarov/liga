@@ -3,6 +3,7 @@
 @import "normalize.css";
 @import "typography.css";
 @import "global.css";
+@import "components.css";
 @import "block/page.css";
 @import "block/btn.css";
 @import "block/page-footer.css";

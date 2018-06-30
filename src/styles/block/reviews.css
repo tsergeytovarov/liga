@@ -1,0 +1,24 @@
+.reviews {
+  position: relative;
+  background-color: var(--color-gray);
+}
+
+.reviews::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: calc(50% - 372px);
+  background-image: linear-gradient(to right, var(--color-gray) 0%, var(--color-gray) 80%, rgba(255, 255, 255, 0) 100%);
+  z-index: 2;
+}
+
+.reviews__title {
+  margin: 0 0 90px;
+  padding-top: 125px;
+  max-width: 450px;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 58px;
+}

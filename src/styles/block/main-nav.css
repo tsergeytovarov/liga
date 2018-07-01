@@ -2,7 +2,7 @@
   position: fixed;
   left: 8px;
   bottom: 18px;
-  z-index: 1;
+  z-index: 100;
 }
 
 .main-nav__toggler {
@@ -13,6 +13,10 @@
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.child-menu {
+  position: absolute;
 }
 
 .main-nav__link {

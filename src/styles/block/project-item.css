@@ -31,12 +31,22 @@
   font-size: 30px;
   line-height: 38px;
   color: var(--color-white);
+  transition: text-shadow 0.3s ease;
+}
+
+.project-item__link:hover {
+  text-shadow: -3px 3px 0 var(--color-red);
 }
 
 .project-item__link-icon {
   margin-left: 20px;
   width: 24px;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  transition: text-shadow 0.3s ease;
+}
+
+.project-item__link:hover .project-item__link-icon {
+  text-shadow: -6px 3px 0 var(--color-red);
 }
 
 .project-item__link-icon img {

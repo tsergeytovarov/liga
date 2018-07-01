@@ -1,4 +1,5 @@
 .tabs-list {
+  position: relative;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -8,14 +9,14 @@
   position: absolute;
   top: 0;
   left: 0;
-  max-width: 100%;
+  width: 100%;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease;
 }
 
 .tabs-list__item.active {
-  position: relative;
+  position: static;
   opacity: 1;
   pointer-events: initial;
 }

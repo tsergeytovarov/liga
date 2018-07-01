@@ -1,0 +1,3 @@
+.simplebar-scrollbar.visible:before {
+  opacity: 0 !important;
+}

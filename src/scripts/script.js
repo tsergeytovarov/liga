@@ -112,4 +112,31 @@ window.script = ((document) => {
     }
   });
 
+  const projectImages = document.querySelectorAll(`.js-project-image`);
+  for (let i = 0; i < projectImages.length; i++) {
+    projectImages[i].addEventListener(`click`, function () {
+      const siblings = projectImages[i].parentNode.childNodes;
+      for (let m = 0; m < siblings.length; m++) {
+        if (siblings[m].nodeType === 1) {
+          siblings[m].classList.remove(`higher`);
+        }
+      }
+      projectImages[i].classList.add(`higher`);
+    });
+  }
+
+  let tabControls = document.querySelectorAll(`.js-tab-control`);
+  let tabs = document.querySelectorAll(`.js-tab`);
+  for (let i = 0; i < tabControls.length; i++) {
+    tabControls[i].addEventListener(`click`, function () {
+      for (let tc = 0; tc < tabControls.length; tc++) {
+        tabControls[tc].classList.remove(`active`);
+        tabs[tc].classList.remove(`active`);
+      }
+      tabControls[i].classList.add(`active`);
+      tabs[i].classList.add(`active`);
+    });
+
+  }
+
 })(document);

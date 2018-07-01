@@ -50,6 +50,7 @@
 
 .review-slide__author {
   margin: 0 0 30px;
+  padding-top: 8px;
   font-weight: 300;
   font-size: 14px;
   line-height: 21px;
@@ -61,6 +62,11 @@
 
 .review-slide__file {
   color: var(--color-white);
+  transition: text-shadow 0.3s ease;
+}
+
+.review-slide__file:hover {
+  text-shadow: -2px 2px 0 var(--color-red);
 }
 
 .review-slide__file-icon {

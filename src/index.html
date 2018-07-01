@@ -41,7 +41,7 @@
   <a href="tel:88002222222" class="main-nav__telephone">812 337 21 40</a>
 </nav>
 <main class="page-content">
-  <section class="intro js-section" id="top">
+  <section class="section intro js-section" id="top">
     <div class="intro__wrapper wrapper">
       <div class="intro__content content-wrapper">
         <h1 class="intro__title">
@@ -111,7 +111,7 @@
       </div>
     </div>
   </section>
-  <section class="js-section projects" id="project">
+  <section class="section js-section projects" id="project">
     <div class="projects__wrapper wrapper">
       <div class="projects__content content-wrapper">
         <h2 class="projects__title">Наверстанного не упустим</h2>
@@ -148,11 +148,13 @@
               </div>
             </div>
             <div class="project-item__gallery project-gallery">
-              <div class="project-gallery__tablet">
-                <img src="img/project01-t.jpg" width="883" height="500" alt="">
+              <div class="project-gallery__tablet-wrapper js-project-image">
+                <div class="project-gallery__tablet scrollable" data-simplebar>
+                  <img src="img/project01-t.jpg" width="883" height="500" alt="">
+                </div>
               </div>
-              <div class="project-gallery__mobile">
-                <div class="project-gallery__mobile-inner">
+              <div class="project-gallery__mobile js-project-image">
+                <div class="project-gallery__mobile-inner" data-simplebar>
                   <img src="img/project01-m.jpg" width="261" height="437" alt="">
                 </div>
               </div>
@@ -186,13 +188,15 @@
               </div>
             </div>
             <div class="project-item__gallery project-gallery project-gallery&#45;&#45;alternative">
-              <div class="project-gallery__mobile">
-                <div class="project-gallery__mobile-inner">
+              <div class="project-gallery__mobile js-project-image">
+                <div class="project-gallery__mobile-inner" data-simplebar>
                   <img src="img/project02-m.jpg" width="261" height="437" alt="">
                 </div>
               </div>
-              <div class="project-gallery__tablet">
-                <img src="img/project02-t.jpg" width="883" height="500" alt="">
+              <div class="project-gallery__tablet-wrapper js-project-image">
+                <div class="project-gallery__tablet scrollable" data-simplebar>
+                  <img src="img/project02-t.jpg" width="883" height="500" alt="">
+                </div>
               </div>
             </div>
           </li>
@@ -228,11 +232,13 @@
               </div>
             </div>
             <div class="project-item__gallery project-gallery">
-              <div class="project-gallery__tablet">
-                <img src="img/project03-t.jpg" width="883" height="500" alt="">
+              <div class="project-gallery__tablet-wrapper js-project-image">
+                <div class="project-gallery__tablet scrollable" data-simplebar>
+                  <img src="img/project03-t.jpg" width="883" height="500" alt="">
+                </div>
               </div>
-              <div class="project-gallery__mobile">
-                <div class="project-gallery__mobile-inner">
+              <div class="project-gallery__mobile js-project-image">
+                <div class="project-gallery__mobile-inner" data-simplebar>
                   <img src="img/project03-m.jpg" width="261" height="437" alt="">
                 </div>
               </div>
@@ -242,7 +248,7 @@
       </div>
     </div>
   </section>
-  <section class="js-section work" id="work">
+  <section class="section js-section work" id="work">
     <div class="work__wrapper">
       <div class="work__content">
         <h2 class="work__title">Как мы работаем</h2>
@@ -332,7 +338,7 @@
       </li>
     </ol>
   </section>
-  <section class="js-section advantages" id="advantages">
+  <section class="section js-section advantages" id="advantages">
     <div class="advantages__wrapper wrapper">
       <div class="advantages__content content-wrapper">
         <div class="advantages__tabs js-tabs">
@@ -403,7 +409,7 @@
       </div>
     </div>
   </section>
-  <section class="js-section our-team" id="team">
+  <section class="section js-section our-team" id="team">
     <h2 class="visually-hidden">
       Наша команда
     </h2>
@@ -508,7 +514,7 @@
       </div>
     </div>
   </section>
-  <section class="js-section reviews" id="reviews">
+  <section class="section js-section reviews" id="reviews">
     <div class="reviews__wrapper wrapper">
       <div class="reviews__content content-wrapper">
         <h2 class="reviews__title">В этом уже&nbsp;убедились</h2>
@@ -952,6 +958,7 @@
 </footer>
 <script src="scripts/libs/svg4everybody.min.js"></script>
 <script src="scripts/libs/swiper.min.js"></script>
+<script src="scripts/libs/simplebar.js"></script>
 <script src="/scripts/script.js"></script>
 </body>
 </html>

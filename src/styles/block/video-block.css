@@ -4,17 +4,20 @@
 
 .video-block video {
   display: block;
+  max-width: 100%;
 }
 
 .video-block__btn {
-  all: initial;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: block;
+  padding: 0;
   width: 88px;
   height: 88px;
   background-color: var(--color-white);
+  border: none;
   border-radius: 50%;
 }
 

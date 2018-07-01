@@ -7,6 +7,10 @@
   min-height: 280px;
   color: var(--color-white);
   background-color: var(--color-blue);
+
+  @media (--tabletMax) {
+    padding-right: 30px;
+  }
 }
 
 .review-slide::after {
@@ -46,6 +50,16 @@
   font-weight: 300;
   font-size: 30px;
   line-height: 36px;
+
+  @media (--desktopMin) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  @media (--tabletMax) {
+    font-size: 20px;
+    line-height: 28px;
+  }
 }
 
 .review-slide__author {

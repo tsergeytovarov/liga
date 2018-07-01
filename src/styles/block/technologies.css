@@ -8,8 +8,9 @@
 
 .technologies-list {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
-  margin: 0 0 42px;
+  margin: 0 0 22px;
   padding: 0;
   list-style: none;
 }
@@ -20,11 +21,16 @@
   justify-content: center;
   align-items: center;
   margin-right: 44px;
+  margin-bottom: 20px;
   width: 66px;
   height: 82px;
   background-image: url("../img/svg/icon-stack-big.svg");
   background-repeat: no-repeat;
   background-size: contain;
+
+  @media (--desktopMin) {
+    margin-right: 33px;
+  }
 }
 
 .technologies-list__item-icon {

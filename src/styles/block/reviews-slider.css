@@ -1,4 +1,8 @@
 .reviews-slider.swiper-container {
   margin: 0;
   width: 797px;
+
+  @media (--desktopMin) {
+    width: 100%;
+  }
 }

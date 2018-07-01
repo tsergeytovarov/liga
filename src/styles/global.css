@@ -10,6 +10,12 @@ body {
   /*height: calc(100vh - var(--body-border-width));*/
 }
 
+body.overflow {
+  @media (--desktopMin) {
+    overflow: hidden;
+  }
+}
+
 a {
   text-decoration: none;
 }
@@ -25,8 +31,22 @@ a {
   align-items: flex-end;
   margin: 0 auto;
   width: 1134px;
+
+  @media (--desktopMin) {
+    box-sizing: border-box;
+    padding: 0 80px;
+    width: 100%;
+  }
+
+  @media (--tabletMax) {
+    padding: 0 40px;
+  }
 }
 
 .content-wrapper {
   width: 939px;
+
+  @media (--desktopMin) {
+    width: 100%;
+  }
 }

@@ -19,6 +19,32 @@
   padding-bottom: 100px;
 }
 
+.step:first-child .step__content {
+  @media (--desktopMin) {
+    padding-top: 80px;
+  }
+}
+
+.step:first-child .step__body {
+  @media (--desktopMin) {
+    margin-bottom: 60px;
+    min-height: 133px;
+  }
+}
+
+.step:last-child .step__content {
+  @media (--desktopMin) {
+    padding-top: 88px;
+    padding-bottom: 98px;
+  }
+}
+
+.step:last-child .step__body {
+  @media (--desktopMin) {
+    min-height: 97px;
+  }
+}
+
 .step::after {
   content: counter(li);
   counter-increment: li;
@@ -38,6 +64,15 @@
   background-size: contain;
   background-position: top center;
   z-index: 1;
+
+  @media (--desktopMin) {
+    left: 116px;
+    margin-left: 0;
+  }
+
+  @media (--tabletMax) {
+    left: 86px;
+  }
 }
 
 .step::before {
@@ -50,6 +85,16 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+
+  @media (--desktopMin) {
+    left: 92px;
+    transform: translateX(0);
+    margin-left: 0;
+  }
+
+  @media (--tabletMax) {
+    left: 62px;
+  }
 }
 
 .step:first-child::before {
@@ -57,6 +102,15 @@
   width: 112px;
   height: 132px;
   background-image: url("../img/shield-01.png");
+
+  @media (--desktopMin) {
+    top: 45px;
+    left: 77px;
+  }
+
+  @media (--tabletMax) {
+    left: 47px;
+  }
 }
 
 .step:first-child::after {
@@ -92,11 +146,15 @@
 }
 
 .step__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  margin: 0 auto;
-  width: 1134px;
+  @media (--desktopMin) {
+    padding-left: 130px;
+    padding-right: 57px;
+  }
+
+  @media (--tabletMax) {
+    padding-left: 100px;
+    padding-right: 40px;
+  }
 }
 
 .step__content {
@@ -105,7 +163,16 @@
   padding-left: 113px;
   padding-top: 80px;
   padding-bottom: 77px;
-  width: 939px;
+
+  @media (--desktopMin) {
+    padding-left: 115px;
+    padding-bottom: 80px;
+    padding-top: 75px;
+  }
+
+  @media (--tabletMax) {
+    padding-left: 85px;
+  }
 }
 
 .step__content::before {
@@ -116,17 +183,30 @@
   bottom: -2px;
   width: 3px;
   background-color: var(--color-blue);
+
+  @media (--desktopMin) {
+    width: 6px;
+  }
 }
 
 .step__body {
   display: flex;
   margin-bottom: 60px;
   min-height: 133px;
+
+  @media (--desktopMin) {
+    margin-bottom: 33px;
+    min-height: 161px;
+  }
 }
 
 .step__info {
   flex: none;
   width: 285px;
+
+  @media (--tabletMax) {
+    width: 240px;
+  }
 }
 
 .step__headline {
@@ -158,4 +238,8 @@
   max-width: 400px;
   font-weight: 600;
   color: var(--color-blue);
+
+  @media (--desktopMin) {
+    max-width: 440px;
+  }
 }

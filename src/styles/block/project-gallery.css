@@ -38,6 +38,10 @@
 
 .project-gallery__tablet.scrollable {
   max-height: 501px;
+
+  @media (--desktopMin) {
+    max-height: 450px;
+  }
 }
 
 .project-gallery__tablet img {
@@ -51,6 +55,11 @@
   top: 150px;
   left: -45px;
   cursor: pointer;
+
+  @media (--desktopMin) {
+    top: 80px;
+    left: -40px;
+  }
 }
 
 .project-gallery__mobile::before {
@@ -98,11 +107,22 @@
 .project-gallery--alternative {
   left: -55px;
   margin-bottom: -40px;
+
+  @media (--desktopMin) {
+    left: 0;
+    margin-bottom: 0;
+  }
 }
 
 .project-gallery--alternative .project-gallery__mobile {
   left: auto;
   right: -45px;
+
+  @media (--desktopMin) {
+    right: auto;
+    left: -40px;
+    z-index: 5;
+  }
 }
 
 .higher {

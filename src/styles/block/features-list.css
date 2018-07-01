@@ -12,6 +12,12 @@
   margin-right: auto;
   margin-bottom: 40px;
   max-width: 420px;
+
+  @media (--desktopMin) {
+    box-sizing: border-box;
+    padding-right: 55px;
+    max-width: 50%;
+  }
 }
 
 .features-list__item:nth-child(even) {

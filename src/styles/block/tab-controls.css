@@ -4,6 +4,10 @@
   padding: 0;
   padding-right: 100px;
   list-style: none;
+
+  @media (--tabletMax) {
+    padding-right: 20px;
+  }
 }
 
 .tab-controls__item {
@@ -14,6 +18,16 @@
   letter-spacing: -1px;
   cursor: pointer;
   transition: text-shadow 0.3s ease, padding-left 0.3s ease;
+
+  @media (--desktopMin) {
+    font-size: 60px;
+    line-height: 64px;
+  }
+
+  @media (--tabletMax) {
+    font-size: 54px;
+    line-height: 60px;
+  }
 }
 
 .tab-controls__item:hover,
@@ -23,6 +37,10 @@
 
 .tab-controls__item.active {
   padding-left: 45px;
+
+  @media (--tabletMax) {
+    padding-left: 30px;
+  }
 }
 
 .tab-controls__item.active::before {

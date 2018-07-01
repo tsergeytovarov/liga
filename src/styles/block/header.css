@@ -12,6 +12,11 @@
   display: flex;
   align-items: flex-start;
   padding: 13px 18px;
+
+  @media (--desktopMin) {
+    padding: 8px 11px;
+    padding-left: 68px;
+  }
 }
 
 .header__btn {
@@ -22,6 +27,7 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
 }
 
 .header__logo {
@@ -38,6 +44,10 @@
   fill: var(--color-blue);
 }
 
+.header__logo svg .letter {
+  fill: var(--color-white);
+}
+
 .header__logo-icon .logo-shield {
   fill: var(--color-blue);
   transition: fill 0.3s ease;
@@ -52,7 +62,42 @@
   pointer-events: initial;
 }
 
+.header.full .header__btn {
+  @media (--desktopMin) {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.header.full.menu-opened .header__btn {
+  @media (--desktopMin) {
+    opacity: 1;
+    pointer-events: initial;
+  }
+}
+
 .header.dark,
 .header.dark .header__btn {
   background-color: transparent;
+}
+
+.header.menu-opened {
+  background-color: var(--color-blue);
+}
+
+.header.menu-opened .header__btn {
+  color: var(--color-blue);
+  background-color: var(--color-white);
+}
+
+.header.menu-opened .header__logo {
+  opacity: 1;
+}
+
+.header.menu-opened .header__logo svg {
+  fill: var(--color-white);
+}
+
+.header.menu-opened .header__logo svg .letter {
+  fill: var(--color-blue);
 }

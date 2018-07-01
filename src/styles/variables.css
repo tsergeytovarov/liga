@@ -16,6 +16,11 @@
   --set-font-family-plex: "plex", "Arial", sans-serif;
 }
 
+@custom-media --desktopMax (max-width: 1919px);
+@custom-media --desktopMin (max-width: 1365px);
+@custom-media --tabletMax (max-width: 1023px);
+@custom-media --mobileMax (max-width: 767px);
+
 .visually-hidden {
   position: absolute;
   width: 1px;

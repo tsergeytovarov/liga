@@ -2,18 +2,26 @@
   padding-bottom: 15px;
   color: var(--color-white);
   background-color: var(--color-blue);
+
+  @media (--desktopMax) {
+    padding-bottom: 28px;
+  }
+
+  @media (--desktopMin) {
+    padding-bottom: 10px;
+  }
 }
 
 .projects__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  margin: 0 auto;
-  width: 1134px;
-}
+  @media (--desktopMax) {
+    padding-left: 130px;
+    padding-right: 57px;
+  }
 
-.projects__content {
-  width: 939px;
+  @media (--tabletMax) {
+    padding-left: 57px;
+    padding-right: 40px;
+  }
 }
 
 .projects__title {
@@ -23,6 +31,13 @@
   font-size: 54px;
   line-height: 64px;
   letter-spacing: -1px;
+
+  @media (--desktopMin) {
+    margin-bottom: 53px;
+    padding-top: 85px;
+    font-size: 50px;
+    line-height: 64px;
+  }
 }
 
 .projects__list {

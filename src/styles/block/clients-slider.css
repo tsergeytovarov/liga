@@ -1,10 +1,18 @@
 .clients-slider-wrapper {
   padding-bottom: 135px;
   overflow: hidden;
+
+  @media (--desktopMin) {
+    padding-bottom: 110px;
+  }
 }
 
 .clients-slider.swiper-container {
   margin: 0;
   width: 227px;
   overflow: visible;
+
+  @media (--desktopMin) {
+    width: 190px;
+  }
 }

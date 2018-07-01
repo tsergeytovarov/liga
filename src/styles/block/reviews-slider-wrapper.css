@@ -3,6 +3,10 @@
   margin-left: -56px;
   padding-left: 56px;
   padding-right: 56px;
+
+  @media (--desktopMin) {
+    padding-right: 39px;
+  }
 }
 
 .reviews-slider-wrapper .swiper-button-prev,
@@ -18,11 +22,21 @@
   border: none;
   transition: background-color 0.3s ease, opacity 0.3s ease;
   pointer-events: initial;
+
+  @media (--desktopMin) {
+    left: 11px;
+    width: 45px;
+    height: 45px;
+  }
 }
 
 .reviews-slider-wrapper .swiper-button-next {
   right: 86px;
   left: auto;
+
+  @media (--desktopMin) {
+    right: -6px;
+  }
 }
 
 .reviews-slider-wrapper .swiper-button-prev.swiper-button-disabled,

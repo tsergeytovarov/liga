@@ -1,26 +1,81 @@
 .project-item {
   margin-bottom: 220px;
+
+  @media (--desktopMin) {
+    margin-bottom: 185px;
+  }
+
+  @media (--mobileMax) {
+    position: relative;
+    display: none;
+    margin-bottom: 34px;
+    padding-bottom: 96px;
+  }
+}
+
+.project-item:first-child {
+  @media (--mobileMax) {
+    display: block;
+  }
 }
 
 .project-item__header {
   display: flex;
   align-items: flex-end;
   margin-bottom: 64px;
+
+  @media (--mobileMax) {
+    display: block;
+    margin-bottom: 35px;
+  }
 }
 
 .project-item__info {
   flex: none;
   width: 54.739%;
+
+  @media (--desktopMin) {
+    width: 60%;
+  }
+
+  @media (--tabletMax) {
+    flex-shrink: 1;
+    box-sizing: border-box;
+    padding-right: 20px;
+    width: 55%;
+  }
+
+  @media (--mobileMax) {
+    padding-right: 0;
+    width: 100%;
+  }
 }
 
 .project-item__time {
   flex: none;
   width: 24.494%;
+
+  @media (--desktopMin) {
+    width: 21.5%;
+  }
+
+  @media (--mobileMax) {
+    display: none;
+  }
 }
 
 .project-item__stack {
   flex: none;
   width: 20.767%;
+
+  @media (--mobileMax) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 
 .project-item__link {
@@ -32,6 +87,18 @@
   line-height: 38px;
   color: var(--color-white);
   transition: text-shadow 0.3s ease;
+
+  @media (--tabletMax) {
+    display: block;
+  }
+
+  @media (--mobileMax) {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 4px;
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .project-item__link:hover {
@@ -43,6 +110,10 @@
   width: 24px;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   transition: text-shadow 0.3s ease;
+
+  @media (--tabletMax) {
+    margin-left: 0;
+  }
 }
 
 .project-item__link:hover .project-item__link-icon {
@@ -62,6 +133,11 @@
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.1px;
+
+  @media (--mobileMax) {
+    font-size: 15px;
+    line-height: 21px;
+  }
 }
 
 .project-item__label {
@@ -70,6 +146,18 @@
   font-weight: 300;
   font-size: 18px;
   line-height: 22px;
+
+  @media (--desktopMin) {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+  }
+
+  @media (--mobileMax) {
+    order: 1;
+    margin: 0 0 5px;
+    font-size: 15px;
+  }
 }
 
 .project-item__days {
@@ -77,4 +165,8 @@
   font-weight: 600;
   font-size: 72px;
   line-height: 64px;
+
+  @media (--desktopMin) {
+    font-size: 64px;
+  }
 }

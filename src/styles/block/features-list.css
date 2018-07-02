@@ -6,12 +6,30 @@
   font-size: 18px;
   line-height: 26px;
   letter-spacing: -0.1px;
+
+  @media (--mobileMax) {
+    display: block;
+    font-size: 15px;
+    line-height: 21px;
+  }
 }
 
 .features-list__item {
   margin-right: auto;
   margin-bottom: 40px;
   max-width: 420px;
+
+  @media (--desktopMin) {
+    box-sizing: border-box;
+    padding-right: 55px;
+    max-width: 50%;
+  }
+
+  @media (--mobileMax) {
+    margin-bottom: 25px;
+    padding-right: 12px;
+    max-width: 100%;
+  }
 }
 
 .features-list__item:nth-child(even) {
@@ -21,6 +39,10 @@
 .features-list__slogan {
   margin: 0 0 11px;
   font-weight: 600;
+
+  @media (--mobileMax) {
+    margin-bottom: 8px;
+  }
 }
 
 .features-list__descr {

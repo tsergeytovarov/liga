@@ -1,4 +1,17 @@
 .clients-slider-wrapper {
   padding-left: calc(50% - 372px);
   overflow: hidden;
+
+  @media (--desktopMax) {
+    padding-left: calc(50% - 425px);
+  }
+
+  @media (--desktopMin) {
+    padding-left: 80px;
+  }
+
+  @media (--mobileMax) {
+    padding-bottom: 70px;
+    padding-left: 23px;
+  }
 }

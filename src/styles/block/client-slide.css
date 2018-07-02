@@ -6,6 +6,10 @@
   padding-right: 10px;
 }
 
+.client-slide--cubeline .client-slide__image {
+  bottom: -10px;
+}
+
 .client-slide__image {
   position: relative;
   display: flex;
@@ -15,6 +19,15 @@
   margin-right: auto;
   padding-bottom: 16px;
   min-height: 81px;
+
+  @media (--desktopMax) {
+    min-height: 78px;
+  }
+
+  @media (--mobileMax) {
+    padding-bottom: 12px;
+    min-height: 61px;
+  }
 }
 
 .client-slide__image::before {
@@ -26,6 +39,10 @@
   height: 6px;
   background-color: var(--color-red);
   transition: right 0.3s ease;
+
+  @media (--mobileMax) {
+    height: 4px;
+  }
 }
 
 .client-slide.swiper-slide-active .client-slide__image::before {

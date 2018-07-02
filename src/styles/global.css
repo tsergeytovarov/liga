@@ -8,6 +8,16 @@ body {
 
   border: var(--body-border-width) solid var(--color-blue);
   /*height: calc(100vh - var(--body-border-width));*/
+
+  @media (--mobileMax) {
+    border: 7px solid var(--color-blue);
+  }
+}
+
+body.overflow {
+  @media (--desktopMin) {
+    overflow: hidden;
+  }
 }
 
 a {
@@ -25,8 +35,26 @@ a {
   align-items: flex-end;
   margin: 0 auto;
   width: 1134px;
+
+  @media (--desktopMin) {
+    box-sizing: border-box;
+    padding: 0 80px;
+    width: 100%;
+  }
+
+  @media (--tabletMax) {
+    padding: 0 40px;
+  }
+
+  @media (--mobileMax) {
+    padding: 0 23px;
+  }
 }
 
 .content-wrapper {
   width: 939px;
+
+  @media (--desktopMin) {
+    width: 100%;
+  }
 }

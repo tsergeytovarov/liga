@@ -3,6 +3,10 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (--mobileMax) {
+    order: 2;
+  }
 }
 
 .stack-list__item {

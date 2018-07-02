@@ -19,26 +19,26 @@
     <a href="#wont" class="btn header__btn">Заказать проект</a>
     <a href="#top" class="header__logo">
       <span class="visually-hidden">Вернуться наверх</span>
-      <svg width="40" height="51">
-        <use xlink:href="img/svg.svg#icon-logo-sign" />
-      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="51"><g  fill-rule="evenodd"><path class="logo-shield" d="M0 0v37.571h.002l19.72 12.799 19.722-12.8h.002V0z"/><path class="letter" d="M12.895 26.483c-.017 1.818 1.714 2.993 3.93 3.012 2.058.018 4.015-.52 5.718-1.919l.036-3.787c-1.107-.263-2.792-.58-4.323-.593-2.691-.023-5.338.813-5.36 3.287m17.936 2.456a4.09 4.09 0 0 0 1.248-.172l-.038 4.177c-1.06.358-2.405.622-3.7.61-2.351-.02-4.12-.861-5.063-2.522-2.27 1.679-4.92 2.666-8.326 2.637-4.317-.038-8.037-2.456-7.996-6.818.052-5.6 5.587-7.297 10.193-7.258a26.26 26.26 0 0 1 5.463.644l.008-.78c.021-2.204-1.788-3.734-5.387-3.765-3.166-.027-6.005.775-8.171 1.583l.051-5.509c1.878-.58 5.388-1.423 8.939-1.392 6.908.06 11.296 2.806 11.228 10.059l-.066 7.023c-.011 1.148.754 1.476 1.617 1.483"/></g></svg>
     </a>
   </div>
 </header>
-<nav class="main-nav">
-  <button class="main-nav__toggler">
+<nav class="main-nav js-nav">
+  <button class="main-nav__toggler js-nav-toggler">
     <span class="visually-hidden">Меню</span>
   </button>
-  <ul class="main-nav__list">
-    <li class="main-nav__item"><a href="#top" class="main-nav__link active js-scroll-link">О нас</a></li>
-    <li class="main-nav__item"><a href="#project" class="main-nav__link js-scroll-link">Проекты</a></li>
-    <li class="main-nav__item"><a href="#work" class="main-nav__link js-scroll-link">Схема работы</a></li>
-    <li class="main-nav__item"><a href="#advantages" class="main-nav__link js-scroll-link">Преимущества</a></li>
-    <li class="main-nav__item"><a href="#team" class="main-nav__link js-scroll-link">Команда</a></li>
-    <li class="main-nav__item"><a href="#reviews" class="main-nav__link js-scroll-link">Клиенты</a></li>
-    <li class="main-nav__item"><a href="#contacts" class="main-nav__link js-scroll-link">Контакты</a></li>
-  </ul>
-  <a href="tel:88002222222" class="main-nav__telephone">812 337 21 40</a>
+  <div class="main-nav__wrapper">
+    <ul class="main-nav__list">
+      <li class="main-nav__item"><a href="#top" class="main-nav__link active js-scroll-link">О нас</a></li>
+      <li class="main-nav__item"><a href="#project" class="main-nav__link js-scroll-link">Проекты</a></li>
+      <li class="main-nav__item"><a href="#work" class="main-nav__link js-scroll-link">Схема работы</a></li>
+      <li class="main-nav__item"><a href="#advantages" class="main-nav__link js-scroll-link">Преимущества</a></li>
+      <li class="main-nav__item"><a href="#team" class="main-nav__link js-scroll-link">Команда</a></li>
+      <li class="main-nav__item"><a href="#reviews" class="main-nav__link js-scroll-link">Клиенты</a></li>
+      <li class="main-nav__item"><a href="#contacts" class="main-nav__link js-scroll-link">Контакты</a></li>
+    </ul>
+    <a href="tel:88002222222" class="main-nav__telephone">812 337 21 40</a>
+  </div>
 </nav>
 <main class="page-content">
   <section class="section intro js-section" id="top">
@@ -114,14 +114,13 @@
   <section class="section js-section projects" id="project">
     <div class="projects__wrapper wrapper">
       <div class="projects__content content-wrapper">
-        <h2 class="projects__title">Наверстанного не упустим</h2>
-        <ul class="projects__list">
+        <h2 class="projects__title">Наверстанного не&nbsp;упустим</h2>
+        <ul class="projects__list js-projects">
           <li class="project-item project-item&#45;&#45;01">
             <div class="project-item__header">
               <div class="project-item__info">
                 <a href="#" class="project-item__link">
-                  <span>Сайт компании «Миран»</span>
-                  <span class="project-item__link-icon">&#8599;</span>
+                  <span>Сайт компании «Миран»</span>&nbsp;<span class="project-item__link-icon">&#8599;</span>
                 </a>
                 <p class="project-item__descr">Представляется логичным, что максимум традиционно продуцирует интеграл от функции, обращающейся в бесконечность вдоль линии</p>
               </div>
@@ -164,8 +163,7 @@
             <div class="project-item__header">
               <div class="project-item__info">
                 <a href="#" class="project-item__link">
-                  <span>Сайт компании Apla</span>
-                  <span class="project-item__link-icon">&#8599;</span>
+                  <span>Сайт компании Apla</span>&nbsp;<span class="project-item__link-icon">&#8599;</span>
                 </a>
                 <p class="project-item__descr">Представляется логичным, что максимум традиционно продуцирует интеграл от функции, обращающейся в бесконечность вдоль линии</p>
               </div>
@@ -204,8 +202,7 @@
             <div class="project-item__header">
               <div class="project-item__info">
                 <a href="#" class="project-item__link">
-                  <span>Культурный регион</span>
-                  <span class="project-item__link-icon">&#8599;</span>
+                  <span>Культурный регион</span>&nbsp;<span class="project-item__link-icon">&#8599;</span>
                 </a>
                 <p class="project-item__descr">Представляется логичным, что максимум традиционно продуцирует интеграл от функции, обращающейся в бесконечность вдоль линии</p>
               </div>
@@ -245,20 +242,21 @@
             </div>
           </li>
         </ul>
+        <button type="button" class="projects__show-more js-show-projects"><span>+ еще 2 проекта</span></button>
       </div>
     </div>
   </section>
   <section class="section js-section work" id="work">
-    <div class="work__wrapper">
-      <div class="work__content">
+    <div class="work__wrapper wrapper">
+      <div class="work__content content-wrapper">
         <h2 class="work__title">Как мы работаем</h2>
         <p class="work__descr">Интеграл Гамильтона выведен. Геодезическая линия транслирует Наибольший Общий Делитель (НОД). Умножение вектора на число специфицирует стремящийся интеграл.</p>
       </div>
     </div>
     <ol class="work__list steps">
       <li class="steps__item step">
-        <div class="step__wrapper">
-          <div class="step__content">
+        <div class="step__wrapper wrapper">
+          <div class="step__content content-wrapper">
             <div class="step__body">
               <div class="step__info">
                 <p class="step__headline">Оценка макета от&nbsp;заказчика</p>
@@ -273,8 +271,8 @@
         </div>
       </li>
       <li class="steps__item step">
-        <div class="step__wrapper">
-          <div class="step__content">
+        <div class="step__wrapper wrapper">
+          <div class="step__content content-wrapper">
             <div class="step__body">
               <div class="step__info">
                 <p class="step__headline">Согласование договора, сметы и&nbsp;сроков</p>
@@ -289,8 +287,8 @@
         </div>
       </li>
       <li class="steps__item step">
-        <div class="step__wrapper">
-          <div class="step__content">
+        <div class="step__wrapper wrapper">
+          <div class="step__content content-wrapper">
             <div class="step__body">
               <div class="step__info">
                 <p class="step__headline">Подписание, сбор команды </p>
@@ -305,8 +303,8 @@
         </div>
       </li>
       <li class="steps__item step">
-        <div class="step__wrapper">
-          <div class="step__content">
+        <div class="step__wrapper wrapper">
+          <div class="step__content content-wrapper">
             <div class="step__body">
               <div class="step__info">
                 <p class="step__headline">Техническая реализация проекта</p>
@@ -321,8 +319,8 @@
         </div>
       </li>
       <li class="steps__item step">
-        <div class="step__wrapper">
-          <div class="step__content">
+        <div class="step__wrapper wrapper">
+          <div class="step__content content-wrapper">
             <div class="step__body">
               <div class="step__info">
                 <p class="step__headline">Сдача услуги </p>
@@ -365,12 +363,13 @@
             </li>
             <li class="tabs-list__item advantage-tab js-tab">
               <div class="advantage-tab__icon">
-                <svg width="79" height="88">
-                  <use xlink:href="img/svg.svg#icon-dog" />
+                <svg width="75" height="79">
+                  <use xlink:href="img/svg.svg#icon-flower" />
                 </svg>
               </div>
               <div class="advantage-tab__descr">
-                <p></p>
+                <p>Подстраиваемся под стек и&nbsp;окружение заказчика.</p>
+                <p>Верстаем из любого инструмента (PS, IL, Sketch, Invision, XD, Zeplin, Avocode, Figma)</p>
               </div>
             </li>
             <li class="tabs-list__item advantage-tab js-tab">
@@ -380,7 +379,7 @@
                 </svg>
               </div>
               <div class="advantage-tab__descr">
-                <p></p>
+                <p>Даём оценку по проекту в течение 24 часов</p>
               </div>
             </li>
             <li class="tabs-list__item advantage-tab js-tab">
@@ -396,12 +395,12 @@
             </li>
             <li class="tabs-list__item advantage-tab js-tab">
               <div class="advantage-tab__icon">
-                <svg width="75" height="79">
-                  <use xlink:href="img/svg.svg#icon-flower" />
+                <svg width="79" height="88">
+                  <use xlink:href="img/svg.svg#icon-dog" />
                 </svg>
               </div>
               <div class="advantage-tab__descr">
-                <p></p>
+                <p>Работаем официально через договор и без проблем подписываем NDA, если это необходимо</p>
               </div>
             </li>
           </ul>
@@ -524,7 +523,7 @@
               <div class="swiper-slide review-slide">
                 <div class="review-slide__content">
                   <h3 class="review-slide__client">Agima</h3>
-                  <p class="review-slide__text">Очень приятное отношение к работе и к заказчику, мы были всегда на связи и все углы сайта обтачивали максимально оперативно</p>
+                  <p class="review-slide__text">Очень приятное отношение к работе и&nbsp;к&nbsp;заказчику, мы были всегда на связи и все углы сайта обтачивали максимально оперативно</p>
                 </div>
                 <div class="review-slide__aside">
                   <p class="review-slide__author"><span class="name">Павел Прокофьев</span>, Технический директор AGIMA</p>
@@ -541,7 +540,7 @@
               <div class="swiper-slide review-slide">
                 <div class="review-slide__content">
                   <h3 class="review-slide__client">Agima</h3>
-                  <p class="review-slide__text">Очень приятное отношение к работе и к заказчику, мы были всегда на связи и все углы сайта обтачивали максимально оперативно</p>
+                  <p class="review-slide__text">Очень приятное отношение к работе и&nbsp;к&nbsp;заказчику, мы были всегда на связи и все углы сайта обтачивали максимально оперативно</p>
                 </div>
                 <div class="review-slide__aside">
                   <p class="review-slide__author"><span class="name">Павел Прокофьев</span>, Технический директор AGIMA</p>
@@ -558,7 +557,7 @@
               <div class="swiper-slide review-slide">
                 <div class="review-slide__content">
                   <h3 class="review-slide__client">Agima</h3>
-                  <p class="review-slide__text">Очень приятное отношение к работе и к заказчику, мы были всегда на связи и все углы сайта обтачивали максимально оперативно</p>
+                  <p class="review-slide__text">Очень приятное отношение к работе и&nbsp;к&nbsp;заказчику, мы были всегда на связи и все углы сайта обтачивали максимально оперативно</p>
                 </div>
                 <div class="review-slide__aside">
                   <p class="review-slide__author"><span class="name">Павел Прокофьев</span>, Технический директор AGIMA</p>
@@ -575,7 +574,7 @@
               <div class="swiper-slide review-slide">
                 <div class="review-slide__content">
                   <h3 class="review-slide__client">Agima</h3>
-                  <p class="review-slide__text">Очень приятное отношение к работе и к заказчику, мы были всегда на связи и все углы сайта обтачивали максимально оперативно</p>
+                  <p class="review-slide__text">Очень приятное отношение к работе и&nbsp;к&nbsp;заказчику, мы были всегда на связи и все углы сайта обтачивали максимально оперативно</p>
                 </div>
                 <div class="review-slide__aside">
                   <p class="review-slide__author"><span class="name">Павел Прокофьев</span>, Технический директор AGIMA</p>
@@ -592,7 +591,7 @@
               <div class="swiper-slide review-slide">
                 <div class="review-slide__content">
                   <h3 class="review-slide__client">Agima</h3>
-                  <p class="review-slide__text">Очень приятное отношение к работе и к заказчику, мы были всегда на связи и все углы сайта обтачивали максимально оперативно</p>
+                  <p class="review-slide__text">Очень приятное отношение к работе и&nbsp;к&nbsp;заказчику, мы были всегда на связи и все углы сайта обтачивали максимально оперативно</p>
                 </div>
                 <div class="review-slide__aside">
                   <p class="review-slide__author"><span class="name">Павел Прокофьев</span>, Технический директор AGIMA</p>
@@ -609,7 +608,7 @@
               <div class="swiper-slide review-slide">
                 <div class="review-slide__content">
                   <h3 class="review-slide__client">Agima</h3>
-                  <p class="review-slide__text">Очень приятное отношение к работе и к заказчику, мы были всегда на связи и все углы сайта обтачивали максимально оперативно</p>
+                  <p class="review-slide__text">Очень приятное отношение к работе и&nbsp;к&nbsp;заказчику, мы были всегда на связи и все углы сайта обтачивали максимально оперативно</p>
                 </div>
                 <div class="review-slide__aside">
                   <p class="review-slide__author"><span class="name">Павел Прокофьев</span>, Технический директор AGIMA</p>
@@ -626,7 +625,7 @@
               <div class="swiper-slide review-slide">
                 <div class="review-slide__content">
                   <h3 class="review-slide__client">Agima</h3>
-                  <p class="review-slide__text">Очень приятное отношение к работе и к заказчику, мы были всегда на связи и все углы сайта обтачивали максимально оперативно</p>
+                  <p class="review-slide__text">Очень приятное отношение к работе и&nbsp;к&nbsp;заказчику, мы были всегда на связи и все углы сайта обтачивали максимально оперативно</p>
                 </div>
                 <div class="review-slide__aside">
                   <p class="review-slide__author"><span class="name">Павел Прокофьев</span>, Технический директор AGIMA</p>
@@ -643,7 +642,7 @@
               <div class="swiper-slide review-slide">
                 <div class="review-slide__content">
                   <h3 class="review-slide__client">Agima</h3>
-                  <p class="review-slide__text">Очень приятное отношение к работе и к заказчику, мы были всегда на связи и все углы сайта обтачивали максимально оперативно</p>
+                  <p class="review-slide__text">Очень приятное отношение к работе и&nbsp;к&nbsp;заказчику, мы были всегда на связи и все углы сайта обтачивали максимально оперативно</p>
                 </div>
                 <div class="review-slide__aside">
                   <p class="review-slide__author"><span class="name">Павел Прокофьев</span>, Технический директор AGIMA</p>
@@ -660,7 +659,7 @@
               <div class="swiper-slide review-slide">
                 <div class="review-slide__content">
                   <h3 class="review-slide__client">Agima</h3>
-                  <p class="review-slide__text">Очень приятное отношение к работе и к заказчику, мы были всегда на связи и все углы сайта обтачивали максимально оперативно</p>
+                  <p class="review-slide__text">Очень приятное отношение к работе и&nbsp;к&nbsp;заказчику, мы были всегда на связи и все углы сайта обтачивали максимально оперативно</p>
                 </div>
                 <div class="review-slide__aside">
                   <p class="review-slide__author"><span class="name">Павел Прокофьев</span>, Технический директор AGIMA</p>
@@ -677,7 +676,7 @@
               <div class="swiper-slide review-slide">
                 <div class="review-slide__content">
                   <h3 class="review-slide__client">Agima</h3>
-                  <p class="review-slide__text">Очень приятное отношение к работе и к заказчику, мы были всегда на связи и все углы сайта обтачивали максимально оперативно</p>
+                  <p class="review-slide__text">Очень приятное отношение к работе и&nbsp;к&nbsp;заказчику, мы были всегда на связи и все углы сайта обтачивали максимально оперативно</p>
                 </div>
                 <div class="review-slide__aside">
                   <p class="review-slide__author"><span class="name">Павел Прокофьев</span>, Технический директор AGIMA</p>
@@ -731,7 +730,7 @@
               <img src="img/logo-adindex.png" width="117" height="24" alt="">
             </div>
           </div>
-          <div class="swiper-slide client-slide">
+          <div class="swiper-slide client-slide client-slide--cubeline">
             <div class="client-slide__image">
               <img src="img/logo-cubeline.png" width="142" height="46" alt="">
             </div>
@@ -756,7 +755,7 @@
               <img src="img/logo-adindex.png" width="117" height="24" alt="">
             </div>
           </div>
-          <div class="swiper-slide client-slide">
+          <div class="swiper-slide client-slide client-slide--cubeline">
             <div class="client-slide__image">
               <img src="img/logo-cubeline.png" width="142" height="46" alt="">
             </div>

@@ -17,6 +17,50 @@
 
 .step:nth-last-child(2) .step__content {
   padding-bottom: 100px;
+
+  @media (--mobileMax) {
+    padding-bottom: 75px;
+  }
+}
+
+.step:first-child .step__content {
+  @media (--desktopMin) {
+    padding-top: 80px;
+  }
+
+  @media (--mobileMax) {
+    padding-top: 30px;
+  }
+}
+
+.step:first-child .step__body {
+  @media (--desktopMin) {
+    margin-bottom: 60px;
+    min-height: 133px;
+  }
+
+  @media (--mobileMax) {
+    margin-bottom: 20px;
+    min-height: 100px;
+  }
+}
+
+.step:last-child .step__content {
+  @media (--desktopMin) {
+    padding-top: 88px;
+    padding-bottom: 98px;
+  }
+
+  @media (--mobileMax) {
+    padding-top: 42px;
+    padding-bottom: 58px;
+  }
+}
+
+.step:last-child .step__body {
+  @media (--desktopMin) {
+    min-height: 97px;
+  }
 }
 
 .step::after {
@@ -38,6 +82,27 @@
   background-size: contain;
   background-position: top center;
   z-index: 1;
+
+  @media (--desktopMin) {
+    left: 116px;
+    margin-left: 0;
+  }
+
+  @media (--tabletMax) {
+    left: 86px;
+  }
+
+  @media (--mobileMax) {
+    left: 33px;
+    width: 28px;
+    height: 32px;
+    line-height: 28px;
+  }
+
+  @media (--mobileMax) {
+    left: 36px;
+    top: 60px;
+  }
 }
 
 .step::before {
@@ -50,6 +115,21 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+
+  @media (--desktopMin) {
+    left: 92px;
+    transform: translateX(0);
+    margin-left: 0;
+  }
+
+  @media (--tabletMax) {
+    left: 62px;
+  }
+
+  @media (--mobileMax) {
+    top: 46px;
+    left: 23px;
+  }
 }
 
 .step:first-child::before {
@@ -57,10 +137,30 @@
   width: 112px;
   height: 132px;
   background-image: url("../img/shield-01.png");
+
+  @media (--desktopMin) {
+    top: 45px;
+    left: 77px;
+  }
+
+  @media (--tabletMax) {
+    left: 47px;
+  }
+
+  @media (--mobileMax) {
+    top: 35px;
+    left: 24px;
+    width: 52px;
+    height: 62px;
+  }
 }
 
 .step:first-child::after {
   top: 90px;
+
+  @media (--mobileMax) {
+    top: 49px;
+  }
 }
 
 .step:first-child .step__content::before {
@@ -71,32 +171,61 @@
   width: 80px;
   height: 98px;
   background-image: url("../img/shield-02.png");
+
+  @media (--mobileMax) {
+    width: 53px;
+    height: 66px;
+  }
 }
 
 .step:nth-child(3)::before {
   width: 80px;
   height: 99px;
   background-image: url("../img/shield-03.png");
+
+  @media (--mobileMax) {
+    width: 53px;
+    height: 66px;
+  }
 }
 
 .step:nth-child(4)::before {
   width: 80px;
   height: 98px;
   background-image: url("../img/shield-04.png");
+
+  @media (--mobileMax) {
+    width: 53px;
+    height: 66px;
+  }
 }
 
 .step:nth-child(5)::before {
   width: 80px;
   height: 99px;
   background-image: url("../img/shield-05.png");
+
+  @media (--mobileMax) {
+    width: 53px;
+    height: 66px;
+  }
 }
 
 .step__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  margin: 0 auto;
-  width: 1134px;
+  @media (--desktopMin) {
+    padding-left: 130px;
+    padding-right: 57px;
+  }
+
+  @media (--tabletMax) {
+    padding-left: 100px;
+    padding-right: 40px;
+  }
+
+  @media (--mobileMax) {
+    padding-left: 48px;
+    padding-right: 23px;
+  }
 }
 
 .step__content {
@@ -105,7 +234,22 @@
   padding-left: 113px;
   padding-top: 80px;
   padding-bottom: 77px;
-  width: 939px;
+
+  @media (--desktopMin) {
+    padding-left: 115px;
+    padding-bottom: 80px;
+    padding-top: 75px;
+  }
+
+  @media (--tabletMax) {
+    padding-left: 85px;
+  }
+
+  @media (--mobileMax) {
+    padding-bottom: 42px;
+    padding-left: 45px;
+    padding-top: 42px;
+  }
 }
 
 .step__content::before {
@@ -116,17 +260,44 @@
   bottom: -2px;
   width: 3px;
   background-color: var(--color-blue);
+
+  @media (--desktopMin) {
+    width: 6px;
+  }
+
+  @media (--mobileMax) {
+    width: 4px;
+  }
 }
 
 .step__body {
   display: flex;
   margin-bottom: 60px;
   min-height: 133px;
+
+  @media (--desktopMin) {
+    margin-bottom: 33px;
+    min-height: 161px;
+  }
+
+  @media (--mobileMax) {
+    display: block;
+  }
 }
 
 .step__info {
   flex: none;
   width: 285px;
+
+  @media (--tabletMax) {
+    width: 240px;
+  }
+
+  @media (--mobileMax) {
+    margin-bottom: 16px;
+    width: 100%;
+    max-width: 240px;
+  }
 }
 
 .step__headline {
@@ -135,6 +306,12 @@
   font-size: 30px;
   line-height: 33px;
   letter-spacing: -0.7px;
+
+  @media (--mobileMax) {
+    margin-bottom: 5px;
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .step__descr {
@@ -148,6 +325,11 @@
   font-weight: 300;
   font-size: 18px;
   line-height: 26px;
+
+  @media (--mobileMax) {
+    font-size: 15px;
+    line-height: 21px;
+  }
 }
 
 .step__text {
@@ -158,4 +340,8 @@
   max-width: 400px;
   font-weight: 600;
   color: var(--color-blue);
+
+  @media (--desktopMin) {
+    max-width: 440px;
+  }
 }

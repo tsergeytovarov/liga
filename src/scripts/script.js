@@ -139,4 +139,31 @@ window.script = ((document) => {
 
   }
 
+  const navToggler = document.querySelector(`.js-nav-toggler`);
+  const nav = document.querySelector(`.js-nav`);
+  const header = document.querySelector(`.header`);
+
+  navToggler.addEventListener(`click`, function () {
+    header.classList.toggle(`menu-opened`);
+    nav.classList.toggle(`opened`);
+    document.querySelector(`body`).classList.toggle(`overflow`);
+  });
+
+  let scrollLink = document.querySelectorAll(`.js-scroll-link`);
+  for (let i = 0; i < scrollLink.length; i++) {
+    scrollLink[i].addEventListener(`click`, function () {
+      header.classList.remove(`menu-opened`);
+      nav.classList.remove(`opened`);
+      document.querySelector(`body`).classList.remove(`overflow`);
+    });
+  }
+
+  let showProjects = document.querySelector(`.js-show-projects`);
+  let projectsList = document.querySelector(`.js-projects`);
+
+  showProjects.addEventListener(`click`, function () {
+    showProjects.classList.add(`hide`);
+    projectsList.classList.add(`full`);
+  });
+
 })(document);

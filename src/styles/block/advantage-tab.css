@@ -9,6 +9,11 @@
     padding-left: 0;
     min-height: 400px;
   }
+
+  @media (--mobileMax) {
+    padding: 0;
+    min-height: 100px;
+  }
 }
 
 .advantage-tab__icon {
@@ -17,6 +22,10 @@
   @media (--desktopMin) {
     margin-bottom: 18px;
     margin-left: 9px;
+  }
+
+  @media (--mobileMax) {
+    margin-bottom: 14px;
   }
 }
 
@@ -33,5 +42,11 @@
   @media (--tabletMax) {
     font-size: 22px;
     line-height: 28px;
+  }
+
+  @media (--mobileMax) {
+    margin-bottom: 8px;
+    font-size: 15px;
+    line-height: 21px;
   }
 }

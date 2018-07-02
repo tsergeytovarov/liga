@@ -11,6 +11,10 @@
     max-height: 0;
     overflow: hidden;
   }
+
+  @media (--mobileMax) {
+    top: 55px;
+  }
 }
 
 .main-nav__toggler {
@@ -29,6 +33,13 @@
   @media (--desktopMin) {
     display: block;
   }
+
+  @media (--mobileMax) {
+    top: 13px;
+    left: 14px;
+    width: 36px;
+    height: 36px;
+  }
 }
 
 .main-nav__toggler::before,
@@ -39,14 +50,27 @@
   right: 15px;
   height: 4px;
   background-color: #ffffff;
+
+  @media (--mobileMax) {
+    left: 10px;
+    right: 10px;
+  }
 }
 
 .main-nav__toggler::after {
   bottom: 15px;
+
+  @media (--mobileMax) {
+    bottom: 12px;
+  }
 }
 
 .main-nav__toggler::before {
   top: 15px;
+
+  @media (--mobileMax) {
+    top: 12px;
+  }
 }
 
 .main-nav__toggler:hover {
@@ -63,6 +87,10 @@
     transform: translate(-100%);
     height: calc(100vh - 75px);
     background-color: var(--color-blue);
+  }
+
+  @media (--mobileMax) {
+    height: calc(100vh - 55px);
   }
 }
 
@@ -90,6 +118,11 @@
     font-size: 24px;
     line-height: 41px;
     color: var(--color-white);
+  }
+
+  @media (--mobileMax) {
+    font-size: 20px;
+    line-height: 37px;
   }
 }
 
@@ -139,6 +172,11 @@
     font-size: 24px;
     left: 33px;
     color: var(--color-white);
+  }
+
+  @media (--mobileMax) {
+    font-size: 20px;
+    line-height: 33px;
   }
 }
 

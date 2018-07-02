@@ -11,6 +11,11 @@
   @media (--tabletMax) {
     padding-left: 80px;
   }
+
+  @media (--mobileMax) {
+    padding-left: 23px;
+    padding-right: 0;
+  }
 }
 
 .reviews::before {
@@ -30,6 +35,10 @@
   @media (--desktopMin) {
     width: 80px;
   }
+
+  @media (--mobileMax) {
+    display: none;
+  }
 }
 
 .reviews__title {
@@ -47,5 +56,12 @@
   @media (--desktopMin) {
     margin-bottom: 70px;
     padding-top: 89px;
+  }
+
+  @media (--mobileMax) {
+    margin-bottom: 40px;
+    padding-top: 60px;
+    font-size: 30px;
+    line-height: 33px;
   }
 }

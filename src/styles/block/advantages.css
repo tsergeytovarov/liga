@@ -5,6 +5,11 @@
   background-repeat: no-repeat, repeat-x;
   background-size: cover, auto 100%;
   background-position: left top, right top 0;
+
+  @media (--mobileMax) {
+    background-color: var(--color-blue);
+    background-image: none;
+  }
 }
 
 .advantages__wrapper {
@@ -17,11 +22,20 @@
     padding-left: 57px;
     padding-right: 40px;
   }
+
+  @media (--mobileMax) {
+    padding-left: 23px;
+    padding-right: 23px;
+  }
 }
 
 .advantages__tabs {
   display: flex;
   align-items: center;
+
+  @media (--mobileMax) {
+    display: block;
+  }
 }
 
 .advantages__tab-controls {
@@ -34,6 +48,10 @@
 
   @media (--desktopMin) {
     width: 43%;
+  }
+
+  @media (--mobileMax) {
+    width: 100%;
   }
 }
 
@@ -49,6 +67,12 @@
     padding-bottom: 133px;
     width: 57%;
   }
+
+  @media (--mobileMax) {
+    padding-top: 40px;
+    padding-bottom: 33px;
+    width: 100%;
+  }
 }
 
 .advantages__label {
@@ -60,5 +84,11 @@
 
   @media (--desktopMin) {
     margin-bottom: 0;
+  }
+
+  @media (--mobileMax) {
+    margin-bottom: 2px;
+    font-size: 20px;
+    line-height: 24px;
   }
 }

@@ -5,6 +5,7 @@
 .video-block video {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 .video-block__btn {
@@ -19,6 +20,11 @@
   background-color: var(--color-white);
   border: none;
   border-radius: 50%;
+
+  @media (--mobileMax) {
+    width: 59px;
+    height: 59px;
+  }
 }
 
 .video-block__btn svg {
@@ -29,6 +35,13 @@
   margin-left: 4px;
   fill: var(--color-pink);
   transition: fill 0.3s ease;
+
+  @media (--mobileMax) {
+    top: 42%;
+    left: 42%;
+    transform: scale(0.7, 0.7) translate(-50%, -50%);
+    transform-origin: center;
+  }
 }
 
 .video-block__btn:hover svg,

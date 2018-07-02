@@ -4,6 +4,11 @@
   font-size: 30px;
   line-height: 33px;
   letter-spacing: -0.9px;
+
+  @media (--mobileMax) {
+    margin-bottom: 13px;
+    font-size: 20px;
+  }
 }
 
 .technologies-list {
@@ -13,6 +18,11 @@
   margin: 0 0 22px;
   padding: 0;
   list-style: none;
+
+  @media (--mobileMax) {
+    margin-bottom: 8px;
+    width: calc(100% + 24px);
+  }
 }
 
 .technologies-list__item {
@@ -31,6 +41,13 @@
   @media (--desktopMin) {
     margin-right: 33px;
   }
+
+  @media (--mobileMax) {
+    margin-right: 24px;
+    margin-bottom: 18px;
+    width: 47px;
+    height: 60px;
+  }
 }
 
 .technologies-list__item-icon {
@@ -38,6 +55,11 @@
   display: block;
   margin-bottom: 15px;
   max-width: 96%;
+
+  @media (--mobileMax) {
+    margin-bottom: 9px;
+    transform: scale(0.7, 0.7);
+  }
 }
 
 .technologies__label,
@@ -47,8 +69,17 @@
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.1px;
+
+  @media (--mobileMax) {
+    font-size: 15px;
+    line-height: 21px;
+  }
 }
 
 .technologies__label {
   font-weight: 600;
+
+  @media (--mobileMax) {
+    margin-bottom: 8px;
+  }
 }

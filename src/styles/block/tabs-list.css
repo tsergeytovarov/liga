@@ -4,6 +4,10 @@
   padding: 0;
   list-style: none;
   background-color: var(--color-blue);
+
+  @media (--mobileMax) {
+    padding-bottom: 44px;
+  }
 }
 
 .tabs-list__item {
@@ -14,6 +18,13 @@
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease;
+
+  @media (--mobileMax) {
+    position: static;
+    margin-bottom: 40px;
+    opacity: 1;
+    pointer-events: initial;
+  }
 }
 
 .tabs-list__item.active {

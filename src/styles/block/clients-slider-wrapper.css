@@ -9,4 +9,9 @@
   @media (--desktopMin) {
     padding-left: 80px;
   }
+
+  @media (--mobileMax) {
+    padding-bottom: 70px;
+    padding-left: 23px;
+  }
 }

@@ -7,6 +7,12 @@
   @media (--desktopMin) {
     padding-right: 39px;
   }
+
+  @media (--mobileMax) {
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .reviews-slider-wrapper .swiper-button-prev,
@@ -28,6 +34,12 @@
     width: 45px;
     height: 45px;
   }
+
+  @media (--mobileMax) {
+    left: 0;
+    width: 36px;
+    height: 36px;
+  }
 }
 
 .reviews-slider-wrapper .swiper-button-next {
@@ -36,6 +48,10 @@
 
   @media (--desktopMin) {
     right: -6px;
+  }
+
+  @media (--mobileMax) {
+    right: 0;
   }
 }
 
@@ -50,10 +66,15 @@
   background-color: var(--color-black);
 }
 
-.reviews-slider-wrapper .swiper-button-prev .svg,
-.reviews-slider-wrapper .swiper-button-next .svg {
+.reviews-slider-wrapper .swiper-button-prev svg,
+.reviews-slider-wrapper .swiper-button-next svg {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  @media (--mobileMax) {
+    width: 7px;
+    height: 15px;
+  }
 }

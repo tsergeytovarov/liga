@@ -158,4 +158,12 @@ window.script = ((document) => {
     });
   }
 
+  let showProjects = document.querySelector(`.js-show-projects`);
+  let projectsList = document.querySelector(`.js-projects`);
+
+  showProjects.addEventListener(`click`, function () {
+    showProjects.classList.add(`hide`);
+    projectsList.classList.add(`full`);
+  });
+
 })(document);

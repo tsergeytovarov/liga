@@ -23,6 +23,11 @@
   @media (--desktopMax) {
     min-height: 78px;
   }
+
+  @media (--mobileMax) {
+    padding-bottom: 12px;
+    min-height: 61px;
+  }
 }
 
 .client-slide__image::before {
@@ -34,6 +39,10 @@
   height: 6px;
   background-color: var(--color-red);
   transition: right 0.3s ease;
+
+  @media (--mobileMax) {
+    height: 4px;
+  }
 }
 
 .client-slide.swiper-slide-active .client-slide__image::before {

@@ -3,7 +3,7 @@
 @import "normalize.css";
 @import "typography.css";
 @import "global.css";
-@import "components.css";
+@import "text-components.css";
 @import "lib/swiper.css";
 @import "lib/scrollbar.css";
 @import "lib/overrides.css";

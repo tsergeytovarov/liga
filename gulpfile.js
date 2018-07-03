@@ -83,7 +83,7 @@ gulp.task('images', function () {
     .src('src/img/**/*.{png,jpg,gif}')
     .pipe(
       imagemin([
-        magemin.optipng({
+        imagemin.optipng({
           optimizationLevel: 3,
         }),
         imagemin.jpegtran({
@@ -100,7 +100,8 @@ gulp.task('copy', () => {
   return gulp.src([
       'src/*',
       'src/fonts/*',
-      'src/images/**/*.{jpg,png}',
+      'src/img/**/*.{jpg,png}',
+      'src/img/svg/*.svg',
       '!src/styles/*',
       '!src/scripts/*',
       'src/scripts/libs/*',
@@ -148,7 +149,7 @@ gulp.task('watch:copy', () => {
   return gulp.watch([
     'src/*',
     'src/fonts/*',
-    'src/img/**/*.{jpg,png}',
+    'src/img/**/*.{jpg,png,svg}',
     '!src/styles/*',
     '!src/scripts/*',
     '!src/**/*.html'
@@ -167,6 +168,7 @@ gulp.task('watch', gulp.parallel(
 
 gulp.task('build', gulp.parallel(
   'svg',
+  'images',
   'html',
   'css',
   'scripts',

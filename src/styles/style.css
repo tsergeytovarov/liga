@@ -3,10 +3,10 @@
 @import "normalize.css";
 @import "typography.css";
 @import "global.css";
-@import "components.css";
 @import "lib/swiper.css";
 @import "lib/scrollbar.css";
 @import "lib/overrides.css";
+@import "block/components.css";
 @import "block/page.css";
 @import "block/section.css";
 @import "block/btn.css";

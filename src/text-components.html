@@ -297,31 +297,5 @@
 </footer>
 <script src="scripts/libs/svg4everybody.min.js"></script>
 <script src="/scripts/script.js"></script>
-<script>
-  function flexibleTextarea(textarea) {
-    let textareaItem = document.getElementById(textarea) || textarea;
-    if (textareaItem) {
-      textareaItem.style.overflow = "hidden";
-      let e = textareaItem.rows = textareaItem.rows > 0 ? textareaItem.rows : 2;
-      textarea = textareaItem.cols = textareaItem.cols > 0 ? textareaItem.cols : 20;
-      var g = RegExp("([^\r\n]{" + textarea + "})([^\r\n])"),
-        f = RegExp("[^\n]{" + textarea + "}\n?$|[^\n]{0," + textarea + "}\n");
-      textareaItem.onkeyup = textareaItem.onkeydown = function () {
-        textareaItem.value = textareaItem.value.replace(g, "$1\r\n$2");
-        for (var c = 0, d = textareaItem.value; d.search(f) >= 0;) {
-          c++;
-          d = d.replace(f, "")
-        }
-        c += 1;
-        if (c < e) c = e;
-        textareaItem.rows = c
-      }
-    }
-  }
-
-  window.onload = function () {
-    flexibleTextarea('client-message');
-  };
-</script>
 </body>
 </html>

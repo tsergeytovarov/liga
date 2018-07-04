@@ -112,6 +112,8 @@
   top: 60px;
   margin-left: -370px;
   transform: translateX(-50%);
+  width: 80px;
+  height: 98px;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -129,14 +131,19 @@
   @media (--mobileMax) {
     top: 46px;
     left: 23px;
+    width: 53px;
+    height: 66px;
   }
 }
 
 .step:first-child::before {
+  background-image: url("../img/shield-01.png");
+}
+
+.step.current::before {
   top: 50px;
   width: 112px;
   height: 132px;
-  background-image: url("../img/shield-01.png");
 
   @media (--desktopMin) {
     top: 45px;
@@ -155,7 +162,7 @@
   }
 }
 
-.step:first-child::after {
+.step.current::after {
   top: 90px;
 
   @media (--mobileMax) {
@@ -168,47 +175,19 @@
 }
 
 .step:nth-child(2)::before {
-  width: 80px;
-  height: 98px;
   background-image: url("../img/shield-02.png");
-
-  @media (--mobileMax) {
-    width: 53px;
-    height: 66px;
-  }
 }
 
 .step:nth-child(3)::before {
-  width: 80px;
-  height: 99px;
   background-image: url("../img/shield-03.png");
-
-  @media (--mobileMax) {
-    width: 53px;
-    height: 66px;
-  }
 }
 
 .step:nth-child(4)::before {
-  width: 80px;
-  height: 98px;
   background-image: url("../img/shield-04.png");
-
-  @media (--mobileMax) {
-    width: 53px;
-    height: 66px;
-  }
 }
 
 .step:nth-child(5)::before {
-  width: 80px;
-  height: 99px;
   background-image: url("../img/shield-05.png");
-
-  @media (--mobileMax) {
-    width: 53px;
-    height: 66px;
-  }
 }
 
 .step__wrapper {

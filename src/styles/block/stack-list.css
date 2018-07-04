@@ -13,13 +13,23 @@
   display: flex;
   flex: none;
   justify-content: center;
+  align-items: flex-start;
   margin-right: 15px;
   box-sizing: border-box;
-  padding-top: 8px;
+  padding-top: 4px;
   width: 37px;
   height: 45px;
   background-image: url("../img/svg/icon-stack-big.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+}
+
+.stack-list__icon {
+  flex: none;
+  display: block;
+  width: auto;
+  height: auto;
+  max-height: 75%;
+  max-width: 90%;
 }

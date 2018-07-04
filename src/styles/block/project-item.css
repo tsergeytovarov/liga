@@ -81,7 +81,7 @@
 .project-item__link {
   margin-bottom: 15px;
   display: flex;
-  align-items: center;
+  align-items: top;
   font-weight: 600;
   font-size: 30px;
   line-height: 38px;
@@ -107,6 +107,7 @@
 
 .project-item__link-icon {
   margin-left: 20px;
+  margin-right: 20px;
   width: 24px;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   transition: text-shadow 0.3s ease;

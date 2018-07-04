@@ -7,7 +7,6 @@ body {
   font-weight: var(--font-weight-basic);
 
   border: var(--body-border-width) solid var(--color-blue);
-  /*height: calc(100vh - var(--body-border-width));*/
 
   @media (--mobileMax) {
     border: 7px solid var(--color-blue);

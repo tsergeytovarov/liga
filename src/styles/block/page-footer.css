@@ -11,7 +11,6 @@
 .page-footer .page-footer__title {
   font-size: 30px;
   line-height: 33px;
-  max-width: 200px;
   font-weight: 200;
   letter-spacing: -0.4px;
   color: #ffffff;
@@ -19,6 +18,8 @@
 }
 
 .page-footer .page-footer__form-field {
+  display: flex;
+  flex-direction: column;
   max-width: 320px;
   margin-bottom: 23px;
 }
@@ -237,7 +238,8 @@
   margin-top: -9px;
 }
 
-.page-footer__success-message {
+
+.page-footer .page-footer__success-message {
   font-size: 18px;
   line-height: 24px;
   letter-spacing: normal;
@@ -302,10 +304,6 @@
 
   .page-footer .page-footer__input--mail {
     max-width: 285px;
-  }
-
-  .page-footer .page-footer__label {
-    padding-left: 2px;
   }
 
   .page-footer .page-footer__label--no-wrap {
@@ -421,7 +419,7 @@
   }
 
   .page-footer .page-footer__info-block__wrapper {
-    max-width: 280px;
+    max-width: 300px;
   }
 
   .page-footer .page-footer__designed {
@@ -467,19 +465,6 @@
     margin-bottom: 29px;
   }
 
-  .page-footer .page-footer__label--fourth {
-    display: none;
-  }
-
-  .page-footer .page-footer__label--fourth-desktop {
-    display: block;
-    font-size: 14px;
-    max-width: 284px;
-    margin-top: 17px;
-    letter-spacing: 0.52px;
-    margin-right: 47px;
-  }
-
   .page-footer .page-footer__button {
     margin-top: 15px;
   }
@@ -502,6 +487,10 @@
   .page-footer .page-footer__designed {
     right: -24px;
     bottom: 73px;
+  }
+
+  .page-footer .page-footer__label--fourth {
+    max-width: 200px;
   }
 
   .page-footer .page-footer__social--desktop {

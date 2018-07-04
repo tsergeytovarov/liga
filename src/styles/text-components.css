@@ -100,7 +100,8 @@
   width: 20px;
   height: 2px;
   background-color: var(--color-blue);
-  top: 50%;
+  top: 0;
+  margin-top: 11px;
   left: 0;
 }
 

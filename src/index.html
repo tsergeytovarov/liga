@@ -446,9 +446,9 @@
             </div>
             <!--<div class="our-team__avatar">-->
             <!--</div>-->
-            <h3 class="our-team__name">
+            <h4 class="our-team__name">
               Сергей Попов
-            </h3>
+            </h4>
             <p class="our-team__description">
               Наш любимый директор. Верстает с 17 лет
             </p>
@@ -457,9 +457,9 @@
             <div class="our-team__avatar">
             </div>
             <!--<img src="http://placehold.it/142x182" alt="Изображение члена нашей команды" class="our-team__avatar">-->
-            <h3 class="our-team__name">
+            <h4 class="our-team__name">
               Ирина Ожерельева
-            </h3>
+            </h4>
             <p class="our-team__description">
               Старший менеджер проектов. Красива и мила с рождения
             </p>
@@ -468,9 +468,9 @@
             <div class="our-team__avatar">
             </div>
             <!--<img src="http://placehold.it/142x182" alt="Изображение члена нашей команды" class="our-team__avatar">-->
-            <h3 class="our-team__name">
+            <h4 class="our-team__name">
               Иван Петров
-            </h3>
+            </h4>
             <p class="our-team__description">
               Ведущий разработчик. Тщательно следит за собой
             </p>
@@ -479,9 +479,9 @@
             <div class="our-team__avatar">
             </div>
             <!--<img src="http://placehold.it/142x182" alt="Изображение члена нашей команды" class="our-team__avatar">-->
-            <h3 class="our-team__name">
+            <h4 class="our-team__name">
               Пётр Иванов
-            </h3>
+            </h4>
             <p class="our-team__description">
               Тестировщик. Любит тестировать и монотонную работу.
             </p>
@@ -745,33 +745,29 @@
 <footer class="page-footer js-section" id="contacts">
   <div class="page-footer__wrapper">
     <div class="page-footer__top-wrapper">
-      <header class="page-footer__header">
-        <h2 class="page-footer__title">Наверняка, для нас есть работёнка</h2>
-      </header>
-      <main class="page-footer__main">
+      <div class="page-footer__header">
+        <h2 class="page-footer__title">Наверняка, для&nbsp;нас есть работёнка</h2>
+      </div>
+      <div class="page-footer__main">
         <div class="page-footer__success">
           <p class="page-footer__success-message">Спасибо! Ваше письмо отправлено нам на почту. Совсем скоро мы вам напишем, или позвоним</p>
-          <button class="page-footer__button page-footer__button--success">Отправить еще</button>
+          <a class="page-footer__button page-footer__button--success">Отправить еще</a>
         </div>
         <form action="" class="page-footer__form" method="post">
           <div class="page-footer__form-field">
             <input type="text" class="page-footer__input page-footer__input--mail" id="client-contacts" required placeholder="Телефон или почта">
-            <label for="client-contacts" class="page-footer__label visually-hidden">Только для связи с нами</label>
-            <p class="page-footer__label">Только для связи с нами</p>
+            <label for="client-contacts" class="page-footer__label">Только для связи с нами</label>
             <p class="page-footer__label error-message error-message--invalid">Введенные не являются ни телефоном, ни почтой</p>
             <p class="page-footer__label error-message error-message--empty">Поле незаполнено</p>
           </div>
           <div class="page-footer__form-field">
             <input type="text" class="page-footer__input" id="client-name" required placeholder="Имя">
-            <label for="client-name" class="page-footer__label visually-hidden">Необязательно указывать, но мы его все
+            <label for="client-name" class="page-footer__label">Необязательно указывать, но мы его все
               равно спросим</label>
-            <p class="page-footer__label page-footer__label--no-wrap">Необязательно указывать, но мы его все равно
-              спросим</p>
           </div>
           <div class="page-footer__form-field">
             <textarea type="text" class="page-footer__input" id="client-message" required placeholder="Сообщение" rows="1"></textarea>
-            <label for="client-message" class="page-footer__label visually-hidden">Чем можем помочь</label>
-            <p class="page-footer__label page-footer__label--third">Чем можем помочь</p>
+            <label for="client-message" class="page-footer__label">Чем можем помочь</label>
           </div>
           <div class="page-footer__button-field">
             <p class="error-message error-message--server">
@@ -782,20 +778,16 @@
               и согласиться с&nbsp;<a href="privacy.html" class="page-footer__link page-footer__link--policy">политикой
               конфиденциальности</a>
             </p>
-            <p class="page-footer__label page-footer__label--fourth page-footer__label--fourth-desktop">
-              и согласиться <br>с <a href="privacy.html" class="page-footer__link page-footer__link--policy">политикой
-              конфиденциальности</a>
-            </p>
           </div>
         </form>
-      </main>
+      </div>
     </div>
-    <footer class="page-footer__footer">
+    <div class="page-footer__footer">
       <div class="page-footer__info">
         <div class="page-footer__info-block">
           <div class="page-footer__info-block__wrapper">
             <p class="page-footer__info-text">
-              Если любите читать длинные юридические тексты:
+              Если любите читать длинные юридические&nbsp;тексты:
             </p>
             <p class="page-footer__info-text page-footer__info-text--legal">
               <a href="requisites.html" class="page-footer__link">Реквизиты</a>
@@ -862,8 +854,7 @@
           <div>
             <p class="page-footer__info-text">Если надумаете заглянуть в гости:</p>
             <p class="page-footer__link-block">
-              <a href="" class="page-footer__link page-footer__link--mobile">Санкт-Петербург,<br> ул. Большая Конюшенная 19/8</a>
-              <a href="" class="page-footer__link page-footer__link--desktop">Санкт-Петербург, ул. Б. Конюшенная 19/8</a>
+              <a href="" class="page-footer__link page-footer__link--desktop">Санкт-Петербург, ул.&nbsp; Большая Конюшенная&nbsp;19/8</a>
             </p>
           </div>
           <div class="page-footer__social page-footer__social--mobile">
@@ -919,9 +910,10 @@
       <div class="page-footer__designed">
         <a href="http://shishki.pro/" class="page-footer__link">Дизайн *Shishki</a>
       </div>
-    </footer>
+    </div>
   </div>
 </footer>
+<script src="scripts/libs/autosize.min.js"></script>
 <script src="scripts/libs/svg4everybody.min.js"></script>
 <script src="scripts/libs/swiper.min.js"></script>
 <script src="scripts/libs/simplebar.js"></script>

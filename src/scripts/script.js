@@ -63,7 +63,11 @@ window.script = ((document) => {
     });
 
     const clientsSlider = new Swiper(`.js-clients-slider`, {
-
+      on: {
+        reachEnd() {
+          // clientsSlider.slideTo(1);
+        }
+      }
     });
 
     let clientsSlide = document.querySelectorAll(`.client-slide`);
@@ -120,16 +124,18 @@ window.script = ((document) => {
 
   if (document.querySelector(`.js-project-image`)) {
     const projectImages = document.querySelectorAll(`.js-project-image`);
-    for (let i = 0; i < projectImages.length; i++) {
-      projectImages[i].addEventListener(`click`, function () {
-        const siblings = projectImages[i].parentNode.childNodes;
-        for (let m = 0; m < siblings.length; m++) {
-          if (siblings[m].nodeType === 1) {
-            siblings[m].classList.remove(`higher`);
+    if (document.documentElement.clientWidth > 767) {
+      for (let i = 0; i < projectImages.length; i++) {
+        projectImages[i].addEventListener(`click`, function () {
+          const siblings = projectImages[i].parentNode.childNodes;
+          for (let m = 0; m < siblings.length; m++) {
+            if (siblings[m].nodeType === 1) {
+              siblings[m].classList.remove(`higher`);
+            }
           }
-        }
-        projectImages[i].classList.add(`higher`);
-      });
+          projectImages[i].classList.add(`higher`);
+        });
+      }
     }
   }
 

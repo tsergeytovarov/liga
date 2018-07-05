@@ -18,9 +18,20 @@
 
   @media (--mobileMax) {
     margin-bottom: 25px;
-    padding: 30px 42px;
-    padding-right: 20px;
+    padding: 32px 60px 30px;
     min-height: 394px;
+  }
+}
+
+.review-slide:first-child {
+  @media (--mobileMax) {
+    padding-left: 25px;
+  }
+}
+
+.review-slide:last-child {
+  @media (--mobileMax) {
+    padding-right: 25px;
   }
 }
 

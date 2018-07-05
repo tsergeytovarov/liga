@@ -44,7 +44,7 @@
   }
 }
 
-.intro__title {
+.intro__headline {
   margin: 0 0 30px;
 
   @media (--desktopMin) {
@@ -56,11 +56,11 @@
   }
 }
 
-.intro__title svg {
+.intro__headline svg {
   display: block;
 }
 
-.intro__subtitle {
+.intro__title {
   margin: 0 0 40px;
   max-width: 615px;
   font-weight: 300;

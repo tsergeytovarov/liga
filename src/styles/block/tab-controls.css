@@ -32,6 +32,7 @@
   @media (--mobileMax) {
     font-size: 36px;
     line-height: 38px;
+    pointer-events: none;
   }
 }
 

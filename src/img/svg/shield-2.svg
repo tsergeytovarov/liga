@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="81px" height="100px" viewBox="0 0 81 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_shield_2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Стайлгайд" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="styleguide_icons" transform="translate(-144.000000, -637.000000)">
+            <g id="icon_shield_2" transform="translate(145.000000, 638.000000)">
+                <polygon id="Fill-1" fill="#000000" points="0.0594974874 24.83186 39.8894472 24.83186 39.8894472 0.0518592965 0.0594974874 0.0518592965"></polygon>
+                <polygon id="Fill-2" fill="#FF1553" points="39.7901508 22.8341709 79.6196985 22.8341709 79.6196985 0.0518592965 39.7901508 0.0518592965"></polygon>
+                <polygon id="Fill-3" fill="#FF1553" points="0.0594974874 45.7819095 39.8894472 45.7819095 39.8894472 23 0.0594974874 23"></polygon>
+                <polygon id="Fill-4" fill="#000000" points="39.7901508 45.6160804 79.6196985 45.6160804 79.6196985 22.8341709 39.7901508 22.8341709"></polygon>
+                <polygon id="Fill-5" fill="#000000" points="0.0594974874 68.3815075 39.8894472 68.3815075 39.8894472 45.599598 0.0594974874 45.599598"></polygon>
+                <polygon id="Fill-6" fill="#FF1553" points="39.8890452 68.3815075 79.718593 68.3815075 79.718593 45.599598 39.8890452 45.599598"></polygon>
+                <polygon id="Fill-7" fill="#FF1553" points="0.0593366834 68.3816281 0.0593366834 71.9900704 39.8892864 97.9892663 39.8892864 68.3816281"></polygon>
+                <polygon id="Fill-8" fill="#000000" points="39.8890854 68.3816281 39.8890854 97.9892663 79.7186332 71.9900704 79.7186332 68.3816281"></polygon>
+                <polygon id="Stroke-9" stroke="#989898" stroke-width="0.258" points="0.0518190955 0.0518592965 0.0542311558 71.9899497 39.8809648 97.9891457 79.7081005 71.9899497 79.7109146 0.0518592965"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

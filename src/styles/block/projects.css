@@ -56,12 +56,6 @@
   }
 }
 
-.projects__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 .projects__list.full .project-item {
   display: block;
 }

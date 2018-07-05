@@ -16,49 +16,49 @@
 <body>
 <header class="header">
   <div class="header__wrapper">
-    <a href="#wont" class="btn header__btn">Заказать проект</a>
-    <a href="#top" class="header__logo">
+    <a href="#" class="btn header__btn js-scroll-link" data-target="contacts">Заказать проект</a>
+    <a href="#top" class="header__logo" data-target="top">
       <span class="visually-hidden">Вернуться наверх</span>
       <svg xmlns="http://www.w3.org/2000/svg" width="40" height="51"><g fill-rule="evenodd"><path class="logo-shield" d="M0 0v37.571h.002l19.72 12.799 19.722-12.8h.002V0z"/><path class="letter" d="M12.895 26.483c-.017 1.818 1.714 2.993 3.93 3.012 2.058.018 4.015-.52 5.718-1.919l.036-3.787c-1.107-.263-2.792-.58-4.323-.593-2.691-.023-5.338.813-5.36 3.287m17.936 2.456a4.09 4.09 0 0 0 1.248-.172l-.038 4.177c-1.06.358-2.405.622-3.7.61-2.351-.02-4.12-.861-5.063-2.522-2.27 1.679-4.92 2.666-8.326 2.637-4.317-.038-8.037-2.456-7.996-6.818.052-5.6 5.587-7.297 10.193-7.258a26.26 26.26 0 0 1 5.463.644l.008-.78c.021-2.204-1.788-3.734-5.387-3.765-3.166-.027-6.005.775-8.171 1.583l.051-5.509c1.878-.58 5.388-1.423 8.939-1.392 6.908.06 11.296 2.806 11.228 10.059l-.066 7.023c-.011 1.148.754 1.476 1.617 1.483"/></g></svg>
     </a>
   </div>
 </header>
 <nav class="main-nav js-nav">
-  <button class="main-nav__toggler js-nav-toggler">
+  <button class="main-nav__toggler js-nav-toggler" type="button">
     <span class="visually-hidden">Меню</span>
   </button>
   <div class="main-nav__wrapper">
-    <ul class="main-nav__list" id="menu">
-      <li class="main-nav__item"><a href="#top" class="main-nav__link active js-scroll-link">О нас</a></li>
-      <li class="main-nav__item"><a href="#project" class="main-nav__link js-scroll-link">Проекты</a></li>
-      <li class="main-nav__item"><a href="#work" class="main-nav__link js-scroll-link">Схема работы</a></li>
-      <li class="main-nav__item"><a href="#advantages" class="main-nav__link js-scroll-link">Преимущества</a></li>
-      <li class="main-nav__item"><a href="#team" class="main-nav__link js-scroll-link">Команда</a></li>
-      <li class="main-nav__item"><a href="#reviews" class="main-nav__link js-scroll-link">Клиенты</a></li>
-      <li class="main-nav__item"><a href="#contacts" class="main-nav__link js-scroll-link">Контакты</a></li>
+    <ul class="main-nav__list">
+      <li class="main-nav__item"><a href="#" class="main-nav__link active js-scroll-link" data-target="">О нас</a></li>
+      <li class="main-nav__item"><a href="#" class="main-nav__link js-scroll-link" data-target="projects">Проекты</a></li>
+      <li class="main-nav__item"><a href="#" class="main-nav__link js-scroll-link" data-target="work">Схема работы</a></li>
+      <li class="main-nav__item"><a href="#" class="main-nav__link js-scroll-link" data-target="advantages">Преимущества</a></li>
+      <li class="main-nav__item"><a href="#" class="main-nav__link js-scroll-link" data-target="team">Команда</a></li>
+      <li class="main-nav__item"><a href="#" class="main-nav__link js-scroll-link" data-target="reviews">Клиенты</a></li>
+      <li class="main-nav__item"><a href="#" class="main-nav__link js-scroll-link" data-target="contacts">Контакты</a></li>
     </ul>
     <a href="tel:88002222222" class="main-nav__telephone">8 800 337 21 40</a>
   </div>
 </nav>
 <main class="page-content">
-  <section class="section intro js-section" id="top">
+  <section class="section intro js-section" data-name="top">
     <div class="intro__wrapper wrapper">
       <div class="intro__content content-wrapper">
-        <h1 class="intro__title">
+        <p class="intro__headline">
           <span class="visually-hidden">Лига</span>
           <span class="intro__title-icon">
             <svg width="173" height="70">
               <use xlink:href="img/svg.svg#icon-logo-full" />
             </svg>
           </span>
-        </h1>
+        </p>
         <div class="intro__content-block">
-          <h2 class="intro__subtitle">Фронтенд-аутсорс от выпускников HTML-Academy</h2>
+          <h1 class="intro__title">Фронтенд-аутсорс от выпускников HTML-Academy</h1>
           <p class="intro__slogan">Мы научили самых сильных выпускников HTML Academy работать на реальных коммерческих проектах.</p>
         </div>
         <div class="intro__video video-block js-video">
           <video width="853" height="482" src="http://mirrors.standaloneinstaller.com/video-sample/jellyfish-25-mbps-hd-hevc.m4v" poster="img/poster.png" loop></video>
-          <button class="video-block__btn js-play-btn">
+          <button class="video-block__btn js-play-btn" type="button">
             <span class="visually-hidden">Проиграть видео</span>
             <svg width="24" height="28">
               <use xlink:href="img/svg.svg#triangle" />
@@ -66,33 +66,29 @@
           </button>
         </div>
         <div class="intro__content-block">
-          <ul class="intro__features features-list">
-            <li class="features-list__item">
-              <p class="features-list__slogan">Командная работа</p>
+          <div class="intro__features features-list">
+            <div class="features-list__item">
+              <h3 class="features-list__slogan">Командная работа</h3>
               <p class="features-list__descr">Над проектом работает команда выпускников под контролем менеджера, опытного наставника и тестировщика.</p>
-            </li>
-            <li class="features-list__item">
-              <p class="features-list__slogan">Минимизация рисков</p>
+            </div>
+            <div class="features-list__item">
+              <h3 class="features-list__slogan">Минимизация рисков</h3>
               <p class="features-list__descr">Благодаря отслеживанию всего процесса, мы минимизируем такие риски как: сорванные сроки, плохая коммуникация, некачественный результат.</p>
-            </li>
-          </ul>
+            </div>
+          </div>
           <div class="intro__technologies technologies">
             <h3 class="technologies__title">Стек</h3>
             <ul class="technologies-list">
               <li class="technologies-list__item">
-                <span class="visually-hidden">html</span>
                 <img src="img/logo-html.png" width="38" height="54" alt="" class="technologies-list__item-icon">
               </li>
               <li class="technologies-list__item">
-                <span class="visually-hidden">css</span>
                 <img src="img/logo-css.png" width="38" height="54" alt="" class="technologies-list__item-icon">
               </li>
               <li class="technologies-list__item">
-                <span class="visually-hidden">js</span>
                 <img src="img/logo-js.png" width="39" height="54" alt="" class="technologies-list__item-icon">
               </li>
               <li class="technologies-list__item">
-                <span class="visually-hidden">github</span>
                 <img src="img/logo-github.png" width="45" height="45" alt="" class="technologies-list__item-icon">
               </li>
             </ul>
@@ -103,12 +99,13 @@
       </div>
     </div>
   </section>
-  <section class="section js-section projects" id="project">
+  <section class="section js-section projects" data-name="projects">
+    <h2 class="visually-hidden">Наши проекты</h2>
     <div class="projects__wrapper wrapper">
       <div class="projects__content content-wrapper">
         <h2 class="projects__title">Наверстанного не&nbsp;упустим</h2>
-        <ul class="projects__list js-projects">
-          <li class="project-item project-item&#45;&#45;01">
+        <div class="projects__list js-projects">
+          <div class="project-item">
             <div class="project-item__header">
               <div class="project-item__info">
                 <a href="/portfolio/pik" class="project-item__link">
@@ -123,15 +120,12 @@
               <div class="project-item__stack">
                 <ul class="stack-list">
                   <li class="stack-list__item">
-                    <span class="visually-hidden">html5</span>
                     <img src="img/icon-html5.png" width="22" height="25" alt="" class="stack-list__icon">
                   </li>
                   <li class="stack-list__item">
-                    <span class="visually-hidden">css</span>
                     <img src="img/logo-css.png" width="38" height="54" alt="" class="stack-list__icon">
                   </li>
                   <li class="stack-list__item">
-                    <span class="visually-hidden">js</span>
                     <img src="img/logo-js.png" width="39" height="54" alt="" class="stack-list__icon">
                   </li>
                 </ul>
@@ -150,8 +144,8 @@
                 </div>
               </div>
             </div>
-          </li>
-          <li class="project-item project-item&#45;&#45;02">
+          </div>
+          <div class="project-item">
             <div class="project-item__header">
               <div class="project-item__info">
                 <a href="/portfolio/crypto" class="project-item__link">
@@ -166,15 +160,12 @@
               <div class="project-item__stack">
                 <ul class="stack-list">
                   <li class="stack-list__item">
-                    <span class="visually-hidden">html5</span>
                     <img src="img/icon-html5.png" width="22" height="25" alt="" class="stack-list__icon">
                   </li>
                   <li class="stack-list__item">
-                    <span class="visually-hidden">css</span>
                     <img src="img/logo-css.png" width="38" height="54" alt="" class="stack-list__icon">
                   </li>
                   <li class="stack-list__item">
-                    <span class="visually-hidden">js</span>
                     <img src="img/logo-js.png" width="39" height="54" alt="" class="stack-list__icon">
                   </li>
                 </ul>
@@ -193,8 +184,8 @@
                 </div>
               </div>
             </div>
-          </li>
-          <li class="project-item project-item&#45;&#45;03">
+          </div>
+          <div class="project-item">
             <div class="project-item__header">
               <div class="project-item__info">
                 <a href="#" class="project-item__link">
@@ -209,15 +200,12 @@
               <div class="project-item__stack">
                 <ul class="stack-list">
                   <li class="stack-list__item">
-                    <span class="visually-hidden">html5</span>
                     <img src="img/icon-html5.png" width="22" height="25" alt="" class="stack-list__icon">
                   </li>
                   <li class="stack-list__item">
-                    <span class="visually-hidden">css</span>
                     <img src="img/logo-css.png" width="38" height="54" alt="" class="stack-list__icon">
                   </li>
                   <li class="stack-list__item">
-                    <span class="visually-hidden">js</span>
                     <img src="img/logo-js.png" width="39" height="54" alt="" class="stack-list__icon">
                   </li>
                 </ul>
@@ -236,13 +224,14 @@
                 </div>
               </div>
             </div>
-          </li>
-        </ul>
+          </div>
+        </div>
         <button type="button" class="projects__show-more js-show-projects"><span>+ еще 2 проекта</span></button>
       </div>
     </div>
   </section>
-  <section class="section js-section work" id="work">
+  <section class="section js-section work" data-name="work">
+    <h2 class="visually-hidden">Наш рабочий процесс</h2>
     <div class="work__wrapper wrapper">
       <div class="work__content content-wrapper">
         <h2 class="work__title">Как мы работаем</h2>
@@ -251,6 +240,11 @@
     </div>
     <ol class="work__list steps">
       <li class="steps__item step current">
+        <div class="step__shield">
+          <svg width="80" height="94">
+            <use xlink:href="img/svg.svg#shield-1" />
+          </svg>
+        </div>
         <div class="step__wrapper wrapper">
           <div class="step__content content-wrapper">
             <div class="step__body">
@@ -267,6 +261,11 @@
         </div>
       </li>
       <li class="steps__item step">
+        <div class="step__shield">
+          <svg width="80" height="94">
+            <use xlink:href="img/svg.svg#shield-2" />
+          </svg>
+        </div>
         <div class="step__wrapper wrapper">
           <div class="step__content content-wrapper">
             <div class="step__body">
@@ -283,6 +282,11 @@
         </div>
       </li>
       <li class="steps__item step">
+        <div class="step__shield">
+          <svg width="80" height="94">
+            <use xlink:href="img/svg.svg#shield-3" />
+          </svg>
+        </div>
         <div class="step__wrapper wrapper">
           <div class="step__content content-wrapper">
             <div class="step__body">
@@ -299,6 +303,11 @@
         </div>
       </li>
       <li class="steps__item step">
+        <div class="step__shield">
+          <svg width="80" height="94">
+            <use xlink:href="img/svg.svg#shield-4" />
+          </svg>
+        </div>
         <div class="step__wrapper wrapper">
           <div class="step__content content-wrapper">
             <div class="step__body">
@@ -315,6 +324,11 @@
         </div>
       </li>
       <li class="steps__item step">
+        <div class="step__shield">
+          <svg width="80" height="94">
+            <use xlink:href="img/svg.svg#shield-5" />
+          </svg>
+        </div>
         <div class="step__wrapper wrapper">
           <div class="step__content content-wrapper">
             <div class="step__body">
@@ -332,7 +346,8 @@
       </li>
     </ol>
   </section>
-  <section class="section js-section advantages" id="advantages">
+  <section class="section js-section advantages" data-name="advantages">
+    <h2 class="visually-hidden">Наши преимущества</h2>
     <div class="advantages__wrapper wrapper">
       <div class="advantages__content content-wrapper">
         <div class="advantages__tabs js-tabs">
@@ -403,7 +418,7 @@
       </div>
     </div>
   </section>
-  <section class="section js-section our-team" id="team">
+  <section class="section js-section our-team" data-name="team">
     <h2 class="visually-hidden">Наша команда</h2>
     <div class="our-team__wrapper">
       <h3 class="our-team__title">Ага, вот эти ребята</h3>
@@ -490,7 +505,8 @@
       </div>
     </div>
   </section>
-  <section class="section js-section reviews" id="reviews">
+  <section class="section js-section reviews" data-name="reviews">
+    <h2 class="visually-hidden">Отзывы о нас</h2>
     <div class="reviews__wrapper wrapper">
       <div class="reviews__content content-wrapper">
         <h2 class="reviews__title">В этом уже&nbsp;убедились</h2>
@@ -742,7 +758,7 @@
     </div>
   </section>
 </main>
-<footer class="page-footer js-section" id="contacts">
+<footer class="page-footer js-section" data-name="contacts">
   <div class="page-footer__wrapper">
     <div class="page-footer__top-wrapper">
       <div class="page-footer__header">

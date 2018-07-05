@@ -3,7 +3,6 @@
   top: 0;
   left: 8px;
   right: 8px;
-  background-color: var(--color-white);
   border-top: var(--body-border-width) solid var(--color-blue);
   z-index: 11;
 
@@ -98,7 +97,6 @@
   }
 }
 
-.header.dark,
 .header.dark .header__btn {
   background-color: transparent;
 }

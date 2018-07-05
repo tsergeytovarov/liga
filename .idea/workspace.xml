@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db83d075-a542-4c59-926b-acd174f15fb0" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/img/svg/icon-twitter.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.htmlhintrc" beforeDir="false" afterPath="$PROJECT_DIR$/.htmlhintrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/img/svg/icon-fb.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/svg/icon-fb.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/img/svg/icon-inst.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/svg/icon-inst.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/img/svg/icon-vk.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/svg/icon-vk.svg" afterDir="false" />
@@ -29,7 +32,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="419">
@@ -47,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".htmlhintrc" pinned="false" current-in-tab="false">
+      <file leaf-file-name=".htmlhintrc" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.htmlhintrc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+            <state relative-caret-position="399">
+              <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -121,9 +124,9 @@
         <option value="$PROJECT_DIR$/src/styles/block/our-team.css" />
         <option value="$PROJECT_DIR$/.editorconfig" />
         <option value="$PROJECT_DIR$/.eslintrc" />
-        <option value="$PROJECT_DIR$/.htmlhintrc" />
         <option value="$PROJECT_DIR$/src/styles/block/page-footer.css" />
         <option value="$PROJECT_DIR$/src/main.html" />
+        <option value="$PROJECT_DIR$/.htmlhintrc" />
       </list>
     </option>
   </component>
@@ -234,12 +237,12 @@
       <workItem from="1530297886731" duration="598000" />
       <workItem from="1530381584837" duration="4190000" />
       <workItem from="1530654342913" duration="80000" />
-      <workItem from="1530829018159" duration="5480000" />
+      <workItem from="1530829018159" duration="5510000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36498000" />
+    <option name="totallyTimeSpent" value="36528000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -521,13 +524,6 @@
     <entry file="file://$PROJECT_DIR$/.stylelintignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/.htmlhintrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/block/page-footer.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
@@ -539,6 +535,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="419">
           <caret line="856" column="24" selection-start-line="856" selection-start-column="24" selection-end-line="856" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htmlhintrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
         </state>
       </provider>
     </entry>

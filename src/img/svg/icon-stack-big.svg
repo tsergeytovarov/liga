@@ -1,12 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="65px" height="82px" viewBox="0 0 65 82" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: sketchtool 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
-    <title>849C341D-5D0A-4119-A9E7-9E1F66FC9C22</title>
-    <desc>Created with sketchtool.</desc>
-    <defs></defs>
-    <g id="Стайлгайд" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="styleguide_icons" transform="translate(-397.000000, -219.000000)" fill="#FF1553">
-            <polygon id="icon_stack_big" points="397 219 397 280.16473 397.002866 280.16473 429.498567 301 461.997134 280.16473 462 280.16473 462 219"></polygon>
-        </g>
-    </g>
-</svg>
+<svg width="65" height="82" xmlns="http://www.w3.org/2000/svg"><path d="M0 0v61.165h.003L32.499 82l32.498-20.835H65V0z" fill="#FF1553" fill-rule="evenodd"/></svg>

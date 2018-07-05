@@ -12,7 +12,7 @@
 }
 
 .our-team__avatar {
-  background-image: url("http://placehold.it/142x182");
+  /*background-image: url("http://placehold.it/142x182");*/
   background-size: cover;
   background-position: center;
   clip-path: polygon(0% 0%, 100% 0, 100% 75%, 50% 100%, 0 75%);
@@ -138,7 +138,7 @@
   }
 
   .our-team__avatar {
-    background-image: url("http://placehold.it/142x182");
+    /*background-image: url("http://placehold.it/142x182");*/
     background-size: cover;
     background-position: center;
     width: 100px;
@@ -193,7 +193,7 @@
   }
 
   .our-team__avatar {
-    background-image: url("http://placehold.it/142x182");
+    /*background-image: url("http://placehold.it/142x182");*/
     background-size: cover;
     background-position: center;
     width: 100px;

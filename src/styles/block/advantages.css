@@ -17,7 +17,6 @@
 
   @media (--desktopMin) {
     padding-left: 130px;
-    padding-right: 60px;
   }
 
   @media (--tabletMax) {

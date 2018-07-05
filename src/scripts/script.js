@@ -2,6 +2,49 @@ window.script = ((document) => {
 
   svg4everybody();
 
+  let elNames = document.querySelectorAll(`.js-scroll-link[data-target]`);
+
+  function getTop(elem) {
+    let box = elem.getBoundingClientRect();
+    let boxTop = box.top + pageYOffset;
+
+    return boxTop;
+  }
+
+  for (let i = 0; i < elNames.length; i++) {
+    elNames[i].addEventListener(`click`, function (e) {
+      e.preventDefault();
+      if (elNames[i].classList.contains(`main-nav__link`)) {
+        for (let n = 0; n < elNames.length; n++) {
+          elNames[n].classList.remove(`active`);
+        }
+      }
+      elNames[i].classList.add(`active`);
+      let targetName = elNames[i].getAttribute(`data-target`);
+      let targets = document.querySelectorAll(`.js-section[data-name]`);
+      let targetCoord;
+
+      for (let t = 0; t < targets.length; t++) {
+        if (targets[t].getAttribute(`data-name`) === targetName) {
+          targetCoord = getTop(targets[t]);
+        }
+      }
+
+      let scrollData = function () {
+        window.scrollTo({
+          top: targetCoord,
+          behavior: `smooth`
+        });
+      };
+
+      setTimeout(scrollData, 10);
+    });
+  }
+
+  document.addEventListener(`scroll`, function () {
+
+  });
+
   // let firstScreenHeight = document.querySelector(`.intro`).offsetHeight;
   // let pageContentHeight = document.querySelector(`.page-content`).offsetHeight;
 

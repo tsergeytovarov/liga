@@ -80,23 +80,24 @@ window.script = ((document) => {
     }
   }
 
+  if (document.querySelector(`textarea`)) {
+    window.onload = function () {
+      autosize(document.querySelector(`textarea`));
+    };
 
-  window.onload = function () {
-    autosize(document.querySelector(`textarea`));
-  };
+    if (document.querySelector(`.our-team__button`)) {
+      const button = document.querySelector(`.our-team__button`);
 
-  if (document.querySelector(`.our-team__button`)) {
-    const button = document.querySelector(`.our-team__button`);
+      button.addEventListener(`click`, function () {
+        let listItem = document.querySelector(`.our-team__second-list`);
 
-    button.addEventListener(`click`, function () {
-      let listItem = document.querySelector(`.our-team__second-list`);
-
-      if (listItem.classList.contains(`visible`) === false) {
-        listItem.classList.add(`visible`);
-      } else {
-        listItem.classList.remove(`visible`);
-      }
-    });
+        if (listItem.classList.contains(`visible`) === false) {
+          listItem.classList.add(`visible`);
+        } else {
+          listItem.classList.remove(`visible`);
+        }
+      });
+    }
   }
 
   if (document.querySelector(`.js-project-image`)) {

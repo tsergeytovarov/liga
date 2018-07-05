@@ -21,7 +21,6 @@
   position: fixed;
   top: 16px;
   left: 21px;
-  display: none;
   margin-right: 10px;
   padding: 0;
   width: 45px;
@@ -29,9 +28,12 @@
   background-color: var(--color-blue);
   border: none;
   transition: background-color 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
 
   @media (--desktopMin) {
-    display: block;
+    opacity: 1;
+    pointer-events: initial;
   }
 
   @media (--mobileMax) {
@@ -54,6 +56,34 @@
   @media (--mobileMax) {
     left: 10px;
     right: 10px;
+  }
+}
+
+.main-nav__toggler.link-color-projects,
+.main-nav__toggler.link-color-advantages,
+.main-nav__toggler.link-color-contacts {
+  background-color: var(--color-white);
+}
+
+.main-nav__toggler.link-color-contacts {
+  @media (--desktopMin) {
+    background-color: var(--color-blue);
+  }
+}
+
+.main-nav__toggler.link-color-projects::before,
+.main-nav__toggler.link-color-projects::after,
+.main-nav__toggler.link-color-advantages::before,
+.main-nav__toggler.link-color-advantages::after,
+.main-nav__toggler.link-color-contacts::before,
+.main-nav__toggler.link-color-contacts::after {
+  background-color: var(--color-blue);
+}
+
+.main-nav__toggler.link-color-contacts::before,
+.main-nav__toggler.link-color-contacts::after {
+  @media (--desktopMin) {
+    background-color: var(--color-white);
   }
 }
 
@@ -124,6 +154,46 @@
     font-size: 20px;
     line-height: 37px;
   }
+}
+
+.main-nav__telephone.link-color-projects,
+.main-nav__telephone.link-color-advantages,
+.main-nav__telephone.link-color-contacts,
+.main-nav__link.link-color-projects,
+.main-nav__link.active.link-color-projects,
+.main-nav__link.link-color-advantages,
+.main-nav__link.active.link-color-advantages,
+.main-nav__link.link-color-contacts,
+.main-nav__link.active.link-color-contacts {
+  color: var(--color-white);
+}
+
+.main-nav__link.link-color-projects::before,
+.main-nav__link.link-color-advantages::before,
+.main-nav__link.link-color-contacts::before {
+  background-color: var(--color-white);
+}
+
+.main-nav__telephone.link-color-work,
+.main-nav__telephone.link-color-top,
+.main-nav__telephone.link-color-team,
+.main-nav__telephone.link-color-reviews,
+.main-nav__link.link-color-work,
+.main-nav__link.link-color-top,
+.main-nav__link.link-color-team,
+.main-nav__link.link-color-reviews {
+  color: var(--color-black);
+
+  @media (--desktopMin) {
+    color: var(--color-white);
+  }
+}
+
+.main-nav__link.link-color-work::before,
+.main-nav__link.link-color-top::before,
+.main-nav__link.link-color-team::before,
+.main-nav__link.link-color-reviews::before {
+  background-color: var(--color-blue);
 }
 
 .main-nav__link::before {

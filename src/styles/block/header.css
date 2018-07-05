@@ -78,27 +78,103 @@
   fill: var(--color-pink);
 }
 
-.header.full .header__logo {
+.header.link-color-projects .header__logo,
+.header.link-color-advantages .header__logo,
+.header.link-color-team .header__logo,
+.header.link-color-reviews .header__logo,
+.header.link-color-contacts .header__logo {
   opacity: 1;
   pointer-events: initial;
 }
 
-.header.full .header__btn {
+.header.link-color-projects .logo-shield,
+.header.link-color-advantages .logo-shield,
+.header.link-color-contacts .logo-shield {
+  fill: var(--color-white);
+}
+
+.header.link-color-contacts .logo-shield {
+  @media (--desktopMin) {
+    fill: var(--color-blue);
+  }
+}
+
+.header.link-color-projects .letter,
+.header.link-color-advantages .letter,
+.header.link-color-contacts .letter {
+  fill: var(--color-blue);
+}
+
+.header.link-color-contacts .letter {
+  @media (--desktopMin) {
+    fill: var(--color-white);
+  }
+}
+
+.header.link-color-projects .header__btn,
+.header.link-color-advantages .header__btn {
+  color: var(--color-blue);
+  background-color: var(--color-white);
+
   @media (--desktopMin) {
     opacity: 0;
     pointer-events: none;
   }
 }
 
-.header.full.menu-opened .header__btn {
+.header.link-color-contacts .header__btn {
+  color: var(--color-white);
+  background-color: rgba(255, 255, 255, 0);
+
+  @media (--desktopMin) {
+    color: var(--color-white);
+    background-color: var(--color-blue);
+  }
+}
+
+.header.link-color-projects .header__btn:hover,
+.header.link-color-advantages .header__btn:hover {
+  color: var(--color-white);
+  background-color: var(--color-red);
+}
+
+.header.link-color-projects.menu-opened .header__btn,
+.header.link-color-advantages.menu-opened .header__btn {
   @media (--desktopMin) {
     opacity: 1;
     pointer-events: initial;
   }
 }
 
-.header.dark .header__btn {
-  background-color: transparent;
+.header .header__btn {
+  @media (--desktopMin) {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.header.link-color-top .header__btn,
+.header.link-color-work.menu-opened .header__btn,
+.header.link-color-team.menu-opened .header__btn,
+.header.link-color-contacts.menu-opened .header__btn,
+.header.link-color-reviews.menu-opened .header__btn {
+  @media (--desktopMin) {
+    opacity: 1;
+    pointer-events: initial;
+  }
+}
+
+.header.link-color-work .header__logo {
+  opacity: 1;
+  pointer-events: initial;
+}
+
+.header.link-color-work .logo-shield {
+  fill: var(--color-blue);
+}
+
+.header.link-color-work .letter {
+  fill: var(--color-white);
 }
 
 .header.menu-opened {

@@ -29,7 +29,7 @@
   </button>
   <div class="main-nav__wrapper">
     <ul class="main-nav__list">
-      <li class="main-nav__item"><a href="#" class="main-nav__link active js-scroll-link" data-target="top">О нас</a></li>
+      <li class="main-nav__item"><a href="#" class="main-nav__link js-scroll-link" data-target="top">О нас</a></li>
       <li class="main-nav__item"><a href="#" class="main-nav__link js-scroll-link" data-target="projects">Проекты</a></li>
       <li class="main-nav__item"><a href="#" class="main-nav__link js-scroll-link" data-target="work">Схема работы</a></li>
       <li class="main-nav__item"><a href="#" class="main-nav__link js-scroll-link" data-target="advantages">Преимущества</a></li>
@@ -348,74 +348,82 @@
   </section>
   <section class="section js-section advantages" data-name="advantages">
     <h2 class="visually-hidden">Наши преимущества</h2>
-    <div class="advantages__wrapper wrapper">
-      <div class="advantages__content content-wrapper">
-        <div class="advantages__tabs js-tabs">
-          <div class="advantages__col">
-            <p class="advantages__label">Мы</p>
-            <ul class="advantages__tab-controls tab-controls">
-              <li class="tab-controls__item js-tab-control active">дотошные,</li>
-              <li class="tab-controls__item js-tab-control">гибкие, </li>
-              <li class="tab-controls__item js-tab-control">оперативные,</li>
-              <li class="tab-controls__item js-tab-control">бюджетные ребята,</li>
-              <li class="tab-controls__item js-tab-control">и ваш юрист нас полюбит</li>
-            </ul>
-          </div>
-          <ul class="advantages__tab-list tabs-list">
-            <li class="tabs-list__item advantage-tab js-tab active">
-              <div class="advantage-tab__icon">
-                <svg width="91" height="74">
-                  <use xlink:href="img/svg.svg#icon-eye" />
-                </svg>
-              </div>
-              <div class="advantage-tab__descr">
-                <p>У нас выработана система критериев вёрстки и есть штатный тестировщик, который перед сдачей проверяет проект.</p>
-              </div>
-            </li>
-            <li class="tabs-list__item advantage-tab js-tab">
-              <div class="advantage-tab__icon">
-                <svg width="75" height="79">
-                  <use xlink:href="img/svg.svg#icon-flower" />
-                </svg>
-              </div>
-              <div class="advantage-tab__descr">
-                <p>Мы верстаем из любых исходников: Adobe Photoshop, Adobe InDesign, Sketch, Adobe XD и подстраиваемся под необходимый стек.</p>
-              </div>
-            </li>
-            <li class="tabs-list__item advantage-tab js-tab">
-              <div class="advantage-tab__icon">
-                <svg width="81" height="82">
-                  <use xlink:href="img/svg.svg#icon-rocket" />
-                </svg>
-              </div>
-              <div class="advantage-tab__descr">
-                <p>В течение суток производим оценку проекта для согласования и на следующий день готовы приступать к разработке.</p>
-              </div>
-            </li>
-            <li class="tabs-list__item advantage-tab js-tab">
-              <div class="advantage-tab__icon">
-                <svg width="85" height="83">
-                  <use xlink:href="img/svg.svg#icon-knight" />
-                </svg>
-              </div>
-              <div class="advantage-tab__descr">
-                <p>Фиксированный рейт — 650 рублей/час. При загрузке от 100 часов/месяц — 600 рублей/час.</p>
-                <p>Если проект до 50 часов, работаем без предоплаты.</p>
-              </div>
-            </li>
-            <li class="tabs-list__item advantage-tab js-tab">
-              <div class="advantage-tab__icon">
-                <svg width="79" height="88">
-                  <use xlink:href="img/svg.svg#icon-dog" />
-                </svg>
-              </div>
-              <div class="advantage-tab__descr">
-                <p>Мы вышлем оригиналы всех необходимых документов для вашего бухгалтера. Готовы подписать NDA по проекту.</p>
-              </div>
-            </li>
+    <div class="advantages__wrapper">
+      <div class="advantages__col">
+        <div class="advantages__col-inner">
+          <p class="advantages__label">Мы</p>
+          <ul class="advantages__tab-controls tab-controls">
+            <li class="tab-controls__item js-tab-control active">дотошные,</li>
+            <li class="tab-controls__item js-tab-control">гибкие, </li>
+            <li class="tab-controls__item js-tab-control">оперативные,</li>
+            <li class="tab-controls__item js-tab-control">бюджетные ребята,</li>
+            <li class="tab-controls__item js-tab-control">и ваш юрист нас полюбит</li>
           </ul>
         </div>
       </div>
+      <ul class="advantages__tab-list tabs-list">
+        <li class="tabs-list__item advantage-tab js-tab active">
+          <div class="advantage-tab__inner">
+            <div class="advantage-tab__icon">
+              <svg width="91" height="74">
+                <use xlink:href="img/svg.svg#icon-eye" />
+              </svg>
+            </div>
+            <div class="advantage-tab__descr">
+              <p>У нас выработана система критериев вёрстки и есть штатный тестировщик, который перед сдачей проверяет проект.</p>
+            </div>
+          </div>
+        </li>
+        <li class="tabs-list__item advantage-tab js-tab">
+          <div class="advantage-tab__inner">
+            <div class="advantage-tab__icon">
+              <svg width="75" height="79">
+                <use xlink:href="img/svg.svg#icon-flower" />
+              </svg>
+            </div>
+            <div class="advantage-tab__descr">
+              <p>Мы верстаем из любых исходников: Adobe Photoshop, Adobe InDesign, Sketch, Adobe XD и подстраиваемся под необходимый стек.</p>
+            </div>
+          </div>
+        </li>
+        <li class="tabs-list__item advantage-tab js-tab">
+          <div class="advantage-tab__inner">
+            <div class="advantage-tab__icon">
+              <svg width="81" height="82">
+                <use xlink:href="img/svg.svg#icon-rocket" />
+              </svg>
+            </div>
+            <div class="advantage-tab__descr">
+              <p>В течение суток производим оценку проекта для согласования и на следующий день готовы приступать к разработке.</p>
+            </div>
+          </div>
+        </li>
+        <li class="tabs-list__item advantage-tab js-tab">
+          <div class="advantage-tab__inner">
+            <div class="advantage-tab__icon">
+              <svg width="85" height="83">
+                <use xlink:href="img/svg.svg#icon-knight" />
+              </svg>
+            </div>
+            <div class="advantage-tab__descr">
+              <p>Фиксированный рейт — 650 рублей/час. При загрузке от 100 часов/месяц — 600 рублей/час.</p>
+              <p>Если проект до 50 часов, работаем без предоплаты.</p>
+            </div>
+          </div>
+        </li>
+        <li class="tabs-list__item advantage-tab js-tab">
+          <div class="advantage-tab__inner">
+            <div class="advantage-tab__icon">
+              <svg width="79" height="88">
+                <use xlink:href="img/svg.svg#icon-dog" />
+              </svg>
+            </div>
+            <div class="advantage-tab__descr">
+              <p>Мы вышлем оригиналы всех необходимых документов для вашего бухгалтера. Готовы подписать NDA по проекту.</p>
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
   </section>
   <section class="section js-section our-team" data-name="team">

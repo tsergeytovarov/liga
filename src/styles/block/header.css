@@ -112,6 +112,7 @@
 
 .header.menu-opened .header__logo {
   opacity: 1;
+  pointer-events: initial;
 }
 
 .header.menu-opened .header__logo svg {

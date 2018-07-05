@@ -122,14 +122,19 @@
   }
 
   .our-team .our-team__item {
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 180px;
+    flex-direction: column;
+    width: 40%;
     height: auto;
+    margin-right: 20px;
   }
 
   .our-team .our-team__item + .our-team__item {
     margin-top: 0;
+  }
+
+  .our-team .our-team__item:nth-of-type(3),
+  .our-team .our-team__item:nth-of-type(4) {
+    margin-top: 60px;
   }
 
   .our-team__avatar {
@@ -187,10 +192,6 @@
     margin-top: 10px;
   }
 
-  .our-team .our-team__item {
-    max-width: 180px;
-  }
-
   .our-team__avatar {
     background-image: url("http://placehold.it/142x182");
     background-size: cover;
@@ -241,10 +242,6 @@
     letter-spacing: -0.1px;
     margin: 0;
     margin-top: 10px;
-  }
-
-  .our-team .our-team__item {
-    max-width: 200px;
   }
 
   .our-team__avatar {

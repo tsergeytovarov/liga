@@ -491,7 +491,8 @@
   }
 
   .page-footer .page-footer__label--fourth {
-    display: none;
+    max-width: 280px;
+    margin-top: 13px;
   }
 
   .page-footer .page-footer__label--fourth-desktop {

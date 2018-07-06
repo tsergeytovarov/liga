@@ -20,7 +20,8 @@
 .page-missing .page-missing__title::after {
   content: "";
   position: absolute;
-  background-image: url("../../img/icon-logo-sign.svg");
+  background-size: cover;
+  background-image: url("../../img/icon-logo-sign.png");
   width: 33px;
   height: 42px;
   top: -45px;

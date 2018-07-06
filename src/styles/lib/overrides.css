@@ -3,13 +3,18 @@
 }
 
 .simplebar-scroll-content {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .simplebar-scroll-content {
-    pointer-events: none;
+  pointer-events: none;
 }
 
 .higher .simplebar-scroll-content {
-    pointer-events: initial;
+  pointer-events: initial;
+  overscroll-behavior: contain;
+
+  @media (--tabletMax) {
+    overscroll-behavior: auto;
+  }
 }

@@ -41,7 +41,6 @@ window.script = ((document) => {
     });
   }
 
-  // const forEach = Array.prototype.forEach;
   const map = Array.prototype.map;
   const debounce = function (deltaTime, fn) {
     let nextCall;
@@ -55,7 +54,7 @@ window.script = ((document) => {
     return `link-color-` + sectionName;
   };
 
-  if (document.querySelectorAll(`.header`) || document.querySelectorAll(`.page-footer`)) {
+  if (document.querySelector(`.header`)) {
     let sections = [];
 
     const updateSections = function () {

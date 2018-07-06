@@ -13,7 +13,6 @@
     "autoprefixer": "^8.0.0",
     "browser-sync": "^2.18.2",
     "gulp": "^4.0.0",
-    "gulp-concat": "^2.6.1",
     "gulp-csso": "^3.0.1",
     "gulp-htmlmin": "^4.0.0",
     "gulp-imagemin": "^4.1.0",
@@ -52,6 +51,7 @@
   "devDependencies": {
     "eslint": "^4.19.1",
     "eslint-config-htmlacademy": "^0.5.2",
+    "gulp-concat": "^2.6.1",
     "gulp-svgstore": "^6.1.1"
   }
 }

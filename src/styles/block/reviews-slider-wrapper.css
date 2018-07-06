@@ -74,7 +74,6 @@
   transform: translate(-50%, -50%);
 
   @media (--mobileMax) {
-    width: 7px;
-    height: 15px;
+    transform: translate(-50%, -50%) scale(0.6, 0.6);
   }
 }

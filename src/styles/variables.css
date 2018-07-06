@@ -20,6 +20,8 @@
 @custom-media --desktopMin (max-width: 1365px);
 @custom-media --tabletMax (max-width: 1023px);
 @custom-media --mobileMax (max-width: 767px);
+@custom-media --retinadpi (min-resolution: 144dpi);
+@custom-media --retinadppx (min-resolution: 1.5dppx);
 
 .visually-hidden {
   position: absolute;

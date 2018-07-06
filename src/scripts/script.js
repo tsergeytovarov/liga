@@ -41,54 +41,143 @@ window.script = ((document) => {
     });
   }
 
-  document.addEventListener(`scroll`, function () {
+  // const forEach = Array.prototype.forEach;
+  const map = Array.prototype.map;
+  const debounce = function (deltaTime, fn) {
+    let nextCall;
+    return function () {
+      clearTimeout(nextCall);
+      nextCall = setTimeout(fn, deltaTime);
+    };
+  };
 
-  });
+  const menuItemStyleName = function (sectionName) {
+    return `link-color-` + sectionName;
+  };
 
-  // let firstScreenHeight = document.querySelector(`.intro`).offsetHeight;
-  // let pageContentHeight = document.querySelector(`.page-content`).offsetHeight;
+  if (document.querySelectorAll(`.header`) || document.querySelectorAll(`.page-footer`)) {
+    let sections = [];
 
-  // document.addEventListener(`scroll`, function () {
-  //   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  //   document.querySelector(`.header`).classList.remove(`dark`);
-  //   document.querySelector(`.header`).classList.remove(`full`);
+    const updateSections = function () {
 
-  //   if (scrollTop < pageContentHeight) {
-  //     document.querySelector(`.main-nav`).classList.remove(`dark`);
-  //   }
-  //   if (scrollTop > firstScreenHeight) {
-  //     document.querySelector(`.header`).classList.add(`full`);
-  //     document.querySelector(`.main-nav`).classList.add(`dark`);
-  //   }
-  //   if (scrollTop > pageContentHeight) {
-  //     document.querySelector(`.header`).classList.add(`dark`);
-  //   }
+      const section = document.querySelectorAll(`.js-section`);
+      sections = map.call(section, function (e) {
+        return {
+          offset: e.offsetTop,
+          dataName: e.getAttribute(`data-name`),
+          el: document.querySelector(`.js-scroll-link[data-target=` + e.getAttribute(`data-name`) + `]`),
+          height: e.offsetHeight
+        };
+      });
+    };
 
-  //   let scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+    let windowHeight;
+    let colorizableItems = [];
 
-  //   let last;
+    let onResize = debounce(30, function () {
 
-  //   for (let i = 0; i < sections.length; i++) {
-  //     let section = sections[i];
+      windowHeight = window.innerHeight;
 
-  //     if (section.offset <= scrollPosition + window.innerHeight / 2) {
-  //       last = section;
-  //     }
-  //   }
+      colorizableItems = [].slice.call(document.querySelectorAll(`.main-nav .main-nav__item a`)).concat(document.querySelector(`.main-nav__telephone`)).concat(document.querySelector(`.header`)).concat(document.querySelector(`.js-nav-toggler`)).map(function (el) {
+        const rect = el.getClientRects()[0];
 
-  //   if (last && oldLast !== last) {
-  //     oldLast = last;
-  //     document.querySelector(`.js-scroll-link.active`).classList.remove(`active`);
-  //     last.el.classList.add(`active`);
-  //   }
-  // });
+        return {
+          el,
+          offset: windowHeight - rect.bottom + rect.height / 2,
+          currentStyle: `none`,
+          setStyle: `none`,
+          isActive: false,
+          lastActive: false
+        };
+      });
+      updateSections();
+      highlightMenu();
+    });
 
-  // let oldLast;
-  // const sections = [];
-  // const section = document.querySelectorAll(`.js-section`);
-  // Array.prototype.forEach.call(section, function (e) {
-  //   sections.push({offset: e.offsetTop, id: e.id, el: document.querySelector(`.js-scroll-link[href*=` + e.id + `]`)});
-  // });
+    let lastHeight = document.body.clientHeight;
+    let madnessCounter = 0;
+    let madnessInterval = setInterval(function () {
+      let newHeight = document.body.clientHeight;
+
+      if (lastHeight !== newHeight) {
+        lastHeight = newHeight;
+        // gotcha
+        onResize();
+      }
+      madnessCounter++;
+      if (madnessCounter > 50 * 20) { // ~20 seconds
+        clearInterval(madnessInterval);
+      }
+    }, 20);
+
+    onResize();
+
+    window.addEventListener(`resize`, onResize);
+
+    let highlightMenu = function () {
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      let j;
+      let _j;
+      let item;
+
+      for (j = 0, _j = colorizableItems.length; j < _j; j++) {
+        item = colorizableItems[j];
+        if (item) {
+          item.isActive = false;
+        }
+      }
+
+      for (let i = 0; i < sections.length; i++) {
+
+        let sectionOffsetTop = scrollTop + windowHeight - (sections[i].offset);
+        let sectionOffsetBottom = sectionOffsetTop - sections[i].height;
+
+        if (sections[i].offset + sections[i].height < scrollTop) {
+          // skip it
+        } else if (sections[i].offset > scrollTop + windowHeight) {
+          // out of viewing range
+          break;
+        } else {
+
+          for (j = 0, _j = colorizableItems.length; j < _j; j++) {
+            item = colorizableItems[j];
+            if (item.offset < sectionOffsetTop && item.offset >= sectionOffsetBottom) {
+              item.setStyle = sections[i].dataName;
+              // console.log(j,item.setStyle);
+              if (i === j && item) {
+                item.isActive = true;
+              }
+            }
+          }
+        }
+      }
+
+      for (j = 0, _j = colorizableItems.length; j < _j; j++) {
+        item = colorizableItems[j];
+        if (item) {
+          if (item.setStyle !== item.currentStyle) {
+            item.el.classList.remove(menuItemStyleName(item.currentStyle));
+            item.currentStyle = item.setStyle;
+            item.el.classList.add(menuItemStyleName(item.currentStyle));
+          }
+        }
+
+        if (item.isActive !== item.lastActive) {
+
+          if (item.isActive) {
+            item.el.classList.add(`active`);
+          } else {
+            item.el.classList.remove(`active`);
+          }
+
+          item.lastActive = item.isActive;
+        }
+      }
+    };
+
+    document.addEventListener(`scroll`, highlightMenu);
+    highlightMenu();
+  }
 
   if (document.querySelector(`.js-reviews-slider`)) {
     const reviewsSlider = new Swiper(`.js-reviews-slider`, {

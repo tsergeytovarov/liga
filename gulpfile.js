@@ -8,11 +8,11 @@ const sync = require('browser-sync').create();
 const svgmin = require('gulp-svgmin');
 svgstore = require('gulp-svgstore');
 const plumber = require('gulp-plumber');
-const concat = require('gulp-concat');
 const jsmin = require('gulp-jsmin');
 const postcssPresetEnv = require('postcss-preset-env');
 const imagemin = require("gulp-imagemin");
 const webp = require('gulp-webp');
+const concat = require('gulp-concat');
 
 // svg sprite
 
@@ -65,6 +65,15 @@ gulp.task('scripts', () => {
     }));
 });
 
+//libs 
+
+gulp.task('libs', () => {
+  return gulp.src('src/scripts/libs/*.js')
+    .pipe(jsmin())
+    .pipe(concat('libs.js'))
+    .pipe(gulp.dest('dest/scripts'))
+});
+
 // Images
 
 gulp.task('webp', function () {
@@ -98,7 +107,6 @@ gulp.task('images', function () {
 
 gulp.task('copy', () => {
   return gulp.src([
-      'src/*',
       'src/fonts/*',
       'src/img/**/*.{jpg,png}',
       'src/img/svg/*.svg',
@@ -145,6 +153,10 @@ gulp.task('watch:scripts', () => {
   return gulp.watch('src/scripts/*.js', gulp.series('scripts'));
 });
 
+gulp.task('watch:libs', () => {
+  return gulp.watch('src/scripts/libs/*.js', gulp.series('libs'));
+});
+
 gulp.task('watch:copy', () => {
   return gulp.watch([
     'src/*',
@@ -161,6 +173,7 @@ gulp.task('watch', gulp.parallel(
   'watch:html',
   'watch:css',
   'watch:scripts',
+  'watch:libs',
   'watch:copy'
 ));
 
@@ -172,6 +185,7 @@ gulp.task('build', gulp.parallel(
   'html',
   'css',
   'scripts',
+  'libs',
   'copy'
 ));
 

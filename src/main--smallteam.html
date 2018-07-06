@@ -17,7 +17,7 @@
 <header class="header">
   <div class="header__wrapper">
     <a href="#" class="btn header__btn js-scroll-link" data-target="contacts">Заказать проект</a>
-    <a href="#top" class="header__logo" data-target="top">
+    <a href="#" class="header__logo js-scroll-link" data-target="top">
       <span class="visually-hidden">Вернуться наверх</span>
       <svg xmlns="http://www.w3.org/2000/svg" width="40" height="51"><g fill-rule="evenodd"><path class="logo-shield" d="M0 0v37.571h.002l19.72 12.799 19.722-12.8h.002V0z"/><path class="letter" d="M12.895 26.483c-.017 1.818 1.714 2.993 3.93 3.012 2.058.018 4.015-.52 5.718-1.919l.036-3.787c-1.107-.263-2.792-.58-4.323-.593-2.691-.023-5.338.813-5.36 3.287m17.936 2.456a4.09 4.09 0 0 0 1.248-.172l-.038 4.177c-1.06.358-2.405.622-3.7.61-2.351-.02-4.12-.861-5.063-2.522-2.27 1.679-4.92 2.666-8.326 2.637-4.317-.038-8.037-2.456-7.996-6.818.052-5.6 5.587-7.297 10.193-7.258a26.26 26.26 0 0 1 5.463.644l.008-.78c.021-2.204-1.788-3.734-5.387-3.765-3.166-.027-6.005.775-8.171 1.583l.051-5.509c1.878-.58 5.388-1.423 8.939-1.392 6.908.06 11.296 2.806 11.228 10.059l-.066 7.023c-.011 1.148.754 1.476 1.617 1.483"/></g></svg>
     </a>
@@ -29,7 +29,7 @@
   </button>
   <div class="main-nav__wrapper">
     <ul class="main-nav__list">
-      <li class="main-nav__item"><a href="#" class="main-nav__link active js-scroll-link" data-target="top">О нас</a></li>
+      <li class="main-nav__item"><a href="#" class="main-nav__link js-scroll-link" data-target="top">О нас</a></li>
       <li class="main-nav__item"><a href="#" class="main-nav__link js-scroll-link" data-target="projects">Проекты</a></li>
       <li class="main-nav__item"><a href="#" class="main-nav__link js-scroll-link" data-target="work">Схема работы</a></li>
       <li class="main-nav__item"><a href="#" class="main-nav__link js-scroll-link" data-target="advantages">Преимущества</a></li>
@@ -135,12 +135,12 @@
             <div class="project-item__gallery project-gallery">
               <div class="project-gallery__tablet-wrapper js-project-image">
                 <div class="project-gallery__tablet scrollable" data-simplebar>
-                  <img src="img/project01-t.jpg" width="883" height="500" alt="">
+                  <img src="img/portfolio/tur.jpg" width="883" height="500" alt="">
                 </div>
               </div>
-              <div class="project-gallery__mobile js-project-image">
+              <div class="project-gallery__mobile higher js-project-image">
                 <div class="project-gallery__mobile-inner" data-simplebar>
-                  <img src="img/project01-m.jpg" width="261" height="437" alt="">
+                  <img src="img/portfolio/tur-mobile.png" width="261" height="437" alt="">
                 </div>
               </div>
             </div>
@@ -178,7 +178,7 @@
                   <img src="img/project02-m.jpg" width="261" height="437" alt="">
                 </div>
               </div>
-              <div class="project-gallery__tablet-wrapper js-project-image">
+              <div class="project-gallery__tablet-wrapper higher js-project-image">
                 <div class="project-gallery__tablet scrollable" data-simplebar>
                   <img src="img/project02-t.jpg" width="883" height="500" alt="">
                 </div>
@@ -218,7 +218,7 @@
                   <img src="img/project03-t.jpg" width="883" height="500" alt="">
                 </div>
               </div>
-              <div class="project-gallery__mobile js-project-image">
+              <div class="project-gallery__mobile higher js-project-image">
                 <div class="project-gallery__mobile-inner" data-simplebar>
                   <img src="img/project03-m.jpg" width="261" height="437" alt="">
                 </div>
@@ -348,74 +348,82 @@
   </section>
   <section class="section js-section advantages" data-name="advantages">
     <h2 class="visually-hidden">Наши преимущества</h2>
-    <div class="advantages__wrapper wrapper">
-      <div class="advantages__content content-wrapper">
-        <div class="advantages__tabs js-tabs">
-          <div class="advantages__col">
-            <p class="advantages__label">Мы</p>
-            <ul class="advantages__tab-controls tab-controls">
-              <li class="tab-controls__item js-tab-control active">дотошные,</li>
-              <li class="tab-controls__item js-tab-control">гибкие, </li>
-              <li class="tab-controls__item js-tab-control">оперативные,</li>
-              <li class="tab-controls__item js-tab-control">бюджетные ребята,</li>
-              <li class="tab-controls__item js-tab-control">и ваш юрист нас полюбит</li>
-            </ul>
-          </div>
-          <ul class="advantages__tab-list tabs-list">
-            <li class="tabs-list__item advantage-tab js-tab active">
-              <div class="advantage-tab__icon">
-                <svg width="91" height="74">
-                  <use xlink:href="img/svg.svg#icon-eye" />
-                </svg>
-              </div>
-              <div class="advantage-tab__descr">
-                <p>У нас выработана система критериев вёрстки и есть штатный тестировщик, который перед сдачей проверяет проект.</p>
-              </div>
-            </li>
-            <li class="tabs-list__item advantage-tab js-tab">
-              <div class="advantage-tab__icon">
-                <svg width="75" height="79">
-                  <use xlink:href="img/svg.svg#icon-flower" />
-                </svg>
-              </div>
-              <div class="advantage-tab__descr">
-                <p>Мы верстаем из любых исходников: Adobe Photoshop, Adobe InDesign, Sketch, Adobe XD и подстраиваемся под необходимый стек.</p>
-              </div>
-            </li>
-            <li class="tabs-list__item advantage-tab js-tab">
-              <div class="advantage-tab__icon">
-                <svg width="81" height="82">
-                  <use xlink:href="img/svg.svg#icon-rocket" />
-                </svg>
-              </div>
-              <div class="advantage-tab__descr">
-                <p>В течение суток производим оценку проекта для согласования и на следующий день готовы приступать к разработке.</p>
-              </div>
-            </li>
-            <li class="tabs-list__item advantage-tab js-tab">
-              <div class="advantage-tab__icon">
-                <svg width="85" height="83">
-                  <use xlink:href="img/svg.svg#icon-knight" />
-                </svg>
-              </div>
-              <div class="advantage-tab__descr">
-                <p>Фиксированный рейт — 650 рублей/час. При загрузке от 100 часов/месяц — 600 рублей/час.</p>
-                <p>Если проект до 50 часов, работаем без предоплаты.</p>
-              </div>
-            </li>
-            <li class="tabs-list__item advantage-tab js-tab">
-              <div class="advantage-tab__icon">
-                <svg width="79" height="88">
-                  <use xlink:href="img/svg.svg#icon-dog" />
-                </svg>
-              </div>
-              <div class="advantage-tab__descr">
-                <p>Мы вышлем оригиналы всех необходимых документов для вашего бухгалтера. Готовы подписать NDA по проекту.</p>
-              </div>
-            </li>
+    <div class="advantages__wrapper">
+      <div class="advantages__col">
+        <div class="advantages__col-inner">
+          <p class="advantages__label">Мы</p>
+          <ul class="advantages__tab-controls tab-controls">
+            <li class="tab-controls__item js-tab-control active">дотошные,</li>
+            <li class="tab-controls__item js-tab-control">гибкие, </li>
+            <li class="tab-controls__item js-tab-control">оперативные,</li>
+            <li class="tab-controls__item js-tab-control">бюджетные ребята,</li>
+            <li class="tab-controls__item js-tab-control">и ваш юрист нас полюбит</li>
           </ul>
         </div>
       </div>
+      <ul class="advantages__tab-list tabs-list">
+        <li class="tabs-list__item advantage-tab js-tab active">
+          <div class="advantage-tab__inner">
+            <div class="advantage-tab__icon">
+              <svg width="91" height="74">
+                <use xlink:href="img/svg.svg#icon-eye" />
+              </svg>
+            </div>
+            <div class="advantage-tab__descr">
+              <p>У нас выработана система критериев вёрстки и есть штатный тестировщик, который перед сдачей проверяет проект.</p>
+            </div>
+          </div>
+        </li>
+        <li class="tabs-list__item advantage-tab js-tab">
+          <div class="advantage-tab__inner">
+            <div class="advantage-tab__icon">
+              <svg width="75" height="79">
+                <use xlink:href="img/svg.svg#icon-flower" />
+              </svg>
+            </div>
+            <div class="advantage-tab__descr">
+              <p>Мы верстаем из любых исходников: Adobe Photoshop, Adobe InDesign, Sketch, Adobe XD и подстраиваемся под необходимый стек.</p>
+            </div>
+          </div>
+        </li>
+        <li class="tabs-list__item advantage-tab js-tab">
+          <div class="advantage-tab__inner">
+            <div class="advantage-tab__icon">
+              <svg width="81" height="82">
+                <use xlink:href="img/svg.svg#icon-rocket" />
+              </svg>
+            </div>
+            <div class="advantage-tab__descr">
+              <p>В течение суток производим оценку проекта для согласования и на следующий день готовы приступать к разработке.</p>
+            </div>
+          </div>
+        </li>
+        <li class="tabs-list__item advantage-tab js-tab">
+          <div class="advantage-tab__inner">
+            <div class="advantage-tab__icon">
+              <svg width="85" height="83">
+                <use xlink:href="img/svg.svg#icon-knight" />
+              </svg>
+            </div>
+            <div class="advantage-tab__descr">
+              <p>Фиксированный рейт — 650 рублей/час. При загрузке от 100 часов/месяц — 600 рублей/час.</p>
+              <p>Если проект до 50 часов, работаем без предоплаты.</p>
+            </div>
+          </div>
+        </li>
+        <li class="tabs-list__item advantage-tab js-tab">
+          <div class="advantage-tab__inner">
+            <div class="advantage-tab__icon">
+              <svg width="79" height="88">
+                <use xlink:href="img/svg.svg#icon-dog" />
+              </svg>
+            </div>
+            <div class="advantage-tab__descr">
+              <p>Мы вышлем оригиналы всех необходимых документов для вашего бухгалтера. Готовы подписать NDA по проекту.</p>
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
   </section>
   <section class="section js-section our-team" data-name="team">
@@ -425,30 +433,23 @@
       <div class="our-team__first-list">
         <ul class="our-team__list">
           <li class="our-team__item">
-            <div class="our-team__avatar">
-            </div>
-            <h3 class="our-team__name">Серёжа Попов</h3>
+            <img src="http://placehold.it/142x182" srcset="http://placehold.it/142x182 2x" alt="Изображение члена нашей команды" class="our-team__avatar">
+            <h4 class="our-team__name">Серёжа Попов</h4>
             <p class="our-team__description">Наш любимый директор. Верстает с 16 лет.</p>
           </li>
           <li class="our-team__item">
-            <div class="our-team__avatar">
-            </div>
-            <!--<img src="http://placehold.it/142x182" alt="Изображение члена нашей команды" class="our-team__avatar">-->
-            <h3 class="our-team__name">Ирина Ожерельева</h3>
+            <img src="http://placehold.it/142x182" srcset="http://placehold.it/142x182 2x" alt="Изображение члена нашей команды" class="our-team__avatar">
+            <h4 class="our-team__name">Ирина Ожерельева</h4>
             <p class="our-team__description">Директор по развитию. Постоянно что-то улучшает.</p>
           </li>
           <li class="our-team__item">
-            <div class="our-team__avatar">
-            </div>
-            <!--<img src="http://placehold.it/142x182" alt="Изображение члена нашей команды" class="our-team__avatar">-->
-            <h3 class="our-team__name">Наташа Петрищева</h3>
+            <img src="http://placehold.it/142x182" srcset="http://placehold.it/142x182 2x" alt="Изображение члена нашей команды" class="our-team__avatar">
+            <h4 class="our-team__name">Наташа Петрищева</h4>
             <p class="our-team__description">Менеджер проектов. Тщательно следит за всеми.</p>
           </li>
           <li class="our-team__item">
-            <div class="our-team__avatar">
-            </div>
-            <!--<img src="http://placehold.it/142x182" alt="Изображение члена нашей команды" class="our-team__avatar">-->
-            <h3 class="our-team__name">Дима Шахов</h3>
+            <img src="http://placehold.it/142x182" srcset="http://placehold.it/142x182 2x" alt="Изображение члена нашей команды" class="our-team__avatar">
+            <h4 class="our-team__name">Дима Шахов</h4>
             <p class="our-team__description">Тестировщик. Любит монотонную работу.</p>
           </li>
         </ul>
@@ -655,52 +656,52 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide client-slide">
             <div class="client-slide__image">
-              <img src="img/logo-agima.png" width="124" height="28" alt="">
+              <img src="img/logo-agima.png" srcset="img/logo-agima.png 2x" width="124" height="28" alt="">
             </div>
           </div>
           <div class="swiper-slide client-slide">
             <div class="client-slide__image">
-              <img src="img/logo-itmo.png" width="151" height="61" alt="">
+              <img src="img/logo-itmo.png"  srcset="img/logo-itmo.png 2x" width="151" height="61" alt="">
             </div>
           </div>
           <div class="swiper-slide client-slide client-slide--shishki">
             <div class="client-slide__image">
-              <img src="img/logo-shishki.png" width="110" height="23" alt="">
+              <img src="img/logo-shishki.png" srcset="img/logo-shishki.png 2x" width="110" height="23" alt="">
             </div>
           </div>
           <div class="swiper-slide client-slide">
             <div class="client-slide__image">
-              <img src="img/logo-adindex.png" width="117" height="24" alt="">
+              <img src="img/logo-adindex.png" srcset="img/logo-adindex.png 2x" width="117" height="24" alt="">
             </div>
           </div>
           <div class="swiper-slide client-slide client-slide--cubeline">
             <div class="client-slide__image">
-              <img src="img/logo-cubeline.png" width="142" height="46" alt="">
+              <img src="img/logo-cubeline.png" srcset="img/logo-cubeline.png 2x" width="142" height="46" alt="">
             </div>
           </div>
           <div class="swiper-slide client-slide">
             <div class="client-slide__image">
-              <img src="img/logo-agima.png" width="124" height="28" alt="">
+              <img src="img/logo-agima.png" srcset="img/logo-agima.png 2x" width="124" height="28" alt="">
             </div>
           </div>
           <div class="swiper-slide client-slide">
             <div class="client-slide__image">
-              <img src="img/logo-itmo.png" width="151" height="61" alt="">
+              <img src="img/logo-itmo.png" srcset="img/logo-itmo.png 2x" width="151" height="61" alt="">
             </div>
           </div>
           <div class="swiper-slide client-slide client-slide--shishki">
             <div class="client-slide__image">
-              <img src="img/logo-shishki.png" width="110" height="23" alt="">
+              <img src="img/logo-shishki.png" srcset="img/logo-shishki.png 2x" width="110" height="23" alt="">
             </div>
           </div>
           <div class="swiper-slide client-slide">
             <div class="client-slide__image">
-              <img src="img/logo-adindex.png" width="117" height="24" alt="">
+              <img src="img/logo-adindex.png" srcset="img/logo-adindex.png 2x" width="117" height="24" alt="">
             </div>
           </div>
           <div class="swiper-slide client-slide client-slide--cubeline">
             <div class="client-slide__image">
-              <img src="img/logo-cubeline.png" width="142" height="46" alt="">
+              <img src="img/logo-cubeline.png" srcset="img/logo-cubeline.png 2x" width="142" height="46" alt="">
             </div>
           </div>
         </div>
@@ -766,44 +767,32 @@
               <li class="page-footer__item">
                 <a href="https://www.facebook.com/academy.liga/" class="page-footer__social-link">
                   <span class="visually-hidden">Facebook</span>
-                  <svg class="page-footer__social-icon" xmlns="http://www.w3.org/2000/svg"
-                       xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="44">
-                    <g fill="none" fill-rule="evenodd">
-                      <path class="icon-shield" fill="#FF1553" fill-rule="nonzero"
-                            d="M0 0v32.8201h.00159L17.9992 44l17.9992-11.1799H36V0z"/>
-                      <path class="icon-picture" fill="#FFF" fill-rule="nonzero"
-                            d="M19 16v-1.78594C19 13.40781 19.17813 13 20.42969 13H22v-3h-2.62031c-3.21094 0-4.27032 1.47188-4.27032 3.99844V16H13v3h2.10938v9H19v-9h2.64375L22 16h-3z"/>
-                    </g>
+                  <svg class="page-footer__icon">
+                    <use xlink:href="img/svg.svg#icon-fb"></use>
                   </svg>
                 </a>
               </li>
               <li class="page-footer__item">
                 <a href="https://vk.com/academy.liga" class="page-footer__social-link">
                   <span class="visually-hidden">Вконтакте</span>
-                  <svg class="page-footer__social-icon" width="36" height="44" xmlns="http://www.w3.org/2000/svg"
-                       xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g fill="none" fill-rule="evenodd">
-                      <path class="icon-shield" fill="#FF1553" fill-rule="nonzero"
-                            d="M0 0v32.8201h.00159L17.9992 44l17.9992-11.1799H36V0z"/>
-                      <path class="icon-picture"
-                            d="M17.14548 25.38438c.63247 0 .63247-.91138.63247-1.26493 0-.63246.63246-1.26493 1.26493-1.26493.63246 0 1.71714 1.08468 2.52986 1.8974.63247.63246.63247.63246 1.26493.63246h1.8974S26 25.33632 26 24.11945c0-.39529-.43324-1.0657-1.8974-2.52986-1.26493-1.26493-1.91384-.6116 0-3.16233 1.16564-1.55334 2.01377-2.96057 1.8683-3.36662-.13914-.3877-3.38116-1.00498-3.7657-.42817-1.26493 1.8974-1.49704 2.36226-1.8974 3.16232-.63246 1.26494-.69507 1.8974-1.26492 1.8974-.57491 0-.63247-1.22761-.63247-1.8974 0-2.09093.30295-3.56963-.63246-3.79479h-1.8974c-1.01827 0-1.8974.63247-1.8974.63247s-.78489.61222-.63246.63246c.18847.0253 1.26493-.26184 1.26493.63247v1.26493s.00569 2.52986-.63247 2.52986c-.63246 0-1.8974-2.52986-3.16233-4.42726-.49648-.74441-.63246-.63246-1.26493-.63246-.678 0-1.2643.02656-1.8974.02656-.63246 0-.71342.40288-.63246.6059 1.26493 3.16233 2.17378 5.14827 4.57715 7.6503 2.20415 2.29522 3.67653 2.4173 4.90983 2.46915.31624.01328 0 0 .63247 0z"
-                            fill="#FFF" fill-rule="nonzero"/>
-                    </g>
+                  <svg class="page-footer__icon">
+                    <use xlink:href="img/svg.svg#icon-vk"></use>
                   </svg>
                 </a>
               </li>
               <li class="page-footer__item">
                 <a href="" class="page-footer__social-link">
                   <span class="visually-hidden">Instagram</span>
-                  <svg width="36" height="44" xmlns="http://www.w3.org/2000/svg"
-                       xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g fill="none" fill-rule="evenodd">
-                      <path class="icon-shield" fill="#FF1553"
-                            d="M0 0v32.8201h.00159L17.9992 44l17.9992-11.1799H36V0z"/>
-                      <path class="icon-picture"
-                            d="M24.83333 22.18889c-.00273 2.01173-1.6327 3.64171-3.64444 3.64444H14.8111c-2.01173-.00273-3.64171-1.6327-3.64444-3.64444V15.8111c.00182-2.01173 1.6327-3.64262 3.64444-3.64444h6.37778c2.01173.00182 3.64262 1.6327 3.64444 3.64444v6.37778zM18 15c-2.20889 0-4 1.79111-4 4 0 2.20889 1.79111 4 4 4 2.20889 0 4-1.79111 4-4 0-2.20889-1.79111-4-4-4zm4.17778-1.06667c-.49067 0-.8889.39823-.8889.8889 0 .49066.39823.88888.8889.88888.49066 0 .88889-.39822.88889-.88889 0-.49066-.39823-.88889-.8889-.88889z"
-                            fill="#FFF"/>
-                    </g>
+                  <svg class="page-footer__icon">
+                    <use xlink:href="img/svg.svg#icon-inst"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="page-footer__item">
+                <a href="" class="page-footer__social-link">
+                  <span class="visually-hidden">Twitter</span>
+                  <svg class="page-footer__icon page-footer__icon--twitter">
+                    <use xlink:href="img/svg.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
@@ -828,44 +817,32 @@
               <li class="page-footer__item">
                 <a href="https://www.facebook.com/academy.liga/" class="page-footer__social-link">
                   <span class="visually-hidden">Facebook</span>
-                  <svg class="page-footer__social-icon" xmlns="http://www.w3.org/2000/svg"
-                       xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="44">
-                    <g fill="none" fill-rule="evenodd">
-                      <path class="icon-shield" fill="#FF1553" fill-rule="nonzero"
-                            d="M0 0v32.8201h.00159L17.9992 44l17.9992-11.1799H36V0z"/>
-                      <path class="icon-picture" fill="#FFF" fill-rule="nonzero"
-                            d="M19 16v-1.78594C19 13.40781 19.17813 13 20.42969 13H22v-3h-2.62031c-3.21094 0-4.27032 1.47188-4.27032 3.99844V16H13v3h2.10938v9H19v-9h2.64375L22 16h-3z"/>
-                    </g>
+                  <svg class="page-footer__icon">
+                    <use xlink:href="img/svg.svg#icon-fb"></use>
                   </svg>
                 </a>
               </li>
               <li class="page-footer__item">
                 <a href="https://vk.com/academy.liga" class="page-footer__social-link">
                   <span class="visually-hidden">Вконтакте</span>
-                  <svg class="page-footer__social-icon" width="36" height="44" xmlns="http://www.w3.org/2000/svg"
-                       xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g fill="none" fill-rule="evenodd">
-                      <path class="icon-shield" fill="#FF1553" fill-rule="nonzero"
-                            d="M0 0v32.8201h.00159L17.9992 44l17.9992-11.1799H36V0z"/>
-                      <path class="icon-picture"
-                            d="M17.14548 25.38438c.63247 0 .63247-.91138.63247-1.26493 0-.63246.63246-1.26493 1.26493-1.26493.63246 0 1.71714 1.08468 2.52986 1.8974.63247.63246.63247.63246 1.26493.63246h1.8974S26 25.33632 26 24.11945c0-.39529-.43324-1.0657-1.8974-2.52986-1.26493-1.26493-1.91384-.6116 0-3.16233 1.16564-1.55334 2.01377-2.96057 1.8683-3.36662-.13914-.3877-3.38116-1.00498-3.7657-.42817-1.26493 1.8974-1.49704 2.36226-1.8974 3.16232-.63246 1.26494-.69507 1.8974-1.26492 1.8974-.57491 0-.63247-1.22761-.63247-1.8974 0-2.09093.30295-3.56963-.63246-3.79479h-1.8974c-1.01827 0-1.8974.63247-1.8974.63247s-.78489.61222-.63246.63246c.18847.0253 1.26493-.26184 1.26493.63247v1.26493s.00569 2.52986-.63247 2.52986c-.63246 0-1.8974-2.52986-3.16233-4.42726-.49648-.74441-.63246-.63246-1.26493-.63246-.678 0-1.2643.02656-1.8974.02656-.63246 0-.71342.40288-.63246.6059 1.26493 3.16233 2.17378 5.14827 4.57715 7.6503 2.20415 2.29522 3.67653 2.4173 4.90983 2.46915.31624.01328 0 0 .63247 0z"
-                            fill="#FFF" fill-rule="nonzero"/>
-                    </g>
+                  <svg class="page-footer__icon">
+                    <use xlink:href="img/svg.svg#icon-vk"></use>
                   </svg>
                 </a>
               </li>
               <li class="page-footer__item">
                 <a href="" class="page-footer__social-link">
                   <span class="visually-hidden">Instagram</span>
-                  <svg width="36" height="44" xmlns="http://www.w3.org/2000/svg"
-                       xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g fill="none" fill-rule="evenodd">
-                      <path class="icon-shield" fill="#FF1553"
-                            d="M0 0v32.8201h.00159L17.9992 44l17.9992-11.1799H36V0z"/>
-                      <path class="icon-picture"
-                            d="M24.83333 22.18889c-.00273 2.01173-1.6327 3.64171-3.64444 3.64444H14.8111c-2.01173-.00273-3.64171-1.6327-3.64444-3.64444V15.8111c.00182-2.01173 1.6327-3.64262 3.64444-3.64444h6.37778c2.01173.00182 3.64262 1.6327 3.64444 3.64444v6.37778zM18 15c-2.20889 0-4 1.79111-4 4 0 2.20889 1.79111 4 4 4 2.20889 0 4-1.79111 4-4 0-2.20889-1.79111-4-4-4zm4.17778-1.06667c-.49067 0-.8889.39823-.8889.8889 0 .49066.39823.88888.8889.88888.49066 0 .88889-.39822.88889-.88889 0-.49066-.39823-.88889-.8889-.88889z"
-                            fill="#FFF"/>
-                    </g>
+                  <svg class="page-footer__icon">
+                    <use xlink:href="img/svg.svg#icon-inst"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="page-footer__item">
+                <a href="" class="page-footer__social-link">
+                  <span class="visually-hidden">Twitter</span>
+                  <svg class="page-footer__icon page-footer__icon--twitter">
+                    <use xlink:href="img/svg.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>

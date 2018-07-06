@@ -1,18 +1,55 @@
 .advantage-tab {
-  box-sizing: border-box;
-  padding: 72px 50px 50px 0;
-  min-height: 454px;
-  background-color: var(--color-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--color-red);
+  background-repeat: repeat-x;
+  background-size: cover;
+  background-position: top left;
 
   @media (--tabletMax) {
-    padding: 50px;
-    padding-left: 0;
     min-height: 400px;
   }
 
   @media (--mobileMax) {
     padding: 0;
     min-height: 100px;
+  }
+}
+
+.advantage-tab:nth-child(odd) {
+  background-image: url("../img/pattern1.png");
+
+  @media (--retinadpi), (--retinadppx) {
+    background-image: url("../img/pattern1@2x.png");
+  }
+}
+
+.advantage-tab:nth-child(even) {
+  background-image: url("../img/pattern2.png");
+
+  @media (--retinadpi), (--retinadppx) {
+    background-image: url("../img/pattern2@2x.png");
+  }
+}
+
+.advantage-tab__inner {
+  box-sizing: border-box;
+  padding: 72px 50px 50px 0;
+  width: 100%;
+  max-width: 370px;
+  min-height: 454px;
+  background-color: var(--color-blue);
+
+  @media (--desktopMin) {
+    max-width: 345px;
+  }
+
+  @media (--mobileMax) {
+    min-height: 50px;
+    padding: 0;
+    padding-right: 20px;
+    max-width: 100%;
   }
 }
 

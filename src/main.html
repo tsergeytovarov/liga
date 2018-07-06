@@ -17,7 +17,7 @@
 <header class="header">
   <div class="header__wrapper">
     <a href="#" class="btn header__btn js-scroll-link" data-target="contacts">Заказать проект</a>
-    <a href="#" class="header__logo" data-target="top">
+    <a href="#" class="header__logo js-scroll-link" data-target="top">
       <span class="visually-hidden">Вернуться наверх</span>
       <svg xmlns="http://www.w3.org/2000/svg" width="40" height="51"><g fill-rule="evenodd"><path class="logo-shield" d="M0 0v37.571h.002l19.72 12.799 19.722-12.8h.002V0z"/><path class="letter" d="M12.895 26.483c-.017 1.818 1.714 2.993 3.93 3.012 2.058.018 4.015-.52 5.718-1.919l.036-3.787c-1.107-.263-2.792-.58-4.323-.593-2.691-.023-5.338.813-5.36 3.287m17.936 2.456a4.09 4.09 0 0 0 1.248-.172l-.038 4.177c-1.06.358-2.405.622-3.7.61-2.351-.02-4.12-.861-5.063-2.522-2.27 1.679-4.92 2.666-8.326 2.637-4.317-.038-8.037-2.456-7.996-6.818.052-5.6 5.587-7.297 10.193-7.258a26.26 26.26 0 0 1 5.463.644l.008-.78c.021-2.204-1.788-3.734-5.387-3.765-3.166-.027-6.005.775-8.171 1.583l.051-5.509c1.878-.58 5.388-1.423 8.939-1.392 6.908.06 11.296 2.806 11.228 10.059l-.066 7.023c-.011 1.148.754 1.476 1.617 1.483"/></g></svg>
     </a>
@@ -29,7 +29,7 @@
   </button>
   <div class="main-nav__wrapper">
     <ul class="main-nav__list">
-      <li class="main-nav__item"><a href="#" class="main-nav__link active js-scroll-link" data-target="top">О нас</a></li>
+      <li class="main-nav__item"><a href="#" class="main-nav__link js-scroll-link" data-target="top">О нас</a></li>
       <li class="main-nav__item"><a href="#" class="main-nav__link js-scroll-link" data-target="projects">Проекты</a></li>
       <li class="main-nav__item"><a href="#" class="main-nav__link js-scroll-link" data-target="work">Схема работы</a></li>
       <li class="main-nav__item"><a href="#" class="main-nav__link js-scroll-link" data-target="advantages">Преимущества</a></li>
@@ -138,7 +138,7 @@
                   <img src="img/portfolio/tur.jpg" width="883" height="500" alt="">
                 </div>
               </div>
-              <div class="project-gallery__mobile js-project-image">
+              <div class="project-gallery__mobile higher js-project-image">
                 <div class="project-gallery__mobile-inner" data-simplebar>
                   <img src="img/portfolio/tur-mobile.png" width="261" height="437" alt="">
                 </div>
@@ -178,7 +178,7 @@
                   <img src="img/project02-m.jpg" width="261" height="437" alt="">
                 </div>
               </div>
-              <div class="project-gallery__tablet-wrapper js-project-image">
+              <div class="project-gallery__tablet-wrapper higher js-project-image">
                 <div class="project-gallery__tablet scrollable" data-simplebar>
                   <img src="img/project02-t.jpg" width="883" height="500" alt="">
                 </div>
@@ -218,7 +218,7 @@
                   <img src="img/project03-t.jpg" width="883" height="500" alt="">
                 </div>
               </div>
-              <div class="project-gallery__mobile js-project-image">
+              <div class="project-gallery__mobile higher js-project-image">
                 <div class="project-gallery__mobile-inner" data-simplebar>
                   <img src="img/project03-m.jpg" width="261" height="437" alt="">
                 </div>
@@ -348,74 +348,82 @@
   </section>
   <section class="section js-section advantages" data-name="advantages">
     <h2 class="visually-hidden">Наши преимущества</h2>
-    <div class="advantages__wrapper wrapper">
-      <div class="advantages__content content-wrapper">
-        <div class="advantages__tabs js-tabs">
-          <div class="advantages__col">
-            <p class="advantages__label">Мы</p>
-            <ul class="advantages__tab-controls tab-controls">
-              <li class="tab-controls__item js-tab-control active">дотошные,</li>
-              <li class="tab-controls__item js-tab-control">гибкие, </li>
-              <li class="tab-controls__item js-tab-control">оперативные,</li>
-              <li class="tab-controls__item js-tab-control">бюджетные ребята,</li>
-              <li class="tab-controls__item js-tab-control">и ваш юрист нас полюбит</li>
-            </ul>
-          </div>
-          <ul class="advantages__tab-list tabs-list">
-            <li class="tabs-list__item advantage-tab js-tab active">
-              <div class="advantage-tab__icon">
-                <svg width="91" height="74">
-                  <use xlink:href="img/svg.svg#icon-eye" />
-                </svg>
-              </div>
-              <div class="advantage-tab__descr">
-                <p>У нас выработана система критериев вёрстки и есть штатный тестировщик, который перед сдачей проверяет проект.</p>
-              </div>
-            </li>
-            <li class="tabs-list__item advantage-tab js-tab">
-              <div class="advantage-tab__icon">
-                <svg width="75" height="79">
-                  <use xlink:href="img/svg.svg#icon-flower" />
-                </svg>
-              </div>
-              <div class="advantage-tab__descr">
-                <p>Мы верстаем из любых исходников: Adobe Photoshop, Adobe InDesign, Sketch, Adobe XD и подстраиваемся под необходимый стек.</p>
-              </div>
-            </li>
-            <li class="tabs-list__item advantage-tab js-tab">
-              <div class="advantage-tab__icon">
-                <svg width="81" height="82">
-                  <use xlink:href="img/svg.svg#icon-rocket" />
-                </svg>
-              </div>
-              <div class="advantage-tab__descr">
-                <p>В течение суток производим оценку проекта для согласования и на следующий день готовы приступать к разработке.</p>
-              </div>
-            </li>
-            <li class="tabs-list__item advantage-tab js-tab">
-              <div class="advantage-tab__icon">
-                <svg width="85" height="83">
-                  <use xlink:href="img/svg.svg#icon-knight" />
-                </svg>
-              </div>
-              <div class="advantage-tab__descr">
-                <p>Фиксированный рейт — 650 рублей/час. При загрузке от 100 часов/месяц — 600 рублей/час.</p>
-                <p>Если проект до 50 часов, работаем без предоплаты.</p>
-              </div>
-            </li>
-            <li class="tabs-list__item advantage-tab js-tab">
-              <div class="advantage-tab__icon">
-                <svg width="79" height="88">
-                  <use xlink:href="img/svg.svg#icon-dog" />
-                </svg>
-              </div>
-              <div class="advantage-tab__descr">
-                <p>Мы вышлем оригиналы всех необходимых документов для вашего бухгалтера. Готовы подписать NDA по проекту.</p>
-              </div>
-            </li>
+    <div class="advantages__wrapper">
+      <div class="advantages__col">
+        <div class="advantages__col-inner">
+          <p class="advantages__label">Мы</p>
+          <ul class="advantages__tab-controls tab-controls">
+            <li class="tab-controls__item js-tab-control active">дотошные,</li>
+            <li class="tab-controls__item js-tab-control">гибкие, </li>
+            <li class="tab-controls__item js-tab-control">оперативные,</li>
+            <li class="tab-controls__item js-tab-control">бюджетные ребята,</li>
+            <li class="tab-controls__item js-tab-control">и ваш юрист нас полюбит</li>
           </ul>
         </div>
       </div>
+      <ul class="advantages__tab-list tabs-list">
+        <li class="tabs-list__item advantage-tab js-tab active">
+          <div class="advantage-tab__inner">
+            <div class="advantage-tab__icon">
+              <svg width="91" height="74">
+                <use xlink:href="img/svg.svg#icon-eye" />
+              </svg>
+            </div>
+            <div class="advantage-tab__descr">
+              <p>У нас выработана система критериев вёрстки и есть штатный тестировщик, который перед сдачей проверяет проект.</p>
+            </div>
+          </div>
+        </li>
+        <li class="tabs-list__item advantage-tab js-tab">
+          <div class="advantage-tab__inner">
+            <div class="advantage-tab__icon">
+              <svg width="75" height="79">
+                <use xlink:href="img/svg.svg#icon-flower" />
+              </svg>
+            </div>
+            <div class="advantage-tab__descr">
+              <p>Мы верстаем из любых исходников: Adobe Photoshop, Adobe InDesign, Sketch, Adobe XD и подстраиваемся под необходимый стек.</p>
+            </div>
+          </div>
+        </li>
+        <li class="tabs-list__item advantage-tab js-tab">
+          <div class="advantage-tab__inner">
+            <div class="advantage-tab__icon">
+              <svg width="81" height="82">
+                <use xlink:href="img/svg.svg#icon-rocket" />
+              </svg>
+            </div>
+            <div class="advantage-tab__descr">
+              <p>В течение суток производим оценку проекта для согласования и на следующий день готовы приступать к разработке.</p>
+            </div>
+          </div>
+        </li>
+        <li class="tabs-list__item advantage-tab js-tab">
+          <div class="advantage-tab__inner">
+            <div class="advantage-tab__icon">
+              <svg width="85" height="83">
+                <use xlink:href="img/svg.svg#icon-knight" />
+              </svg>
+            </div>
+            <div class="advantage-tab__descr">
+              <p>Фиксированный рейт — 650 рублей/час. При загрузке от 100 часов/месяц — 600 рублей/час.</p>
+              <p>Если проект до 50 часов, работаем без предоплаты.</p>
+            </div>
+          </div>
+        </li>
+        <li class="tabs-list__item advantage-tab js-tab">
+          <div class="advantage-tab__inner">
+            <div class="advantage-tab__icon">
+              <svg width="79" height="88">
+                <use xlink:href="img/svg.svg#icon-dog" />
+              </svg>
+            </div>
+            <div class="advantage-tab__descr">
+              <p>Мы вышлем оригиналы всех необходимых документов для вашего бухгалтера. Готовы подписать NDA по проекту.</p>
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
   </section>
   <section class="section js-section our-team" data-name="team">
@@ -425,22 +433,22 @@
       <div class="our-team__first-list">
         <ul class="our-team__list">
           <li class="our-team__item">
-            <img src="http://placehold.it/142x182" alt="Изображение члена нашей команды" class="our-team__avatar">
+            <img src="http://placehold.it/142x182" srcset="http://placehold.it/142x182 2x" alt="Изображение члена нашей команды" class="our-team__avatar">
             <h4 class="our-team__name">Серёжа Попов</h4>
             <p class="our-team__description">Наш любимый директор. Верстает с 16 лет.</p>
           </li>
           <li class="our-team__item">
-            <img src="http://placehold.it/142x182" alt="Изображение члена нашей команды" class="our-team__avatar">
-            <h3 class="our-team__name">Ирина Ожерельева</h3>
+            <img src="http://placehold.it/142x182" srcset="http://placehold.it/142x182 2x" alt="Изображение члена нашей команды" class="our-team__avatar">
+            <h4 class="our-team__name">Ирина Ожерельева</h4>
             <p class="our-team__description">Директор по развитию. Постоянно что-то улучшает.</p>
           </li>
           <li class="our-team__item">
-            <img src="http://placehold.it/142x182" alt="Изображение члена нашей команды" class="our-team__avatar">
+            <img src="http://placehold.it/142x182" srcset="http://placehold.it/142x182 2x" alt="Изображение члена нашей команды" class="our-team__avatar">
             <h4 class="our-team__name">Наташа Петрищева</h4>
             <p class="our-team__description">Менеджер проектов. Тщательно следит за всеми.</p>
           </li>
           <li class="our-team__item">
-            <img src="http://placehold.it/142x182" alt="Изображение члена нашей команды" class="our-team__avatar">
+            <img src="http://placehold.it/142x182" srcset="http://placehold.it/142x182 2x" alt="Изображение члена нашей команды" class="our-team__avatar">
             <h4 class="our-team__name">Дима Шахов</h4>
             <p class="our-team__description">Тестировщик. Любит монотонную работу.</p>
           </li>
@@ -450,7 +458,7 @@
       <div class="our-team__second-list">
         <ul class="our-team__list">
           <li class="our-team__item">
-            <img src="http://placehold.it/142x182" alt="Изображение члена нашей команды" class="our-team__avatar">
+            <img src="http://placehold.it/142x182" srcset="http://placehold.it/142x182 2x" alt="Изображение члена нашей команды" class="our-team__avatar">
             <h4 class="our-team__name">
               Сергей Попов
             </h4>
@@ -459,7 +467,7 @@
             </p>
           </li>
           <li class="our-team__item">
-            <img src="http://placehold.it/142x182" alt="Изображение члена нашей команды" class="our-team__avatar">
+            <img src="http://placehold.it/142x182" srcset="http://placehold.it/142x182 2x" alt="Изображение члена нашей команды" class="our-team__avatar">
             <h4 class="our-team__name">
               Ирина Ожерельева
             </h4>
@@ -468,7 +476,7 @@
             </p>
           </li>
           <li class="our-team__item">
-            <img src="http://placehold.it/142x182" alt="Изображение члена нашей команды" class="our-team__avatar">
+            <img src="http://placehold.it/142x182" srcset="http://placehold.it/142x182 2x" alt="Изображение члена нашей команды" class="our-team__avatar">
             <h4 class="our-team__name">
               Иван Петров
             </h4>
@@ -479,7 +487,7 @@
           <li class="our-team__item">
             <!--<div class="our-team__avatar">-->
             <!--</div>-->
-            <img src="http://placehold.it/142x182" alt="Изображение члена нашей команды" class="our-team__avatar">
+            <img src="http://placehold.it/142x182" srcset="http://placehold.it/142x182 2x" alt="Изображение члена нашей команды" class="our-team__avatar">
             <h4 class="our-team__name">
               Пётр Иванов
             </h4>
@@ -691,52 +699,52 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide client-slide">
             <div class="client-slide__image">
-              <img src="img/logo-agima.png" width="124" height="28" alt="">
+              <img src="img/logo-agima.png" srcset="img/logo-agima.png 2x" width="124" height="28" alt="">
             </div>
           </div>
           <div class="swiper-slide client-slide">
             <div class="client-slide__image">
-              <img src="img/logo-itmo.png" width="151" height="61" alt="">
+              <img src="img/logo-itmo.png"  srcset="img/logo-itmo.png 2x" width="151" height="61" alt="">
             </div>
           </div>
           <div class="swiper-slide client-slide client-slide--shishki">
             <div class="client-slide__image">
-              <img src="img/logo-shishki.png" width="110" height="23" alt="">
+              <img src="img/logo-shishki.png" srcset="img/logo-shishki.png 2x" width="110" height="23" alt="">
             </div>
           </div>
           <div class="swiper-slide client-slide">
             <div class="client-slide__image">
-              <img src="img/logo-adindex.png" width="117" height="24" alt="">
+              <img src="img/logo-adindex.png" srcset="img/logo-adindex.png 2x" width="117" height="24" alt="">
             </div>
           </div>
           <div class="swiper-slide client-slide client-slide--cubeline">
             <div class="client-slide__image">
-              <img src="img/logo-cubeline.png" width="142" height="46" alt="">
+              <img src="img/logo-cubeline.png" srcset="img/logo-cubeline.png 2x" width="142" height="46" alt="">
             </div>
           </div>
           <div class="swiper-slide client-slide">
             <div class="client-slide__image">
-              <img src="img/logo-agima.png" width="124" height="28" alt="">
+              <img src="img/logo-agima.png" srcset="img/logo-agima.png 2x" width="124" height="28" alt="">
             </div>
           </div>
           <div class="swiper-slide client-slide">
             <div class="client-slide__image">
-              <img src="img/logo-itmo.png" width="151" height="61" alt="">
+              <img src="img/logo-itmo.png" srcset="img/logo-itmo.png 2x" width="151" height="61" alt="">
             </div>
           </div>
           <div class="swiper-slide client-slide client-slide--shishki">
             <div class="client-slide__image">
-              <img src="img/logo-shishki.png" width="110" height="23" alt="">
+              <img src="img/logo-shishki.png" srcset="img/logo-shishki.png 2x" width="110" height="23" alt="">
             </div>
           </div>
           <div class="swiper-slide client-slide">
             <div class="client-slide__image">
-              <img src="img/logo-adindex.png" width="117" height="24" alt="">
+              <img src="img/logo-adindex.png" srcset="img/logo-adindex.png 2x" width="117" height="24" alt="">
             </div>
           </div>
           <div class="swiper-slide client-slide client-slide--cubeline">
             <div class="client-slide__image">
-              <img src="img/logo-cubeline.png" width="142" height="46" alt="">
+              <img src="img/logo-cubeline.png" srcset="img/logo-cubeline.png 2x" width="142" height="46" alt="">
             </div>
           </div>
         </div>

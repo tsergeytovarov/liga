@@ -1,3 +1,15 @@
 .simplebar-scrollbar.visible:before {
   opacity: 0 !important;
 }
+
+.simplebar-scroll-content {
+    cursor: pointer;
+}
+
+.simplebar-scroll-content {
+    pointer-events: none;
+}
+
+.higher .simplebar-scroll-content {
+    pointer-events: initial;
+}

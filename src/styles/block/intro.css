@@ -50,10 +50,6 @@
   @media (--desktopMin) {
     margin-bottom: 20px;
   }
-
-  @media (--mobileMax) {
-    display: none;
-  }
 }
 
 .intro__headline svg {

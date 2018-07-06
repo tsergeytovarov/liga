@@ -19,6 +19,9 @@
   margin-right: auto;
   padding-bottom: 16px;
   min-height: 81px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
 
   @media (--desktopMax) {
     min-height: 78px;
@@ -28,6 +31,10 @@
     padding-bottom: 12px;
     min-height: 61px;
   }
+}
+
+.client-slide__image:hover {
+  opacity: 1;
 }
 
 .client-slide__image::before {

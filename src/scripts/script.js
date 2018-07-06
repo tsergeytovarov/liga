@@ -41,8 +41,8 @@ window.script = ((document) => {
     });
   }
 
-  const forEach = Array.prototype.forEach;
-
+  // const forEach = Array.prototype.forEach;
+  const map = Array.prototype.map;
   const debounce = function (deltaTime, fn) {
     let nextCall;
     return function () {
@@ -56,51 +56,82 @@ window.script = ((document) => {
   };
 
   if (document.querySelectorAll(`.header`) || document.querySelectorAll(`.page-footer`)) {
-    const sections = [];
-    const section = document.querySelectorAll(`.js-section`);
+    let sections = [];
 
-    forEach.call(section, function (e) {
-      sections.push({offset: e.offsetTop, dataName: e.getAttribute(`data-name`), el: document.querySelector(`.js-scroll-link[data-target=` + e.getAttribute(`data-name`) + `]`), height: e.offsetHeight});
-    });
+    const updateSections = function () {
 
-    // let navRect;
+      const section = document.querySelectorAll(`.js-section`);
+      sections = map.call(section, function (e) {
+        return {
+          offset: e.offsetTop,
+          dataName: e.getAttribute(`data-name`),
+          el: document.querySelector(`.js-scroll-link[data-target=` + e.getAttribute(`data-name`) + `]`),
+          height: e.offsetHeight
+        };
+      });
+    };
+
     let windowHeight;
     let colorizableItems = [];
 
-    let onResize = debounce(30, function () { // maybe it would change something
-      // navRect = document.querySelector(`.main-nav`).getClientRects();
+    let onResize = debounce(30, function () {
+
       windowHeight = window.innerHeight;
+
       colorizableItems = [].slice.call(document.querySelectorAll(`.main-nav .main-nav__item a`)).concat(document.querySelector(`.main-nav__telephone`)).concat(document.querySelector(`.header`)).concat(document.querySelector(`.js-nav-toggler`)).map(function (el) {
         const rect = el.getClientRects()[0];
-        // console.log(rect, windowHeight)
-        return {el, offset: windowHeight - rect.bottom + rect.height / 2, currentStyle: `none`, setStyle: `none`, isActive: false, lastActive: false};
+
+        return {
+          el,
+          offset: windowHeight - rect.bottom + rect.height / 2,
+          currentStyle: `none`,
+          setStyle: `none`,
+          isActive: false,
+          lastActive: false
+        };
       });
-
+      updateSections();
       highlightMenu();
-
     });
 
-    onResize();
-    document.addEventListener(`resize`, onResize);
+    let lastHeight = document.body.clientHeight;
+    let madnessCounter = 0;
+    let madnessInterval = setInterval(function () {
+      let newHeight = document.body.clientHeight;
 
-    // console.log(sections);
+      if (lastHeight !== newHeight) {
+        lastHeight = newHeight;
+        // gotcha
+        onResize();
+      }
+      madnessCounter++;
+      if (madnessCounter > 50 * 20) { // ~20 seconds
+        clearInterval(madnessInterval);
+      }
+    }, 20);
+
+    onResize();
+
+    window.addEventListener(`resize`, onResize);
+
     let highlightMenu = function () {
-      // console.clear();
       let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      // let i;
       let j;
       let _j;
       let item;
-      // let menuItems = document.querySelectorAll('.main-nav__link');
+
       for (j = 0, _j = colorizableItems.length; j < _j; j++) {
         item = colorizableItems[j];
-        item.isActive = false;
+        if (item) {
+          item.isActive = false;
+        }
       }
+
       for (let i = 0; i < sections.length; i++) {
 
         let sectionOffsetTop = scrollTop + windowHeight - (sections[i].offset);
         let sectionOffsetBottom = sectionOffsetTop - sections[i].height;
-        // console.log(sectionOffsetTop, sectionOffsetBottom, sections[i].dataName);
+
         if (sections[i].offset + sections[i].height < scrollTop) {
           // skip it
         } else if (sections[i].offset > scrollTop + windowHeight) {
@@ -113,7 +144,7 @@ window.script = ((document) => {
             if (item.offset < sectionOffsetTop && item.offset >= sectionOffsetBottom) {
               item.setStyle = sections[i].dataName;
               // console.log(j,item.setStyle);
-              if (i === j) {
+              if (i === j && item) {
                 item.isActive = true;
               }
             }
@@ -123,10 +154,12 @@ window.script = ((document) => {
 
       for (j = 0, _j = colorizableItems.length; j < _j; j++) {
         item = colorizableItems[j];
-        if (item.setStyle !== item.currentStyle) {
-          item.el.classList.remove(menuItemStyleName(item.currentStyle));
-          item.currentStyle = item.setStyle;
-          item.el.classList.add(menuItemStyleName(item.currentStyle));
+        if (item) {
+          if (item.setStyle !== item.currentStyle) {
+            item.el.classList.remove(menuItemStyleName(item.currentStyle));
+            item.currentStyle = item.setStyle;
+            item.el.classList.add(menuItemStyleName(item.currentStyle));
+          }
         }
 
         if (item.isActive !== item.lastActive) {
@@ -145,52 +178,6 @@ window.script = ((document) => {
     document.addEventListener(`scroll`, highlightMenu);
     highlightMenu();
   }
-
-
-  // let firstScreenHeight = document.querySelector(`.intro`).offsetHeight;
-  // let pageContentHeight = document.querySelector(`.page-content`).offsetHeight;
-
-  // document.addEventListener(`scroll`, function () {
-  //   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  //   document.querySelector(`.header`).classList.remove(`dark`);
-  //   document.querySelector(`.header`).classList.remove(`full`);
-
-  //   if (scrollTop < pageContentHeight) {
-  //     document.querySelector(`.main-nav`).classList.remove(`dark`);
-  //   }
-  //   if (scrollTop > firstScreenHeight) {
-  //     document.querySelector(`.header`).classList.add(`full`);
-  //     document.querySelector(`.main-nav`).classList.add(`dark`);
-  //   }
-  //   if (scrollTop > pageContentHeight) {
-  //     document.querySelector(`.header`).classList.add(`dark`);
-  //   }
-
-  //   let scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
-
-  //   let last;
-
-  //   for (let i = 0; i < sections.length; i++) {
-  //     let section = sections[i];
-
-  //     if (section.offset <= scrollPosition + window.innerHeight / 2) {
-  //       last = section;
-  //     }
-  //   }
-
-  //   if (last && oldLast !== last) {
-  //     oldLast = last;
-  //     document.querySelector(`.js-scroll-link.active`).classList.remove(`active`);
-  //     last.el.classList.add(`active`);
-  //   }
-  // });
-
-  // let oldLast;
-  // const sections = [];
-  // const section = document.querySelectorAll(`.js-section`);
-  // Array.prototype.forEach.call(section, function (e) {
-  //   sections.push({offset: e.offsetTop, id: e.id, el: document.querySelector(`.js-scroll-link[href*=` + e.id + `]`)});
-  // });
 
   if (document.querySelector(`.js-reviews-slider`)) {
     const reviewsSlider = new Swiper(`.js-reviews-slider`, {

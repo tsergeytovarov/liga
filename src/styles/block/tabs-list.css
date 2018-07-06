@@ -22,7 +22,7 @@
 
   @media (--mobileMax) {
     position: static;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
     opacity: 1;
     pointer-events: initial;
   }

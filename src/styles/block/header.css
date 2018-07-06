@@ -191,10 +191,10 @@
   pointer-events: initial;
 }
 
-.header.menu-opened .header__logo svg {
+.header.menu-opened .header__logo .logo-shield {
   fill: var(--color-white);
 }
 
-.header.menu-opened .header__logo svg .letter {
+.header.menu-opened .header__logo .letter {
   fill: var(--color-blue);
 }

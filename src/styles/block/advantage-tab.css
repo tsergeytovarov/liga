@@ -8,8 +8,6 @@
   background-position: top left;
 
   @media (--tabletMax) {
-    padding: 50px;
-    padding-left: 0;
     min-height: 400px;
   }
 
@@ -38,9 +36,21 @@
 .advantage-tab__inner {
   box-sizing: border-box;
   padding: 72px 50px 50px 0;
-  width: 370px;
+  width: 100%;
+  max-width: 370px;
   min-height: 454px;
   background-color: var(--color-blue);
+
+  @media (--desktopMin) {
+    max-width: 345px;
+  }
+
+  @media (--mobileMax) {
+    min-height: 50px;
+    padding: 0;
+    padding-right: 20px;
+    max-width: 100%;
+  }
 }
 
 .advantage-tab__icon {

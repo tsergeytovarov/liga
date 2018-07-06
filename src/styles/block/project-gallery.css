@@ -43,6 +43,7 @@
   overflow-x: hidden;
   overflow-y: scroll;
   transition: border-color 0.3s ease;
+  cursor: pointer;
 
   @media (--mobileMax) {
     margin: 0;
@@ -80,6 +81,10 @@
     max-height: 166px;
     min-height: 166px;
   }
+}
+
+.project-gallery__tablet .simplebar-content {
+  padding-bottom: 0 !important;
 }
 
 .project-gallery__tablet img {

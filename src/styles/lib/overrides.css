@@ -13,4 +13,8 @@
 .higher .simplebar-scroll-content {
   pointer-events: initial;
   overscroll-behavior: contain;
+
+  @media (--tabletMax) {
+    overscroll-behavior: auto;
+  }
 }

@@ -16,6 +16,7 @@ body {
 body.overflow {
   @media (--desktopMin) {
     overflow: hidden;
+    background-color: var(--color-blue);
   }
 }
 

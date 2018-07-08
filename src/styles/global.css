@@ -5,7 +5,7 @@ body {
   line-height: var(--font-line-basic);
   letter-spacing: var(--font-letter-spacing-basic);
   font-weight: var(--font-weight-basic);
-
+  background-color: var(--color-white);
   border: var(--body-border-width) solid var(--color-blue);
 
   @media (--mobileMax) {
@@ -16,6 +16,7 @@ body {
 body.overflow {
   @media (--desktopMin) {
     overflow: hidden;
+    background-color: var(--color-blue);
   }
 }
 

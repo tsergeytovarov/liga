@@ -17,96 +17,6 @@
   }
 }
 
-.main-nav__toggler {
-  position: fixed;
-  top: 16px;
-  left: 21px;
-  margin-right: 10px;
-  padding: 0;
-  width: 45px;
-  height: 45px;
-  background-color: var(--color-blue);
-  border: none;
-  transition: background-color 0.3s ease;
-  opacity: 0;
-  pointer-events: none;
-
-  @media (--desktopMin) {
-    opacity: 1;
-    pointer-events: initial;
-  }
-
-  @media (--mobileMax) {
-    top: 13px;
-    left: 14px;
-    width: 36px;
-    height: 36px;
-  }
-}
-
-.main-nav__toggler::before,
-.main-nav__toggler::after {
-  content: "";
-  position: absolute;
-  left: 15px;
-  right: 15px;
-  height: 4px;
-  background-color: #ffffff;
-
-  @media (--mobileMax) {
-    left: 10px;
-    right: 10px;
-  }
-}
-
-.main-nav__toggler.link-color-projects,
-.main-nav__toggler.link-color-advantages,
-.main-nav__toggler.link-color-contacts {
-  background-color: var(--color-white);
-}
-
-.main-nav__toggler.link-color-contacts {
-  @media (--desktopMin) {
-    background-color: var(--color-blue);
-  }
-}
-
-.main-nav__toggler.link-color-projects::before,
-.main-nav__toggler.link-color-projects::after,
-.main-nav__toggler.link-color-advantages::before,
-.main-nav__toggler.link-color-advantages::after,
-.main-nav__toggler.link-color-contacts::before,
-.main-nav__toggler.link-color-contacts::after {
-  background-color: var(--color-blue);
-}
-
-.main-nav__toggler.link-color-contacts::before,
-.main-nav__toggler.link-color-contacts::after {
-  @media (--desktopMin) {
-    background-color: var(--color-white);
-  }
-}
-
-.main-nav__toggler::after {
-  bottom: 15px;
-
-  @media (--mobileMax) {
-    bottom: 12px;
-  }
-}
-
-.main-nav__toggler::before {
-  top: 15px;
-
-  @media (--mobileMax) {
-    top: 12px;
-  }
-}
-
-.main-nav__toggler:hover {
-  background-color: var(--color-red);
-}
-
 .main-nav__wrapper {
   transition: transform 0.3s ease;
 
@@ -260,25 +170,6 @@
   max-height: 100000px;
   overflow: visible;
   pointer-events: initial;
-}
-
-.main-nav.opened .main-nav__toggler {
-  background-color: var(--color-white);
-}
-
-.main-nav.opened .main-nav__toggler::before,
-.main-nav.opened .main-nav__toggler::after {
-  background-color: var(--color-blue);
-  top: 50%;
-  left: 50%;
-  right: auto;
-  bottom: auto;
-  transform: translate(-50%, -50%) rotate(45deg);
-  width: 19px;
-}
-
-.main-nav.opened .main-nav__toggler::after {
-  transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 .main-nav.opened .main-nav__wrapper {

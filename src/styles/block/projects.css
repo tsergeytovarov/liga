@@ -17,14 +17,17 @@
 }
 
 .projects__wrapper {
-  @media (--desktopMax) {
+  @media (--desktopMin) {
     padding-left: 130px;
-    padding-right: 57px;
   }
 
   @media (--tabletMax) {
     padding-left: 57px;
     padding-right: 40px;
+  }
+
+  @media (max-width: 768px) {
+    padding-left: 70px;
   }
 
   @media (--mobileMax) {

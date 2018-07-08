@@ -80,8 +80,8 @@
 
 .project-item__link {
   margin-bottom: 15px;
-  display: flex;
-  align-items: top;
+  display: inline-block;
+  vertical-align: top;
   font-weight: 600;
   font-size: 30px;
   line-height: 38px;
@@ -93,8 +93,6 @@
   }
 
   @media (--mobileMax) {
-    display: flex;
-    align-items: flex-start;
     margin-bottom: 4px;
     font-size: 20px;
     line-height: 24px;

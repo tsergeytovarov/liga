@@ -1,0 +1,109 @@
+.nav-toggler {
+  position: fixed;
+  top: 16px;
+  left: 21px;
+  margin-right: 10px;
+  padding: 0;
+  width: 45px;
+  height: 45px;
+  background-color: var(--color-blue);
+  border: none;
+  transition: background-color 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 12;
+
+  @media (--desktopMin) {
+    opacity: 1;
+    pointer-events: initial;
+  }
+
+  @media (--mobileMax) {
+    top: 13px;
+    left: 14px;
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.nav-toggler::before,
+.nav-toggler::after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  height: 4px;
+  background-color: #ffffff;
+
+  @media (--mobileMax) {
+    left: 10px;
+    right: 10px;
+  }
+}
+
+.nav-toggler.link-color-projects,
+.nav-toggler.link-color-advantages,
+.nav-toggler.link-color-contacts {
+  background-color: var(--color-white);
+}
+
+.nav-toggler.link-color-contacts {
+  @media (--desktopMin) {
+    background-color: var(--color-blue);
+  }
+}
+
+.nav-toggler.link-color-projects::before,
+.nav-toggler.link-color-projects::after,
+.nav-toggler.link-color-advantages::before,
+.nav-toggler.link-color-advantages::after,
+.nav-toggler.link-color-contacts::before,
+.nav-toggler.link-color-contacts::after {
+  background-color: var(--color-blue);
+}
+
+.nav-toggler.link-color-contacts::before,
+.nav-toggler.link-color-contacts::after {
+  @media (--desktopMin) {
+    background-color: var(--color-white);
+  }
+}
+
+.nav-toggler::after {
+  bottom: 15px;
+
+  @media (--mobileMax) {
+    bottom: 12px;
+  }
+}
+
+.nav-toggler::before {
+  top: 15px;
+
+  @media (--mobileMax) {
+    top: 12px;
+  }
+}
+
+.nav-toggler:hover {
+  background-color: var(--color-red);
+}
+
+.nav-toggler.active {
+  background-color: var(--color-white);
+}
+
+.nav-toggler.active::before,
+.nav-toggler.active::after {
+  background-color: var(--color-blue);
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 19px;
+}
+
+.nav-toggler.active::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}

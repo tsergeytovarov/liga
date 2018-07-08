@@ -1,5 +1,5 @@
 .nav-toggler {
-  position: fixed;
+  position: absolute;
   top: 16px;
   left: 21px;
   margin-right: 10px;
@@ -24,6 +24,10 @@
     width: 36px;
     height: 36px;
   }
+}
+
+.nav-toggler.fixed {
+  position: fixed;
 }
 
 .nav-toggler::before,

@@ -13,6 +13,7 @@ const postcssPresetEnv = require('postcss-preset-env');
 const imagemin = require("gulp-imagemin");
 const webp = require('gulp-webp');
 const concat = require('gulp-concat');
+const babel = require('gulp-babel');
 
 // svg sprite
 
@@ -58,6 +59,7 @@ gulp.task('css', () => {
 
 gulp.task('scripts', () => {
   return gulp.src('src/scripts/*.js')
+    .pipe(babel())
     .pipe(jsmin())
     .pipe(gulp.dest('dest/scripts'))
     .pipe(sync.stream({
@@ -65,7 +67,7 @@ gulp.task('scripts', () => {
     }));
 });
 
-//libs 
+//libs
 
 gulp.task('libs', () => {
   return gulp.src('src/scripts/libs/*.js')
@@ -153,9 +155,9 @@ gulp.task('watch:scripts', () => {
   return gulp.watch('src/scripts/*.js', gulp.series('scripts'));
 });
 
-gulp.task('watch:libs', () => {
-  return gulp.watch('src/scripts/libs/*.js', gulp.series('libs'));
-});
+// gulp.task('watch:libs', () => {
+//   return gulp.watch('src/scripts/libs/*.js', gulp.series('libs'));
+// });
 
 gulp.task('watch:copy', () => {
   return gulp.watch([
@@ -173,7 +175,7 @@ gulp.task('watch', gulp.parallel(
   'watch:html',
   'watch:css',
   'watch:scripts',
-  'watch:libs',
+  //'watch:libs',
   'watch:copy'
 ));
 
@@ -185,7 +187,7 @@ gulp.task('build', gulp.parallel(
   'html',
   'css',
   'scripts',
-  'libs',
+  //'libs',
   'copy'
 ));
 

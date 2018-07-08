@@ -8,6 +8,8 @@ body {
   background-color: var(--color-white);
   border: var(--body-border-width) solid var(--color-blue);
 
+  overflow-x: hidden;
+
   @media (--mobileMax) {
     border: 7px solid var(--color-blue);
   }

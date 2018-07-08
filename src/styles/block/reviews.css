@@ -12,6 +12,10 @@
     padding-left: 80px;
   }
 
+  @media (max-width: 768px) {
+    padding-left: 70px;
+  }
+
   @media (--mobileMax) {
     padding-left: 23px;
     padding-right: 0;
@@ -34,6 +38,10 @@
 
   @media (--desktopMin) {
     width: 80px;
+  }
+
+  @media (max-width: 768px) {
+    width: 70px;
   }
 
   @media (--mobileMax) {
@@ -60,6 +68,7 @@
 
   @media (--mobileMax) {
     margin-bottom: 40px;
+    max-width: 250px;
     padding-top: 60px;
     font-size: 30px;
     line-height: 33px;

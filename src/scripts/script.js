@@ -100,7 +100,6 @@ window.script = ((document) => {
 
       if (lastHeight !== newHeight) {
         lastHeight = newHeight;
-        // gotcha
         onResize();
       }
       madnessCounter++;
@@ -195,8 +194,9 @@ window.script = ((document) => {
 
     const clientsSlider = new Swiper(`.js-clients-slider`, {
       on: {
-        reachEnd() {
-          // clientsSlider.slideTo(1);
+        slideChange() {
+          let n = clientsSlider.activeIndex;
+          reviewsSlider.slideTo(n, 1000);
         }
       }
     });
@@ -272,6 +272,7 @@ window.script = ((document) => {
     navToggler.addEventListener(`click`, function () {
       header.classList.toggle(`menu-opened`);
       nav.classList.toggle(`opened`);
+      navToggler.classList.toggle(`active`);
       document.querySelector(`body`).classList.toggle(`overflow`);
     });
 
@@ -280,6 +281,7 @@ window.script = ((document) => {
       scrollLink[i].addEventListener(`click`, function () {
         header.classList.remove(`menu-opened`);
         nav.classList.remove(`opened`);
+        navToggler.classList.remove(`active`);
         document.querySelector(`body`).classList.remove(`overflow`);
       });
     }

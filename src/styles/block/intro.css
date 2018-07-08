@@ -35,6 +35,14 @@
 .intro__content-block {
   padding-left: 54px;
 
+  @media (--desktopMax) {
+    padding-left: 62px;
+  }
+
+  @media (--desktopMin) {
+    padding-left: 52px;
+  }
+
   @media (--tabletMax) {
     padding-left: 30px;
   }

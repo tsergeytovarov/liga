@@ -58,6 +58,7 @@
   background-color: var(--color-blue);
 
   @media (--desktopMin) {
+    box-sizing: border-box;
     padding-top: 58px;
     padding-bottom: 133px;
     width: calc(50% + 80px);

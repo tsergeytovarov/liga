@@ -173,7 +173,17 @@ window.script = ((document) => {
       }
     };
 
-    document.addEventListener(`scroll`, highlightMenu);
+    document.addEventListener(`scroll`, function () {
+      highlightMenu();
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      if (scrollTop > 1) {
+        document.querySelector(`.header`).classList.add(`fixed`);
+        document.querySelector(`.nav-toggler`).classList.add(`fixed`);
+      } else {
+        document.querySelector(`.header`).classList.remove(`fixed`);
+        document.querySelector(`.nav-toggler`).classList.remove(`fixed`);
+      }
+    });
     highlightMenu();
   }
 

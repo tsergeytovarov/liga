@@ -1,5 +1,5 @@
 .header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 8px;
   right: 8px;
@@ -11,6 +11,10 @@
     right: 7px;
     border-top-width: 7px;
   }
+}
+
+.header.fixed {
+  position: fixed;
 }
 
 .header__wrapper {

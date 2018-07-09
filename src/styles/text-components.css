@@ -45,6 +45,7 @@
 /* Paragraphs */
 .text-components p {
   font-weight: 300;
+  text-align: justify;
 }
 
 .text-components .paragraph--large {
@@ -86,6 +87,7 @@
   line-height: 19px;
   letter-spacing: -0.1px;
   color: black;
+  margin-bottom: 15px;
 }
 
 .text-components ul li,

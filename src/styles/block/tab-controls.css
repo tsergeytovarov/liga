@@ -43,6 +43,7 @@
 
 .tab-controls__item.active {
   padding-left: 45px;
+  text-shadow: -6px 6px 0 var(--color-red);
 
   @media (--tabletMax) {
     padding-left: 30px;

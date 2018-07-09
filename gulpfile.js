@@ -48,7 +48,7 @@ gulp.task('css', () => {
       })
       ]))
     .pipe(postcss([autoprefixer]))
-    // .pipe(csso())
+    .pipe(csso())
     .pipe(gulp.dest('dest/styles'))
     .pipe(sync.stream({
       once: true

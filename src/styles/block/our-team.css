@@ -8,7 +8,6 @@
   margin: 0 auto;
 }
 
-
 .our-team__title {
   font-size: 30px;
   line-height: 33px;
@@ -55,7 +54,6 @@
   transform: rotate(0deg);
   z-index: 1;
 }
-
 
 .our-team__list {
   display: flex;
@@ -225,7 +223,6 @@
     margin-top: 0;
   }
 
-
   .our-team__item {
     max-width: 190px;
     margin-right: 30px;
@@ -256,7 +253,6 @@
     width: 100px;
     height: 128px;
   }
-
 
   .our-team__list {
     display: flex;

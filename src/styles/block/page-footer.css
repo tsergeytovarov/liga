@@ -73,6 +73,7 @@
 .page-footer__input:focus,
 .page-footer__input:hover {
   border-bottom: 2px solid var(--color-white);
+  transition: all 0.3s;
 }
 
 .page-footer__input::-moz-placeholder {
@@ -165,6 +166,7 @@
 
 .page-footer__link:hover {
   color: var(--color-red);
+  transition: all 0.3s;
 }
 
 .page-footer__social-list {
@@ -204,6 +206,11 @@
   height: 100%;
   display: block;
   vertical-align: middle;
+}
+
+.page-footer__link--policy {
+  font-size: 15px;
+  font-weight: 300;
 }
 
 .page-footer__icon {
@@ -508,6 +515,10 @@
   .page-footer__link {
     font-size: 14px;
     letter-spacing: 0.35px;
+  }
+
+  .page-footer__link--policy {
+    font-size: 15px;
   }
 
   .page-footer__info-block {

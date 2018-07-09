@@ -2,10 +2,10 @@
 @import "variables.css";
 @import "normalize.css";
 @import "global.css";
-@import "text-components.css";
 @import "lib/swiper.css";
 @import "lib/scrollbar.css";
 @import "lib/overrides.css";
+@import "block/text-components.css";
 @import "block/page.css";
 @import "block/section.css";
 @import "block/btn.css";

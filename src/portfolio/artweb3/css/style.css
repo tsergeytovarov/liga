@@ -65,7 +65,7 @@ figure {
  */
 hr {
   -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -104,7 +104,7 @@ abbr[title] {
   text-decoration: underline;
   /* 2 */
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   /* 2 */ }
 
 /**
@@ -143,8 +143,8 @@ dfn {
  * Add the correct background and color in IE 9-.
  */
 mark {
-  background-color: #ff0;
-  color: #000; }
+  background-color: #ffff00;
+  color: #000000; }
 
 /**
  * Add the correct font size in all browsers.
@@ -280,7 +280,7 @@ fieldset {
  */
 legend {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -316,7 +316,7 @@ textarea {
 [type="checkbox"],
 [type="radio"] {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */ }
@@ -394,26 +394,26 @@ template {
   display: none; }
 
 @font-face {
-  font-family: 'AcuminProExtraCondensed';
+  font-family: "AcuminProExtraCondensed";
   src: url("../fonts/AcuminProExtraCondensed-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'AcuminProExtraCondensed';
+  font-family: "AcuminProExtraCondensed";
   src: url("../fonts/AcuminProExtraCondensed-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal; }
 
 :root {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+  box-sizing: border-box; }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   -webkit-box-sizing: inherit;
-          box-sizing: inherit; }
+  box-sizing: inherit; }
 
 body {
   font-family: "AcuminProExtraCondensed", sans-serif;
@@ -448,12 +448,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0; }
+
   100% {
     opacity: 1; } }
 
 @keyframes fadeIn {
   0% {
     opacity: 0; }
+
   100% {
     opacity: 1; } }
 
@@ -466,6 +468,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 0;
     -webkit-transform: translateY(-20px);
     transform: translateY(-20px); }
+
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -476,6 +479,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 0;
     -webkit-transform: translateY(-20px);
     transform: translateY(-20px); }
+
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -490,6 +494,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 0;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%); }
+
   100% {
     opacity: 1;
     -webkit-transform: translateX(0);
@@ -500,6 +505,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 0;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%); }
+
   100% {
     opacity: 1;
     -webkit-transform: translateX(0);
@@ -514,6 +520,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 0;
     -webkit-transform: translateX(50%);
     transform: translateX(50%); }
+
   100% {
     opacity: 1;
     -webkit-transform: translateX(0);
@@ -524,6 +531,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 0;
     -webkit-transform: translateX(50%);
     transform: translateX(50%); }
+
   100% {
     opacity: 1;
     -webkit-transform: translateX(0);
@@ -538,6 +546,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 0;
     -webkit-transform: translateY(20px);
     transform: translateY(20px); }
+
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -548,6 +557,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 0;
     -webkit-transform: translateY(20px);
     transform: translateY(20px); }
+
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -560,12 +570,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 @-webkit-keyframes fadeOut {
   0% {
     opacity: 1; }
+
   100% {
     opacity: 0; } }
 
 @keyframes fadeOut {
   0% {
     opacity: 1; }
+
   100% {
     opacity: 0; } }
 
@@ -578,6 +590,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 1;
     -webkit-transform: translateY(0);
     transform: translateY(0); }
+
   100% {
     opacity: 0;
     -webkit-transform: translateY(20px);
@@ -588,6 +601,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 1;
     -webkit-transform: translateY(0);
     transform: translateY(0); }
+
   100% {
     opacity: 0;
     -webkit-transform: translateY(20px);
@@ -602,6 +616,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 1;
     -webkit-transform: translateX(0);
     transform: translateX(0); }
+
   100% {
     opacity: 0;
     -webkit-transform: translateX(-20px);
@@ -612,6 +627,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 1;
     -webkit-transform: translateX(0);
     transform: translateX(0); }
+
   100% {
     opacity: 0;
     -webkit-transform: translateX(-20px);
@@ -626,6 +642,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 1;
     -webkit-transform: translateX(0);
     transform: translateX(0); }
+
   100% {
     opacity: 0;
     -webkit-transform: translateX(20px);
@@ -636,6 +653,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 1;
     -webkit-transform: translateX(0);
     transform: translateX(0); }
+
   100% {
     opacity: 0;
     -webkit-transform: translateX(20px);
@@ -650,6 +668,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 1;
     -webkit-transform: translateY(0);
     transform: translateY(0); }
+
   100% {
     opacity: 0;
     -webkit-transform: translateY(-20px);
@@ -660,6 +679,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 1;
     -webkit-transform: translateY(0);
     transform: translateY(0); }
+
   100% {
     opacity: 0;
     -webkit-transform: translateY(-20px);
@@ -674,6 +694,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 0;
     -webkit-transform: translateY(-2000px);
     transform: translateY(-2000px); }
+
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0); } }
@@ -683,6 +704,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 0;
     -webkit-transform: translateY(-2000px);
     transform: translateY(-2000px); }
+
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0); } }
@@ -696,6 +718,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 0;
     -webkit-transform: translateX(-2000px);
     transform: translateX(-2000px); }
+
   100% {
     -webkit-transform: translateX(0);
     transform: translateX(0); } }
@@ -705,6 +728,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 0;
     -webkit-transform: translateX(-2000px);
     transform: translateX(-2000px); }
+
   100% {
     -webkit-transform: translateX(0);
     transform: translateX(0); } }
@@ -718,6 +742,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 0;
     -webkit-transform: translateX(2000px);
     transform: translateX(2000px); }
+
   100% {
     -webkit-transform: translateX(0);
     transform: translateX(0); } }
@@ -727,6 +752,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 0;
     -webkit-transform: translateX(2000px);
     transform: translateX(2000px); }
+
   100% {
     -webkit-transform: translateX(0);
     transform: translateX(0); } }
@@ -739,6 +765,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   0% {
     -webkit-transform: translateX(0);
     transform: translateX(0); }
+
   100% {
     opacity: 0;
     -webkit-transform: translateX(-2000px);
@@ -748,6 +775,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   0% {
     -webkit-transform: translateX(0);
     transform: translateX(0); }
+
   100% {
     opacity: 0;
     -webkit-transform: translateX(-2000px);
@@ -761,6 +789,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   0% {
     -webkit-transform: translateX(0);
     transform: translateX(0); }
+
   100% {
     opacity: 0;
     -webkit-transform: translateX(2000px);
@@ -770,6 +799,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   0% {
     -webkit-transform: translateX(0);
     transform: translateX(0); }
+
   100% {
     opacity: 0;
     -webkit-transform: translateX(2000px);
@@ -783,6 +813,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   0% {
     -webkit-transform: translateY(0);
     transform: translateY(0); }
+
   100% {
     opacity: 0;
     -webkit-transform: translateY(-2000px);
@@ -792,6 +823,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   0% {
     -webkit-transform: translateY(0);
     transform: translateY(0); }
+
   100% {
     opacity: 0;
     -webkit-transform: translateY(-2000px);
@@ -812,33 +844,35 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   margin: 0;
   list-style: none;
   counter-reset: list2; }
-  .branding__list li {
-    margin-bottom: 45px; }
-    .branding__list li:last-child {
-      margin-bottom: 0; }
+
+.branding__list li {
+  margin-bottom: 45px; }
+
+.branding__list li:last-child {
+  margin-bottom: 0; }
 
 .branding__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
   margin: 0 0 15px; }
 
-.branding__title:before {
+.branding__title::before {
   content: counter(list1, decimal-leading-zero);
   font-family: "Roboto Condensed", sans-serif;
   font-size: 36px;
   font-weight: 700;
   line-height: 1;
   -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1; }
+  -ms-flex-order: 1;
+  order: 1; }
 
-.branding__title:after {
+.branding__title::after {
   counter-increment: list2;
   content: "/" counter(list2, decimal-leading-zero);
   font-family: "Roboto Condensed", sans-serif;
@@ -846,14 +880,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   font-weight: 300;
   line-height: 1;
   -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2; }
+  -ms-flex-order: 2;
+  order: 2; }
 
 .branding__title-inner {
   width: 100%;
   -webkit-box-ordinal-group: 4;
-      -ms-flex-order: 3;
-          order: 3;
+  -ms-flex-order: 3;
+  order: 3;
   font-size: 32px;
   font-weight: 300;
   letter-spacing: 3px;
@@ -867,8 +901,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   text-decoration: none;
   border: none;
   cursor: pointer; }
-  .btn:hover, .btn:focus {
-    outline: none; }
+
+.btn:hover, .btn:focus {
+  outline: none; }
 
 .cabinet {
   padding-top: 45px; }
@@ -887,41 +922,44 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .cabinet__page {
   margin-bottom: 25px; }
-  .cabinet__page:last-child {
-    margin-bottom: 0; }
+
+.cabinet__page:last-child {
+  margin-bottom: 0; }
 
 .cabinet__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
   -ms-flex-line-pack: start;
-      align-content: flex-start;
+  align-content: flex-start;
   line-height: 1;
   margin-bottom: 10px; }
-  .cabinet__title::before {
-    content: counter(list1, decimal-leading-zero);
-    font-family: "Roboto Condensed", sans-serif;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1; }
-  .cabinet__title::after {
-    counter-increment: list2;
-    content: "/" counter(list2, decimal-leading-zero);
-    font-family: "Roboto Condensed", sans-serif;
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 1;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2; }
+
+.cabinet__title::before {
+  content: counter(list1, decimal-leading-zero);
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1;
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1; }
+
+.cabinet__title::after {
+  counter-increment: list2;
+  content: "/" counter(list2, decimal-leading-zero);
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1;
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2; }
 
 .cabinet__page:nth-child(even) .cabinet__title {
   left: auto;
@@ -937,8 +975,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .cabinet__title-inner {
   width: 100%;
   -webkit-box-ordinal-group: 4;
-      -ms-flex-order: 3;
-          order: 3;
+  -ms-flex-order: 3;
+  order: 3;
   font-size: 32px;
   font-weight: 300;
   letter-spacing: 2px;
@@ -951,45 +989,48 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .cabinet__images .cabinet__image {
   position: absolute;
   width: 100%; }
-  .cabinet__images .cabinet__image:first-child {
-    bottom: 0;
-    left: -35px; }
-  .cabinet__images .cabinet__image:nth-child(2) {
-    bottom: 15px;
-    left: -20px; }
-  .cabinet__images .cabinet__image:last-child {
-    position: relative;
-    z-index: 3; }
+
+.cabinet__images .cabinet__image:first-child {
+  bottom: 0;
+  left: -35px; }
+
+.cabinet__images .cabinet__image:nth-child(2) {
+  bottom: 15px;
+  left: -20px; }
+
+.cabinet__images .cabinet__image:last-child {
+  position: relative;
+  z-index: 3; }
 
 .colors {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin: 0 -20px; }
 
 .colors__item {
   width: 156px;
   height: 165px;
   background: url(../img/colors-item-blue.png) no-repeat;
-  color: #fff;
+  color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 32px;
   letter-spacing: 2px; }
 
@@ -1019,8 +1060,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
   font-family: "Roboto Condensed", sans-serif;
   padding-top: 25px; }
 
@@ -1028,8 +1069,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   font-size: 22px;
   line-height: 1;
   margin-bottom: 24px; }
-  .font-sizes__item:last-child {
-    margin-bottom: 0; }
+
+.font-sizes__item:last-child {
+  margin-bottom: 0; }
 
 .font-sizes__title {
   font-size: 22px;
@@ -1040,8 +1082,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .font-sizes__item {
   margin-right: 5px; }
-  .font-sizes__item:last-child {
-    margin-right: 0; }
+
+.font-sizes__item:last-child {
+  margin-right: 0; }
 
 .font-sizes__item--14 {
   font-size: 14px; }
@@ -1063,22 +1106,24 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 16px;
   line-height: 1;
   margin-bottom: 24px; }
-  .fonts__item:last-child {
-    margin-bottom: 0; }
+
+.fonts__item:last-child {
+  margin-bottom: 0; }
 
 .fonts__item--bold {
   font-weight: 700; }
 
 .fonts__item--light {
   font-family: "AcuminProExtraCondensed", sans-serif; }
-  .fonts__item--light .fonts__sample {
-    letter-spacing: 0.05px; }
+
+.fonts__item--light .fonts__sample {
+  letter-spacing: 0.05px; }
 
 .fonts__name {
   margin-right: 20px; }
@@ -1114,10 +1159,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   line-height: 1.25;
   font-weight: 300;
   margin-bottom: 35px; }
-  .footer__text > *:first-child {
-    margin-top: 0; }
-  .footer__text > *:last-child {
-    margin-bottom: 0; }
+
+.footer__text > *:first-child {
+  margin-top: 0; }
+
+.footer__text > *:last-child {
+  margin-bottom: 0; }
 
 .footer__paragraph {
   margin: 15px 0; }
@@ -1136,7 +1183,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   width: 213px;
   height: 231px;
   background: url(../img/hexagon.png) no-repeat;
-  color: #fff;
+  color: #ffffff;
   font-size: 24px;
   font-weight: 300;
   padding: 72px 58px;
@@ -1180,7 +1227,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   line-height: 1.2;
   text-transform: uppercase;
   font-weight: 300;
-  text-shadow: 0px 0px 60px #52d387;
+  text-shadow: 0 0 60px #52d387;
   letter-spacing: 6.3px;
   position: relative;
   z-index: 1;
@@ -1197,7 +1244,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   border: 2px solid transparent;
   margin: 0 auto;
   -ms-flex-negative: 0;
-      flex-shrink: 0; }
+  flex-shrink: 0; }
 
 .logotypes-versions__image {
   margin-bottom: 25px; }
@@ -1211,12 +1258,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   padding-top: 6px;
   border-image-source: linear-gradient(-135deg, #52d387, #37c1ea);
   border-image-slice: 2; }
-  .logotypes-versions__item--final .logotypes-versions__image {
-    margin-bottom: 20px; }
+
+.logotypes-versions__item--final .logotypes-versions__image {
+  margin-bottom: 20px; }
 
 .promo {
   background: #071525 url(../img/bg-promo.jpg) no-repeat center bottom;
-  color: #fff;
+  color: #ffffff;
   overflow: hidden; }
 
 .promo .container {
@@ -1226,7 +1274,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .site-pages {
   background: url(../img/bg-fonts-3.png) no-repeat center 500px;
   background-color: #071525;
-  color: #fff;
+  color: #ffffff;
   padding-top: 55px;
   overflow: hidden; }
 
@@ -1243,16 +1291,17 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   font-weight: 300;
   letter-spacing: 4px;
   margin-bottom: 10px; }
-  .site-pages__title:before {
-    counter-increment: list1;
-    content: counter(list1, decimal-leading-zero);
-    display: block;
-    font-family: "Roboto Condensed", sans-serif;
-    font-size: 70px;
-    font-weight: 700;
-    line-height: 1;
-    letter-spacing: 0;
-    margin-bottom: -7px; }
+
+.site-pages__title::before {
+  counter-increment: list1;
+  content: counter(list1, decimal-leading-zero);
+  display: block;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0;
+  margin-bottom: -7px; }
 
 .visually-hidden {
   border: 0;
@@ -1275,15 +1324,15 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   position: relative;
   z-index: 9;
   display: none; }
 
 .web-site__screen {
   -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   position: absolute;
   top: 0; }
 
@@ -1326,47 +1375,50 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .web-site__page {
   margin-bottom: 45px; }
-  .web-site__page:last-child {
-    margin-bottom: 0; }
+
+.web-site__page:last-child {
+  margin-bottom: 0; }
 
 .web-site__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
   -ms-flex-line-pack: start;
-      align-content: flex-start;
+  align-content: flex-start;
   line-height: 1;
   margin-bottom: 10px; }
-  .web-site__title::before {
-    content: counter(list1, decimal-leading-zero);
-    font-family: "Roboto Condensed", sans-serif;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1; }
-  .web-site__title::after {
-    counter-increment: list2;
-    content: "/" counter(list2, decimal-leading-zero);
-    font-family: "Roboto Condensed", sans-serif;
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 1;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2; }
+
+.web-site__title::before {
+  content: counter(list1, decimal-leading-zero);
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1;
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1; }
+
+.web-site__title::after {
+  counter-increment: list2;
+  content: "/" counter(list2, decimal-leading-zero);
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1;
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2; }
 
 .web-site__title-inner {
   width: 100%;
   -webkit-box-ordinal-group: 4;
-      -ms-flex-order: 3;
-          order: 3;
+  -ms-flex-order: 3;
+  order: 3;
   font-size: 32px;
   font-weight: 300;
   letter-spacing: 3px;
@@ -1376,317 +1428,389 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   text-align: center; }
 
 @media (min-width: 530px) {
-    .colors {
-      width: 468px;
-      margin: 0 auto; }
+  .colors {
+    width: 468px;
+    margin: 0 auto; }
+
   .logotypes-versions {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     width: 474px;
     margin: 0 auto; } }
 
 @media (min-width: 768px) {
-    .footer__desc {
-      padding: 0 50px; }
-    .promo__row .hexagon--big {
-      margin: 0;
-      margin-right: 40px; }
-    .logo {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      text-align: left;
-      font-size: 80px; }
-    .logo__image {
-      margin: 0;
-      margin-right: 22px;
-      -ms-flex-negative: 0;
-          flex-shrink: 0;
-      padding-top: 10px; }
+  .footer__desc {
+    padding: 0 50px; }
+
+  .promo__row .hexagon--big {
+    margin: 0;
+    margin-right: 40px; }
+
+  .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+    font-size: 80px; }
+
+  .logo__image {
+    margin: 0;
+    margin-right: 22px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    padding-top: 10px; }
+
   .logo__text {
     width: 210px; }
-    .logotypes-versions__item {
-      margin: 0;
-      margin-right: 20px; }
-      .logotypes-versions__item:nth-child(2n) {
-        margin-right: 0; }
+
+  .logotypes-versions__item {
+    margin: 0;
+    margin-right: 20px; }
+
+  .logotypes-versions__item:nth-child(2n) {
+    margin-right: 0; }
+
   .promo__row {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; } }
+    -ms-flex-pack: center;
+    justify-content: center; } }
 
 @media (min-width: 1000px) {
-    .colors {
-      width: auto;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between; } }
+  .colors {
+    width: auto;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; } }
 
 @media (min-width: 1024px) {
   .logotypes-versions {
     width: auto;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap; } }
+    flex-wrap: nowrap; } }
 
 @media (min-width: 1200px) {
-    .branding .site-pages__title {
-      margin-bottom: 75px; }
-      .branding__list li {
-        padding-left: 86px;
-        padding-right: 78px;
-        margin-bottom: 90px; }
-    .branding__title {
-      padding-left: 23px; }
+  .branding .site-pages__title {
+    margin-bottom: 75px; }
+
+  .branding__list li {
+    padding-left: 86px;
+    padding-right: 78px;
+    margin-bottom: 90px; }
+
+  .branding__title {
+    padding-left: 23px; }
+
   .branding__list .section-colors {
     padding-left: 82px; }
-    .branding__list .section-colors .branding__title {
-      padding-left: 27px;
-      margin-bottom: 11px; }
-    .cabinet {
-      margin-top: -86px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      padding: 0; }
-    .cabinet .site-pages__title {
-      width: 1200px;
-      margin-bottom: 0;
-      -ms-flex-negative: 0;
-          flex-shrink: 0; }
-    .cabinet__pages {
-      padding: 0;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: reverse;
-          -ms-flex-direction: row-reverse;
-              flex-direction: row-reverse;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      -webkit-box-align: start;
-          -ms-flex-align: start;
-              align-items: flex-start;
-      width: 1710px;
-      margin-top: -216px; }
-    .cabinet__page {
-      width: 1145px;
-      -ms-flex-negative: 0;
-          flex-shrink: 0;
-      position: relative;
-      margin-top: -255px;
-      margin-bottom: 0; }
-      .cabinet__page:first-child, .cabinet__page:nth-child(2) {
-        margin-top: 0; }
-      .cabinet__page:nth-child(even) {
-        padding-top: 385px; }
-      .cabinet__page:nth-child(odd) {
-        margin-left: -580px; }
-      .cabinet__page:nth-child(8) {
-        padding-top: 528px; }
-    .cabinet__title {
-      width: 191px;
-      height: 205px;
-      background: url(../img/bg-web-site-title.png) no-repeat;
-      padding: 65px 45px;
-      padding-right: 30px;
-      padding-bottom: 67px;
-      position: absolute;
-      z-index: 10;
-      top: 147px;
-      left: -86px;
-      margin-bottom: 0; }
-      .cabinet__title::before {
-        margin-bottom: 8px; }
-    .cabinet__title-inner {
-      font-size: 24px; }
-    .cabinet__images {
-      padding-bottom: 72px; }
-    .cabinet__images .cabinet__image:first-child {
-      bottom: -30px;
-      left: -60px; }
-    .cabinet__images .cabinet__image:nth-child(2) {
-      bottom: 20px;
-      left: -25px; }
+
+  .branding__list .section-colors .branding__title {
+    padding-left: 27px;
+    margin-bottom: 11px; }
+
+  .cabinet {
+    margin-top: -86px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0; }
+
+  .cabinet .site-pages__title {
+    width: 1200px;
+    margin-bottom: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0; }
+
+  .cabinet__pages {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    width: 1710px;
+    margin-top: -216px; }
+
+  .cabinet__page {
+    width: 1145px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    position: relative;
+    margin-top: -255px;
+    margin-bottom: 0; }
+
+  .cabinet__page:first-child, .cabinet__page:nth-child(2) {
+    margin-top: 0; }
+
+  .cabinet__page:nth-child(even) {
+    padding-top: 385px; }
+
+  .cabinet__page:nth-child(odd) {
+    margin-left: -580px; }
+
+  .cabinet__page:nth-child(8) {
+    padding-top: 528px; }
+
+  .cabinet__title {
+    width: 191px;
+    height: 205px;
+    background: url(../img/bg-web-site-title.png) no-repeat;
+    padding: 65px 45px;
+    padding-right: 30px;
+    padding-bottom: 67px;
+    position: absolute;
+    z-index: 10;
+    top: 147px;
+    left: -86px;
+    margin-bottom: 0; }
+
+  .cabinet__title::before {
+    margin-bottom: 8px; }
+
+  .cabinet__title-inner {
+    font-size: 24px; }
+
+  .cabinet__images {
+    padding-bottom: 72px; }
+
+  .cabinet__images .cabinet__image:first-child {
+    bottom: -30px;
+    left: -60px; }
+
+  .cabinet__images .cabinet__image:nth-child(2) {
+    bottom: 20px;
+    left: -25px; }
+
   .cabinet__page:nth-child(7) .cabinet__images .cabinet__image:first-child {
     bottom: -23px;
     left: -63px; }
+
   .cabinet__page:nth-child(7) .cabinet__images .cabinet__image:nth-child(2) {
     bottom: 28px;
     left: -35px; }
+
   .cabinet__page:nth-child(7) .cabinet__images .cabinet__image:last-child {
     left: -5px;
     bottom: -5px; }
-    .font-sizes {
-      padding-left: 23px;
-      padding-right: 30px; }
-    .font-sizes__item {
-      margin-right: 82px; }
-    .font-sizes__item--18 {
-      margin-right: 75px; }
-    .font-sizes__item--24 {
-      margin-right: 70px; }
-    .font-sizes__item--36 {
-      margin-right: 55px; }
+
+  .font-sizes {
+    padding-left: 23px;
+    padding-right: 30px; }
+
+  .font-sizes__item {
+    margin-right: 82px; }
+
+  .font-sizes__item--18 {
+    margin-right: 75px; }
+
+  .font-sizes__item--24 {
+    margin-right: 70px; }
+
+  .font-sizes__item--36 {
+    margin-right: 55px; }
+
   .fonts {
     padding-left: 23px;
     padding-top: 20px;
     padding-right: 30px; }
-    .fonts__item {
-      font-size: 22px; }
-    .footer {
-      padding-top: 120px;
-      padding-bottom: 178px; }
-    .footer__image {
-      margin-bottom: 450px; }
-    .footer__desc {
-      padding: 0 100px; }
-    .footer__thanks-text {
-      font-size: 100px;
-      margin-bottom: 45px; }
-    .footer__text {
-      font-size: 30px;
-      margin-bottom: 65px; }
-    .footer__paragraph--small {
-      font-size: 20px; }
-    .copyright {
-      font-size: 20px; }
-    .hexagon--big {
-      width: 282px;
-      height: 311px;
-      padding: 102px 72px;
-      font-size: 32px; }
-    .promo__row .hexagon--big {
-      margin-top: 17px; }
-    .hexagon--small.hexagon--right {
-      margin-left: auto;
-      margin-right: 123px; }
-    .hexagon__title {
-      font-size: 62px; }
-    .logo {
-      font-size: 120px;
-      letter-spacing: 10.3px; }
-      .logo::after {
-        content: attr(data-label);
-        position: absolute;
-        z-index: -1;
-        opacity: 0.1;
-        font-size: 263px;
-        line-height: 1.2;
-        top: 50%;
-        -webkit-transform: translateY(-45%);
-                transform: translateY(-45%);
-        left: 215px;
-        letter-spacing: 23px; }
-    .logo__image {
-      padding-top: 23px;
-      margin-bottom: 0;
-      width: auto; }
+
+  .fonts__item {
+    font-size: 22px; }
+
+  .footer {
+    padding-top: 120px;
+    padding-bottom: 178px; }
+
+  .footer__image {
+    margin-bottom: 450px; }
+
+  .footer__desc {
+    padding: 0 100px; }
+
+  .footer__thanks-text {
+    font-size: 100px;
+    margin-bottom: 45px; }
+
+  .footer__text {
+    font-size: 30px;
+    margin-bottom: 65px; }
+
+  .footer__paragraph--small {
+    font-size: 20px; }
+
+  .copyright {
+    font-size: 20px; }
+
+  .hexagon--big {
+    width: 282px;
+    height: 311px;
+    padding: 102px 72px;
+    font-size: 32px; }
+
+  .promo__row .hexagon--big {
+    margin-top: 17px; }
+
+  .hexagon--small.hexagon--right {
+    margin-left: auto;
+    margin-right: 123px; }
+
+  .hexagon__title {
+    font-size: 62px; }
+
+  .logo {
+    font-size: 120px;
+    letter-spacing: 10.3px; }
+
+  .logo::after {
+    content: attr(data-label);
+    position: absolute;
+    z-index: -1;
+    opacity: 0.1;
+    font-size: 263px;
+    line-height: 1.2;
+    top: 50%;
+    -webkit-transform: translateY(-45%);
+    transform: translateY(-45%);
+    left: 215px;
+    letter-spacing: 23px; }
+
+  .logo__image {
+    padding-top: 23px;
+    margin-bottom: 0;
+    width: auto; }
+
   .logo__text {
     width: 330px; }
-    .logotypes-versions__item {
-      margin: 0; }
-    .promo .container {
-      padding-top: 80px; }
+
+  .logotypes-versions__item {
+    margin: 0; }
+
+  .promo .container {
+    padding-top: 80px; }
+
   .promo__row {
     padding: 95px 0 84px;
     -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start; }
-    .site-pages {
-      background: url(../img/bg-footer-bottom.png) no-repeat left calc(50% - 10px) bottom 326px, url(../img/bg-fonts-3.png) no-repeat center 792px;
-      background-color: #071525; }
-    .site-pages__title {
-      font-size: 48px; }
-      .site-pages__title:before {
-        font-size: 100px; }
-    .web-site {
-      margin-top: -47px;
-      padding-top: 325px;
-      padding-bottom: 440px;
-      background: url(../img/bg-web-site.png) no-repeat calc(50% - 20px) top, url(../img/bg-web-site-bottom.png) no-repeat calc(50% - 8px) bottom, -webkit-gradient(linear, left bottom, left top, from(#009361), color-stop(53%, #37c2e8), to(#46fd99)) no-repeat center 812px/100% calc(100% - 1629px);
-      background: url(../img/bg-web-site.png) no-repeat calc(50% - 20px) top, url(../img/bg-web-site-bottom.png) no-repeat calc(50% - 8px) bottom, linear-gradient(to top, #009361 0%, #37c2e8 53%, #46fd99 100%) no-repeat center 812px/100% calc(100% - 1629px); }
-    .web-site .site-pages__title {
-      margin-bottom: 123px; }
-    .web-site__preview {
-      display: block; }
-    .web-site__pages {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      width: 1400px;
-      margin: 0 auto;
-      position: relative;
-      z-index: 10;
-      margin-top: -183px;
-      padding: 0; }
-    .web-site__page {
-      position: relative;
-      margin-right: auto;
-      width: 960px;
-      margin-bottom: 0; }
-    .web-site__title {
-      width: 191px;
-      height: 205px;
-      background: url(../img/bg-web-site-title.png) no-repeat;
-      padding: 70px 45px;
-      padding-right: 30px;
-      padding-bottom: 67px;
-      position: absolute;
-      z-index: 10;
-      top: -103px;
-      right: -95.5px;
-      margin-bottom: 0; }
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+
+  .site-pages {
+    background: url(../img/bg-footer-bottom.png) no-repeat left calc(50% - 10px) bottom 326px, url(../img/bg-fonts-3.png) no-repeat center 792px;
+    background-color: #071525; }
+
+  .site-pages__title {
+    font-size: 48px; }
+
+  .site-pages__title::before {
+    font-size: 100px; }
+
+  .web-site {
+    margin-top: -47px;
+    padding-top: 325px;
+    padding-bottom: 440px;
+    background: url(../img/bg-web-site.png) no-repeat calc(50% - 20px) top, url(../img/bg-web-site-bottom.png) no-repeat calc(50% - 8px) bottom, -webkit-gradient(linear, left bottom, left top, from(#009361), color-stop(53%, #37c2e8), to(#46fd99)) no-repeat center 812px/100% calc(100% - 1629px);
+    background: url(../img/bg-web-site.png) no-repeat calc(50% - 20px) top, url(../img/bg-web-site-bottom.png) no-repeat calc(50% - 8px) bottom, linear-gradient(to top, #009361 0%, #37c2e8 53%, #46fd99 100%) no-repeat center 812px/100% calc(100% - 1629px); }
+
+  .web-site .site-pages__title {
+    margin-bottom: 123px; }
+
+  .web-site__preview {
+    display: block; }
+
+  .web-site__pages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+    margin-top: -183px;
+    padding: 0; }
+
+  .web-site__page {
+    position: relative;
+    margin-right: auto;
+    width: 960px;
+    margin-bottom: 0; }
+
+  .web-site__title {
+    width: 191px;
+    height: 205px;
+    background: url(../img/bg-web-site-title.png) no-repeat;
+    padding: 70px 45px;
+    padding-right: 30px;
+    padding-bottom: 67px;
+    position: absolute;
+    z-index: 10;
+    top: -103px;
+    right: -95.5px;
+    margin-bottom: 0; }
+
   .web-site__page--reverse {
     margin-right: 0;
     margin-left: auto; }
-    .web-site__page--reverse .web-site__title {
-      right: auto;
-      left: -95.5px; }
+
+  .web-site__page--reverse .web-site__title {
+    right: auto;
+    left: -95.5px; }
+
   .web-site__page--about {
     margin-top: -1294px;
     z-index: 2; }
+
   .web-site__page--invest {
     margin-top: -242px;
     z-index: 3; }
+
   .web-site__page--marketing {
     margin-top: -178px;
     z-index: 3; }
+
   .web-site__page--feedback {
     margin-top: -217px;
     z-index: 4; }
+
   .web-site__page--faq {
     margin-top: -126px;
     z-index: 5; }
+
   .web-site__page--news {
     margin-top: -182px;
     z-index: 5; }
+
   .web-site__page--contacts {
     margin-top: -238px;
     z-index: 6; } }

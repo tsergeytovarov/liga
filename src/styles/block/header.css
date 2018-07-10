@@ -15,6 +15,10 @@
 
 .header.fixed {
   position: fixed;
+
+  @media (--desktopMin) {
+    z-index: 10000;
+  }
 }
 
 .header__wrapper {
@@ -127,13 +131,8 @@
 }
 
 .header.link-color-contacts .header__btn {
-  color: var(--color-white);
-  background-color: rgba(255, 255, 255, 0);
-
-  @media (--desktopMin) {
-    color: var(--color-white);
-    background-color: var(--color-blue);
-  }
+  opacity: 0;
+  pointer-events: none;
 }
 
 .header.link-color-projects .header__btn:hover,
@@ -182,7 +181,10 @@
 }
 
 .header.menu-opened {
+  position: fixed;
+  min-height: 100vh;
   background-color: var(--color-blue);
+  overflow: hidden;
 }
 
 .header.menu-opened .header__btn {

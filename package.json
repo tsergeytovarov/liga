@@ -5,8 +5,7 @@
     "build": "gulp build",
     "test": "editorconfig-cli && gulp build && ls dest",
     "images": "gulp images",
-    "webp": "gulp webp",
-    "precommit": "lint-staged"
+    "webp": "gulp webp"
   },
   "dependencies": {
     "@htmlacademy/editorconfig-cli": "^1.0.0",

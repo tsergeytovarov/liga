@@ -179,9 +179,11 @@ window.script = ((document) => {
       if (scrollTop > 1) {
         document.querySelector(`.header`).classList.add(`fixed`);
         document.querySelector(`.nav-toggler`).classList.add(`fixed`);
+        document.querySelector(`.main-nav`).classList.add(`fixed`);
       } else {
         document.querySelector(`.header`).classList.remove(`fixed`);
         document.querySelector(`.nav-toggler`).classList.remove(`fixed`);
+        document.querySelector(`.main-nav`).classList.remove(`fixed`);
       }
     });
     highlightMenu();
@@ -284,6 +286,7 @@ window.script = ((document) => {
       nav.classList.toggle(`opened`);
       navToggler.classList.toggle(`active`);
       document.querySelector(`body`).classList.toggle(`overflow`);
+      scrollLock.toggle(document.querySelector(`body`));
     });
 
     let scrollLink = document.querySelectorAll(`.js-scroll-link`);
@@ -293,6 +296,7 @@ window.script = ((document) => {
         nav.classList.remove(`opened`);
         navToggler.classList.remove(`active`);
         document.querySelector(`body`).classList.remove(`overflow`);
+        scrollLock.show(document.querySelector(`body`));
       });
     }
   }

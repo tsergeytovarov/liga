@@ -71,7 +71,6 @@ gulp.task('scripts', () => {
 
 gulp.task('libs', () => {
   return gulp.src('src/scripts/libs/*.js')
-    .pipe(jsmin())
     .pipe(concat('libs.js'))
     .pipe(gulp.dest('dest/scripts'))
 });
@@ -155,9 +154,9 @@ gulp.task('watch:scripts', () => {
   return gulp.watch('src/scripts/*.js', gulp.series('scripts'));
 });
 
-// gulp.task('watch:libs', () => {
-//   return gulp.watch('src/scripts/libs/*.js', gulp.series('libs'));
-// });
+gulp.task('watch:libs', () => {
+  return gulp.watch('src/scripts/libs/*.js', gulp.series('libs'));
+});
 
 gulp.task('watch:copy', () => {
   return gulp.watch([
@@ -175,7 +174,7 @@ gulp.task('watch', gulp.parallel(
   'watch:html',
   'watch:css',
   'watch:scripts',
-  //'watch:libs',
+  'watch:libs',
   'watch:copy'
 ));
 
@@ -187,7 +186,7 @@ gulp.task('build', gulp.parallel(
   'html',
   'css',
   'scripts',
-  //'libs',
+  'libs',
   'copy'
 ));
 

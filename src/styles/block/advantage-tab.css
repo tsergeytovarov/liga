@@ -17,7 +17,7 @@
   }
 }
 
-.advantage-tab:nth-child(odd) {
+.advantage-tab:nth-child(1) {
   background-image: url("../img/pattern1.png");
 
   @media (--retinadpi), (--retinadppx) {
@@ -25,11 +25,35 @@
   }
 }
 
-.advantage-tab:nth-child(even) {
+.advantage-tab:nth-child(2) {
   background-image: url("../img/pattern2.png");
 
   @media (--retinadpi), (--retinadppx) {
     background-image: url("../img/pattern2@2x.png");
+  }
+}
+
+.advantage-tab:nth-child(3) {
+  background-image: url("../img/pattern3.png");
+
+  @media (--retinadpi), (--retinadppx) {
+    background-image: url("../img/pattern3@2x.png");
+  }
+}
+
+.advantage-tab:nth-child(4) {
+  background-image: url("../img/pattern4.png");
+
+  @media (--retinadpi), (--retinadppx) {
+    background-image: url("../img/pattern4@2x.png");
+  }
+}
+
+.advantage-tab:nth-child(5) {
+  background-image: url("../img/pattern5.png");
+
+  @media (--retinadpi), (--retinadppx) {
+    background-image: url("../img/pattern5@2x.png");
   }
 }
 

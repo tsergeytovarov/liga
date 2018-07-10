@@ -16,6 +16,7 @@
   @media (--desktopMin) {
     opacity: 1;
     pointer-events: initial;
+    z-index: 10001;
   }
 
   @media (--mobileMax) {
@@ -94,6 +95,7 @@
 }
 
 .nav-toggler.active {
+  position: fixed;
   background-color: var(--color-white);
 }
 

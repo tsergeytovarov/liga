@@ -17,8 +17,10 @@ body {
 
 body.overflow {
   @media (--desktopMin) {
+    max-height: 100vh;
     overflow: hidden;
     background-color: var(--color-blue);
+    pointer-events: none;
   }
 }
 

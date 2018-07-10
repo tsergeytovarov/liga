@@ -1,5 +1,7 @@
 .client-slide {
   display: flex;
+  pointer-events: all;
+  z-index: 1;
 }
 
 .client-slide--shishki .client-slide__image {

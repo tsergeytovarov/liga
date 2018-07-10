@@ -3,8 +3,10 @@
   left: 8px;
   bottom: 18px;
   z-index: 100;
+  box-sizing: border-box;
 
   @media (--desktopMin) {
+    position: absolute;
     top: 75px;
     left: 0;
     right: 0;
@@ -15,6 +17,10 @@
   @media (--mobileMax) {
     top: 55px;
   }
+}
+
+.main-nav.fixed {
+  position: fixed;
 }
 
 .main-nav__wrapper {
@@ -167,11 +173,18 @@
 }
 
 .main-nav.opened {
-  max-height: 100000px;
-  overflow: visible;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+  bottom: 0;
   pointer-events: initial;
+  z-index: 10001;
+  overflow: hidden;
 }
 
 .main-nav.opened .main-nav__wrapper {
   transform: translateX(0);
+  flex-grow: 1;
+  overflow-y: scroll;
 }

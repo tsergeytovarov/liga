@@ -9,6 +9,7 @@
 }
 
 .our-team__title {
+  font-weight: 600;
   font-size: 30px;
   line-height: 33px;
   letter-spacing: -1px;
@@ -79,6 +80,7 @@
 }
 
 .our-team__name {
+  font-weight: 600;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.4px;

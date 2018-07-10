@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tutovo | Поиск</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../css/clarity-icons.min.css">
+  <link rel="stylesheet" href="../../css/clarity-ui.min.css">
+  <link rel="stylesheet" href="../../css/style.min.css">
+  <script src="../../js/svg4everybody.js"></script>
+  <script>svg4everybody();</script>
+</head>
+
+<body class="page">
+<main class="page__main  page__main--form  search">
+  <h1 class="search__title">Расширенный поиск</h1>
+  <section class="search__search-header  search-header">
+    <h2 class="search-header__title">Поиск</h2>
+    <form action="#" class="search-header__form">
+      <a class="search-header__link" href="#">Назад</a>
+      <div class="select  select--city">
+        <svg class="search-header__svg  search-header__svg--pointer" width="10" height="13">
+          <use xlink:href="../../img/sprite.svg#pointer"></use>
+        </svg>
+        <select name="city" id="city">
+          <option value="city">Москва</option>
+        </select>
+      </div>
+      <div class="search-header__wrap">
+        <svg class="search-header__svg  search-header__svg--search" width="13" height="13">
+          <use xlink:href="../../img/sprite.svg#search"></use>
+        </svg>
+        <input class="search-header__key-words" type="text" name="key-words" placeholder="По ключевым словам">
+      </div>
+      <input class="search-header__id" type="number" name="id" placeholder="ID объявления">
+    </form>
+  </section>
+  <section class="search__filter  filter">
+    <h2 class="filter__title">Параметры поиска</h2>
+    <form action="#" class="filter__form">
+      <div class="filter__wrap  filter__wrap--main-search">
+        <label class="filter__label">Тип недвижимости</label>
+        <div class="select  filter__select">
+          <select name="sorting">
+            <option value="default">Квартиры, комнаты</option>
+          </select>
+        </div>
+        <label class="filter__label">Тип сделки</label>
+        <div class="select  filter__select">
+          <select name="sorting">
+            <option value="default">Продам</option>
+          </select>
+        </div>
+        <label class="filter__label">Цена</label>
+        <div class="filter__wrap--price">
+          <input class="filter__price" type="text" placeholder="От">
+          <span class="filter__span">&#8211;</span>
+          <input class="filter__price" type="text" placeholder="До">
+        </div>
+        <input class="filter__input-check" type="checkbox" id="with-photo" checked>
+        <label class="filter__label-check" for="with-photo">Только с фото</label>
+        <button class="filter__btn" type="button">Расширенный поиск</button>
+      </div>
+      <div class="filter__search-footer  search-footer">
+        <button class="search-footer__btn" type="submit">Показать объявления</button>
+        <a class="search-footer__btn  search-footer__btn--map" href="#">
+          <svg class="search-footer__svg" width="10" height="13">
+            <use xlink:href="../../img/sprite.svg#pointer"></use>
+          </svg>
+          Поиск на карте
+        </a>
+      </div>
+    </form>
+  </section>
+</main>
+</body>
+</html>

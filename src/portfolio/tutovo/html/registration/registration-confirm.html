@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tutovo | Главная</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../css/clarity-icons.min.css">
+  <link rel="stylesheet" href="../../css/clarity-ui.min.css">
+  <link rel="stylesheet" href="../../css/style.min.css">
+  <script src="../../js/svg4everybody.js"></script>
+  <script>svg4everybody();</script>
+</head>
+
+<body class="page">
+<main class="page__main  page__main--form  registration">
+  <header class="registration__header  registration-header">
+    <h1 class="registration-header__title">Регистрация. Шаг 2</h1>
+    <button class="registration-header__btn  registration-header__btn--back">
+      <span class="registration-header__btn-title">Назад</span>
+      <svg class="registration-header__svg  registration-header__svg--back" width="8" height="16">
+        <use xlink:href="../../img/sprite.svg#back"></use>
+      </svg>
+    </button>
+    <button class="registration-header__btn  registration-header__btn--close">
+      <span class="registration-header__btn-title">Закрыть</span>
+      <svg class="registration-header__svg  registration-header__svg--close" width="14" height="14">
+        <use xlink:href="../../img/sprite.svg#close"></use>
+      </svg>
+    </button>
+  </header>
+  <div class="registration__wrapper">
+    <p class="registration__description">
+      Подтвердите номер
+      <span class="registration__description-phone">
+          +7 951 123 56 78
+      </span>
+    </p>
+    <p class="registration__note">
+      Код подтверждения будет выслан в бесплатном SMS. Для получения SMS нажмите на кнопку «Получить код»
+    </p>
+  </div>
+  <form class="registration__form  registration__form--getcode" method="post">
+    <p class="registration__input-wrap  registration__input-wrap--phone-confirm  field  field--phone-confirm">
+      <input id="phone" type="tel" class="field__input  field__input--phone-confirm" value="+7 951 123 45 67"
+             tabindex="-1" readonly>
+      <label for="phone" class="field__label  field__label--phone-confirm">
+        Номер телефона
+        <svg class="field__svg  field__svg--question" width="11" height="11">
+          <use xlink:href="../../img/sprite.svg#question"></use>
+        </svg>
+      </label>
+      <button class="field__edit" type="button">
+        <span class="field__edit-title">Редактировать</span>
+        <svg class="field__svg  field__svg--edit" width="13" height="13">
+          <use xlink:href="../../img/sprite.svg#pencil"></use>
+        </svg>
+      </button>
+      <span class="field__svg-wrapper  field__svg-wrapper--confirm">
+          <svg class="field__svg  field__svg--phone-gray" width="16" height="16">
+            <use xlink:href="../../img/sprite.svg#phone"></use>
+          </svg>
+        </span>
+    </p>
+    <button class="registration__btn  registration__btn--getcode" type="submit">
+      <svg class="registration__svg  registration__svg--paper-plane" width="13" height="13">
+        <use xlink:href="../../img/sprite.svg#paper-plane"></use>
+      </svg>
+      Получить код
+    </button>
+  </form>
+  <form class="registration__form  registration__form--confirm" method="post">
+    <p class="registration__input-wrap  registration__input-wrap--code  field  field--code">
+      <input type="text" class="field__input  field__input--code" placeholder="Код подтверждения" required>
+    </p>
+    <button class="registration__btn" type="submit">Регистрация</button>
+  </form>
+</main>
+
+</body>
+</html>

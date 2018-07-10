@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tutovo | Страница объявления - дома/дачи</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../css/clarity-icons.min.css">
+  <link rel="stylesheet" href="../../../css/clarity-ui.min.css">
+  <link rel="stylesheet" href="../../../css/style.min.css">
+  <script src="../../../js/svg4everybody.js"></script>
+  <script>svg4everybody();</script>
+</head>
+
+<body class="page">
+<header class="page__header  page-header">
+  <button class="page-header__toggle">Меню</button>
+  <a href="#" class="page-header__logo">
+    <img src="../../../img/logo.png" alt="лого" class="page-header__img" width="73" height="41">
+  </a>
+  <div class="user">
+    <a href="#" class="user__link  user__link--message">
+      <svg class="user__svg  user__svg--message" width="18" height="18">
+        <use xlink:href="../../../img/sprite.svg#envelope"></use>
+      </svg>
+      <span class="user__message-amount">1</span>
+    </a>
+    <a href="#" class="user__link  user__link--favorites">
+      <svg class="user__svg  user__svg--favorites" width="19" height="16">
+        <use xlink:href="../../../img/sprite.svg#heart"></use>
+      </svg>
+    </a>
+  </div>
+</header>
+
+<main class="page__main  messages">
+  <h1 class="messages__title  messages__title--hidden">
+    Диалог
+  </h1>
+  <div class="messages__button-wrapper  messages__button-wrapper--title">
+    <button
+      class="messages__button  messages__button--title  button  button--transparent  button--noborder  button--nospace  button--small-2"
+      type="button">
+    <span class="button__name">
+      Дмитрий
+    </span>
+      <span class="button__caption">
+      Зем. участок 8 соток
+      <svg class="button__icon  button__icon--down-messages" width="8" height="8">
+      <use xlink:href="../../../img/sprite.svg#arrow"></use>
+    </svg>
+    </span>
+    </button>
+    <button class="messages__button-icon  messages__button-icon--back  button-icon" type="button">
+      <span class="button-icon__title">Назад</span>
+      <svg class="button-icon__icon  button-icon__icon--back" width="16" height="16">
+        <use xlink:href="../../../img/sprite.svg#back"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="messages__button-wrapper">
+    <button class="messages__button  messages__button--spam  button  button--transparent  button--noborder"
+            type="button">
+      <svg class="button__icon  button__icon--spam" width="16" height="16">
+        <use xlink:href="../../../img/sprite.svg#spam"></use>
+      </svg>
+      Пометить как спам
+    </button>
+    <button
+      class="messages__button  messages__button--delete  button  button--transparent  button--noborder  button--red"
+      type="button">
+      <svg class="button__icon  button__icon--del" width="12" height="12">
+        <use xlink:href="../../../img/sprite.svg#trash"></use>
+      </svg>
+      Удалить
+    </button>
+  </div>
+  <ul class="messages__list">
+    <li class="messages__item  messages__item--inner  messages__item--operator">
+      <p class="messages__name-wrapper  messages__name-wrapper--inner  messages__name-wrapper--operator">
+        <picture class="messages__image-wrapper  messages__image-wrapper--inner">
+          <img class="messages__image" src="../../../img/avatar-1.png"
+               srcset="../../../img/avatar-1@2x.png  2x"
+               alt="">
+        </picture>
+        <span class="messages__date  messages__date--inner">
+       Вчера, 08:23
+     </span>
+      </p>
+      <p class="messages__text  messages__text--inner  messages__text--operator">
+        Здравствуйте, заинтерисован!
+      </p>
+    </li>
+    <li class="messages__item  messages__item--inner   messages__item--customer">
+      <p class="messages__name-wrapper  messages__name-wrapper--inner  messages__name-wrapper--customer">
+        <picture class="messages__image-wrapper  messages__image-wrapper--inner">
+          <img class="messages__image" src="../../../img/avatar-2.png"
+               srcset="../../../img/avatar-2@2x.png  2x"
+               alt="">
+        </picture>
+        <span class="messages__date  messages__date--inner">
+       14:56
+     </span>
+      </p>
+      <p class="messages__text  messages__text--inner  messages__text--customer">
+        Добрый день, что вас интерисует?
+      </p>
+    </li>
+  </ul>
+  <form class="messages__form" method="post">
+    <textarea class="messages__form-field" name="messages" placeholder="Введите ваше сообщение..."></textarea>
+    <button class="messages__button-icon  messages__button-icon--sent  button-icon  button-icon--blue" type="submit">
+      <span class="button-icon__title">Задать вопрос</span>
+      <svg class="button-icon__icon  button-icon__icon--sent" width="18" height="18">
+        <use xlink:href="../../../../img/sprite.svg#plane"></use>
+      </svg>
+    </button>
+  </form>
+</main>
+</body>
+</html>
+
+
+

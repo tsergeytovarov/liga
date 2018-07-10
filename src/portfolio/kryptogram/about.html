@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <link href="css/style.min.css" rel="stylesheet">
+  <meta name="robots" content="noindex, nofollow">
+  <title>О нас</title>
+
+</head>
+
+<main class="site-main">
+  <header class="site-header">
+    <div class="container">
+      <a class="site-header__site-logo" href="index.html">
+      <img src="img/logo-original.png" alt="логотип " width="304" height="75">
+      </a>
+      <ul class="navigation">
+        <li><a class="navigation__link" href="main.html">home</a></li>
+        <li><a class="navigation__link" href="#">about</a></li>
+        <li><a class="navigation__link" href="investing.html">investing</a></li>
+        <li><a class="navigation__link navigation__link--center" href="faq.html">faq</a></li>
+        <li><a class="navigation__link" href="news.html">news</a></li>
+        <li><a class="navigation__link" href="contacts">contacts</a></li>
+      </ul>
+      <ul class="navigation navigation--login">
+        <li><a class="navigation__link navigation__link--login" href="registration.html">login</a></li>
+        <li><a class="navigation__link  navigation__link--avatar" href="registration.html">Аватар</a></li>
+      </ul>
+    </div>
+
+  </header>
+
+  <div id="fullpage">
+    <section class="about section" id="section-about1">
+      <div class="container container--custom ">
+
+        <h2 class="about__header anim-block">About</h2>
+        <p class="about__descr anim-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et interdum urna, non egestas elit. Integer scelerisque eros justo. Mauris faucibus facilisis ex nec mollis. Proin nibh mauris, bibendum id elit et, semper consectetur orci. Donec
+          aliquet mi vitae ligula porttitor, ac maximus neque sodales. Sed sed libero magna.</p>
+        <p class="about__descr anim-block">Sed tempor nisl quis aliquam ullamcorper. Donec congue posuere eros sit amet egestas. Pellentesque egestas sagittis libero, in convallis felis iaculis at. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        <p class="about__descr anim-block">Sed vitae est eget elit aliquam commodo eget id lectus. Nam sagittis egestas hendrerit. Ut hendrerit ultricies enim. Vivamus et maximus sapien, eu rhoncus urna. Donec vel ornare odio.</p>
+
+      </div>
+
+    </section>
+
+    <section class="about about--custom section" id="section-about2">
+      <h2 class="visually-hidden">About</h2>
+      <div class="container container--custom ">
+
+
+        <p class="about__descr anim-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et interdum urna, non egestas elit. Integer scelerisque eros justo. Mauris faucibus facilisis ex nec mollis. Proin nibh mauris, bibendum id elit et, semper consectetur orci. Donec
+          aliquet mi vitae ligula porttitor, ac maximus neque sodales. Sed sed libero magna.</p>
+        <p class="about__descr anim-block">Sed tempor nisl quis aliquam ullamcorper. Donec congue posuere eros sit amet egestas. Pellentesque egestas sagittis libero, in convallis felis iaculis at. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        <p class="about__descr anim-block">Sed vitae est eget elit aliquam commodo eget id lectus. Nam sagittis egestas hendrerit. Ut hendrerit ultricies enim. Vivamus et maximus sapien, eu rhoncus urna. Donec vel ornare odio.</p>
+
+
+      </div>
+
+      <footer class="site-footer">
+        <div class="container--footer container--custom">
+
+          <p class="site-footer__copyright">&#169; 2018. Test Hyip. All rights reserved.</p>
+
+          <ul class="site-footer__list">
+            <li class="site-footer__item">
+              <a href="#"><img src="../img/partner_1.png" width="75" height="15" alt="partner-1"></a>
+            </li>
+            <li class="site-footer__item">
+              <a href="#"><img src="../img/partner_2.png" width="115" height="15" alt="partner-2"></a>
+            </li>
+            <li class="site-footer__item">
+              <a href="#"><img src="../img/partner_3.png" width="78" height="15" alt="partner-3"></a>
+            </li>
+            <li class="site-footer__item">
+              <a href="#"><img src="../img/partner_4.png" width="83" height="15" alt="partner-4"></a>
+            </li>
+            <li class="site-footer__item">
+              <a href="#"><img src="../img/partner_5.png" width="47" height="15" alt="partner-5"></a>
+            </li>
+          </ul>
+        </div>
+
+      </footer>
+    </section>
+  </div>
+  <section class="social">
+    <h2 class="visually-hidden">Социальные сети</h2>
+    <ul class="social__list">
+
+      <li class="social__item">
+        <a class="social__link social__link--facebook" href="#">Facebook</a>
+      </li>
+
+      <li class="social__item">
+        <a class="social__link social__link--twiter" href="#">Twiter</a>
+      </li>
+
+      <li class="social__item">
+        <a class="social__link social__link--instagram" href="#">Instagram</a>
+      </li>
+
+      <li class="social__item">
+        <a class="social__link social__link--youtube" href="#">Youtube</a>
+      </li>
+
+      <li class="social__item">
+        <a class="social__link social__link--google" href="#">google</a>
+      </li>
+
+    </ul>
+  </section>
+</main>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.viewportchecker.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+
+    $('#fullpage').fullpage({
+      navigation: true,
+      navigationPosition: 'right',
+      verticalCentered: false,
+      responsiveWidth: 1200,
+      afterLoad: function(anchorLink, index) {
+        $('.anim-block').addClass('hidden').viewportChecker({
+          classToAdd: 'visible animated fadeInDown',
+          offset: 120
+        });
+      }
+    })
+  });
+</script>
+</body>
+
+</html>

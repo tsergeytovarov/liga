@@ -1,0 +1,26 @@
+<svg viewBox="0 0 38 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Group</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-39892 465)">
+<g id="Group">
+<g id="Vector">
+<use xlink:href="#path0_fill" transform="translate(39892 -465)" fill="url(#paint0_linear)"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="translate(39907.2 -465)" fill="url(#paint1_linear)"/>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1.61653e-15 34 -26.4 2.0819e-15 26.7083 -2.98201e-08)">
+<stop offset="0" stop-color="#7C3475"/>
+<stop offset="1" stop-color="#454A5E"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1.3961e-15 22.5 -22.8 1.37773e-15 23.0663 -1.97339e-08)">
+<stop offset="0" stop-color="#7C3475"/>
+<stop offset="1" stop-color="#454A5E"/>
+</linearGradient>
+<path id="path0_fill" d="M 23.8667 31.5L 15.2 31.5L 15.2 27.75C 15.2 27.0596 14.6329 26.5 13.9333 26.5L 10.1333 26.5C 7.80267 26.5 7.6 25.425 7.6 25.25L 7.6 22.75L 8.86667 22.75L 8.86667 20.25L 2.53333 20.25L 2.53333 15C 2.53333 8.09641 8.20436 2.5 15.2 2.5L 15.2 0C 6.80525 0 0 6.7157 0 15L 0 20.25C 0 21.6307 1.13422 22.75 2.53333 22.75L 5.06667 22.75L 5.06667 25.25C 5.06667 26.5 6.13067 29 10.1333 29L 12.6667 29L 12.6667 32.75C 12.6667 33.4404 13.2337 34 13.9333 34L 25.1333 34C 25.8329 34 26.4 33.4404 26.4 32.75L 26.4 25L 23.8667 25L 23.8667 31.5Z"/>
+<path id="path1_fill" d="M 11.4 0C 5.10395 0 0 5.0368 0 11.25C 0 17.4632 5.10395 22.5 11.4 22.5C 17.696 22.5 22.8 17.4632 22.8 11.25C 22.8 5.0368 17.696 0 11.4 0ZM 11.4 20C 6.50323 19.9628 2.56421 16.0152 2.60189 11.1829C 2.63546 6.88477 5.82746 3.24711 10.1333 2.6L 10.1333 11.25C 10.1314 11.5823 10.2636 11.9016 10.5007 12.1375L 16.7073 18.2625C 15.1744 19.3914 13.3127 20.0009 11.4 20ZM 12.6667 10L 12.6667 2.6C 16.5503 3.15719 19.6007 6.1675 20.1653 10L 12.6667 10Z"/>
+</defs>
+</svg>

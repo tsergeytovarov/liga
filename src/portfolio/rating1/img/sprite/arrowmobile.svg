@@ -1,0 +1,19 @@
+<svg width="9" height="17" viewBox="0 0 9 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>arrowmobile</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-12976 -3143)">
+<rect x="12976" y="3143" width="9" height="17" fill="#191919"/>
+<clipPath id="clip-0" clip-rule="evenodd">
+<path d="M 12729 2969L 13774 2969L 13774 3985L 12729 3985L 12729 2969Z" fill="#FFFFFF"/>
+</clipPath>
+<g id="icoKit" clip-path="url(#clip-0)">
+<path d="M 12729 2969L 13774 2969L 13774 3985L 12729 3985L 12729 2969Z" fill="#F5F5F5"/>
+</g>
+<g id="arrowmobile">
+<use xlink:href="#path0_fill" transform="matrix(1 2.44929e-16 -2.44929e-16 1 12976 3143)" fill="#E0E0E0"/>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 1.40882 0.255668C 1.09218 -0.0852226 0.565187 -0.0852226 0.237478 0.255668C -0.0791594 0.585042 -0.0791594 1.13323 0.237478 1.46184L 6.17683 7.6401L 6.94944 8.5L 6.17683 9.35914L 0.237478 15.5259C -0.0791594 15.8668 -0.0791594 16.4157 0.237478 16.7443C 0.565187 17.0852 1.09292 17.0852 1.40882 16.7443L 8.75422 9.10347C 9.08193 8.77409 9.08193 8.22591 8.75422 7.8973L 1.40882 0.255668Z"/>
+</defs>
+</svg>

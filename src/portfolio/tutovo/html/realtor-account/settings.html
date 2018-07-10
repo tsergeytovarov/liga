@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tutovo | Главная</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../css/clarity-icons.min.css">
+  <link rel="stylesheet" href="../../css/clarity-ui.min.css">
+  <link rel="stylesheet" href="../../css/style.min.css">
+  <script src="../../js/svg4everybody.js"></script>
+  <script>svg4everybody();</script>
+</head>
+
+<body class="page">
+<header class="page__header  page-header">
+  <button class="page-header__toggle">Меню</button>
+  <a href="#" class="page-header__logo">
+    <img src="../../img/logo.png" alt="лого" class="page-header__img" width="73" height="41">
+  </a>
+  <div class="user">
+    <a href="#" class="user__link  user__link--message">
+      <svg class="user__svg  user__svg--message" width="18" height="18">
+        <use xlink:href="../../img/sprite.svg#envelope"></use>
+      </svg>
+      <span class="user__message-amount">1</span>
+    </a>
+    <a href="#" class="user__link  user__link--favorites">
+      <svg class="user__svg  user__svg--favorites" width="19" height="16">
+        <use xlink:href="../../img/sprite.svg#heart"></use>
+      </svg>
+    </a>
+  </div>
+</header>
+<main class="page__main  settings  settings--main">
+  <h1 class="settings__title">
+    Настройки аккаунта
+  </h1>
+  <button class="settings__button-icon  settings__button-icon--back  button-icon">
+    <span class="button-icon__title">Назад</span>
+    <svg class="button-icon__icon  button-icon__icon--back  button-icon__icon--blue" width="8" height="16">
+      <use xlink:href="../../img/sprite.svg#back"></use>
+    </svg>
+  </button>
+  <form class="settings__form  settings__form--main" method="post">
+    <div class="settings__info-wrapper  settings__info-wrapper--realtor">
+      <h2 class="settings__title-inside  settings__title-inside--hidden">
+        Настройки контактой информации
+      </h2>
+      <div class="settings__images-wrapper">
+        <picture class="settings__image-wrapper">
+          <img class="settings__image" src="../../img/user.png" srcset="../../img/user@2x.png  2x" alt="">
+        </picture>
+        <button class="settings__button-icon  settings__button-icon--photo  button-icon  button-icon--blue">
+          <span class="button-icon__title">Добавить фото</span>
+          <svg class="button-icon__icon  button-icon__icon--camera" width="13" height="13">
+            <use xlink:href="../../img/sprite.svg#camera-2"></use>
+          </svg>
+        </button>
+      </div>
+      <p class="settings__field-wrapper  settings__field-wrapper--contact-realtor  field">
+        <input id="name" type="text" class="field__input  field__input--promo" name="name">
+        <label for="name" class="field__label">
+          Ваше имя:
+        </label>
+      </p>
+      <p class="settings__field-wrapper  settings__field-wrapper--contact-realtor  field">
+        <input id="email" type="email" class="field__input  field__input--promo" name="email">
+        <label for="email" class="field__label">
+          Почта:
+        </label>
+        <span class="field__note">
+          <svg class="field__svg  field__svg--note" width="10" height="10">
+            <use xlink:href="../../img/sprite.svg#check"></use>
+          </svg>
+          Подтверждена
+        </span>
+      </p>
+      <p
+        class="settings__field-wrapper  settings__field-wrapper--contact-realtor  settings__field-wrapper--phone  field">
+        <input id="tel" type="text" class="field__input  field__input--promo" name="phone">
+        <label for="tel" class="field__label">
+          Телефон:
+        </label>
+      </p>
+      <button class="settings__button  button  button--transparent  button--noborder  button--font-2  button--nospace"
+              type="button">
+        <svg class="button__icon  button__icon--plus  button__icon--blue" width="16" height="16">
+          <use xlink:href="../../img/sprite.svg#plus"></use>
+        </svg>
+        Добавить номер телефона
+      </button>
+    </div>
+    <div class="settings__password-wrapper">
+      <h2 class="settings__title-inside">
+        Смена пароля
+      </h2>
+      <div class="settings__fields-wrapper">
+        <p class="settings__field-wrapper  settings__field-wrapper--password  field">
+          <input id="password-actual" type="password" class="field__input  field__input--promo  field__input--valid">
+          <label for="name" class="field__label">
+            Текущий пароль:
+          </label>
+        </p>
+        <p class="settings__field-wrapper  settings__field-wrapper--password  field">
+          <input id="password-new" type="password" class="field__input  field__input--promo  field__input--valid">
+          <label for="name" class="field__label">
+            Новый пароль:
+          </label>
+        </p>
+        <p class="settings__field-wrapper  settings__field-wrapper--password  field">
+          <input id="password-repeat" type="password" class="field__input  field__input--promo  field__input--invalid">
+          <label for="name" class="field__label">
+            Повторите пароль:
+          </label>
+        </p>
+      </div>
+    </div>
+    <div class="settings__common-wrapper">
+      <h2 class="settings__title-inside  settings__title-inside--hidden">
+        Настройка платежной информации
+      </h2>
+      <p class="settings__promo-wrapper">
+        Объявления
+        <span class="settings__promo">
+          396 (из них 131 активные)
+        </span>
+      </p>
+      <a
+        class="settings__link  settings__link--promo  button  button--transparent  button--noborder  button--left  button--nospace  button--small-2"
+        href="#">
+        Перейти в списку объявлений
+      </a>
+      <p class="settings__balance-wrapper">
+        Баланс
+        <span class="settings__balance">
+          1918,30 руб.
+        </span>
+      </p>
+      <a
+        class="settings__link  settings__link--balance  button  button--transparent  button--noborder  button--left  button--nospace  button--small-2"
+        href="#">
+        Управление балансом
+      </a>
+      <p class="settings__field-wrapper  settings__field-wrapper  field  field--row">
+        <input id="auto-update" class="field__input  field__input--checkbox" type="checkbox" name="auto-update"
+               checked>
+        <label for="auto-update" class="field__label  field__label--checkbox  field__label--checkbox-type-4">
+          Автообновление
+        </label>
+      </p>
+      <a
+        class="settings__link  settings__link--set  button  button--transparent  button--noborder  button--left  button--nospace  button--small-2"
+        href="#">
+        Настроить
+      </a>
+      <div class="settings__card-wrapper">
+        <p class="settings__mark  settings__mark--card">
+          Привязанные карты
+        </p>
+        <ul class="settings__list">
+          <li class="settings__item  settings__item--card">
+            <span class="settings__icon-wrapper">
+              <svg class="settings__icon  settings__icon--visa" width="40" height="15">
+                <use xlink:href="../../img/sprite.svg#visa"></use>
+              </svg>
+            </span>
+            4276 **** **** 7757
+            <button class="settings__button-icon  settings__button-icon--delete  button-icon" type="button">
+              <span class="button-icon__title">Удалить</span>
+              <svg class="button-icon__icon  button-icon__icon--del" width="13" height="13">
+                <use xlink:href="../../img/sprite.svg#del"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="settings__item  settings__item--card">
+            <span class="settings__icon-wrapper">
+              <svg class="settings__icon  settings__icon--master" width="35" height="20">
+              <use xlink:href="../../img/sprite.svg#master"></use>
+            </svg>
+            </span>
+            4276 **** **** 6811
+            <button class="settings__button-icon  settings__button-icon--delete  button-icon" type="button">
+              <span class="button-icon__title">Удалить</span>
+              <svg class="button-icon__icon  button-icon__icon--del" width="13" height="13">
+                <use xlink:href="../../img/sprite.svg#del"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="settings__item  settings__item--card">
+            <span class="settings__icon-wrapper">
+              <svg class="settings__icon  settings__icon--visa" width="40" height="15">
+                <use xlink:href="../../img/sprite.svg#visa"></use>
+              </svg>
+            </span>
+            4276 **** **** 7757
+            <button class="settings__button-icon  settings__button-icon--delete  button-icon" type="button">
+              <span class="button-icon__title">Удалить</span>
+              <svg class="button-icon__icon  button-icon__icon--del" width="13" height="13">
+                <use xlink:href="../../img/sprite.svg#del"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="settings__dispatch-wrapper">
+      <h2 class="settings__title-inside  settings__title-inside--dispatch">
+        Присылать на электронную почту
+      </h2>
+      <p class="settings__description">
+        Отметьте сообщения, которые вы хотите получать по электронной почте
+      </p>
+      <p class="settings__field-wrapper  settings__field-wrapper--checkbox  settings__field-wrapper  field  field--row">
+        <input id="news" class="field__input  field__input--checkbox" type="checkbox" name="news"
+               checked>
+        <label for="news"
+               class="field__label  field__label--checkbox  field__label--checkbox-2  field__label--checkbox-type-5">
+          Новости сайта
+        </label>
+      </p>
+      <p class="settings__field-wrapper  settings__field-wrapper--checkbox  settings__field-wrapper  field  field--row">
+        <input id="notifications" class="field__input  field__input--checkbox" type="checkbox" name="notifications"
+               checked>
+        <label for="notifications"
+               class="field__label  field__label--checkbox  field__label--checkbox-2  field__label--checkbox-type-5">
+          Уведомления
+        </label>
+      </p>
+      <p class="settings__field-wrapper  settings__field-wrapper--checkbox  settings__field-wrapper  field  field--row">
+        <input id="reminders" class="field__input  field__input--checkbox" type="checkbox" name="reminders">
+        <label for="reminders"
+               class="field__label  field__label--checkbox  field__label--checkbox-2  field__label--checkbox-type-5">
+          Напоминания
+        </label>
+      </p>
+    </div>
+
+    <div class="settings__button-wrapper">
+      <button class="settings__button  settings__button--save  button  button--fill  button--radius-2  button--medium-2"
+              type="submit">
+        Сохранить
+      </button>
+    </div>
+  </form>
+</main>
+<footer class="page__footer  page-footer  page-footer--other">
+  <span class="page-footer__copyright">© Tutovo</span>
+  <span class="page-footer__year  page-footer__year--other">2017</span>
+</footer>
+</body>
+</html>
+

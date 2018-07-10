@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tutovo | Главная</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../css/clarity-icons.min.css">
+  <link rel="stylesheet" href="../../../css/clarity-ui.min.css">
+  <link rel="stylesheet" href="../../../css/style.min.css">
+  <script src="../../../js/svg4everybody.js"></script>
+  <script>svg4everybody();</script>
+</head>
+
+<body class="page">
+<header class="page__header  page-header">
+  <button class="page-header__toggle">Меню</button>
+  <a href="#" class="page-header__logo">
+    <img src="../../../img/logo.png" alt="лого" class="page-header__img" width="73" height="41">
+  </a>
+  <div class="user">
+    <a href="#" class="user__link  user__link--message">
+      <svg class="user__svg  user__svg--message" width="18" height="18">
+        <use xlink:href="../../../img/sprite.svg#envelope"></use>
+      </svg>
+      <span class="user__message-amount">1</span>
+    </a>
+    <a href="#" class="user__link  user__link--favorites">
+      <svg class="user__svg  user__svg--favorites" width="19" height="16">
+        <use xlink:href="../../../img/sprite.svg#heart"></use>
+      </svg>
+    </a>
+  </div>
+</header>
+<main class="page__main  settings  settings--main">
+  <h1 class="settings__title">
+    Настройки аккаунта
+  </h1>
+  <button class="settings__button-icon  settings__button-icon--back  button-icon">
+    <span class="button-icon__title">Назад</span>
+    <svg class="button-icon__icon  button-icon__icon--back  button-icon__icon--blue" width="8" height="16">
+      <use xlink:href="../../../img/sprite.svg#back"></use>
+    </svg>
+  </button>
+  <form class="settings__form  settings__form--main" method="post">
+    <div class="settings__info-wrapper">
+      <h2 class="settings__title-inside  settings__title-inside--hidden">
+        Настройки контактой информации
+      </h2>
+      <div class="settings__images-wrapper">
+        <picture class="settings__image-wrapper">
+          <img class="settings__image" src="../../../img/user.png" srcset="../../../img/user@2x.png  2x" alt="">
+        </picture>
+        <button class="settings__button-icon  settings__button-icon--photo  button-icon  button-icon--blue">
+          <span class="button-icon__title">Добавить фото</span>
+          <svg class="button-icon__icon  button-icon__icon--camera" width="13" height="13">
+            <use xlink:href="../../../img/sprite.svg#camera-2"></use>
+          </svg>
+        </button>
+      </div>
+      <p class="settings__field-wrapper  field">
+        <input id="name" type="text" class="field__input  field__input--promo" name="name">
+        <label for="name" class="field__label">
+          Ваше имя:
+        </label>
+      </p>
+      <p class="settings__field-wrapper  settings__field-wrapper--email  field  field--row">
+        <input id="email" type="email" class="field__input  field__input--row" name="email" value="noname@yandex.ru"
+               readonly>
+        <label for="email" class="field__label  field__label--row">
+          Почта:
+        </label>
+        <button class="field__edit  field__edit--row  button-icon  button-icon--edit" type="button">
+          <span class="button-icon__title">Редактировать</span>
+          <svg class="button-icon__icon  button-icon__icon--edit" width="13" height="13">
+            <use xlink:href="../../../img/sprite.svg#pencil"></use>
+          </svg>
+        </button>
+      </p>
+      <button
+        class="settings__button  button  button--transparent  button--noborder  button--font-2  button--nospace  button--small-2"
+        type="button">
+        Сменить почту
+      </button>
+      <div class="settings__note-wrapper">
+        Подтвердите вашу почту
+        <p class="settings__note">
+          Письмо отправлено на ваш E-mail. Перейдите по ссылке для подтверждения почты
+        </p>
+      </div>
+      <div class="settings__phone-wrapper">
+        <p class="settings__mark">
+          Телефон:
+        </p>
+        <ul class="settings__list">
+          <li class="settings__item">
+            +7 (999) 123 45 67
+            <button class="settings__button-icon  settings__button-icon--delete  button-icon" type="button">
+              <span class="button-icon__title">Удалить</span>
+              <svg class="button-icon__icon  button-icon__icon--del" width="13" height="13">
+                <use xlink:href="../../../img/sprite.svg#del"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="settings__item">
+            +7 (999) 123 45 67
+            <button class="settings__button-icon  settings__button-icon--delete  button-icon" type="button">
+              <span class="button-icon__title">Удалить</span>
+              <svg class="button-icon__icon  button-icon__icon--del" width="13" height="13">
+                <use xlink:href="../../../img/sprite.svg#del"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+        <button class="settings__button  button  button--transparent  button--noborder  button--font-2  button--nospace"
+                type="button">
+          <svg class="button__icon  button__icon--plus  button__icon--blue" width="16" height="16">
+            <use xlink:href="../../../img/sprite.svg#plus"></use>
+          </svg>
+          Добавить номер телефона
+        </button>
+      </div>
+    </div>
+    <div class="settings__password-wrapper">
+      <h2 class="settings__title-inside">
+        Смена пароля
+      </h2>
+      <div class="settings__fields-wrapper">
+        <p class="settings__field-wrapper  settings__field-wrapper--password  field">
+          <input id="password-actual" type="password" class="field__input  field__input--promo  field__input--valid">
+          <label for="password-actual" class="field__label">
+            Текущий пароль:
+          </label>
+        </p>
+        <p class="settings__field-wrapper  settings__field-wrapper--password  field">
+          <input id="password-new" type="password" class="field__input  field__input--promo  field__input--valid">
+          <label for="password-new" class="field__label">
+            Новый пароль:
+          </label>
+        </p>
+        <p class="settings__field-wrapper  settings__field-wrapper--password  field">
+          <input id="password-repeat" type="password" class="field__input  field__input--promo  field__input--invalid">
+          <label for="password-repeat" class="field__label">
+            Повторите пароль:
+          </label>
+        </p>
+      </div>
+    </div>
+    <div class="settings__button-wrapper">
+      <button class="settings__button  settings__button--save  button  button--fill  button--radius-2  button--medium-2"
+              type="submit">
+        Сохранить
+      </button>
+    </div>
+  </form>
+</main>
+<footer class="page__footer  page-footer  page-footer--other">
+  <span class="page-footer__copyright">© Tutovo</span>
+  <span class="page-footer__year  page-footer__year--other">2017</span>
+</footer>
+</body>
+</html>
+

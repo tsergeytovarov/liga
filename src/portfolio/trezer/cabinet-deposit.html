@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrazerBit</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+  <div class="page-container">
+    <header class="page-header">
+      <div class="page-header__row">
+        <a class="logo" href="/">
+          <img class="logo__image" src="img/logo.png" width="232" height="57" alt="TrazerBit">
+        </a>
+        <ul class="page-header__lang-list">
+          <li class="page-header__lang-item">
+            <a class="page-header__lang-link" href="#">En</a>
+          </li>
+          <li class="page-header__lang-item">
+            <a class="page-header__lang-link" href="#">Vt</a>
+          </li>
+          <li class="page-header__lang-item">
+            <a class="page-header__lang-link" href="#">De</a>
+          </li>
+          <li class="page-header__lang-item">
+            <a class="page-header__lang-link" href="#">Ru</a>
+          </li>
+        </ul>
+        <p class="page-header__support">
+          Тех поддержка:
+          <a class="page-header__support-link" href="mailto:support@trezerbit.com">support@trezerbit.com</a>
+        </p>
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a class="social-list__link  social-list__link--facebook" href="#">Facebook</a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link  social-list__link--twitter" href="#">Twitter</a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link  social-list__link--telegram" href="#">Telegram</a>
+          </li>
+        </ul>
+        <a class="button  button--login" href="login.html">Вход / Регистрация</a>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="about.html">О нас</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="investors.html">Инвесторам</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="partners.html">Партнёрам</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="faq.html">FAQ</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="support.html">Поддержка</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="reviews.html">Отзывы</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main main--cabinet">
+      <aside class="sidebar">
+        <ul class="sidebar__menu">
+          <li class="sidebar__menu-item">
+            <a class="sidebar__menu-link  sidebar__menu-link--deposit" href="cabinet-deposit.html">Deposit</a>
+          </li>
+          <li class="sidebar__menu-item">
+            <a class="sidebar__menu-link  sidebar__menu-link--withdraw" href="cabinet-withdraw.html">Withdraw</a>
+          </li>
+          <li class="sidebar__menu-item">
+            <a class="sidebar__menu-link  sidebar__menu-link--transactions" href="cabinet-transactions.html">Transactions</a>
+          </li>
+          <li class="sidebar__menu-item">
+            <a class="sidebar__menu-link  sidebar__menu-link--payment" href="cabinet-payment.html">Payment details</a>
+          </li>
+          <li class="sidebar__menu-item">
+            <a class="sidebar__menu-link  sidebar__menu-link--affiliates" href="cabinet-affiliates.html">My affiliates</a>
+          </li>
+          <li class="sidebar__menu-item">
+            <a class="sidebar__menu-link  sidebar__menu-link--setting" href="cabinet-setting.html">Setting</a>
+          </li>
+        </ul>
+      </aside>
+      <section class="cabinet">
+        <h1 class="cabinet__title">Создание депозита</h1>
+        <div class="cabinet__table-container">
+          <form class="cabinet__table-wrapper" action="#" method="post">
+            <table class="cabinet__table">
+              <thead class="cabinet__table-head">
+                <tr class="cabinet__table-row">
+                  <th class="cabinet__table-cell-head  cabinet__table-cell-head--left">Сумма</th>
+                  <th class="cabinet__table-cell-head">К оплате</th>
+                  <th class="cabinet__table-cell-head">Комиссия</th>
+                  <th class="cabinet__table-cell-head">Ваш балланс</th>
+                </tr>
+              </thead>
+              <tbody class="cabinet__table-body">
+                <tr class="cabinet__table-row  cabinet__table-row--form">
+                  <td class="cabinet__table-cell">
+                    <input class="cabinet__input" type="text" name="summ" placeholder="Введите сумму">
+                  </td>
+                  <td class="cabinet__table-cell">
+                    <output class="cabinet__output" name="toPay">305$</output>
+                  </td>
+                  <td class="cabinet__table-cell">
+                    <output class="cabinet__output" name="comission">5$</output>
+                  </td>
+                  <td class="cabinet__table-cell">
+                    <output class="cabinet__output" name="balance">300$</output>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <button class="button  button--cabinet" type="submit">Пополнить</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__info">
+        <p class="page-footer__copyright">
+          © 2017. trezer bit limited. все права защищены.
+        </p>
+        <ul class="page-footer__payments">
+          <li class="page-footer__payments-item">
+            <a class="page-footer__payments-link  page-footer__payments-link--1" href="#">1</a>
+          </li>
+          <li class="page-footer__payments-item">
+            <a class="page-footer__payments-link  page-footer__payments-link--2" href="#">2</a>
+          </li>
+          <li class="page-footer__payments-item">
+            <a class="page-footer__payments-link  page-footer__payments-link--3" href="#">3</a>
+          </li>
+          <li class="page-footer__payments-item">
+            <a class="page-footer__payments-link  page-footer__payments-link--4" href="#">4</a>
+          </li>
+          <li class="page-footer__payments-item">
+            <a class="page-footer__payments-link  page-footer__payments-link--5" href="#">5</a>
+          </li>
+          <li class="page-footer__payments-item">
+            <a class="page-footer__payments-link  page-footer__payments-link--6" href="#">6</a>
+          </li>
+          <li class="page-footer__payments-item">
+            <a class="page-footer__payments-link  page-footer__payments-link--7" href="#">7</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/select2.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

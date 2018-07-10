@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <link href="css/style.min.css" rel="stylesheet">
+    <meta name="robots" content="noindex, nofollow">
+    <title>account - deposit</title>
+  </head>
+
+  <body class="cabinet-page">
+    <svg style="display:none" xmlns="http://www.w3.org/2000/svg"><symbol id="icon-balance" viewBox="0 0 26.906 24"><path data-name="icon-balance" d="M26.902 7.633a.5.5 0 0 0 .006-.054.47.47 0 0 0 0-.065.525.525 0 0 0-.009-.055.5.5 0 0 0-.02-.062c0-.01 0-.022-.01-.032s-.01-.013-.014-.021 0-.015-.01-.023L22.359.209a.439.439 0 0 0-.072-.088.46.46 0 0 0-.134-.082c-.006 0-.01-.008-.017-.01h-.015a.445.445 0 0 0-.141-.025H4.931a.433.433 0 0 0-.139.025.059.059 0 0 0-.014 0c-.007 0-.011.008-.017.01a.436.436 0 0 0-.129.078h-.008a.474.474 0 0 0-.073.088L.065 7.318c0 .007-.006.015-.01.023s-.01.013-.014.021a.3.3 0 0 0-.01.032.448.448 0 0 0-.02.062.485.485 0 0 0-.009.055.354.354 0 0 0 0 .065.5.5 0 0 0 .006.054.416.416 0 0 0 .017.063.328.328 0 0 0 .02.052.244.244 0 0 0 .01.024c.007.013.018.023.026.035s.01.02.017.029l13 16a.432.432 0 0 0 .133.1.281.281 0 0 0 .039.019.445.445 0 0 0 .172.039.463.463 0 0 0 .154-.027c.008 0 .013-.009.02-.012a.39.39 0 0 0 .062-.037.442.442 0 0 0 .092-.073c.006-.006.016-.01.022-.017l13.009-16c.007-.009.01-.02.017-.029a.288.288 0 0 0 .026-.035.244.244 0 0 0 .01-.024.465.465 0 0 0 .02-.052.323.323 0 0 0 .028-.052zM14.402.889h6.929l-2.18 5.8zm3.946 6.224H8.571l4.888-5.963zM7.73 6.727L5.578.889h6.939zM18.658 8l-5.282 14.049L8.195 8h10.463zm3.422-6.556l3.574 5.667h-5.7zM4.825 1.45l2.087 5.661H1.255zM7.24 8l4.862 13.186L1.383 8H7.24zm7.29 13.527L19.615 8h5.916z"/></symbol><symbol id="icon-deposit" viewBox="0 0 25.906 25"><path data-name="icon-deposit" d="M19.64-.009c3.515 0 6.269 1.516 6.269 3.448v18.109c0 1.937-2.754 3.448-6.269 3.448s-6.269-1.516-6.269-3.448V3.439c0-1.932 2.754-3.448 6.269-3.448zm-5.433 21.563c0 1.247 2.184 2.589 5.433 2.589s5.433-1.342 5.433-2.589v-.848a9.481 9.481 0 0 1-10.866 0v.848zm0-2.59c0 1.248 2.184 2.59 5.433 2.59s5.433-1.342 5.433-2.59v-.847a9.486 9.486 0 0 1-10.866 0v.852zm0-2.589c0 1.247 2.184 2.589 5.433 2.589s5.433-1.336 5.433-2.589v-.847a9.486 9.486 0 0 1-10.866 0v.847zm0-2.584c0 1.247 2.184 2.589 5.433 2.589s5.433-1.342 5.433-2.589v-.847a9.486 9.486 0 0 1-10.866 0v.847zm0-2.59c0 1.248 2.184 2.59 5.433 2.59s5.433-1.337 5.433-2.59v-.847a9.481 9.481 0 0 1-10.866 0v.847zm0-2.584c0 1.248 2.184 2.59 5.433 2.59s5.433-1.342 5.433-2.59v-.848a9.481 9.481 0 0 1-10.866 0v.847zm0-2.589c0 1.247 2.184 2.589 5.433 2.589s5.433-1.342 5.433-2.589v-.847a9.486 9.486 0 0 1-10.866 0v.847zm5.433 0c3.249 0 5.433-1.337 5.433-2.589S22.889.849 19.64.849s-5.433 1.337-5.433 2.59 2.184 2.589 5.433 2.589zm-13.375 4.31c3.515 0 6.269 1.516 6.269 3.448v7.762c0 1.937-2.754 3.448-6.269 3.448s-6.269-1.511-6.269-3.442v-7.763c0-1.937 2.755-3.453 6.269-3.453zM.831 21.554c0 1.247 2.183 2.589 5.432 2.589s5.433-1.337 5.433-2.589v-.848a9.48 9.48 0 0 1-10.865 0v.848zm0-2.59c0 1.248 2.183 2.59 5.432 2.59s5.433-1.337 5.433-2.59v-.847a9.484 9.484 0 0 1-10.865 0v.852zm0-2.589c0 1.247 2.183 2.589 5.432 2.589s5.433-1.336 5.433-2.589v-.847a9.484 9.484 0 0 1-10.865 0v.847zm5.432 0c3.249 0 5.433-1.337 5.433-2.589s-2.184-2.59-5.433-2.59-5.432 1.337-5.432 2.59 2.185 2.589 5.434 2.589z"/></symbol><symbol id="icon-operations" viewBox="0 0 20.937 26"><path data-name="icon-operations" d="M20.289.003H.667a.616.616 0 0 0-.654.65v24.7a.616.616 0 0 0 .654.65h19.622a.616.616 0 0 0 .654-.65V.653a.616.616 0 0 0-.654-.65zm-.654 1.3v3.9H1.321v-1.3H9.17v-1.3H1.321v-1.3h18.314zm-18.314 23.4v-18.2h18.314v18.2H1.321zm3.271-16.9h1.962v1.3H4.592v-1.3zm3.27 0h1.962v1.3H7.862v-1.3zm3.27 0h1.963v1.3h-1.963v-1.3zm3.271 0h1.959v1.3H14.4v-1.3zm-11.12 3.251H5.9v1.3H3.283v-1.3zm3.925 0h2.616v1.3H7.208v-1.3zm3.924 0h2.617v1.3h-2.617v-1.3zm3.925 0h2.616v1.3h-2.611v-1.3zm-11.774 2.6H5.9v1.3H3.283v-1.3zm3.925 0h2.616v1.3H7.208v-1.3zm3.924 0h2.617v1.3h-2.617v-1.3zm3.925 0h2.616v1.3h-2.611v-1.3zm-11.774 2.6H5.9v1.3H3.283v-1.3zm3.925 0h2.616v1.3H7.208v-1.3zm3.924 0h2.617v1.3h-2.617v-1.3zm3.925 0h2.616v1.3h-2.611v-1.3zm-11.774 2.6H5.9v1.3H3.283v-1.3zm3.925 0h2.616v1.3H7.208v-1.3zm3.924 0h2.617v1.3h-2.617v-1.3zm3.925 0h2.616v1.3h-2.611v-1.3zm-11.774 2.6H5.9v1.3H3.283v-1.3zm3.925 0h2.616v1.3H7.208v-1.3zm3.924 0h2.617v1.3h-2.617v-1.3zm3.925 0h2.616v1.3h-2.611v-1.3zM10.478 2.602h1.963v1.3h-1.963v-1.3z"/></symbol><symbol id="icon-refferal" viewBox="0 0 25.906 25"><path data-name="icon-refferal" d="M5.931 12.761a3.724 3.724 0 1 0 3.779 3.724 3.729 3.729 0 0 0-3.779-3.724zm0 6.384a2.66 2.66 0 1 1 2.7-2.66 2.654 2.654 0 0 1-2.7 2.66zm0 0a5.879 5.879 0 0 0-5.938 5.852h1.08a4.859 4.859 0 0 1 9.717 0h1.08a5.879 5.879 0 0 0-5.939-5.852zm14.037-6.384a3.724 3.724 0 1 0 3.779 3.724 3.728 3.728 0 0 0-3.776-3.724zm0 6.384a2.66 2.66 0 1 1 2.7-2.66 2.655 2.655 0 0 1-2.697 2.66zm0 0a5.879 5.879 0 0 0-5.937 5.852h1.08a4.859 4.859 0 0 1 9.717 0h1.08a5.879 5.879 0 0 0-5.937-5.852zM12.95-.008a3.724 3.724 0 1 0 3.779 3.725 3.729 3.729 0 0 0-3.776-3.725zm0 6.385a2.661 2.661 0 1 1 2.7-2.66 2.655 2.655 0 0 1-2.697 2.66zm0 0a5.878 5.878 0 0 0-5.939 5.852h1.08a4.859 4.859 0 0 1 9.717 0h1.08a5.878 5.878 0 0 0-5.935-5.852z"/></symbol><symbol id="icon-settings" viewBox="0 0 25.906 26.031"><path data-name="icon-settings" d="M24.578 10.126h-2.424a.934.934 0 0 1-.658-1.594l1.714-1.72a1.342 1.342 0 0 0 0-1.894l-2.185-2.192a1.362 1.362 0 0 0-1.887 0l-1.714 1.72a.931.931 0 0 1-1.589-.661V1.352A1.337 1.337 0 0 0 14.501.014h-3.09a1.337 1.337 0 0 0-1.334 1.338v2.433a.931.931 0 0 1-1.589.661l-1.714-1.72a1.362 1.362 0 0 0-1.887 0L2.702 4.918a1.342 1.342 0 0 0 0 1.894l1.714 1.72a.934.934 0 0 1-.658 1.594H1.331a1.339 1.339 0 0 0-1.334 1.339v3.1a1.338 1.338 0 0 0 1.334 1.341h2.425a.935.935 0 0 1 .658 1.6L2.7 19.225a1.342 1.342 0 0 0 0 1.894l2.185 2.193a1.362 1.362 0 0 0 1.887 0l1.714-1.72a.931.931 0 0 1 1.589.661v2.432a1.337 1.337 0 0 0 1.334 1.339h3.09a1.338 1.338 0 0 0 1.334-1.339v-2.432a.931.931 0 0 1 1.589-.661l1.713 1.72a1.362 1.362 0 0 0 1.887 0l2.185-2.193a1.342 1.342 0 0 0 0-1.894l-1.714-1.719a.935.935 0 0 1 .659-1.6h2.424a1.337 1.337 0 0 0 1.334-1.338v-3.1a1.338 1.338 0 0 0-1.332-1.342zm.375 4.441a.375.375 0 0 1-.375.375h-2.424a1.9 1.9 0 0 0-1.337 3.239l1.714 1.725a.375.375 0 0 1 0 .531l-2.185 2.193a.373.373 0 0 1-.529 0l-1.714-1.724a1.89 1.89 0 0 0-3.228 1.342v2.432a.376.376 0 0 1-.374.376h-3.09a.376.376 0 0 1-.375-.376v-2.432a1.867 1.867 0 0 0-1.167-1.753 1.9 1.9 0 0 0-.735-.15 1.863 1.863 0 0 0-1.325.56l-1.714 1.721a.375.375 0 0 1-.53 0L3.38 20.433a.378.378 0 0 1 0-.532l1.715-1.719a1.9 1.9 0 0 0-1.337-3.239H1.331a.375.375 0 0 1-.374-.375v-3.1a.375.375 0 0 1 .374-.375h2.425a1.9 1.9 0 0 0 1.337-3.239l-1.715-1.72a.378.378 0 0 1 0-.532L5.563 3.41a.374.374 0 0 1 .53 0l1.714 1.719a1.889 1.889 0 0 0 3.227-1.341V1.355a.375.375 0 0 1 .375-.375h3.09a.375.375 0 0 1 .374.375v2.433a1.89 1.89 0 0 0 3.228 1.342l1.714-1.72a.372.372 0 0 1 .529 0l2.185 2.193a.375.375 0 0 1 0 .531l-1.714 1.72a1.9 1.9 0 0 0 1.337 3.239h2.424a.375.375 0 0 1 .375.375v3.1zm-12-5.885a4.334 4.334 0 1 0 4.319 4.334 4.331 4.331 0 0 0-4.316-4.334zm0 7.705a3.371 3.371 0 1 1 3.359-3.371 3.369 3.369 0 0 1-3.356 3.371z"/></symbol><symbol id="icon-withdrawal" viewBox="0 0 29.906 26.031"><path data-name="icon-withdrawal" d="M21.506.013H1.845A1.839 1.839 0 0 0 .003 1.845v13.032a1.839 1.839 0 0 0 1.842 1.832h13.108a.436.436 0 1 0 0-.871H1.845a.964.964 0 0 1-.966-.961V1.845a.964.964 0 0 1 .966-.961h19.661a.965.965 0 0 1 .967.961v8.843a.438.438 0 0 0 .876 0V1.845A1.84 1.84 0 0 0 21.506.013zM6.058 5.133H4.186a1.372 1.372 0 0 0-1.375 1.366v.931a1.372 1.372 0 0 0 1.375 1.366h1.872A1.371 1.371 0 0 0 7.432 7.43v-.931a1.371 1.371 0 0 0-1.374-1.366zM4.684 7.925h-.5a.5.5 0 0 1-.5-.5v-.926a.5.5 0 0 1 .5-.495h.5v1.921zm1.872-.5a.5.5 0 0 1-.5.5h-.5V6.003h.5a.5.5 0 0 1 .5.5v.931zm-.5 2.822H3.247a.436.436 0 1 0 0 .871h2.809a.436.436 0 1 0 .002-.866zm4.681 0H7.931a.436.436 0 1 0 0 .871h2.808a.436.436 0 1 0 0-.866zm1.873 2.328H3.247a.435.435 0 1 0 0 .87h9.363a.435.435 0 1 0 .002-.865zm2.809-2.328H12.61a.436.436 0 1 0 0 .871h2.809a.436.436 0 1 0 .002-.866zm4.681 0h-2.809a.436.436 0 1 0 0 .871H20.1a.436.436 0 1 0 .002-.866zM18.228 2.8a2.315 2.315 0 0 1-3.745 0 4.591 4.591 0 1 0 3.748.005zm-3.746 3.724a1.427 1.427 0 1 1 1.435-1.426 1.432 1.432 0 0 1-1.433 1.431zm3.746 0a1.427 1.427 0 1 1 1.434-1.426 1.432 1.432 0 0 1-1.431 1.431zm4.681 5.585a6.952 6.952 0 1 0 6.991 6.952 6.98 6.98 0 0 0-6.989-6.947zm0 13.032a6.081 6.081 0 1 1 6.122-6.072 6.1 6.1 0 0 1-6.12 6.077zm-.922-8.358h3.095l-.983-.587a.432.432 0 0 1-.15-.6.438.438 0 0 1 .6-.149l2.336 1.394a.433.433 0 0 1 0 .745l-2.336 1.394a.439.439 0 0 1-.6-.149.434.434 0 0 1 .15-.6l.982-.586h-3.094a1.889 1.889 0 1 0 0 3.777h3.271a.435.435 0 1 1 0 .869h-3.271a2.758 2.758 0 1 1 .002-5.503z"/></symbol></svg>
+
+    <div class="content-wrapper">
+      <header class="site-header site-header--cabinet">
+        <div class="container">
+          <a href="#" class="site-header__cabinet-logo">
+            <img src="img/logo-cabinet.png" alt="logo" width="304" height="75">
+          </a>
+          <ul class="navigation">
+            <li><a class="navigation__link" href="main.html">home</a></li>
+            <li><a class="navigation__link" href="#">about</a></li>
+            <li><a class="navigation__link" href="#">investing</a></li>
+            <li><a class="navigation__link  navigation__link--center" href="#">faq</a></li>
+            <li><a class="navigation__link" href="#">news</a></li>
+            <li><a class="navigation__link" href="#">contacts</a></li>
+          </ul>
+
+          <ul class="navigation  navigation--login   navigation--logout">
+            <li><a class="navigation__link  navigation__link--login" href="#">exit</a></li>
+            <li><a class="navigation__link  navigation__link--avatar" href="#">Avatar</a></li>
+          </ul>
+        </div>
+      </header>
+
+      <main class="container  footer-shifter">
+        <article class="account-window">
+          <h1 class="visually-hidden">Deposit</h1>
+
+          <aside class="account-sidebar">
+            <div class="account-sidebar__top">
+              <span class="account-sidebar__avatar">
+                <img src="img/avatar-default.png" width="28" height="33" alt="avatar">
+              </span>
+              <span class="account-sidebar__username">
+                John
+              </span>
+            </div>
+
+            <div class="account-sidebar__ammounts">
+              <div class="account-sidebar__ammount">
+                <span class="account-sidebar__currency">USD</span>
+                <span class="account-sidebar__value">123$</span>
+              </div>
+
+              <div class="account-sidebar__ammount">
+                <span class="account-sidebar__currency">BTC</span>
+                <span class="account-sidebar__value">0.98</span>
+              </div>
+
+              <div class="account-sidebar__ammount">
+                <span class="account-sidebar__currency">ETH</span>
+                <span class="account-sidebar__value">12.34</span>
+              </div>
+            </div>
+          </aside>
+
+          <section class="account-window__content">
+            <h2 class="visually-hidden">Cabinet deposit content</h2>
+
+            <nav class="account-nav">
+              <ul class="account-nav__list">
+                <li class="account-nav__item">
+                  <a class="account-nav__link account-nav__link--balance"  href="balance.html" tabindex="1">
+                    <svg class="account-nav__svg" width="27" height="24">
+                      <use xlink:href="#icon-balance"/>
+                    </svg>
+                    Balance
+                  </a>
+                </li>
+
+                <li class="account-nav__item account-nav__item--active">
+                  <a class="account-nav__link account-nav__link--deposit">
+                    <svg class="account-nav__svg" width="26" height="25">
+                      <use xlink:href="#icon-deposit"/>
+                    </svg>
+                    Deposit
+                  </a>
+                </li>
+
+                <li class="account-nav__item">
+                  <a class="account-nav__link account-nav__link--withdrawal" href="withdrawal.html" tabindex="1">
+                    <svg class="account-nav__svg" width="30" height="26">
+                      <use xlink:href="#icon-withdrawal"/>
+                    </svg>
+                    Withdrawal
+                  </a>
+                </li>
+
+                <li class="account-nav__item">
+                  <a class="account-nav__link account-nav__link--operations" href="operations.html" tabindex="1">
+                    <svg class="account-nav__svg" width="21" height="26">
+                      <use xlink:href="#icon-operations"/>
+                    </svg>
+                    Operations
+                  </a>
+                </li>
+
+                <li class="account-nav__item">
+                  <a class="account-nav__link account-nav__link--refferal" href="refferal.html" tabindex="1">
+                    <svg class="account-nav__svg" width="26" height="25">
+                      <use xlink:href="#icon-refferal"/>
+                    </svg>
+                    Refferal
+                  </a>
+                </li>
+
+                <li class="account-nav__item">
+                  <a class="account-nav__link account-nav__link--settings" href="settings.html" tabindex="1">
+                    <svg class="account-nav__svg" width="26" height="26">
+                      <use xlink:href="#icon-settings"/>
+                    </svg>
+                    Settings
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+            <section class="cabinet cabinet--deposit">
+              <div class="cabinet__header">
+                <h2>Create deposits</h2>
+              </div>
+
+              <form class="cabinet__content  cabinet__content--deposit" action="#" method="post">
+                <div class="cabinet__item  cabinet__item--currency-deposit">
+                  <label for="currency-select">Currency:</label>
+                  <select class="cabinet__currency-select" name="currency-select" id="currency-select">
+                    <option value="BTC">BTC</option>
+                    <option value="ETH">ETH</option>
+                    <option value="USD">USD</option>
+                  </select>
+                </div>
+
+                <div class="cabinet__item  cabinet__item--plan">
+                  <label for="plan-select">Plan:</label>
+                  <select class="cabinet__plan-select" name="plan-select" id="plan-select">
+                    <option value="First option">First option</option>
+                    <option value="Second option">Second option</option>
+                    <option value="Third option">Third option</option>
+                    <option value="Fourth option">Fourth option</option>
+                    <option value="Fifth option">Fifth option</option>
+                    <option value="Sixth option">Sixth option</option>
+                  </select>
+                </div>
+
+                <div class="cabinet__button-wrapper">
+                  <button type="submit" name="deposit-submit" class="btn  cabinet-submit  cabinet-submit--deposit">Create</button>
+                </div>
+              </form>
+            </section>
+
+            <section class="review review--deposit">
+              <div class="review__header">
+                <h2>Deposits</h2>
+              </div>
+
+              <table class="review__table">
+                <tr>
+                  <th class="review__id">ID</th>
+                  <th class="review__created">Created</th>
+                  <th class="review__amount">Amount</th>
+                  <th class="review__plan">Plan</th>
+                  <th class="review__last-charges">Last charges</th>
+                  <th class="review__number-of-charges">Number of charges</th>
+                  <th class="review__profit">Profit</th>
+                  <th class="review__following-charges">Following charges</th>
+                  <th class="review__status">Status</th>
+                </tr>
+
+                <tr class="review__row">
+                  <td class="review__id">5<div class="review__id-inner"></div></td>
+                  <td class="review__created">05.02.2017<br> 11:30</td>
+                  <td class="review__amount">300<br> USD</td>
+                  <td class="review__plan">4%</td>
+                  <td class="review__last-charges">-</td>
+                  <td class="review__number-of-charges">0 of 30<br> 100%</td>
+                  <td class="review__profit">0.00<br> USD</td>
+                  <td class="review__following-charges">16.03.2017<br> 11:30</td>
+                  <td class="review__status">Active</td>
+                </tr>
+
+                  <tr class="review__row  review__row--active">
+                    <td class="review__id">4<div class="review__id-inner"></div></td>
+                    <td class="review__created">05.02.2017<br> 11:30</td>
+                    <td class="review__amount">300<br> USD</td>
+                    <td class="review__plan">4%</td>
+                    <td class="review__last-charges">-</td>
+                    <td class="review__number-of-charges">0 of 30<br> 100%</td>
+                    <td class="review__profit">0.00<br> USD</td>
+                    <td class="review__following-charges">16.03.2017<br> 11:30</td>
+                    <td class="review__status">Active</td>
+                  </tr>
+
+                <tr class="review__row">
+                  <td class="review__id">3<div class="review__id-inner"></div></td>
+                  <td class="review__created">05.02.2017<br> 11:30</td>
+                  <td class="review__amount">300<br> USD</td>
+                  <td class="review__plan">4%</td>
+                  <td class="review__last-charges">-</td>
+                  <td class="review__number-of-charges">0 of 30<br> 100%</td>
+                  <td class="review__profit">0.00<br> USD</td>
+                  <td class="review__following-charges">16.03.2017<br> 11:30</td>
+                  <td class="review__status--inactive">Inactive</td>
+                </tr>
+
+                <tr class="review__row">
+                  <td class="review__id">2<div class="review__id-inner"></div></td>
+                  <td class="review__created">05.02.2017<br> 11:30</td>
+                  <td class="review__amount">300<br> USD</td>
+                  <td class="review__plan">4%</td>
+                  <td class="review__last-charges">-</td>
+                  <td class="review__number-of-charges">0 of 30<br> 100%</td>
+                  <td class="review__profit">0.00<br> USD</td>
+                  <td class="review__following-charges">16.03.2017<br> 11:30</td>
+                  <td class="review__status">Active</td>
+                </tr>
+
+                <tr class="review__row">
+                  <td class="review__id">1<div class="review__id-inner"></div></td>
+                  <td class="review__created">05.02.2017<br> 11:30</td>
+                  <td class="review__amount">300<br> USD</td>
+                  <td class="review__plan">4%</td>
+                  <td class="review__last-charges">-</td>
+                  <td class="review__number-of-charges">0 of 30<br> 100%</td>
+                  <td class="review__profit">0.00<br> USD</td>
+                  <td class="review__following-charges">16.03.2017<br> 11:30</td>
+                  <td class="review__status">Active</td>
+                </tr>
+              </table>
+
+              <div class="paginator  paginator--deposits-review">
+                <a class="paginator__prev  paginator__prev--disabled" href="#prev">Назад</a>
+                <a href="#1" class="paginator__page paginator__page--active">1</a>
+                <a href="#2" class="paginator__page">2</a>
+                <a href="#3" class="paginator__page">3</a>
+                <span>&hellip;</span>
+                <a href="#10" class="paginator__page">10</a>
+                <a class="paginator__next" href="#next">Вперёд</a>
+              </div>
+            </section>
+          </section>
+        </article>
+
+        <section class="social  social--cabinet">
+          <h2 class="visually-hidden">Social</h2>
+          <ul class="social__list">
+
+            <li class="social__item">
+              <a class="social__link  social__link--cabinet  social__link--facebook" href="#">Facebook</a>
+            </li>
+
+            <li class="social__item">
+              <a class="social__link  social__link--cabinet  social__link--twiter" href="#">Twiter</a>
+            </li>
+
+            <li class="social__item">
+              <a class="social__link  social__link--cabinet  social__link--instagram" href="#">Instagram</a>
+            </li>
+
+            <li class="social__item">
+              <a class="social__link  social__link--cabinet  social__link--youtube" href="#">Youtube</a>
+            </li>
+
+            <li class="social__item">
+              <a class="social__link  social__link--cabinet  social__link--google" href="#">google</a>
+            </li>
+
+          </ul>
+        </section>
+      </main>
+
+      <footer class="site-footer  site-footer--cabinet">
+        <div class="container  container-footer">
+
+          <p class="site-footer__copyright  site-footer__copyright--cabinet">&#169; 2018. Test Hyip. All rights reserved.</p>
+
+          <ul class="site-footer__list">
+            <li class="site-footer__item">
+              <a href="#"><img src="../img/partner_1.png" width="75" height="15" alt="partner-1"></a>
+            </li>
+            <li class="site-footer__item">
+              <a href="#"><img src="../img/partner_2.png" width="115" height="15" alt="partner-2"></a>
+            </li>
+            <li class="site-footer__item">
+              <a href="#"><img src="../img/partner_3.png" width="78" height="15" alt="partner-3"></a>
+            </li>
+            <li class="site-footer__item">
+              <a href="#"><img src="../img/partner_4.png" width="83" height="15" alt="partner-4"></a>
+            </li>
+            <li class="site-footer__item">
+              <a href="#"><img src="../img/partner_5.png" width="47" height="15" alt="partner-5"></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.custom-select.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('select').customSelect();
+      });
+    </script>
+  </body>
+</html>

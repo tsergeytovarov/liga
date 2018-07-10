@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <link href="css/style.min.css" rel="stylesheet">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Страница новости</title>
+
+</head>
+
+<main class="site-main">
+  <header class="site-header">
+    <div class="container">
+      <a class="site-header__site-logo" href="index.html">
+      <img src="img/logo-original.png" alt="логотип " width="304" height="75">
+      </a>
+      <ul class="navigation">
+        <li><a class="navigation__link" href="main.html">home</a></li>
+        <li><a class="navigation__link" href="about.html">about</a></li>
+        <li><a class="navigation__link" href="investing.html">investing</a></li>
+        <li><a class="navigation__link navigation__link--center" href="faq.html">faq</a></li>
+        <li><a class="navigation__link" href="news.html">news</a></li>
+        <li><a class="navigation__link" href="contacts.html">contacts</a></li>
+      </ul>
+      <ul class="navigation navigation--login">
+        <li><a class="navigation__link navigation__link--login" href="registration.html">login</a></li>
+        <li><a class="navigation__link  navigation__link--avatar" href="registration.html">Аватар</a></li>
+      </ul>
+    </div>
+
+  </header>
+
+  <div id="fullpage">
+    <section class="news news--inner-page section" id="section-news">
+      <div class="container container--custom ">
+
+        <h2 class="news__header anim-block">News</h2>
+        <div class="news__items">
+          <article class="news__item">
+            <div class="news__rows">
+              <div class="news__left-row">
+                <div class="news__date ">
+                  <span>04</span> 02/10
+                </div>
+                <div class="news__img">
+                  <img src="../img/bg_news.jpg" width="400" height="200" alt="news">
+                </div>
+              </div>
+              <div class="news__right-row">
+                <h3 class="news__title  anim-block">Lorem ipsum dolor sit amet</h3>
+                <p class="news__descr  anim-block">Sed ultrices consectetur enim, sit amet efficitur risus ullamcorper id. Nullam ut sapien augue. Duis a nisl id eros sodales rutrum eu eget eros. Donec iaculis laoreet dolor sed ullamcorper. Ut eros diam, viverra a euismod at, interdum
+                  id eros. Fusce eget dui eget nisl scelerisque lacinia vel et sem.</p>
+                <a class="button-original news__btn  anim-block" href="#">read more</a>
+              </div>
+            </div>
+          </article>
+
+
+      </div>
+
+
+    </div>
+    <footer class="site-footer">
+      <div class="container--footer container--custom">
+
+        <p class="site-footer__copyright">&#169; 2018. Test Hyip. All rights reserved.</p>
+
+        <ul class="site-footer__list">
+          <li class="site-footer__item">
+            <a href="#"><img src="../img/partner_1.png" width="75" height="15" alt="partner-1"></a>
+          </li>
+          <li class="site-footer__item">
+            <a href="#"><img src="../img/partner_2.png" width="115" height="15" alt="partner-2"></a>
+          </li>
+          <li class="site-footer__item">
+            <a href="#"><img src="../img/partner_3.png" width="78" height="15" alt="partner-3"></a>
+          </li>
+          <li class="site-footer__item">
+            <a href="#"><img src="../img/partner_4.png" width="83" height="15" alt="partner-4"></a>
+          </li>
+          <li class="site-footer__item">
+            <a href="#"><img src="../img/partner_5.png" width="47" height="15" alt="partner-5"></a>
+          </li>
+        </ul>
+      </div>
+
+    </footer>
+    </section>
+
+
+  </div>
+  <section class="social">
+    <h2 class="visually-hidden">Социальные сети</h2>
+    <ul class="social__list">
+
+      <li class="social__item">
+        <a class="social__link social__link--facebook" href="#">Facebook</a>
+      </li>
+
+      <li class="social__item">
+        <a class="social__link social__link--twiter" href="#">Twiter</a>
+      </li>
+
+      <li class="social__item">
+        <a class="social__link social__link--instagram" href="#">Instagram</a>
+      </li>
+
+      <li class="social__item">
+        <a class="social__link social__link--youtube" href="#">Youtube</a>
+      </li>
+
+      <li class="social__item">
+        <a class="social__link social__link--google" href="#">google</a>
+      </li>
+
+    </ul>
+  </section>
+</main>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.viewportchecker.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+
+    $('#fullpage').fullpage({
+      verticalCentered: false,
+      afterLoad: function(anchorLink, index) {
+        $('.anim-block').addClass('hidden').viewportChecker({
+          classToAdd: 'visible animated fadeInDown',
+          offset: 120
+        });
+      }
+    })
+  });
+</script>
+</body>
+
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tutovo | Главная</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../../css/clarity-icons.min.css">
+  <link rel="stylesheet" href="../../../../css/clarity-ui.min.css">
+  <link rel="stylesheet" href="../../../../css/style.min.css">
+  <script src="../../../../js/svg4everybody.js"></script>
+  <script>svg4everybody();</script>
+</head>
+
+<body class="page">
+<main class="page__main  page__main--form  forms">
+  <h1 class="forms__title  forms__title--promo-form">
+    Новое объявление
+  </h1>
+  <div class="forms__button-wrapper">
+      <span class="forms__note">
+      Этап:
+      <span class="forms__note-step">
+        2/3
+      </span>
+    </span>
+    <button class="forms__button  forms__button--promo-form">
+      <span class="forms__button-title">Назад</span>
+      <svg class="forms__icon  forms__icon--back" width="8" height="16">
+        <use xlink:href="../../../../img/sprite.svg#back"></use>
+      </svg>
+    </button>
+  </div>
+  <section class="forms__promo-form  promo-form">
+    <h2 class="promo-form__title">
+      Форма подачи объявления. Шаг 2.
+    </h2>
+    <ul class="promo-form__list-step">
+      <li class="promo-form__item-step  promo-form__item-step--current">
+        1
+      </li>
+      <li class="promo-form__item-step  promo-form__item-step--current">
+        2
+      </li>
+      <li class="promo-form__item-step">
+        3
+      </li>
+    </ul>
+    <div class="promo-form__declaration-wrapper">
+      <p class="promo-form__declaration-title">
+        Заполненные данные:
+      </p>
+      <p class="promo-form__declaration">
+        Квартира / Продажа
+      </p>
+    </div>
+    <form class="promo-form__form" method="post">
+      <div class="promo-form__fields-wrapper  promo-form__fields-wrapper--options">
+        <h3 class="promo-form__wrapper-title  promo-form__wrapper-title--options">
+          Параметры
+        </h3>
+        <p class="promo-form__field-wrapper  promo-form__field-wrapper--options  field">
+          <input id="square-full" class="field__input  field__input--promo" type="number" name="square-full">
+          <label for="square-full" class="field__label">
+            Общая площадь, м²
+          </label>
+        </p>
+        <p class="promo-form__field-wrapper  promo-form__field-wrapper--options  field">
+          <input id="square-living" class="field__input  field__input--promo" type="number" name="square-living">
+          <label for="square-living" class="field__label">
+            Жилая площадь, м²
+          </label>
+        </p>
+        <div class="promo-form__field-wrapper  promo-form__field-wrapper--options  field  field--column">
+          <p class="field__label">
+            Количество комнат
+          </p>
+          <div class="field__select  select  select--promo">
+            <select name="rooms-count">
+              <option value="Не выбрано" selected>Не выбрано</option>
+            </select>
+          </div>
+        </div>
+        <div class="promo-form__field-wrapper  promo-form__field-wrapper--options  field  field--column">
+          <p class="field__label">
+            Планировка
+          </p>
+          <div class="field__select  select  select--promo">
+            <select name="plan">
+              <option value="Не выбрано" selected>Не выбрано</option>
+            </select>
+          </div>
+        </div>
+        <p
+          class="promo-form__field-wrapper  promo-form__field-wrapper--options  promo-form__field-wrapper--floor-number  field">
+          <input id="floor-number" class="field__input  field__input--promo" type="number" name="floor-number">
+          <label for="floor-number" class="field__label">
+            Этаж
+          </label>
+        </p>
+        <p
+          class="promo-form__field-wrapper  promo-form__field-wrapper--options  promo-form__field-wrapper--floor-count  field">
+          <input id="floor-count" class="field__input  field__input--promo" type="number" name="floor-count">
+          <label for="floor-count" class="field__label  field__label--hidden">
+            Этаж
+          </label>
+        </p>
+        <div class="promo-form__field-wrapper  promo-form__field-wrapper--options  field  field--column">
+          <p class="field__label">
+            Тип дома
+          </p>
+          <div class="field__select  select  select--promo">
+            <select name="type-building">
+              <option value="Панельный" selected>Панельный</option>
+            </select>
+          </div>
+        </div>
+        <div class="promo-form__field-wrapper  promo-form__field-wrapper--options  field  field--column">
+          <p class="field__label">
+            Санузел
+          </p>
+          <div class="field__select  select  select--promo">
+            <select name="type-bathroom">
+              <option value="Раздельный" selected>Раздельный</option>
+            </select>
+          </div>
+        </div>
+        <p class="promo-form__field-wrapper  promo-form__field-wrapper--options  field  field">
+          <input id="year" class="field__input  field__input--promo" type="number" name="year">
+          <label for="year" class="field__label">
+            Год постройки
+          </label>
+        </p>
+        <div class="promo-form__field-wrapper  promo-form__field-wrapper--options  field  field--column">
+          <p class="field__label">
+            Ремонт
+          </p>
+          <div class="field__select  select  select--promo">
+            <select name="repairs">
+              <option value="Евроремонт" selected>Евроремонт</option>
+            </select>
+          </div>
+        </div>
+        <div class="promo-form__field-wrapper  promo-form__field-wrapper--options  field  field--column">
+          <p class="field__label">
+            Балкон
+          </p>
+          <div class="field__select  select  select--promo">
+            <select name="balcony">
+              <option value="2 и более" selected>2 и более</option>
+            </select>
+          </div>
+        </div>
+        <div class="promo-form__field-wrapper  promo-form__field-wrapper--options  field  field--column">
+          <p class="field__label">
+            Окна
+          </p>
+          <div class="field__select  select  select--promo">
+            <select name="type-windows">
+              <option value="Металлопластиковые" selected>Металлопластиковые</option>
+            </select>
+          </div>
+        </div>
+        <div
+          class="promo-form__field-wrapper  promo-form__field-wrapper--options  promo-form__field-wrapper--extras  field  field--column">
+          <p class="field__caption  field__caption--extras">
+            Дополнительно
+          </p>
+          <ul class="field__list  field__list--extras">
+            <li class="field__item  field__item--extras">
+              <input id="extras-furniture" class="field__input  field__input--checkbox  field__input--extras"
+                     type="checkbox" name="extras-furniture" checked>
+              <label for="extras-furniture" class="field__label  field__label--extras  field__label--extras-big">
+                <span class="field__extras-title">Мебель</span>
+                <svg class="field__icon" width="21" height="21">
+                  <use xlink:href="../../../../img/sprite.svg#furniture"></use>
+                </svg>
+              </label>
+            </li>
+            <li class="field__item  field__item--extras">
+              <input id="extras-appliances" class="field__input  field__input--checkbox  field__input--extras"
+                     type="checkbox" name="extras-appliances">
+              <label for="extras-appliances" class="field__label  field__label--extras  field__label--extras-big">
+                <span class="field__extras-title">Бытовая техника</span>
+                <svg class="field__icon" width="21" height="21">
+                  <use xlink:href="../../../../img/sprite.svg#washer"></use>
+                </svg>
+              </label>
+            </li>
+          </ul>
+        </div>
+        <div class="promo-form__field-wrapper  promo-form__field-wrapper--options  field  field--column">
+          <p class="field__label">
+            Город
+          </p>
+          <div class="field__select  select  select--promo">
+            <select name="city">
+              <option value="Дома, дачи" selected>Москва</option>
+            </select>
+          </div>
+        </div>
+        <p
+          class="promo-form__field-wrapper  promo-form__field-wrapper--options  promo-form__field-wrapper--offset  field">
+          <button class="field__button  button  button--radius-2  button--bg">
+            <svg class="button__icon  button__icon--pin" width="15" height="12">
+              <use xlink:href="../../../../img/sprite.svg#pointer"></use>
+            </svg>
+            Отметить на карте
+          </button>
+          <input id="address" class="field__input  field__input--promo" type="text" name="address">
+          <label for="address" class="field__label">
+            Адрес
+          </label>
+        </p>
+      </div>
+      <div class="promo-form__button-wrapper">
+        <button class="promo-form__button  button  button--fill  button--radius-2  button--big" type="submit">
+          Далее
+          <svg class="promo-form__icon  promo-form__icon--back" width="7" height="9">
+            <use xlink:href="../../../../img/sprite.svg#arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </form>
+  </section>
+</main>
+<footer class="page__footer  page-footer">
+  <span class="page-footer__copyright">© Tutovo</span>
+  <span class="page-footer__year">2017</span>
+</footer>
+</body>
+</html>
+

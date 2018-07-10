@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   height="100.7"
+   width="132.5"
+   xml:space="preserve"
+   viewBox="0 0 132.5 100.69999"
+   y="0px"
+   x="0px"
+   id="Icons"
+   version="1.1"><metadata
+     id="metadata3491"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs3489" /><style
+     id="style3463"
+     type="text/css">
+	.st0{fill:#0970E9;}
+	.st1{fill:#1CA2FF;}
+	.st2{fill:none;stroke:#0970E9;stroke-miterlimit:10;}
+	.st3{fill:#3EB8FF;}
+</style><g
+     transform="translate(-3147.4,-2112.4)"
+     id="g3465"><path
+       style="fill:#0970e9"
+       id="path3467"
+       d="m 3200.2,2205 -48.3,0 0,4.9 c 0,1.8 1.4,3.2 3.2,3.2 l 42,0 c 1.8,0 3.2,-1.4 3.2,-3.2 l 0,-4.9 z"
+       class="st0" /><path
+       style="fill:#1ca2ff"
+       id="path3469"
+       d="m 3197,2172.8 -42,0 c -1.8,0 -3.2,1.4 -3.2,3.2 l 0,29 48.3,0 0,-29 c 0.1,-1.7 -1.3,-3.2 -3.1,-3.2 z"
+       class="st1" /><path
+       style="fill:none;stroke:#0970e9;stroke-miterlimit:10"
+       id="path3471"
+       d="m 3180.1,2209 13.6,0 c 1.4,0 2.6,-1.1 2.6,-2.6 l 0,-5.5 0,-29.6 c 0,-1.4 -1.1,-2.6 -2.6,-2.6 l -43.2,0 c -1.4,0 -2.6,1.1 -2.6,2.6 l 0,29.6 0,5.5 c 0,1.4 1.1,2.6 2.6,2.6 l 21.6,0"
+       class="st2" /><circle
+       style="fill:#3eb8ff"
+       r="2"
+       id="ellipse3473"
+       cy="2209"
+       cx="3176"
+       class="st3" /></g><g
+     transform="translate(-3147.4,-2112.4)"
+     id="g3475"><path
+       style="fill:#0970e9"
+       id="path3477"
+       d="m 3279.8,2149.2 -48.3,0 0,4.9 c 0,1.8 1.4,3.2 3.2,3.2 l 42,0 c 1.8,0 3.2,-1.4 3.2,-3.2 l 0,-4.9 z"
+       class="st0" /><path
+       style="fill:#1ca2ff"
+       id="path3479"
+       d="m 3276.7,2117 -42,0 c -1.8,0 -3.2,1.4 -3.2,3.2 l 0,29 48.3,0 0,-29 c 0,-1.7 -1.4,-3.2 -3.1,-3.2 z"
+       class="st1" /><path
+       style="fill:none;stroke:#0970e9;stroke-miterlimit:10"
+       id="path3481"
+       d="m 3259.7,2153.2 13.6,0 c 1.4,0 2.6,-1.1 2.6,-2.6 l 0,-5.5 0,-29.6 c 0,-1.4 -1.1,-2.6 -2.6,-2.6 l -43.3,0 c -1.4,0 -2.6,1.1 -2.6,2.6 l 0,29.6 0,5.5 c 0,1.4 1.1,2.6 2.6,2.6 l 21.6,0"
+       class="st2" /><circle
+       style="fill:#3eb8ff"
+       r="2"
+       id="ellipse3483"
+       cy="2153.2"
+       cx="3255.7"
+       class="st3" /></g><path
+     style="fill:none;stroke:#0970e9;stroke-miterlimit:10"
+     id="path3485"
+     d="m 106.2,58.7 c 0,13.5 -10.9,24.4 -24.4,24.4 l -11.5,0"
+     class="st2" /></svg>

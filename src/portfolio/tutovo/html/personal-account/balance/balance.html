@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tutovo | Страница объявления - дома/дачи</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../css/clarity-icons.min.css">
+  <link rel="stylesheet" href="../../../css/clarity-ui.min.css">
+  <link rel="stylesheet" href="../../../css/style.min.css">
+  <script src="../../../js/svg4everybody.js"></script>
+  <script>svg4everybody();</script>
+</head>
+
+<body class="page">
+<header class="page__header  page-header">
+  <button class="page-header__toggle">Меню</button>
+  <a href="#" class="page-header__logo">
+    <img src="../../../img/logo.png" alt="лого" class="page-header__img" width="73" height="41">
+  </a>
+  <div class="user">
+    <a href="#" class="user__link  user__link--message">
+      <svg class="user__svg  user__svg--message" width="18" height="18">
+        <use xlink:href="../../../img/sprite.svg#envelope"></use>
+      </svg>
+      <span class="user__message-amount">1</span>
+    </a>
+    <a href="#" class="user__link  user__link--favorites">
+      <svg class="user__svg  user__svg--favorites" width="19" height="16">
+        <use xlink:href="../../../img/sprite.svg#heart"></use>
+      </svg>
+    </a>
+  </div>
+</header>
+
+<main class="page__main  balance">
+  <h1 class="balance__title">
+    Баланс
+  </h1>
+  <button class="balance__button  balance__button--back  button-icon" type="button">
+    <span class="button-icon__title">Назад</span>
+    <svg class="button-icon__icon  button-icon__icon--back" width="14" height="14">
+      <use xlink:href="../../../img/sprite.svg#back"></use>
+    </svg>
+  </button>
+  <section class="balance__info">
+    <h2 class="balance__inside-title  balance__inside-title--hidden">
+      Общая инфлормация
+    </h2>
+    <div class="balance__info-wrapper">
+      <p class="balance__type-wrapper">
+        Тип аккаунта:
+        <span class="balance__type">
+            Физическое лицо
+          </span>
+      </p>
+      <p class="balance__rate-wrapper">
+        Тарифный план:
+        <span class="balance__rate">
+            <svg class="balance__icon  balance__icon--diamond" width="14" height="14">
+              <use xlink:href="../../../img/sprite.svg#diamond"></use>
+            </svg>
+            Премиум
+          </span>
+      </p>
+    </div>
+    <div class="balance__balance-debit-wrapper">
+      <p class="balance__balance-wrapper">
+        Баланс
+        <span class="balance__balance">
+          1918,30
+          <svg class="balance__icon  balance__icon--rub" width="14" height="14">
+            <use xlink:href="../../../img/sprite.svg#rub"></use>
+          </svg>
+        </span>
+      </p>
+      <p class="balance__debit-wrapper">
+        Списаний:
+        <span class="balance__wrap">
+          <span class="balance__debit">
+            24,00
+          </span>&nbsp;
+          (за вчера)
+        </span>
+      </p>
+    </div>
+    <a class="balance__link  button  button--fill  button--noborder" href="#">
+      <svg class="button__icon  button__icon--plus" width="12" height="12">
+        <use xlink:href="../../../img/sprite.svg#plus"></use>
+      </svg>
+      Пополнить счет
+    </a>
+  </section>
+  <section class="balance__promo-code">
+    <h2 class="balance__inside-title">
+      Ввести промо-код
+    </h2>
+    <form class="balance__form" method="post">
+      <input class="balance__form-field" type="text" placeholder="Введите при наличии промо-код...">
+      <button class="balance__form-button  button-icon" type="submit">
+        <span class="button-icon__title">Отправить</span>
+        <svg class="button-icon__icon  button-icon__icon--gift" width="17" height="16">
+          <use xlink:href="../../../../img/sprite.svg#gift-2"></use>
+        </svg>
+      </button>
+    </form>
+  </section>
+
+  <section class="balance__history">
+    <h2 class="balance__inside-title">
+      История операций
+    </h2>
+    <div class="balance__history-select-wrapper">
+      <p class="balance__history-label">
+        Показать за:
+      </p>
+      <div class="balance__history-select  select  select--account">
+        <select name="duration">
+          <option value="Все время" selected>Все время</option>
+        </select>
+      </div>
+    </div>
+    <p class="balance__totals-title">
+      Итого
+    </p>
+    <div class="balance__totals-wrapper">
+      <p class="balance__totals-debit-wrapper">
+        Списано
+        <span class="balance__totals-debit">
+          2 880,00
+        </span>
+      </p>
+      <p class="balance__totals-credit-wrapper">
+        Счет пополнен на
+        <span class="balance__totals-credit">
+          15 720,00
+        </span>
+      </p>
+    </div>
+    <ul class="balance__history-list">
+      <li class="balance__history-item">
+        <div class="balance__history-info">
+          <p class="balance__trans-wrapper">
+            Пополнение
+            <span class="balance__date-trans">
+              Вчера, 08:23
+            </span>
+          </p>
+          <span class="balance__sum-trans  balance__sum-trans--credit">
+            + 28 000,00
+          </span>
+          <button class="balance__button  balance__button--history  button-icon" type="button">
+            <span class="button-icon__title">Развернуть</span>
+            <svg class="button-icon__icon  button-icon__icon--expand" width="15" height="15">
+              <use xlink:href="../../../img/sprite.svg#back"></use>
+            </svg>
+          </button>
+        </div>
+      </li>
+      <li class="balance__history-item">
+        <div class="balance__history-info">
+          <p class="balance__trans-wrapper">
+            Списание
+            <span class="balance__date-trans">
+              Вчера, 04:15
+            </span>
+          </p>
+          <span class="balance__sum-trans  balance__sum-trans--debit">
+            - 2 000,00
+          </span>
+          <button class="balance__button  balance__button--history  button-icon" type="button">
+            <span class="button-icon__title">Развернуть</span>
+            <svg class="button-icon__icon  button-icon__icon--expand" width="15" height="15">
+              <use xlink:href="../../../img/sprite.svg#back"></use>
+            </svg>
+          </button>
+        </div>
+      </li>
+      <li class="balance__history-item">
+        <div class="balance__history-info">
+          <p class="balance__trans-wrapper">
+            Пополнение
+            <span class="balance__date-trans">
+              Вчера, 08:23
+            </span>
+          </p>
+          <span class="balance__sum-trans  balance__sum-trans--credit">
+            + 1 800,00
+          </span>
+          <button class="balance__button  balance__button--history  button-icon" type="button">
+            <span class="button-icon__title">Свернуть</span>
+            <svg class="button-icon__icon  button-icon__icon--turn" width="15" height="15">
+              <use xlink:href="../../../img/sprite.svg#back"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="balance__history-info-expand">
+          <p class="balance__comment-trans-wrapper">
+            Комментарий:
+            <span class="balance__comment-trans">
+              Выделить объявление
+            </span>
+          </p>
+          <p class="balance__object-trans-wrapper">
+            Объявление:
+            <span class="balance__object-trans">
+              #1292
+            </span>
+          </p>
+        </div>
+      </li>
+      <li class="balance__history-item">
+        <div class="balance__history-info">
+          <p class="balance__trans-wrapper">
+            Пополнение
+            <span class="balance__date-trans">
+              Вчера, 08:23
+            </span>
+          </p>
+          <span class="balance__sum-trans  balance__sum-trans--credit">
+            - 200,00
+          </span>
+          <button class="balance__button  balance__button--history  button-icon" type="button">
+            <span class="button-icon__title">Развернуть</span>
+            <svg class="button-icon__icon  button-icon__icon--expand" width="15" height="15">
+              <use xlink:href="../../../img/sprite.svg#back"></use>
+            </svg>
+          </button>
+        </div>
+      </li>
+    </ul>
+  </section>
+</main>
+</body>
+</html>

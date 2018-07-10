@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 94 95.2" style="enable-background:new 0 0 94 95.2;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#1CA2FF;}
+	.st1{fill:#0970E9;}
+	.st2{fill:#3EB8FF;}
+	.st3{fill:none;stroke:#0970E9;stroke-width:0.5;stroke-miterlimit:10;}
+</style>
+<g>
+	<path class="st0" d="M14.5,32L47,48.2v40.6L16,73.3c-0.9-0.4-1.4-1.4-1.4-2.3V32z"/>
+	<path class="st1" d="M79.5,32L47,48.2v40.6l31-15.5c0.9-0.4,1.4-1.4,1.4-2.3V32z"/>
+	<polygon class="st1" points="47,15.8 14.5,32 47,48.2 79.5,32 	"/>
+	<path class="st0" d="M47,15.8l7.5-15c0.3-0.7,1.2-1,1.9-0.6l30,15c0.7,0.3,1,1.2,0.6,1.9l-7.5,15L47,15.8z"/>
+	<path class="st0" d="M14.5,32L7,17c-0.3-0.7-0.1-1.5,0.6-1.9l30-15c0.7-0.3,1.5-0.1,1.9,0.6l7.5,15L14.5,32z"/>
+	<path class="st0" d="M47,48.2l-15.6,7.8c-0.4,0.2-0.9,0.2-1.2,0L0.8,41.4c-1-0.5-1-2,0-2.5L14.5,32L47,48.2z"/>
+	<path class="st0" d="M79.5,32l13.7,6.9c1,0.5,1,2,0,2.5L63.9,56.1c-0.4,0.2-0.9,0.2-1.2,0L47,48.2"/>
+	<path class="st2" d="M47,48.2c0,0,12.1-6.1,21.8-10.9c-4-8-12.2-13.5-21.8-13.5s-17.8,5.5-21.8,13.5C34.9,42.2,47,48.2,47,48.2z"/>
+	<path class="st3" d="M9.1,48.2v8v17.9c0,1.2,0.7,2.2,1.7,2.7L47,94.9l36.2-18.1c1-0.5,1.7-1.6,1.7-2.7V56.2v-8"/>
+</g>
+</svg>

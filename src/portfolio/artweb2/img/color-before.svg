@@ -1,0 +1,16 @@
+<svg id="цвет" xmlns="http://www.w3.org/2000/svg" width="7" height="158.87" viewBox="0 0 7 158.87">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle id="Эллипс_4" data-name="Эллипс 4" class="cls-1" cx="3.5" cy="3.5" r="3.5"/>
+  <circle id="Эллипс_4_копия" data-name="Эллипс 4 копия" class="cls-1" cx="3.5" cy="155.37" r="3.5"/>
+  <path id="Прямоугольник_34" data-name="Прямоугольник 34" class="cls-2" d="M334,2738.93h1v151.88h-1V2738.93Z" transform="translate(-331 -2731.94)"/>
+</svg>

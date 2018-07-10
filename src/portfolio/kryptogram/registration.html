@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <link href="css/style.min.css" rel="stylesheet">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Логин</title>
+
+</head>
+
+<main class="site-main">
+  <header class="site-header">
+    <div class="container">
+      <a class="site-header__site-logo" href="index.html">
+      <img src="img/logo-original.png" alt="логотип " width="304" height="75">
+      </a>
+      <ul class="navigation">
+        <li><a class="navigation__link" href="main.html">home</a></li>
+        <li><a class="navigation__link" href="about.html">about</a></li>
+        <li><a class="navigation__link" href="investing.html">investing</a></li>
+        <li><a class="navigation__link navigation__link--center" href="faq.html">faq</a></li>
+        <li><a class="navigation__link" href="news.html">news</a></li>
+        <li><a class="navigation__link" href="contacts.html">contacts</a></li>
+      </ul>
+      <ul class="navigation navigation--login">
+        <li><a class="navigation__link navigation__link--login" href="#">login</a></li>
+        <li><a class="navigation__link  navigation__link--avatar" href="#">Аватар</a></li>
+      </ul>
+    </div>
+
+  </header>
+
+  <div id="fullpage">
+
+    <section class="login section" id="section-login">
+      <h2 class="visually-hidden">About</h2>
+      <div class="container container--custom ">
+
+        <h2 class="login__title anim-block">Sign up</h2>
+        <form class="login__form" action="https://echo.htmlacademy.ru/ " method="get">
+          <ul class="login__list  login__list--form">
+            <li class="login__item login__item--1">
+              <label class="login__label " for="contacts-name">Name:</label>
+              <input class="login__input " type="text" name="contacts-name" id="contacts-name" placeholder="Jonh" required>
+            </li>
+
+            <li class="login__item login__item--3">
+              <label class="login__label " for="contacts-password">E-mail:</label>
+              <input class="login__input " type="text" name="contacts-email" id="contacts-email" placeholder="Jonh@john.com" required>
+            </li>
+
+            <li class="login__item login__item--2">
+              <label class="login__label " for="contacts-password">Password:</label>
+              <input class="login__input " type="password" name="contacts-password" id="contacts-password" required>
+            </li>
+
+            <li class="login__item login__item--2">
+              <label class="login__label " for="contacts-password-confirm">Password:</label>
+              <input class="login__input " type="password" name="contacts-password-confirm" id="contacts-password-confirm" required>
+            </li>
+
+          </ul>
+          <p class="login__sign-up">Already have an account? Click to <a href="login.html">LOGIN</a></p>
+
+          <div class="login__wrapper">
+            <button class="button-original login__btn login__btn--registration" type="submit">sign up</button>
+          </div>
+        </form>
+      </div>
+      <footer class="site-footer">
+        <div class="container--footer container--custom">
+
+          <p class="site-footer__copyright">&#169; 2018. Test Hyip. All rights reserved.</p>
+
+          <ul class="site-footer__list">
+            <li class="site-footer__item">
+              <a href="#"><img src="../img/partner_1.png" width="75" height="15" alt="partner-1"></a>
+            </li>
+            <li class="site-footer__item">
+              <a href="#"><img src="../img/partner_2.png" width="115" height="15" alt="partner-2"></a>
+            </li>
+            <li class="site-footer__item">
+              <a href="#"><img src="../img/partner_3.png" width="78" height="15" alt="partner-3"></a>
+            </li>
+            <li class="site-footer__item">
+              <a href="#"><img src="../img/partner_4.png" width="83" height="15" alt="partner-4"></a>
+            </li>
+            <li class="site-footer__item">
+              <a href="#"><img src="../img/partner_5.png" width="47" height="15" alt="partner-5"></a>
+            </li>
+          </ul>
+        </div>
+
+      </footer>
+
+    </section>
+  </div>
+  <section class="social">
+    <h2 class="visually-hidden">Социальные сети</h2>
+    <ul class="social__list">
+
+      <li class="social__item">
+        <a class="social__link social__link--facebook" href="#">Facebook</a>
+      </li>
+
+      <li class="social__item">
+        <a class="social__link social__link--twiter" href="#">Twiter</a>
+      </li>
+
+      <li class="social__item">
+        <a class="social__link social__link--instagram" href="#">Instagram</a>
+      </li>
+
+      <li class="social__item">
+        <a class="social__link social__link--youtube" href="#">Youtube</a>
+      </li>
+
+      <li class="social__item">
+        <a class="social__link social__link--google" href="#">google</a>
+      </li>
+
+    </ul>
+  </section>
+</main>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.viewportchecker.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#fullpage').fullpage({
+      verticalCentered: false,
+      afterLoad: function(anchorLink, index) {
+        $('.anim-block').addClass('hidden').viewportChecker({
+          classToAdd: 'visible animated fadeInDown',
+          offset: 120
+        });
+      }
+    })
+  });
+</script>
+</body>
+
+</html>

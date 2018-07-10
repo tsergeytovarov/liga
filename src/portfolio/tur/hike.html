@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, follow">
+    <link href="css/style.min.css" rel="stylesheet">
+    <title>Турклуб ПИК: страница похода</title>
+    <script>
+      document.createElement("picture");
+    </script>
+    <script src="js/picturefill.min.js" async=""></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <link rel="preload" href="img/checkbox-on-hover.svg" as="image">
+  </head>
+  
+  <body>
+    <header class="main-header  main-header--relative">
+      <div class="container">
+        <div class="main-header__wrapper">
+          <div class="logo  logo--header">
+            <a href="index.html">
+              <img src="img/logo-red.svg" alt="логотип" width="154" height="57">
+            </a>
+          </div>
+          <div class="main-header__nav">
+            <nav class="nav">
+              <button type="button" class="nav__btn  btn">
+                <span class="nav__note">МЕНЮ</span>
+              </button>
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="campings.html" class="nav__link">Все походы</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Информация</a>
+                  <button class="nav__arrow  nav__arrow--1" type="button"></button>
+                  <ul class="nav__sublist  nav__sublist--1">
+                    <li class="nav__subitem">
+                      <a href="#" class="nav__sublink">Отзывы</a>
+                    </li>
+                    <li class="nav__subitem">
+                      <a href="route.html" class="nav__sublink">Как пойти</a>
+                    </li>
+                    <li class="nav__subitem">
+                      <a href="articles.html" class="nav__sublink">Статьи</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav__item">
+                  <a href="hire.html" class="nav__link">Прокат</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Команда</a>
+                  <button class="nav__arrow  nav__arrow--2" type="button"></button>
+                  <ul class="nav__sublist  nav__sublist--2">
+                    <li class="nav__subitem">
+                      <a href="about.html" class="nav__sublink">О нас</a>
+                    </li>
+                    <li class="nav__subitem">
+                      <a href="route.html" class="nav__sublink">Корпоративные мероприятия</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav__item">
+                  <a href="hire.html" class="nav__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="main-header__search">
+            <form action="#" class="search">
+              <label for="search__input" class="search__label"></label>
+              <input type="text" class="search__input  search__input--hidden" id="search__input" placeholder="Поиск по сайту">
+              <button class="search__btn  search__btn--hidden" type="reset"></button>
+            </form>
+          </div>
+          <div class="main-header__contacts">
+            <a href="#" class="vk"></a>
+            <a href="tel:+79602345699" class="phone">+7 (960) 234-56-99</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main" id="main">
+      <div class="container">
+        <div class="breadcrumbs">
+          <a href="index.html" class="breadcrumbs__link">Вернуться к поиску</a>
+        </div>
+        <h1 class="title  title--margin-bottom">Поход по Грузии: Сванетия</h1>
+        <div class="main__marks">
+          <button class="mark-btn  mark-btn--location  btn" type="button">Кавказ</button>
+          <button class="mark-btn  mark-btn--avia  btn" type="button">Заграничные</button>
+          <button class="mark-btn  mark-btn--walking  btn" type="button">Пешие</button>
+          <button class="mark-btn  mark-btn--calendar  btn" type="button">Походы в сентябре</button>
+        </div>
+      </div>
+      <div class="main__hike  hike">
+        <picture>
+          <source media="(min-width: 920px)" srcset="img/hike-main-img-desktop.jpg 1x, img/hike-main-img-desktop@2x.jpg 2x, img/hike-main-img-desktop@3x.jpg 3x">
+          <source media="(min-width: 480px)" srcset="img/hike-main-img-tablet.jpg 1x, img/hike-main-img-tablet.jpg 2x, img/hike-main-img-tablet@3x.jpg 3x">
+          <source media="(min-width: 320px)" srcset="img/hike-main-img-mobile.jpg 1x, img/hike-main-img-mobile@2x.jpg 2x, img/hike-main-img-mobile@3x.jpg 3x">
+          <img src="img/hike-main-img-mobile.jpg" alt=" " class="hike__main-img">
+        </picture>
+        <div class="hike__wrapper">
+          <div class="hike__column  hike__column--wide">
+            <div class="hike__anchors">
+              <a href="#description" class="hike__anchors-link  hike__anchors-link--active">Описание</a>
+              <a href="#plan" class="hike__anchors-link">План похода</a>
+              <a href="#equipment" class="hike__anchors-link">В рюкзаке</a>
+              <a href="#review" class="hike__anchors-link">Отзывы</a>
+              <div class="hike__select">
+                <div class="hike__select-container">Группы походов</div>
+                <div class="hike__select-dropdown">
+                  <a href="#">Июнь 2017</a>
+                  <a href="#">Июль 2017</a>
+                  <a href="#">Август 2017 </a>
+                </div>
+              </div>
+            </div>
+            <div class="hike__info">
+              <div class="hike__description">
+                <button class="btn  hike__equipment-expand  hike__equipment-expand--open  hike__equipment-expand--hidden  hike__equipment-expand--describe" type="button"></button>
+                <h2 class="hike__title" id="description">Описание</h2>
+              </div>
+              <div class="hike__info-wrapper  hike__info-wrapper--hidden">
+                <div class="hike__info-item">
+                  <p class="hike__info-note  hike__info-note--red">Длительность</p>
+                  <p class="hike__info-text"><b>14</b> дней</p>
+                </div>
+                <div class="hike__info-item">
+                  <p class="hike__info-note  hike__info-note--green">Длина</p>
+                  <p class="hike__info-text"><b>90</b> км</p>
+                </div>
+                <div class="hike__info-item">
+                  <p class="hike__info-note  hike__info-note--red">Вес рюкзака</p>
+                  <p class="hike__info-text"><b>34</b>кг</p>
+                </div>
+                <div class="hike__info-item">
+                  <p class="hike__info-note  hike__info-note--yellow">Сложность</p>
+                  <p class="hike__info-text"><b>2</b>/3</p>
+                </div>
+              </div>
+              <div class="hike__details  hike__details--hidden">
+                <div class="hike__details-title">
+                  <h3>Даты (без дороги)</h3>
+                  <h3>Инструкторы</h3>
+                  <h3>Цена</h3>
+                </div>
+                <div class="hike__details-title  hike__details-title--mobile">
+                  <h3>Даты и инструкторы</h3>
+                </div>
+                <div class="hike__details-wrapper">
+                  <div class="hike__details-column">
+                    <div class="hike__details-item">
+                      <p>с 1 по 14 июл 2017</p>
+                    </div>
+                  </div>
+                  <div class="hike__details-column">
+                    <p>
+                     <a href="#" class="link link--solid">Андрей Васильев</a>
+                     <span> и </span>
+                     <a href="#" class="link link--solid">Бритвина Екатерина</a>
+                    </p>
+                  </div>
+                  <div class="hike__details-column">
+                    <div class="hike__details-item">
+                      <p class="hike__details-price">23 900 руб</p>
+                      <a href="#" class="hike__details-btn">Записаться</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="hike__details-wrapper">
+                  <div class="hike__details-column">
+                    <div class="hike__details-item">
+                      <p>с 15 по 28 июл 2017</p>
+                    </div>
+                  </div>
+                  <div class="hike__details-column">
+                    <p>
+                     <a href="#" class="link link--solid">Бритвина Екатерина</a>
+                    </p>
+                  </div>
+                  <div class="hike__details-column">
+                    <div class="hike__details-item">
+                      <p class="hike__details-price">23 900 руб</p>
+                      <a href="#" class="hike__details-btn">Записаться</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="hike__details-wrapper">
+                  <div class="hike__details-column">
+                    <div class="hike__details-item">
+                      <p>с 5 по 18 авг 2017</p>
+                    </div>
+                  </div>
+                  <div class="hike__details-column">
+                    <p>
+                     <a href="#" class="link link--solid">Ксюша Расина</a>
+                     <span> и </span>
+                     <a href="#" class="link link--solid">Валя Иванов</a>
+                    </p>
+                  </div>
+                  <div class="hike__details-column">
+                    <div class="hike__details-item">
+                      <p class="hike__details-price">23 900 руб</p>
+                      <a href="#" class="hike__details-btn">Записаться</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="hike__details-wrapper">
+                  <div class="hike__details-column">
+                    <div class="hike__details-item">
+                      <p>с 6 по 19 авг 2017</p>
+                    </div>
+                  </div>
+                  <div class="hike__details-column">
+                    <p>
+                     <a href="#" class="link link--solid">Виктория Голубева</a>
+                    </p>
+                  </div>
+                  <div class="hike__details-column">
+                    <div class="hike__details-item">
+                      <p class="hike__details-price">23 900 руб</p>
+                      <a href="#" class="hike__details-btn">Записаться</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="hike__details-wrapper">
+                  <div class="hike__details-column">
+                    <div class="hike__details-item">
+                      <p>с 19 авг по 1 сен 2017</p>
+                    </div>
+                  </div>
+                  <div class="hike__details-column">
+                    <p>
+                     <a href="#" class="link link--solid">Веселый муравьед</a>
+                    </p>
+                  </div>
+                  <div class="hike__details-column">
+                    <div class="hike__details-item">
+                      <p class="hike__details-price">23 900 руб</p>
+                      <a href="#" class="hike__details-btn">Записаться</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="hike__details-wrapper">
+                  <div class="hike__details-column">
+                    <div class="hike__details-item">
+                      <p>с 5 по 18 авг 2017</p>
+                    </div>
+                  </div>
+                  <div class="hike__details-column">
+                    <p>
+                     <a href="#" class="link link--solid">Ксюша Расина</a>
+                     <span> и </span>
+                     <a href="#" class="link link--solid">Валя Иванов</a>
+                    </p>
+                  </div>
+                  <div class="hike__details-column">
+                    <div class="hike__details-item">
+                      <p class="hike__details-price">23 900 руб</p>
+                      <a href="#" class="hike__details-btn">Записаться</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="hike__details-wrapper">
+                  <div class="hike__details-column">
+                    <div class="hike__details-item">
+                      <p>с 6 по 19 авг 2017</p>
+                    </div>
+                  </div>
+                  <div class="hike__details-column">
+                    <p>
+                      <a href="#" class="link link--solid">Виктория Голубева</a>
+                    </p>
+                  </div>
+                  <div class="hike__details-column">
+                    <div class="hike__details-item">
+                      <p class="hike__details-price">23 900 руб</p>
+                      <a href="#" class="hike__details-btn">Записаться</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="hike__text  hike__text--hidden">
+                <p>Приглашаем вас ощутить все прелести активного отдыха в Грузии, куда отправляется турклуб «ПИК» из Санкт-Петербурга. В эту страну с самобытной культурой и древнейшей историей можно влюбиться навсегда, лишь раз ее повидав. Все в ней греет душу и насыщает взор: дивные горные пейзажи Кавказского хребта, добродушные гостеприимные люди, вкуснейшая грузинская кухня и знаменитое вино, песни и зажигательные танцы.</p>
+                <p>Мы идем в пеший поход по Грузии, а именно в Сванетию – один из самых отдаленных и загадочных регионов этого удивительного края. Если вы хотите поближе узнать историю, своими глазами увидеть ее наследие и самую прекрасную природу, а также стать участниками захватывающего приключения – путешествия по Грузии дикарем, то вам непременно с нами по пути.</p>
+              </div>
+              <div class="hike__media">
+                <div class="hike__media-wrapper">
+                  <button class="btn  hike__equipment-expand  hike__equipment-expand--open  hike__equipment-expand--hidden  hike__equipment-expand--video" type="button"></button>
+                  <h3 class="hike__title  hike__title--mobile">Видео о походе</h3>
+                </div>
+                <div class="hike__photos  hike__photos--hidden">
+                  <div class="photos  photos--width">
+                    <a href="img/photo-06@3x.jpg" data-lightbox="roadtrip">
+                      <img src="img/photo-06.jpg" alt=" " srcset="img/photo-06@2x.jpg 2x, img/photo-06@3x.jpg 3x">
+                    </a>
+                    <a href="img/photo-07@3x.jpg" data-lightbox="roadtrip">
+                      <img src="img/photo-07.jpg" alt=" " srcset="img/photo-07@2x.jpg 2x, img/photo-07@3x.jpg 3x">
+                    </a>
+                    <a href="img/photo-06@3x.jpg" data-lightbox="roadtrip">
+                      <img src="img/photo-06.jpg" alt=" " srcset="img/photo-06@2x.jpg 2x, img/photo-06@3x.jpg 3x">
+                    </a>
+                    <a href="img/photo-07@3x.jpg" data-lightbox="roadtrip">
+                      <img src="img/photo-07.jpg" alt=" " srcset="img/photo-07@2x.jpg 2x, img/photo-07@3x.jpg 3x">
+                    </a>
+                    <a href="img/photo-08@3x.jpg" data-lightbox="roadtrip">
+                      <img src="img/photo-08.jpg" alt=" " srcset="img/photo-08@2x.jpg 2x, img/photo-08@3x.jpg 3x">
+                    </a>
+                    <a href="img/photo-09@3x.jpg" data-lightbox="roadtrip">
+                      <img src="img/photo-09.jpg" alt=" " srcset="img/photo-09@2x.jpg 2x, img/photo-09@3x.jpg 3x">
+                    </a>
+                    <a href="img/photo-08@3x.jpg" data-lightbox="roadtrip">
+                      <img src="img/photo-08.jpg" alt=" " srcset="img/photo-08@2x.jpg 2x, img/photo-08@3x.jpg 3x">
+                    </a>
+                    <a href="img/photo-09@3x.jpg" data-lightbox="roadtrip">
+                      <span>+15</span>
+                      <img src="img/photo-09.jpg" alt=" " srcset="img/photo-09@2x.jpg 2x, img/photo-09@3x.jpg 3x">
+                    </a>
+                  </div>
+                </div>
+                <div class="hike__video  hike__video--margin  hike__video--hidden">
+                  <h3 class="hike__subtitle">Видео о походе</h3>
+                  <div class="hike__video">
+                    <picture>
+                      <source media="(min-width: 920px)" srcset="img/video-preview-desktop.jpg 1x, img/video-preview-desktop@2x.jpg 2x, img/video-preview-desktop@3x.jpg 3x">
+                      <source media="(min-width: 480px)" srcset="img/video-preview-tablet.jpg 1x, img/video-preview-tablet@2x.jpg 2x, img/video-preview-tablet@3x.jpg 3x">
+                      <source media="(min-width: 320px)" srcset="img/video-preview-mobile.jpg 1x, img/video-preview-mobile@2x.jpg 2x, img/video-preview-mobile@3x.jpg 3x">
+                      <img src="img/video-preview-mobile.jpg" alt=" " class="hike__video-img">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div class="hike__list">
+                <div class="hike__list-wrapper">
+                  <button class="btn  hike__equipment-expand  hike__equipment-expand--open  hike__equipment-expand--hidden  hike__equipment-expand--price" type="button"></button>
+                  <h3 class="hike__title  hike__title--mobile">Стоимость</h3>
+                </div>
+                <div class="hike__half-column  hike__half-column--hidden  hike__half-column--1">
+                  <h3 class="hike__subtitle">Что входит в стоимость?</h3>
+                  <ul class="list">
+                    <li class="list__item">питание и перекусы на маршруте </li>
+                    <li class="list__item">прокат группового снаряжения (палатки, тент, костровое оборудование, пилы, топоры, посуда) </li>
+                    <li class="list__item">работа инструкторов </li>
+                    <li class="list__item">проживание в кэмпинге Кобулети (2 дня)</li>
+                    <li class="list__item">проживание в хостеле Тбилиси (1 день)</li>
+                    <li class="list__item">трансфер на маршруте</li>
+                    <li class="list__item">медицинская страховка</li>
+                  </ul>
+                </div>
+                <div class="hike__half-column  hike__half-column--hidden  hike__half-column--2">
+                  <h3 class="hike__subtitle">Что не входит в стоимость?</h3>
+                  <ul class="list">
+                    <li class="list__item">прокат личного снаряжения: рюкзак, спальник, пенка</li>
+                    <li class="list__item">билеты Спб - Тбилиси - Спб</li>
+                    <li class="list__item">питание в Тбилиси, Кобулети и Мцхете</li>
+                    <li class="list__item">сувениры</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="hike__tickets  hike__tickets--hidden">
+                <button class="btn  hike__equipment-expand  hike__equipment-expand--hidden  hike__equipment-expand--tickets" type="button"></button>
+                <h3 class="hike__subtitle">Информация о билетах</h3>
+                <p>Встреча группы происходит в аэропорту Тбилиси. Прилетать в Тбилиси нужно не позже 12:00 18 июня 2017. Улетать обратно из Тбилиси не раньше 12:00 25 июня 2017</p>
+                <p>
+                  ✈️ <a href="#" class="link link--solid">Из СПб 17-25 июня</a>
+                </p>
+                <p>
+                  ✈️ <a href="#" class="link link--solid">Из Москвы 17-25 июня</a>
+                </p>
+                <p>При покупке билетов будьте внимательны, рюкзаки весят не меньше 10 кг!!!</p>
+                <div class="avia-widget"></div>
+              </div>
+              <div class="hike__plan">
+                <button class="btn  hike__equipment-expand  hike__equipment-expand--open  hike__equipment-expand--hidden  hike__equipment-expand--plan" type="button"></button>
+                <h2 class="hike__title" id="plan">План похода</h2>
+                <div class="hike__day  hike__day--1  hike__day--hidden">
+                  <div class="hike__day-column  hike__day-column--narrow">
+                    <h4>День 1-й</h4>
+                  </div>
+                  <div class="hike__day-column">
+                    <p>Прибытие в аэропорт Тбилиси утром, знакомство с группой. Прогулка по столице Грузии, по ее историческим районам. Первые хачапури, хинкали и другие вкусности Кавказа. Ночной переезд в Местию – религиозную и культурную столицу Сванетии.</p>
+                    <div class="hike__day-images">
+                      <img src="img/day-img-01.jpg" alt=" " srcset="img/day-img-01@2x.jpg 2x, img/day-img-01@3x.jpg 3x">
+                      <img src="img/day-img-02.jpg" alt=" " srcset="img/day-img-02@2x.jpg 2x, img/day-img-02@3x.jpg 3x">
+                      <img src="img/day-img-03.jpg" alt=" " srcset="img/day-img-03@2x.jpg 2x, img/day-img-03@3x.jpg 3x">
+                      <img src="img/day-img-04.jpg" alt=" " srcset="img/day-img-04@2x.jpg 2x, img/day-img-04@3x.jpg 3x">
+                      <img src="img/day-img-05.jpg" alt=" " srcset="img/day-img-05@2x.jpg 2x, img/day-img-05@3x.jpg 3x">
+                    </div>
+                  </div>
+                </div>
+                <div class="hike__day  hike__day--2  hike__day--hidden">
+                  <div class="hike__day-column  hike__day-column--narrow">
+                    <h4>День 2-й</h4>
+                  </div>
+                  <div class="hike__day-column">
+                    <p>Сегодня начинается нашпоход по Сванетии. Мы разобьем лагерь в селении, стоящем под легендарной вершиной Кавказа - Ушбой. Именно отсюда начинаются почти все альпинистские маршруты в Грузии на эту гору.</p>
+                    <div class="hike__day-images">
+                      <img src="img/day-img-01.jpg" alt=" " srcset="img/day-img-01@2x.jpg 2x, img/day-img-01@3x.jpg 3x">
+                      <img src="img/day-img-02.jpg" alt=" " srcset="img/day-img-02@2x.jpg 2x, img/day-img-02@3x.jpg 3x">
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="hike__more-btn  btn  btn--fade  btn--more">Развернуть</a>
+              </div>
+              <div class="hike__equipment">
+                <button class="btn  hike__equipment-expand  hike__equipment-expand--open  hike__equipment-expand--hidden  hike__equipment-expand--equipment" type="button"></button>
+                <h2 class="hike__title" id="equipment">В рюкзаке</h2>
+                <div class="hike__equipment-wrapper  hike__equipment-wrapper--hidden">
+                  <p>Очень важно подобрать соответствующее снаряжение для каждого похода. Правильно подобранное оборудование - залог вашего хорошего настроения и кофморта на маршруте. Личное снаряжение должно весить не больше 9-13 кг и занимать около 50 % объёма рюкзака. Не забывайте, что вам ещё нести часть общественного снаряжения и модули с едой. Стандартный вес общественных модулей для мужчин — 9 кг, для женщин — 6-7 кг.</p>
+                  <div class="hike__equipment-header  hike__equipment-header--base">
+                    <button class="btn  hike__equipment-expand  hike__equipment-expand--open" type="button"></button>
+                    <h3 class="hike__subtitle">Обязательное снаряжение</h3>
+                    <a href="#" class="btn  btn--hidden  btn--small  btn--share">Поделиться</a>
+                    <a href="#" class="btn  btn--hidden  btn--small  btn--print">Распечатать</a>
+                  </div>
+                  <div class="hike__equipment-dropdown  hike__equipment-dropdown--hidden  hike__equipment-dropdown--base">
+                    <h4>Снаряжение</h4>
+                    <a href="#" class="link  link--solid">Рюкзак для длительного похода (90 л – мужчины, 70 л – женщины) с поясом<span class="link__bullet">В прокат – от 105 руб/день</span></a>
+                    <p>Накидка на рюкзак</p>
+                    <p>Полиэтиленовые или другие непромокаемые мешки</p>
+                    <a href="#" class="link  link--solid">Пенка (туристический коврик, коврик пенополиуретановый, каремат)<span class="link__bullet">В прокат – от 115 руб/день</span></a>
+                    <a href="#" class="link  link--solid">Спальник весенне-осенний (температура комфорта -5* С)<span class="link__bullet">В прокат – от 55 руб/день</span></a>
+                    <h4>Одежда</h4>
+                    <p>Одежда для сна</p>
+                    <p>Нижнее бельё</p>
+                    <p>Плавательный костюм (купальник, плавки)</p>
+                    <p>Термобельё весенне-осеннее</p>
+                    <p>Штаны нижние ходовые (лосины, рейтузы, термобельё)</p>
+                    <p>Штаны верхние ходовые (не продуваемые и непромокаемые)</p>
+                    <p>Шорты</p>
+                    <p>Носки или термоноски</p>
+                    <p>Футболка х/б</p>
+                    <p>Термофутболка</p>
+                    <p>Рубашка с длинным рукавом</p>
+                    <p>Теплая флисовая кофта с горловиной (плотный шерстяной свитер)</p>
+                    <p>Куртка непродуваемая и непромокаемая (штормовка)</p>
+                    <p>Шапочка лёгкая</p>
+                    <p>Головной убор (панамка, бандана, кепка, шляпа)</p>
+                    <p>Накидка от дождя с капюшоном</p>
+                    <h4>Личные вещи</h4>
+                    <p>Паспорт</p>
+                    <p>Билеты</p>
+                    <p>Треккинговые ботинки</p>
+                    <p>Сменные треккинговые ботинки</p>
+                    <p>Шлёпки (сандалии)</p>
+                    <p>Страховка</p>
+                    <p>Деньги</p>
+                    <p>Подпопник (пендаль, хоба, пенозад, сидушка туристическая)</p>
+                    <p>Фонарик налобный светодиодный</p>
+                    <p>Набор посуды (КЛМН)</p>
+                    <p>Пластиковая бутылка</p>
+                    <p>Туалетная бумага</p>
+                    <p>Индивидуальная аптечка</p>
+                    <p>Предметы личной гигиены</p>
+                    <p>Заграничный паспорт</p>
+                    <p>Жилет пуховый</p>
+                  </div>
+                  <div class="hike__equipment-header  hike__equipment-header--advanced">
+                    <button class="btn  hike__equipment-expand  hike__equipment-expand--open" type="button"></button>
+                    <h3 class="hike__subtitle">Рекомендуемое снаряжение</h3>
+                    <a href="#" class="btn  btn--hidden  btn--small  btn--share">Поделиться</a>
+                    <a href="#" class="btn  btn--hidden  btn--small  btn--print">Распечатать</a>
+                  </div>
+                  <div class="hike__equipment-dropdown  hike__equipment-dropdown--hidden  hike__equipment-dropdown--advanced">
+                    <h4>Снаряжение</h4>
+                    <a href="#" class="link  link--solid">Рюкзак для длительного похода (90 л – мужчины, 70 л – женщины) с поясом<span class="link__bullet">В прокат – от 105 руб/день</span></a>
+                    <p>Накидка на рюкзак</p>
+                    <p>Полиэтиленовые или другие непромокаемые мешки</p>
+                    <a href="#" class="link  link--solid">Пенка (туристический коврик, коврик пенополиуретановый, каремат)<span class="link__bullet">В прокат – от 115 руб/день</span></a>
+                    <a href="#" class="link  link--solid">Спальник весенне-осенний (температура комфорта -5* С)<span class="link__bullet">В прокат – от 55 руб/день</span></a>
+                    <h4>Одежда</h4>
+                    <p>Одежда для сна</p>
+                    <p>Нижнее бельё</p>
+                    <p>Плавательный костюм (купальник, плавки)</p>
+                    <p>Термобельё весенне-осеннее</p>
+                    <p>Штаны нижние ходовые (лосины, рейтузы, термобельё)</p>
+                    <p>Штаны верхние ходовые (не продуваемые и непромокаемые)</p>
+                    <p>Шорты</p>
+                    <p>Носки или термоноски</p>
+                    <p>Футболка х/б</p>
+                    <p>Термофутболка</p>
+                    <p>Рубашка с длинным рукавом</p>
+                    <p>Теплая флисовая кофта с горловиной (плотный шерстяной свитер)</p>
+                    <p>Куртка непродуваемая и непромокаемая (штормовка)</p>
+                    <p>Шапочка лёгкая</p>
+                    <p>Головной убор (панамка, бандана, кепка, шляпа)</p>
+                    <p>Накидка от дождя с капюшоном</p>
+                    <h4>Личные вещи</h4>
+                    <p>Паспорт</p>
+                    <p>Билеты</p>
+                    <p>Треккинговые ботинки</p>
+                    <p>Сменные треккинговые ботинки</p>
+                    <p>Шлёпки (сандалии)</p>
+                    <p>Страховка</p>
+                    <p>Деньги</p>
+                    <p>Подпопник (пендаль, хоба, пенозад, сидушка туристическая)</p>
+                    <p>Фонарик налобный светодиодный</p>
+                    <p>Набор посуды (КЛМН)</p>
+                    <p>Пластиковая бутылка</p>
+                    <p>Туалетная бумага</p>
+                    <p>Индивидуальная аптечка</p>
+                    <p>Предметы личной гигиены</p>
+                    <p>Заграничный паспорт</p>
+                    <p>Жилет пуховый</p>
+                  </div>
+                </div>
+              </div>
+              <div class="hike__review">
+                <button class="btn  hike__equipment-expand  hike__equipment-expand--open  hike__equipment-expand--hidden  hike__equipment-expand--review" type="button"></button>
+                <h2 class="hike__title" id="review">Отзывы</h2>
+                <div class="review-widget"></div>
+              </div>
+              <div class="hike__form">
+                <h2 class="hike__title">Задать вопрос</h2>
+                <form action="#" method="post" class="feedback">
+                  <div class="feedback__column">
+                    <div class="feedback__header">
+                      <img src="img/instructor-03.png" alt=" " srcset="img/instructor-03@2x.png 2x, img/instructor-03@3x.png 3x">
+                      <div class="feedback__half-column">
+                        <h3>Катерина Пик</h3>
+                        <p>Задавайте вопросы мне)</p>
+                      </div>
+                    </div>
+                    <input type="email" class="feedback__email  input" required="" name="feedback__email" placeholder="E-mail для ответа">
+                    <textarea name="feedback__comment" class="feedback__comment" required="" placeholder="Ваш вопрос"></textarea>
+                    <div class="feedback__wrapper">
+                      <p class="feedback__note">Максимальное время ответа в будни – 12 часов</p>
+                      <button class="btn  btn--green  feedback__submit" type="submit">Отправить</button>
+                    </div>
+                  </div>
+                  <div class="feedback__column  feedback__column--social  social">
+                    <a href="tel:+79602345699" class="phone  phone--small  phone--marked">+79602345699</a>
+                    <a href="#" class="social__link  social__link--vk">https://vk.com/turclubpik</a>
+                    <a href="mailto:mail@turclub-pik.ru" class="mail">support@turclub-pik.ru</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="hike__column  hike__column--narrow">
+            <div class="hike__dates  entry">
+              <div class="entry__column">
+                <h3 class="entry__title">Даты походов</h3>
+                <select class="entry__select">
+                  <option value="">с 1 по 14 июл 2017</option>
+                  <option value="">с 1 по 14 июл 2017</option>
+                  <option value="">с 1 по 14 июл 2017</option>
+                </select>
+                <h3 class="entry__title">Инструкторы</h3>
+                <a href="#" class="entry__instructor">
+                  <img src="img/instructor-01.png" alt=" " srcset="img/instructor-01@2x.png 2x, img/instructor-01@3x.png 3x">
+                  <p>Андрей Васильев</p>
+                </a>
+                <a href="#" class="entry__instructor">
+                  <img src="img/instructor-02.png" alt=" " srcset="img/instructor-02@2x.png 2x, img/instructor-02@3x.png 3x">
+                  <p>Бритвина Екатерина</p>
+                </a>
+              </div>
+              <div class="entry__column">
+                <h3 class="entry__title  entry__title--margin-top">Цена</h3>
+                <p class="entry__price">23 900 руб</p>
+                <p class="entry__note">
+                  из Санкт-Петербурга,<br>
+                  24 400 руб – из других городов
+                  <button class="entry__info" type="button">
+                    <span class="entry__info-dropdown">
+                      Если вы из другого города России, но сможете за 3 дня до похода забрать модули с едой, то вы едете по цене для жителей Петербурга.
+                    </span>
+                  </button>
+                </p>
+                <a href="#" class="btn  btn--green  entry__btn">Записаться в поход</a>
+                <div class="entry__wrapper">
+                  <a href="#" class="link entry__link">Как пойти в поход?</a>
+                  <b class="entry__important">Осталось 5 мест</b>
+                </div>
+              </div>
+            </div>
+            <a href="#main" class="btn  btn--up  scrollto">
+              <span class="visually-hidden">вернуться к началу страницы</span>
+            </a>
+          </div>
+        </div>
+        <div class="container">
+          <div class="hike__more">
+            <h2 class="hike__title">Вас может заинтересовать</h2>
+            <div class="hike__tour  tour  tour--adaptive">
+              <div class="tour__card  tour__card--border-bold">
+                <p class="tour__places"></p>
+                <a href="#">
+                  <picture>
+                    <source media="(min-width: 920px)" srcset="img/hike-card-01-desktop.jpg 1x, img/hike-card-01-desktop@2x.jpg 2x, img/hike-card-01-desktop@3x.jpg 3x">
+                    <source media="(min-width: 480px)" srcset="img/hike-card-01-tablet.jpg 1x, img/hike-card-01-tablet@2x.jpg 2x, img/hike-card-01-tablet@3x.jpg 3x">
+                    <source media="(min-width: 320px)" srcset="img/hike-card-01-mobile.jpg 1x, img/hike-card-01-mobile@2x.jpg 2x, img/hike-card-01-mobile@3x.jpg 3x">
+                    <img src="img/hike-card-01-desktop.jpg" alt=" " class="tour__img" srcset="img/hike-card-01-desktop@2x.jpg 2x, img/hike-card-01-desktop@3x.jpg 3x">
+                  </picture>
+                  <p class="tour__mark">
+                    <span class="mark  mark--walking"></span>
+                  </p>
+                  <h2 class="tour__title">Камчатка</h2>
+                </a>
+                <p class="tour__description">
+                  с 8 авг по 17 сен 2017 – 12 дней<br>
+                </p>
+                <div class="tour__info">
+                  <p class="tour__length">150 км</p>
+                  <div class="tour__column">
+                    <p class="tour__level  tour__level--hard">Сложный</p>
+                    <div class="tour__level-popup">
+                      <h4 class="tour__subtitle  tour__subtitle--easy">Простые</h4>
+                      <p class="tour__level-description">Переходы до 10 км, преимущественно без рюкзака. осилит любой здоровый человек</p>
+                      <h4 class="tour__subtitle  tour__subtitle--middle">Средние</h4>
+                      <p class="tour__level-description">Переходы до 15 км, преимущественно с рюкзаком. желательно быть в хорошей физической форме</p>
+                      <h4 class="tour__subtitle  tour__subtitle--hard">Сложные</h4>
+                      <p class="tour__level-description">Встречи с дикими зверями, лавовые реки, кислотные дожди, выживут немногие</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="tour__price">25 500 руб</p>
+              </div>
+              <div class="tour__card">
+                <p class="tour__places"></p>
+                <a href="#">
+                  <picture>
+                    <source media="(min-width: 920px)" srcset="img/hike-card-02-desktop.jpg 1x, img/hike-card-02-desktop@2x.jpg 2x, img/hike-card-02-desktop@3x.jpg 3x">
+                    <source media="(min-width: 480px)" srcset="img/hike-card-02-tablet.jpg 1x, img/hike-card-02-tablet@2x.jpg 2x, img/hike-card-02-tablet@3x.jpg 3x">
+                    <source media="(min-width: 320px)" srcset="img/hike-card-02-mobile.jpg 1x, img/hike-card-02-mobile@2x.jpg 2x, img/hike-card-02-mobile@3x.jpg 3x">
+                    <img src="img/hike-card-02-desktop.jpg" alt=" " class="tour__img" srcset="img/hike-card-02-desktop@2x.jpg 2x, img/hike-card-02-desktop@3x.jpg 3x">
+                  </picture>
+                  <p class="tour__mark">
+                    <span class="mark  mark--walking"></span>
+                  </p>
+                  <h2 class="tour__title">Таганай и Зюраткуль. Легенды Южного Урала</h2>
+                </a>
+                <p class="tour__description">
+                  с 8 авг по 17 сен 2017 – 12 дней<br>
+                </p>
+                <div class="tour__info">
+                  <p class="tour__length">150 км</p>
+                  <div class="tour__column">
+                    <p class="tour__level  tour__level--easy">Легкий</p>
+                    <div class="tour__level-popup">
+                      <h4 class="tour__subtitle  tour__subtitle--easy">Простые</h4>
+                      <p class="tour__level-description">Переходы до 10 км, преимущественно без рюкзака. осилит любой здоровый человек</p>
+                      <h4 class="tour__subtitle  tour__subtitle--middle">Средние</h4>
+                      <p class="tour__level-description">Переходы до 15 км, преимущественно с рюкзаком. желательно быть в хорошей физической форме</p>
+                      <h4 class="tour__subtitle  tour__subtitle--hard">Сложные</h4>
+                      <p class="tour__level-description">Встречи с дикими зверями, лавовые реки, кислотные дожди, выживут немногие</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="tour__price">3 900 руб</p>
+              </div>
+              <div class="tour__card">
+                <p class="tour__places"></p>
+                <a href="#">
+                  <picture>
+                    <source media="(min-width: 920px)" srcset="img/hike-card-03-desktop.jpg 1x, img/hike-card-03-desktop@2x.jpg 2x, img/hike-card-03-desktop@3x.jpg 3x">
+                    <source media="(min-width: 480px)" srcset="img/hike-card-03-tablet.jpg 1x, img/hike-card-03-tablet@2x.jpg 2x, img/hike-card-03-tablet@3x.jpg 3x">
+                    <source media="(min-width: 320px)" srcset="img/hike-card-03-mobile.jpg 1x, img/hike-card-03-mobile@2x.jpg 2x, img/hike-card-03-mobile@3x.jpg 3x">
+                    <img src="img/hike-card-03-desktop.jpg" alt=" " class="tour__img" srcset="img/hike-card-03-desktop@2x.jpg 2x, img/hike-card-03-desktop@3x.jpg 3x">
+                  </picture>
+                  <p class="tour__mark">
+                    <span class="mark  mark--walking"></span>
+                    <span class="mark  mark--avia"></span>
+                  </p>
+                  <h2 class="tour__title">Поход по Грузии: Сванетия</h2>
+                </a>
+                <p class="tour__description">
+                  с 8 авг по 17 сен 2017 – 12 дней<br>
+                </p>
+                <div class="tour__info">
+                  <p class="tour__length">150 км</p>
+                  <div class="tour__column">
+                    <p class="tour__level  tour__level--middle">Средний</p>
+                    <div class="tour__level-popup">
+                      <h4 class="tour__subtitle  tour__subtitle--easy">Простые</h4>
+                      <p class="tour__level-description">Переходы до 10 км, преимущественно без рюкзака. осилит любой здоровый человек</p>
+                      <h4 class="tour__subtitle  tour__subtitle--middle">Средние</h4>
+                      <p class="tour__level-description">Переходы до 15 км, преимущественно с рюкзаком. желательно быть в хорошей физической форме</p>
+                      <h4 class="tour__subtitle  tour__subtitle--hard">Сложные</h4>
+                      <p class="tour__level-description">Встречи с дикими зверями, лавовые реки, кислотные дожди, выживут немногие</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="tour__price">23 900 руб </p>
+              </div>
+              <div class="tour__card  tour__card--border-bottom">
+                <p class="tour__places"></p>
+                <a href="#">
+                  <picture>
+                    <source media="(min-width: 920px)" srcset="img/hike-card-04-desktop.jpg 1x, img/hike-card-04-desktop@2x.jpg 2x, img/hike-card-04-desktop@3x.jpg 3x">
+                    <source media="(min-width: 480px)" srcset="img/hike-card-04-tablet.jpg 1x, img/hike-card-04-tablet@2x.jpg 2x, img/hike-card-04-tablet@3x.jpg 3x">
+                    <source media="(min-width: 320px)" srcset="img/hike-card-04-mobile.jpg 1x, img/hike-card-04-mobile@2x.jpg 2x, img/hike-card-04-mobile@3x.jpg 3x">
+                    <img src="img/hike-card-04-desktop.jpg" alt=" " class="tour__img" srcset="img/hike-card-04-desktop@2x.jpg 2x, img/hike-card-04-desktop@3x.jpg 3x">
+                  </picture>
+                  <p class="tour__mark">
+                    <span class="mark  mark--walking"></span>
+                  </p>
+                  <h2 class="tour__title">Крым. Мир камня, неба и воды</h2>
+                </a>
+                <p class="tour__description">
+                  с 8 авг по 17 сен 2017 – 12 дней<br>
+                </p>
+                <div class="tour__info">
+                  <p class="tour__length">150 км</p>
+                  <div class="tour__column">
+                    <p class="tour__level  tour__level--hard">Сложный</p>
+                    <div class="tour__level-popup">
+                      <h4 class="tour__subtitle  tour__subtitle--easy">Простые</h4>
+                      <p class="tour__level-description">Переходы до 10 км, преимущественно без рюкзака. осилит любой здоровый человек</p>
+                      <h4 class="tour__subtitle  tour__subtitle--middle">Средние</h4>
+                      <p class="tour__level-description">Переходы до 15 км, преимущественно с рюкзаком. желательно быть в хорошей физической форме</p>
+                      <h4 class="tour__subtitle  tour__subtitle--hard">Сложные</h4>
+                      <p class="tour__level-description">Встречи с дикими зверями, лавовые реки, кислотные дожди, выживут немногие</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="tour__price">9 800 руб</p>
+              </div>
+            </div>
+          </div>
+          <div class="breadcrumbs  breadcrumbs--bottom">
+            <a href="campings.html" class="breadcrumbs__link">Вернуться к поиску</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="main-footer">
+      <div class="container  container--footer">
+        <div class="main-footer__wrapper">
+          <div class="main-footer__column">
+            <div class="logo  logo--footer">
+              <a href="index.html">
+                <img src="img/logo-red.svg" alt="логотип" width="154" height="57">
+              </a>
+            </div>
+            <div class="main-footer__contacts">
+              <a href="tel:89602345699" class="phone  phone--marked">8 (960) 234-56-99</a>
+              <a href="mailto:mail@turclub-pik.ru" class="mail">mail@turclub-pik.ru</a>
+              <div class="social">
+                <a href="#" class="social__link  social__link--inst">Instagram</a>
+                <a href="#" class="social__link  social__link--vk">Вконтакте</a>
+                <a href="#" class="social__link  social__link--yt">Youtube</a>
+              </div>
+              <a href="#" class="main-footer__subscribe  btn  btn--white">Подписаться на рассылку</a>
+            </div>
+          </div>
+          <div class="main-footer__column  main-footer__column--hidden">
+            <div class="main-footer__nav">
+              <div class="main-footer__nav-row">
+                <a href="campings.html" class="main-footer__nav-link  main-footer__nav-link--margin-right-small">Все походы</a>
+                <a href="#" class="main-footer__nav-link">Отзывы</a>
+                <a href="#" class="main-footer__nav-link">Прокат</a>
+                <a href="#" class="main-footer__nav-link">Контакты</a>
+                <a href="#" class="main-footer__nav-link">Как пойти</a>
+                <a href="#" class="main-footer__nav-link">Статьи</a>
+              </div>
+              <div class="main-footer__nav-row  main-footer__nav-row--column">
+                <a href="about.html" class="main-footer__nav-link  main-footer__nav-link--margin-right-large">О нас</a>
+                <a href="#" class="main-footer__nav-link  main-footer__nav-link--order">Корпоративные мероприятия</a>
+              </div>
+            </div>
+            <div class="main-footer__row">
+              <div class="links">
+                <div class="links__column">
+                  <h3 class="links__title"><a href="#">Направления</a></h3>
+                  <ul class="links__list">
+                    <li class="links__item">
+                      <a href="#" class="links__link">Азия</a>
+                    </li>
+                    <li class="links__item">
+                      <a href="#" class="links__link">Кольский</a>
+                    </li>
+                    <li class="links__item">
+                      <a href="#" class="links__link">Алтай</a>
+                    </li>
+                    <li class="links__item">
+                      <a href="#" class="links__link">Крым</a>
+                    </li>
+                    <li class="links__item">
+                      <a href="#" class="links__link">Америка</a>
+                    </li>
+                    <li class="links__item">
+                      <a href="#" class="links__link">Карелия и ЛО</a>
+                    </li>
+                    <li class="links__item">
+                      <a href="#" class="links__link">Байкал</a>
+                    </li>
+                    <li class="links__item">
+                      <a href="#" class="links__link">Москва и область</a>
+                    </li>
+                    <li class="links__item">
+                      <a href="#" class="links__link">Европа</a>
+                    </li>
+                    <li class="links__item">
+                      <a href="#" class="links__link">Турция</a>
+                    </li>
+                    <li class="links__item">
+                      <a href="#" class="links__link">Кавказ</a>
+                    </li>
+                    <li class="links__item">
+                      <a href="#" class="links__link">Эльбрус</a>
+                    </li>
+                    <li class="links__item">
+                      <a href="#" class="links__link">Камчатка</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="links__column  links__column--wide">
+                  <h3 class="links__title"><a href="#">Подборки</a></h3>
+                  <ul class="links__list">
+                    <li class="links__item">
+                      <a href="#" class="links__link">На выходные</a>
+                    </li>
+                    <li class="links__item">
+                      <a href="#" class="links__link">С детьми</a>
+                    </li>
+                    <li class="links__item">
+                      <a href="#" class="links__link">Велосипедные</a>
+                    </li>
+                    <li class="links__item">
+                      <a href="#" class="links__link">С морем</a>
+                    </li>
+                    <li class="links__item">
+                      <a href="#" class="links__link">Горные</a>
+                    </li>
+                    <li class="links__item">
+                      <a href="#" class="links__link">Скалолазание</a>
+                    </li>
+                    <li class="links__item">
+                      <a href="#" class="links__link">Заграничные</a>
+                    </li>
+                    <li class="links__item">
+                      <a href="#" class="links__link">Ски-выезды</a>
+                    </li>
+                    <li class="links__item">
+                      <a href="#" class="links__link">Йога-тур</a>
+                    </li>
+                    <li class="links__item">
+                      <a href="#" class="links__link">Сплавы</a>
+                    </li>
+                    <li class="links__item">
+                      <a href="#" class="links__link">Пешие</a>
+                    </li>
+                    <li class="links__item">
+                      <a href="#" class="links__link">Яхтинг</a>
+                    </li>
+                    <li class="links__item">
+                      <a href="#" class="links__link">Комбинированные</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="vk-widget"></div>
+            </div>
+          </div>
+        </div>
+        <div class="main-footer__copyright">
+          <p class="copyright">© 2008—2017 ТурКлуб «ПИК»</p>
+        </div>
+      </div>
+    </footer>
+    <div class="overlay"></div>
+    <div class="popup  popup--entry  popup--hidden">
+      <button class="btn  popup__close  popup__close--entry"><span class="visually-hidden">закрыть</span></button>
+      <h2 class="popup__title">Записаться в поход </h2>
+      <p class="popup__describe">Дата: 
+        <select class="popup__select  link">
+          <option class="link">с 1 по 14 июля 2017</option>
+          <option>с 1 по 14 июля 2017</option>
+          <option>с 1 по 14 июля 2017</option>
+          <option>с 1 по 14 июля 2017</option>
+        </select>
+      </p>
+      <p class="popup__describe">Поход по Грузии: Сванетия   •  Стоимость – 23 900 руб из Санкт-Петербурга</p>
+      <form action="#" method="post" class="popup__form  form  form--entry">
+        <div class="form__column  form__column--middle">
+          <label for="entry-name" class="label">Имя*</label>
+          <input type="text" class="input" placeholder="Валентин" name="entry-name" id="entry-name" required="">
+          
+          <label for="entry-surname" class="label">Фамилия*</label>
+          <input type="text" class="input" placeholder="Петров" name="entry-surname" id="entry-surname" required="">
+          
+          <label for="entry-phone" class="label">Номер мобильного телефона*</label>
+          <input type="tel" class="input" placeholder="+7 (960) 234-56-99" name="entry-phone" id="entry-phone" required="" aria-describedby="entry-phone-note">
+          <p class="form__note" id="entry-phone-note">Номер вашего мобильного телефона полностью, например: 89602345699</p>
+        </div>
+        <div class="form__column  form__column--middle">
+          <label for="entry-email" class="label">E-Mail*</label>
+          <input type="email" class="input" placeholder="turclub-pik@yandex.ru" name="entry-email" id="entry-email" required="" aria-describedby="entry-email-note">
+          <p class="form__note" id="entry-email-note">Адрес вашей электронной почты. Например: turclub-pik@yandex.ru. <br>Необходимо указать настоящий адрес</p>
+          
+          <label for="entry-vk" class="label  label--margin-top">Ссылка на страницу ВКонтакте (если есть)</label>
+          <input type="text" class="input" placeholder="https://vk.com/id24770" name="entry-vk" id="entry-vk" aria-describedby="entry-vk-note">
+          <p class="form__note" id="entry-vk-note">Если это поле заполнено, организатор похода свяжется с вами в ВК, чтобы ответить на вопросы</p>
+        </div>
+        <div class="form__container">
+          <button class="btn  btn--rounded  btn--plus" type="button">
+            <span class="btn__number">+1 </span>
+            Добавить человека
+          </button>
+        </div>
+        <div class="form__container  form__container--flex">
+          <p class="form__note  form__note--small" id="entry-form-btn-note">После того как вы отправите заявку, с вами свяжется координатор.</p>
+          <button class="btn  btn--green  form__btn" type="submit" aria-describedby="entry-form-btn-note">Отправить заявку</button>
+        </div>
+      </form>
+    </div>
+    <div class="popup  popup--entry-thanks  popup--hidden">
+      <button class="btn  popup__close  popup__close--entry-thanks"><span class="visually-hidden">закрыть</span></button>
+      <h2 class="popup__title">Спасибо!</h2>
+      <p class="popup__text">В течение N часов вам позвонит координатор.</p>
+      <button class="btn  btn--green  popup__btn  popup__btn--entry-thanks-close">Закрыть</button>
+    </div>
+    <div class="popup  popup--subscribe  popup--hidden">
+      <button class="btn  popup__close  popup__close--subscribe"><span class="visually-hidden">закрыть</span></button>
+      <h2 class="popup__title">Подписаться на рассылку</h2>
+      <p class="popup__text">Подпишитесь на нашу рассылку и первыми узнайте о самых интересных походах, важных и полезных статьях, а также об акциях, скидках и конкурсах.</p>
+      <h3 class="popup__subtitle">Взамен мы торжественно обещаем:</h3>
+      <ul class="popup__list">
+        <li class="popup__item">писать письма 1-2 раза в месяц (не чаще!)</li>
+        <li class="popup__item">сообщать только об интересующих вас направлениях</li>
+        <li class="popup__item">фирменную нашивку на рюкзак от турклуба ПИК</li>
+      </ul>
+      <form action="#" method="post" class="popup__form  form  form--subscribe">
+        <div class="form__column  form__column--wide">
+          <label for="subscribe-email" class="label">E-Mail*</label>
+          <input type="email" class="input" placeholder="turclub-pik@yandex.ru" name="subscribe-email" id="subscribe-email" required="" aria-describedby="subscribe-email-note">
+          <p class="form__note" id="subscribe-email-note">Адрес вашей электронной почты. Например: turclub-pik@yandex.ru. <br>Необходимо указать настоящий адрес</p>
+        </div>
+        <div class="form__column">
+          <h4 class="form__subtitle">Меня интересуют</h4>
+          <input type="checkbox" id="subscribe-checkbox-1" name="subscribe-checkbox-1" class="visually-hidden" checked="">
+          <label for="subscribe-checkbox-1">Походы выходного дня</label>
+          <input type="checkbox" id="subscribe-checkbox-2" name="subscribe-checkbox-2" class="visually-hidden" checked="">
+          <label for="subscribe-checkbox-2">Длительные походы по России и СНГ</label>
+          <input type="checkbox" id="subscribe-checkbox-3" name="subscribe-checkbox-3" class="visually-hidden">
+          <label for="subscribe-checkbox-3">Новые маршруты</label>
+          <input type="checkbox" id="subscribe-checkbox-4" name="subscribe-checkbox-4" class="visually-hidden">
+          <label for="subscribe-checkbox-4">Длительные зарубежные походы</label>
+          <button class="btn  btn--green  form__btn" type="submit">Подписаться</button>
+        </div>
+      </form>
+    </div>
+    <div class="popup  popup--subscribe-thanks  popup--hidden">
+      <button class="btn  popup__close  popup__close--subscribe-thanks"><span class="visually-hidden">закрыть</span></button>
+      <h2 class="popup__title">Спасибо!</h2>
+      <p class="popup__text">Осталось подтвердить ваш адрес почты. Вам выслано письмо-подтверждение. Нажмите на кнопку – и вы в рассылке.</p>
+      <button class="btn  btn--green  popup__btn  popup__btn--subscribe-thanks-close">Закрыть</button>
+    </div>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <script src="js/script.min.js"></script>
+    <script>
+      showSubscribePopups();
+      showHeaderSearchForm();
+      controlMainNav();
+      controlHikeSections();
+      showEntryLink();
+      showHikeSelect();
+    </script>
+    <script>
+      jQuery(window).scroll(function(){
+        var $sections = $('.hike__title');
+          $sections.each(function(i,el){
+            var top  = $(el).offset().top - 120;
+            var bottom = top +$(el).height();
+            var scroll = $(window).scrollTop();
+            var id = $(el).attr('id');
+            if( scroll > top && scroll < bottom){
+              $('a.hike__anchors-link--active').removeClass('hike__anchors-link--active');
+              $('a[href="#'+id+'"]').addClass('hike__anchors-link--active');
+            }
+          })
+       });
+
+      $(".hike__anchors > a").on("click", function (evt) {
+        evt.preventDefault();
+        var id  = $(this).attr('href'),
+        top = $(id).offset().top - 100;
+
+        $('body,html').animate({scrollTop: top}, 800);
+      });
+    </script>
+    <script>
+      $(document).ready(function() {
+        $(window).scroll(function() {
+          if ($(this).scrollTop() > 643) {
+        $('.hike__anchors').addClass('hike__anchors--fixed');
+        $('.hike__column--narrow').addClass('hike__column--fixed');
+        $('.hike__description').addClass('hike__description--margin');
+        } else {
+          $('.hike__anchors').removeClass('hike__anchors--fixed');
+          $('.hike__column--narrow').removeClass('hike__column--fixed');
+          $('.hike__description').removeClass('hike__description--margin');
+        }
+        });
+      });
+    </script>
+  </body>
+</html>

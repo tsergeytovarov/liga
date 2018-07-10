@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tutovo | Главная</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../css/clarity-icons.min.css">
+  <link rel="stylesheet" href="../../css/clarity-ui.min.css">
+  <link rel="stylesheet" href="../../css/style.min.css">
+  <script src="../../js/svg4everybody.js"></script>
+  <script>svg4everybody();</script>
+</head>
+
+<body class="page">
+<main class="page__main  page__main--form  forms">
+  <h1 class="forms__title  forms__title--hidden">
+    Отметить на карте
+  </h1>
+  <section class="forms__promo-map  promo-map">
+    <h2 class="promo-map__title">
+      Указать на карте
+    </h2>
+    <button class="promo-map__button-close" type="button">
+      <span class="promo-map__button-title">Закрыть</span>
+      <svg class="promo-map__button-icon" width="14" height="14">
+        <use xlink:href="../../img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <form class="promo-map__form" method="post">
+      <p class="promo-map__field-wrapper  field">
+        <input class="field__input  field__input--search-map" type="text" name="search" placeholder="Введите адрес">
+        <span class="field__svg-wrapper">
+        <svg class="field__svg  field__svg--pin" width="19" height="16">
+          <use xlink:href="../../img/sprite.svg#pointer"></use>
+        </svg>
+      </span>
+      </p>
+      <div class="promo-map__map">
+        <span class="promo-map__pin">
+        <svg class="promo-map__icon  promo-map__icon--pin" width="40" height="40">
+          <use xlink:href="../../img/sprite.svg#pin"></use>
+        </svg>
+      </span>
+      </div>
+      <button class="promo-map__button  button  button--fill  button--radius-2  button--map" type="submit">
+        Готово
+      </button>
+    </form>
+  </section>
+</main>
+</body>
+</html>
+

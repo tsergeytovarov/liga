@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>percent75: калькулятор</title>
+    <link href="css/style.min.css" rel="stylesheet">
+      <meta name="robots" content="noindex, nofollow">
+  </head>
+  <body>
+    <header class="site-header">
+      <button class="site-header__button  site-header__button--close">
+        <span class="visually-hidden">открыть меню</span>
+      </button>
+      <div class="site-header__wrapper">
+        <nav class="main-nav">
+          <div class="main-nav__quote  quote">
+            <q class="quote__content">Деньги должны работать всегда</q>
+            <cite class="quote__author">Рокфеллер</cite>
+          </div>
+          <div class="main-nav__logo  logo  logo--wide">
+            <a href="index.html" class="logo__link">
+              <img src="img/logo-darkgreen.svg" alt="лого percent75" width="60" height="60">
+              <p class="logo__text">
+                <span class="logo__title">PERCENT75</span>
+                Инвестиционная платформа
+              </p>
+            </a>
+          </div>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="index.html" class="main-nav__link">О Нас</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="confidential.html" class="main-nav__link">Политика конфиденциальности</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="invest.html" class="main-nav__link">Инвестиционные тарифы</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="career.html" class="main-nav__link">Карьера</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link  main-nav__link--active">Калькулятор</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="faq.html" class="main-nav__link">FAQ</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="stat.html" class="main-nav__link">Статистика</a>
+            </li>
+          </ul>
+        </nav>
+      <ul class="social  social--white  social--wide">
+        <li class="social__item">
+          <a href="#" class="social__link  social__link--vk"><span class="visually-hidden">мы во вконтакте</span></a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link  social__link--inst"><span class="visually-hidden">мы в инстаграм</span></a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link  social__link--tg"><span class="visually-hidden">наш канал в телеграме</span></a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link  social__link--yt"><span class="visually-hidden">наш канал на ютьюб</span></a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link  social__link--fb"><span class="visually-hidden">мы на фейсбуке</span></a>
+        </li>
+      </ul>
+      <ul class="language-toogle">
+          <li class="language-toogle__item  language-toogle__item--en">
+            <a href="#" class="language-toogle__button">Eng<span class="visually-hidden">enable english version</span></a>
+          </li>
+          <li class="language-toogle__item  language-toogle__item--ru">
+            <a class="language-toogle__button  language-toogle__button--active">Rus<span class="visually-hidden">переключиться на русскую версию сайта</span></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="flex-wrapper  flex-wrapper--padding">
+      <main class="main  main--calc">
+        <div class="wrapper">
+          <div class="intro  intro--calc">
+            <h1 class="title  title--margin-bottom  title--underline">Калькулятор</h1>
+            <p class="intro__text  intro__text--margin">Рассмотрим пример: <span class="intro__mark">500$</span> инвестиций, <span class="intro__mark">120</span> количество дней = <span class="intro__mark">1500$</span><br>Где — <span class="intro__mark">500$</span> инвестированных Вами <span class="intro__mark">120</span> дней (<span class="intro__mark"></span>4 месяца)- ваши деньги работают в платформе <span class="intro__mark"></span>1800$ — сумма, которую Вы получите через 4 месяца (с телом депозита) Чистый доход — <span class="intro__mark">1300$</span> за <span class="intro__mark">120</span> дней.</p>
+            <p class="intro__text  intro__text--margin">Так же, очень выгодно использовать функцию реинвестирования прибыли, Вы сможете получать еще больший процент.</p>
+            <p class="intro__text  intro__text--margin">Подставьте свою сумму инвестиций и можете просчитать Вашу прибыль через месяц, пол года, год, и так далее!</p>
+          </div>
+          <div class="calc">
+            <h2 class="subtitle  subtitle--centered">Калькулятор расчета невозвратного депозита</h2>
+            <form action="#" class="form  calc__form">
+              <div class="form__column  form__column--padding-right">
+                <div class="form__row">
+                  <label class="form__label" for="tariff">Тариф</label>
+                  <select class="form__select" id="tariff" name="tariff">
+                    <option value="start" class="form__option">Start</option>
+                    <option value="medium" class="form__option" selected>Medium</option>
+                    <option value="premium" class="form__option">Premium</option><option value="unlimit" class="form__option">Тариф «75%»</option>
+                  </select>
+                </div>
+                <div class="form__row">
+                  <label class="form__label" for="invest">Инвестируете</label>
+                  <input type="number" class="form__input" min="250" placeholder="250$ - 750$" id="invest" name="invest" required value="">
+                </div>
+                <div class="form__row">
+                  <label class="form__label" for="term">Количество дней</label>
+                  <input type="number" class="form__input" min="25" placeholder="50" id="term" name="term" required readonly value="50">
+                </div>
+              </div>
+              <div class="form__column">
+                <div class="form__row  form__row--margin-small">
+                  <label class="form__label" for="income">Прибыль с учетом<br>инвестированных средств</label>
+                  <input type="text" class="form__input" placeholder="0" id="income" name="income" readonly>
+                </div>
+                <div class="form__row  form__row--margin-middle">
+                  <label class="form__label" for="profit">Доходность</label>
+                  <input type="text" class="form__input" placeholder="0" id="profit" name="profit" readonly>
+                </div>
+                <div class="form__row">
+                  <button class="button  form__button" type="button" id="calc-button">Рассчитать</button>
+                  <button class="button  form__button  button--green" type="submit" id="submit-button">Инвестировать</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
+
+      <footer class="site-footer">
+         <div class="wrapper  wrapper--flex">
+          <div class="logo  logo--small">
+            <a href="index.html"><img src="img/logo-grey.svg" alt="лого percent75" width="131" height="130"></a>
+          </div>
+          <div class="site-footer__wrapper">
+            <div class="site-footer__nav">
+              <div class="site-footer__nav-wrapper  site-footer__nav-wrapper--wide">
+                <a href="index.html" class="site-footer__link">О Нас</a>
+                <a href="confidential.html" class="site-footer__link">Политика конфиденциальности</a>
+                <a href="invest.html" class="site-footer__link">Инвестиционные тарифы</a>
+              </div>
+              <div class="site-footer__nav-wrapper  site-footer__nav-wrapper--narrow">
+                <a href="career.html" class="site-footer__link">Карьера</a>
+                <a class="site-footer__link">Калькулятор</a>
+                <a href="faq.html" class="site-footer__link">FAQ</a>
+              </div>
+              <div class="site-footer__nav-wrapper  site-footer__nav-wrapper--middle">
+                <a href="stat.html" class="site-footer__link">Статистика</a>
+                <ul class="social  social--dark  social--narrow">
+                  <li class="social__item">
+                    <a href="#" class="social__link  social__link--vk"><span class="visually-hidden">мы во вконтакте</span></a>
+                  </li>
+                  <li class="social__item">
+                    <a href="#" class="social__link  social__link--inst"><span class="visually-hidden">мы в инстаграм</span></a>
+                  </li>
+                  <li class="social__item">
+                    <a href="#" class="social__link  social__link--tg"><span class="visually-hidden">наш канал в телеграме</span></a>
+                  </li>
+                  <li class="social__item">
+                    <a href="#" class="social__link  social__link--yt"><span class="visually-hidden">наш канал на ютьюб</span></a>
+                  </li>
+                  <li class="social__item">
+                    <a href="#" class="social__link  social__link--fb"><span class="visually-hidden">мы на фейсбуке</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <p class="site-footer__note  note">Уважаемые инвесторы, помните, инвестиции всегда сопряжены с рисками. Просчитывайте и обдумывайте свои шаги.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/script.min.js"></script>
+
+  </body>
+</html>

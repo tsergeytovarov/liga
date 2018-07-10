@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrazerBit</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+  <div class="page-container">
+    <header class="page-header">
+      <div class="page-header__row">
+        <a class="logo" href="/">
+          <img class="logo__image" src="img/logo.png" width="232" height="57" alt="TrazerBit">
+        </a>
+        <ul class="page-header__lang-list">
+          <li class="page-header__lang-item">
+            <a class="page-header__lang-link" href="#">En</a>
+          </li>
+          <li class="page-header__lang-item">
+            <a class="page-header__lang-link" href="#">Vt</a>
+          </li>
+          <li class="page-header__lang-item">
+            <a class="page-header__lang-link" href="#">De</a>
+          </li>
+          <li class="page-header__lang-item">
+            <a class="page-header__lang-link" href="#">Ru</a>
+          </li>
+        </ul>
+        <p class="page-header__support">
+          Тех поддержка:
+          <a class="page-header__support-link" href="mailto:support@trezerbit.com">support@trezerbit.com</a>
+        </p>
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a class="social-list__link  social-list__link--facebook" href="#">Facebook</a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link  social-list__link--twitter" href="#">Twitter</a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link  social-list__link--telegram" href="#">Telegram</a>
+          </li>
+        </ul>
+        <a class="button  button--login" href="login.html">Вход / Регистрация</a>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="about.html">О нас</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="investors.html">Инвесторам</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="partners.html">Партнёрам</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="faq.html">FAQ</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="support.html">Поддержка</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="reviews.html">Отзывы</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main main--cabinet">
+      <aside class="sidebar">
+        <ul class="sidebar__menu">
+          <li class="sidebar__menu-item">
+            <a class="sidebar__menu-link  sidebar__menu-link--deposit" href="cabinet-deposit.html">Deposit</a>
+          </li>
+          <li class="sidebar__menu-item">
+            <a class="sidebar__menu-link  sidebar__menu-link--withdraw" href="cabinet-withdraw.html">Withdraw</a>
+          </li>
+          <li class="sidebar__menu-item">
+            <a class="sidebar__menu-link  sidebar__menu-link--transactions" href="cabinet-transactions.html">Transactions</a>
+          </li>
+          <li class="sidebar__menu-item">
+            <a class="sidebar__menu-link  sidebar__menu-link--payment" href="cabinet-payment.html">Payment details</a>
+          </li>
+          <li class="sidebar__menu-item">
+            <a class="sidebar__menu-link  sidebar__menu-link--affiliates" href="cabinet-affiliates.html">My affiliates</a>
+          </li>
+          <li class="sidebar__menu-item">
+            <a class="sidebar__menu-link  sidebar__menu-link--setting" href="cabinet-setting.html">Setting</a>
+          </li>
+        </ul>
+      </aside>
+      <section class="cabinet">
+        <form class="cabinet__table-container" action="#" method="get">
+          <div class="cabinet__container-row">
+            <h1 class="cabinet__title  cabinet__title--operations">Операции</h1>
+            <div class="cabinet__input-wrapper">
+              <p class="cabinet__input-container">
+                <label class="cabinet__input-label" for="dateFrom">Дата с</label>
+                <input class="cabinet__input" id="dateFrom" type="text" name="dateFrom" placeholder="27.10.2017">
+              </p>
+              <p class="cabinet__input-container">
+                <label class="cabinet__input-label" for="dateTo">по</label>
+                <input class="cabinet__input" id="dateTo" type="text" name="dateTo" placeholder="30.10.2017">
+              </p>
+            </div>
+          </div>
+          <div class="cabinet__container-row">
+            <div class="cabinet__table-wrapper  cabinet__table-wrapper--operations">
+              <table class="cabinet__table">
+                <thead class="cabinet__table-head">
+                  <tr class="cabinet__table-row">
+                    <th class="cabinet__table-cell-head  cabinet__table-cell-head--left">Статус</th>
+                  </tr>
+                </thead>
+                <tbody class="cabinet__table-body">
+                  <tr class="cabinet__table-row">
+                    <td class="cabinet__table-cell  cabinet__table-cell--operations">
+                      <select class="cabinet__select" id="cabinetSelect" name="status">
+                        <option value="Perfect Money">Perfect Money</option>
+                        <option value="Advanced Cash">Advanced Cash</option>
+                        <option value="Payeer">Payeer</option>
+                        <option value="Bitcoin">Bitcoin</option>
+                        <option value="Etherium">Etherium</option>
+                        <option value="Visa">Visa</option>
+                        <option value="MasterCard">MasterCard</option>
+                      </select>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="cabinet__table-wrapper  cabinet__table-wrapper--operations">
+              <table class="cabinet__table">
+                <thead class="cabinet__table-head">
+                  <tr class="cabinet__table-row">
+                    <th class="cabinet__table-cell-head  cabinet__table-cell-head--left">Операция</th>
+                  </tr>
+                </thead>
+                <tbody class="cabinet__table-body">
+                  <tr class="cabinet__table-row">
+                    <td class="cabinet__table-cell  cabinet__table-cell--operations">
+                      <input class="cabinet__input" type="text" name="operation" placeholder="Номер кошелька">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="cabinet__table-wrapper  cabinet__table-wrapper--operations">
+              <table class="cabinet__table">
+                <thead class="cabinet__table-head">
+                  <tr class="cabinet__table-row">
+                    <th class="cabinet__table-cell-head  cabinet__table-cell-head--left">Batch-номер</th>
+                  </tr>
+                </thead>
+                <tbody class="cabinet__table-body">
+                  <tr class="cabinet__table-row">
+                    <td class="cabinet__table-cell  cabinet__table-cell--operations">
+                      <input class="cabinet__input" type="text" name="batchNum" placeholder="Номер кошелька">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="cabinet__table-wrapper  cabinet__table-wrapper--operations">
+              <table class="cabinet__table">
+                <thead class="cabinet__table-head">
+                  <tr class="cabinet__table-row">
+                    <th class="cabinet__table-cell-head  cabinet__table-cell-head--left">Примечания</th>
+                  </tr>
+                </thead>
+                <tbody class="cabinet__table-body">
+                  <tr class="cabinet__table-row">
+                    <td class="cabinet__table-cell  cabinet__table-cell--operations">
+                      <input class="cabinet__input" type="text" name="comment" placeholder="Номер кошелька">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <button class="button  button--center" type="submit">Отфильтровать</button>
+        </form>
+
+        <div class="cabinet__table-container">
+          <div class="cabinet__table-wrapper">
+            <table class="cabinet__table">
+              <thead class="cabinet__table-head">
+                <tr class="cabinet__table-row">
+                  <th class="cabinet__table-cell-head  cabinet__table-cell-head--operations  cabinet__table-cell-head--operations-date">Дата</th>
+                  <th class="cabinet__table-cell-head  cabinet__table-cell-head--operations">Операция</th>
+                  <th class="cabinet__table-cell-head  cabinet__table-cell-head--operations">Плат. система</th>
+                  <th class="cabinet__table-cell-head  cabinet__table-cell-head--operations">Расход</th>
+                  <th class="cabinet__table-cell-head  cabinet__table-cell-head--operations">Приход</th>
+                  <th class="cabinet__table-cell-head  cabinet__table-cell-head--operations">Batch-номер</th>
+                  <th class="cabinet__table-cell-head  cabinet__table-cell-head--operations">Статус</th>
+                  <th class="cabinet__table-cell-head  cabinet__table-cell-head--operations  cabinet__table-cell-head--right">Примечание</th>
+                </tr>
+              </thead>
+              <tbody class="cabinet__table-body">
+                <tr class="cabinet__table-row">
+                  <td class="cabinet__table-cell  cabinet__table-cell--light  cabinet__table-cell--left">Сегодня 18:42</td>
+                  <td class="cabinet__table-cell  cabinet__table-cell--light  cabinet__table-cell--left">Вывод средств</td>
+                  <td class="cabinet__table-cell  cabinet__table-cell--light  cabinet__table-cell--left">Payeer</td>
+                  <td class="cabinet__table-cell  cabinet__table-cell--left">100$</td>
+                  <td class="cabinet__table-cell  cabinet__table-cell--light  cabinet__table-cell--left"></td>
+                  <td class="cabinet__table-cell  cabinet__table-cell--light  cabinet__table-cell--left"></td>
+                  <td class="cabinet__table-cell  cabinet__table-cell--light  cabinet__table-cell--left">В ожидании</td>
+                  <td class="cabinet__table-cell  cabinet__table-cell--light  cabinet__table-cell--right">Auto</td>
+                </tr>
+                <tr class="cabinet__table-row">
+                  <td class="cabinet__table-cell  cabinet__table-cell--light  cabinet__table-cell--left">Сегодня 18:42</td>
+                  <td class="cabinet__table-cell  cabinet__table-cell--light  cabinet__table-cell--left">Вывод средств</td>
+                  <td class="cabinet__table-cell  cabinet__table-cell--light  cabinet__table-cell--left">Payeer</td>
+                  <td class="cabinet__table-cell  cabinet__table-cell--left">100$</td>
+                  <td class="cabinet__table-cell  cabinet__table-cell--light  cabinet__table-cell--left"></td>
+                  <td class="cabinet__table-cell  cabinet__table-cell--light  cabinet__table-cell--left"></td>
+                  <td class="cabinet__table-cell  cabinet__table-cell--light  cabinet__table-cell--left">В ожидании</td>
+                  <td class="cabinet__table-cell  cabinet__table-cell--light  cabinet__table-cell--right">Auto</td>
+                </tr>
+                <tr class="cabinet__table-row">
+                  <td class="cabinet__table-cell  cabinet__table-cell--light  cabinet__table-cell--left">Сегодня 18:42</td>
+                  <td class="cabinet__table-cell  cabinet__table-cell--light  cabinet__table-cell--left">Вывод средств</td>
+                  <td class="cabinet__table-cell  cabinet__table-cell--light  cabinet__table-cell--left">Payeer</td>
+                  <td class="cabinet__table-cell  cabinet__table-cell--left">100$</td>
+                  <td class="cabinet__table-cell  cabinet__table-cell--light  cabinet__table-cell--left"></td>
+                  <td class="cabinet__table-cell  cabinet__table-cell--light  cabinet__table-cell--left"></td>
+                  <td class="cabinet__table-cell  cabinet__table-cell--light  cabinet__table-cell--left">В ожидании</td>
+                  <td class="cabinet__table-cell  cabinet__table-cell--light  cabinet__table-cell--right">Auto</td>
+                </tr>
+                <tr class="cabinet__table-row">
+                  <td class="cabinet__table-cell  cabinet__table-cell--light  cabinet__table-cell--left">Сегодня 18:42</td>
+                  <td class="cabinet__table-cell  cabinet__table-cell--light  cabinet__table-cell--left">Вывод средств</td>
+                  <td class="cabinet__table-cell  cabinet__table-cell--light  cabinet__table-cell--left">Payeer</td>
+                  <td class="cabinet__table-cell  cabinet__table-cell--left">100$</td>
+                  <td class="cabinet__table-cell  cabinet__table-cell--light  cabinet__table-cell--left"></td>
+                  <td class="cabinet__table-cell  cabinet__table-cell--light  cabinet__table-cell--left"></td>
+                  <td class="cabinet__table-cell  cabinet__table-cell--light  cabinet__table-cell--left">В ожидании</td>
+                  <td class="cabinet__table-cell  cabinet__table-cell--light  cabinet__table-cell--right">Auto</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <ul class="pagination">
+          <li class="pagination__item">
+            <a class="button button--pagination  button--pagination-back" href="#">Назад</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">1</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">2</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">3</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">4</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">...</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">10</a>
+          </li>
+          <li class="pagination__item">
+            <a class="button button--pagination" href="#">Вперёд</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__info">
+        <p class="page-footer__copyright">
+          © 2017. trezer bit limited. все права защищены.
+        </p>
+        <ul class="page-footer__payments">
+          <li class="page-footer__payments-item">
+            <a class="page-footer__payments-link  page-footer__payments-link--1" href="#">1</a>
+          </li>
+          <li class="page-footer__payments-item">
+            <a class="page-footer__payments-link  page-footer__payments-link--2" href="#">2</a>
+          </li>
+          <li class="page-footer__payments-item">
+            <a class="page-footer__payments-link  page-footer__payments-link--3" href="#">3</a>
+          </li>
+          <li class="page-footer__payments-item">
+            <a class="page-footer__payments-link  page-footer__payments-link--4" href="#">4</a>
+          </li>
+          <li class="page-footer__payments-item">
+            <a class="page-footer__payments-link  page-footer__payments-link--5" href="#">5</a>
+          </li>
+          <li class="page-footer__payments-item">
+            <a class="page-footer__payments-link  page-footer__payments-link--6" href="#">6</a>
+          </li>
+          <li class="page-footer__payments-item">
+            <a class="page-footer__payments-link  page-footer__payments-link--7" href="#">7</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/select2.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tutovo | Главная</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../../css/clarity-icons.min.css">
+  <link rel="stylesheet" href="../../../../css/clarity-ui.min.css">
+  <link rel="stylesheet" href="../../../../css/style.min.css">
+  <script src="../../../../js/svg4everybody.js"></script>
+  <script>svg4everybody();</script>
+</head>
+
+<body class="page">
+<main class="page__main  page__main--form  forms">
+  <h1 class="forms__title  forms__title--promo-form">
+    Новое объявление
+  </h1>
+  <div class="forms__button-wrapper">
+      <span class="forms__note">
+      Этап:
+      <span class="forms__note-step">
+        3/3
+      </span>
+    </span>
+    <button class="forms__button  forms__button--promo-form">
+      <span class="forms__button-title">Назад</span>
+      <svg class="forms__icon  forms__icon--back" width="8" height="16">
+        <use xlink:href="../../../../img/sprite.svg#back"></use>
+      </svg>
+    </button>
+  </div>
+  <section class="forms__promo-form  promo-form">
+    <h2 class="promo-form__title">
+      Форма подачи объявления. Шаг 3.
+    </h2>
+    <ul class="promo-form__list-step">
+      <li class="promo-form__item-step  promo-form__item-step--current">
+        1
+      </li>
+      <li class="promo-form__item-step  promo-form__item-step--current">
+        2
+      </li>
+      <li class="promo-form__item-step  promo-form__item-step--current">
+        3
+      </li>
+    </ul>
+    <form class="promo-form__form" method="post">
+      <div class="promo-form__fields-wrapper  promo-form__fields-wrapper--photo-video">
+        <h3 class="promo-form__wrapper-title  promo-form__wrapper-title--photo-video">
+          Фото
+        </h3>
+        <div class="promo-form__field-wrapper  promo-form__field-wrapper--photo  field  field--column">
+          <ul class="field__list  field__list--photo">
+            <li class="field__item  field__item--photo">
+              <input id="photo-1" class="field__input  field__input--photo" type="radio" name="photo" checked>
+              <label for="photo-1" class="field__label  field__label--photo">
+                <span class="field__image-title">Фотография</span>
+                <img class="field__image" src="../../../../img/photo-1.jpg"
+                     srcset="../../../../img/photo-1@2x.jpg 2x" alt="" width="142" height="96">
+              </label>
+            </li>
+            <li class="field__item  field__item--photo">
+              <input id="photo-2" class="field__input  field__input--photo" type="radio" name="photo">
+              <label for="photo-2" class="field__label  field__label--photo">
+                <span class="field__image-title">Фотография</span>
+                <img class="field__image" src="../../../../img/photo-2.jpg"
+                     srcset="../../../../img/photo-2@2x.jpg 2x" alt="" width="142" height="96">
+              </label>
+            </li>
+          </ul>
+          <div class="promo-form__button-wrapper  promo-form__button-wrapper--photo">
+            <button
+              class="promo-form__button  promo-form__button--photo  button  button--transparent  button--noborder  button--medium">
+              <svg class="button__icon  button__icon--camera" width="22" height="19">
+                <use xlink:href="../../../../img/sprite.svg#camera"></use>
+              </svg>
+              Добавить фото
+            </button>
+          </div>
+        </div>
+        <div class="promo-form__video-wrapper">
+          <p class="promo-form__field-wrapper  promo-form__field-wrapper--video  field">
+            <input id="video-link" class="field__input  field__input--video" type="text" name="video-link"
+                   placeholder="Вставьте ссылку на ролик Youtube">
+            <label for="video-link" class="field__label">
+              Видео объекта
+            </label>
+            <span class="field__svg-wrapper  field__svg-wrapper--video">
+          <svg class="field__svg  field__svg--video" width="22" height="17">
+            <use xlink:href="../../../../img/sprite.svg#youtube"></use>
+          </svg>
+        </span>
+          </p>
+        </div>
+      </div>
+
+      <div class="promo-form__fields-wrapper  promo-form__fields-wrapper--info">
+        <h3 class="promo-form__wrapper-title  promo-form__wrapper-title--info">
+          Общая информация
+        </h3>
+        <div class="promo-form__field-wrapper  promo-form__field-wrapper--info  field  field--column">
+          <p class="field__label  field__label--textarea">
+            Описание
+          </p>
+          <textarea class="field__input  field__input--textarea" name="description"></textarea>
+        </div>
+        <p
+          class="promo-form__field-wrapper  promo-form__field-wrapper--info  promo-form__field-wrapper--price-rent  field  field--price">
+          <input id="price" class="field__input  field__input--promo" type="number" name="price">
+          <label for="price" class="field__label">
+            Цена
+          </label>
+          <span class="field__svg-wrapper  field__svg-wrapper--price-rent">
+          <svg class="field__svg  field__svg--price" width="16" height="14">
+            <use xlink:href="../../../../img/sprite.svg#rub"></use>
+          </svg>
+            / В месяц
+        </span>
+        </p>
+        <p
+          class="promo-form__field-wrapper  promo-form__field-wrapper--info  promo-form__field-wrapper--commission  field">
+          <input id="commission" class="field__input  field__input--promo" type="number" name="commission">
+          <label for="commission" class="field__label">
+            Комиссия
+          </label>
+        </p>
+        <p
+          class="promo-form__field-wrapper  promo-form__field-wrapper--info  promo-form__field-wrapper--offset  promo-form__field-wrapper--check-commission  field  field--checkbox">
+          <input id="check-commission" class="field__input  field__input--checkbox" type="checkbox"
+                 name="check-commission"
+                 checked>
+          <label for="check-commission" class="field__label  field__label--checkbox  field__label--checkbox-type-3">
+            <span class="field__checkbox-title">
+              Комиссия
+            </span>
+          </label>
+        </p>
+        <div
+          class="promo-form__field-wrapper  promo-form__field-wrapper--info  promo-form__field-wrapper--offset  field  field--column">
+          <p class="field__label">
+            Залог
+          </p>
+          <div class="field__select  select  select--promo">
+            <select name="deposit">
+              <option value="Без залога" selected>Без залога</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="promo-form__fields-wrapper  promo-form__fields-wrapper--contact">
+        <h3 class="promo-form__wrapper-title  promo-form__wrapper-title--contact">
+          Контактная информация
+        </h3>
+        <div class="promo-form__description-wrapper">
+          <picture class="promo-form__image-wrapper">
+            <img class="promo-form__image" src="../../../../img/logo-contact.jpg"
+                 srcset="../../../../img/logo-contact@2x.jpg 2x" alt="" width="31" height="31">
+          </picture>
+          <p class="promo-form__description">
+            Home Reality
+          </p>
+        </div>
+        <p
+          class="promo-form__field-wrapper  promo-form__field-wrapper--contact  promo-form__field-wrapper--row  field  field--row">
+          <input id="name" class="field__input  field__input--row  field__input--promo-name" type="text" name="name"
+                 value="Иван Романович" tabindex="-1" readonly>
+          <label for="name" class="field__label  field__label--row">
+            Контактное лицо:
+          </label>
+          <button class="field__edit  field__edit--row" type="button">
+            <span class="field__edit-title">Редактировать</span>
+            <svg class="field__svg  field__svg--edit" width="13" height="13">
+              <use xlink:href="../../../../img/sprite.svg#pencil"></use>
+            </svg>
+          </button>
+        </p>
+        <p
+          class="promo-form__field-wrapper  promo-form__field-wrapper--contact  promo-form__field-wrapper--row  field  field--row">
+          <input id="phone" class="field__input  field__input--row  field__input--promo-phone" type="tel" name="phone"
+                 value="+7 (999) 123 45 67" tabindex="-1" readonly>
+          <label for="phone" class="field__label  field__label--row">
+            Телефон:
+          </label>
+          <button class="field__edit  field__edit--row" type="button">
+            <span class="field__edit-title">Редактировать</span>
+            <svg class="field__svg  field__svg--edit" width="13" height="13">
+              <use xlink:href="../../../../img/sprite.svg#pencil"></use>
+            </svg>
+          </button>
+        </p>
+        <p
+          class="promo-form__field-wrapper  promo-form__field-wrapper--contact  promo-form__field-wrapper--row  promo-form__field-wrapper--email  field  field--row">
+          <input id="email" class="field__input  field__input--row" type="email" name="email" value="noname@yandex.ru"
+                 tabindex="-1" readonly>
+          <label for="email" class="field__label  field__label--row">
+            Адес эл. почты:
+          </label>
+        </p>
+        <p
+          class="promo-form__field-wrapper  promo-form__field-wrapper--contact  promo-form__field-wrapper--notice  field  field--checkbox">
+          <input id="notice" class="field__input  field__input--checkbox" type="checkbox" name="notice"
+                 checked>
+          <label for="notice" class="field__label  field__label--checkbox  field__label--checkbox-type-2">
+            Уведомления
+          </label>
+        </p>
+        <div
+          class="promo-form__field-wrapper  promo-form__field-wrapper--contact  promo-form__field-wrapper--offset  field  field--column">
+          <p class="field__label">
+            Вопросы в чате
+          </p>
+          <div class="field__select  select  select--promo">
+            <select name="questions">
+              <option value="Видно всем" selected>Видно всем</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="promo-form__fields-wrapper  promo-form__fields-wrapper--services">
+        <h3 class="promo-form__wrapper-title  promo-form__wrapper-title--services">
+          Пакет услуг
+        </h3>
+        <div class="promo-form__field-wrapper  promo-form__field-wrapper--services  field">
+          <ul class="field__list  field__list--services">
+            <li class="field__item  field__item--services">
+              <input id="services-1" class="field__input  field__input--services" type="radio" name="services" checked>
+              <label for="services-1"
+                     class="field__label  field__label--services  label-services  label-services--turbo">
+              <span class="label-services__title-wrapper">
+                <span class="label-services__title  label-services__title--white">
+                  Турбо продажа
+                </span>
+                <span class="label-services__price  label-services__price--white">
+                  1 019 руб.
+                </span>
+              </span>
+                <span class="label-services__term  label-services__term--turbo">
+                <svg class="label-services__icon  label-services__icon--term  label-services__icon--white" width="10"
+                     height="10">
+                  <use xlink:href="../../../../img/sprite.svg#clock"></use>
+                </svg>
+                40 дней
+              </span>
+                <span class="label-services__list  label-services__list--turbo">
+                <span class="label-services__item  label-services__item--yellow">
+                  <svg class="label-services__icon  label-services__icon--up  label-services__icon--yellow" width="10"
+                       height="10">
+                    <use xlink:href="../../../../img/sprite.svg#up"></use>
+                  </svg>
+                  Поднятие х5
+                </span>
+                <span class="label-services__item  label-services__item--yellow">
+                  <svg class="label-services__icon  label-services__icon--mark  label-services__icon--yellow" width="16"
+                       height="12">
+                    <use xlink:href="../../../../img/sprite.svg#pen"></use>
+                  </svg>
+                  Выделение
+                </span>
+                <span class="label-services__item  label-services__item--gold">
+                  <svg class="label-services__icon  label-services__icon--vip  label-services__icon--gold" width="15"
+                       height="11">
+                    <use xlink:href="../../../../img/sprite.svg#vip"></use>
+                  </svg>
+                  VIP
+                </span>
+              </span>
+              </label>
+            </li>
+            <li class="field__item  field__item--services">
+              <input id="services-2" class="field__input  field__input--services" type="radio" name="services">
+              <label for="services-2"
+                     class="field__label  field__label--services  label-services  label-services--urgent">
+              <span class="label-services__title-wrapper">
+                <span class="label-services__title">
+                  Срочная продажа
+                </span>
+                <span class="label-services__price">
+                  850 руб.
+                </span>
+              </span>
+                <span class="label-services__term  label-services__term--urgent">
+                <svg class="label-services__icon  label-services__icon--term  label-services__icon--white" width="10"
+                     height="10">
+                  <use xlink:href="../../../../img/sprite.svg#clock"></use>
+                </svg>
+                30 дней
+              </span>
+                <span class="label-services__list  label-services__list--urgent">
+                <span class="label-services__item  label-services__item--green  label-services__item--urgent">
+                  <svg class="label-services__icon  label-services__icon--up  label-services__icon--green" width="10"
+                       height="10">
+                    <use xlink:href="../../../../img/sprite.svg#up"></use>
+                  </svg>
+                  Поднятие х5
+                </span>
+                <span class="label-services__item  label-services__item--gold">
+                  <svg class="label-services__icon  label-services__icon--mark  label-services__icon--gold" width="16"
+                       height="12">
+                    <use xlink:href="../../../../img/sprite.svg#pen"></use>
+                  </svg>
+                  Выделение
+                </span>
+              </span>
+              </label>
+            </li>
+            <li class="field__item  field__item--services">
+              <input id="services-3" class="field__input  field__input--services" type="radio" name="services">
+              <label for="services-3" class="field__label  field__label--services  label-services">
+              <span class="label-services__title-wrapper">
+                <span class="label-services__title">
+                  Обычная продажа
+                </span>
+                <span class="label-services__price">
+                  0 руб.
+                </span>
+              </span>
+                <span class="label-services__term  label-services__term--blue  label-services__term--casual">
+                <svg class="label-services__icon  label-services__icon--term  label-services__icon--blue" width="10"
+                     height="10">
+                  <use xlink:href="../../../../img/sprite.svg#clock"></use>
+                </svg>
+                20 дней
+              </span>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="promo-form__button-wrapper  promo-form__button-wrapper--step-3">
+        <button class="promo-form__button  button  button--fill  button--radius-2  button--big" type="submit">
+          Опубликовать объявление
+        </button>
+        <p class="promo-form__note">
+          Для аккаунта доступно
+          <a class="promo-form__note-link" href="#">
+            3 объявления
+          </a>
+        </p>
+        <button class="promo-form__button  button  button--transparent  button--noborder  button--font-2  button--big"
+                type="button">
+          Увеличить
+        </button>
+      </div>
+    </form>
+  </section>
+</main>
+<footer class="page__footer  page-footer">
+  <span class="page-footer__copyright">© Tutovo</span>
+  <span class="page-footer__year">2017</span>
+</footer>
+</body>
+</html>
+
+
+

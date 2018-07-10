@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300">
+  <g fill="none" fill-rule="evenodd">
+    <path d="M0 0h400v300H0z"/>
+    <path fill="#FFF" d="M89 152h25.7l-9 30H80z" opacity=".5"/>
+    <path fill="#FFF"
+          d="M106 137h25.7l-9 30H97zm45 58h25.7l-9 30H142zm-45 31h25.7l-9 30H97zM61 85h25.7l-9 30H52zm-41 67h25.6l-9 30H11zm138-87h25.7l-9 30H149zm123 35h25.6l-9 30H272z"
+          opacity=".5"/>
+    <path fill="#FFF" d="M261 107h25.6l-9 30H252zm35 9h25.6l-9 30H287zM226 8h25.7l-9 30H217zM26 23h25.6l-9 30H17z"
+          opacity=".5"/>
+    <path fill="#FFF" d="M43 13h25.7l-9.1 30H34zM20 73h25.6l-9 30H11zm17 138h25.6l-9 30H28zm0 37h25.6l-9 30H28z"
+          opacity=".5"/>
+    <path fill="#FFF" d="M26 256h25.6l-9 30H17zm115-3h25.7l-9 30H132zm148-78h25.6l-9 30H280z" opacity=".5"/>
+    <path fill="#FFF" d="M306 165h25.6l-9 30H297zm25-115h25.6l-9 30H322zm-84 3h25.6l-9 30H238z" opacity=".5"/>
+    <path fill="#FFF"
+          d="M348 35h25.6l-9 30H339zM313 8h25.6l-9 30H304zm44 108h25.6l-9 30H348zm0 74h25.6l-9 30H348zm-51 35h25.6l-9 30H297z"
+          opacity=".5"/>
+    <path fill="#FFF"
+          d="M289 233h25.6l-9 30H280zm68 15h25.6l-9 30H348zm-122 15h25.6l-8.9 30H226zM96 209h25.7l-9 30H87zm104-108h25.7l-9 30H191zm29 60h25.7l-9 30H220zm-29 65h25.7l-9 30H191zm-42-81h25.7l-9 30H149zm-17-65h25.7l-9 30H132zm-35-37h25.7l-9 30H97zM37 146h25.6l-9 30H28z"
+          opacity=".5"/>
+    <path fill="#FFF"
+          d="M96 28h25.7l-9 30H87zm87 22h25.7l-9 30H174zm81-7h25.6l-9 30H255zm-38 166h25.7l-9 30H217zm-17-94h25.7l-9 30H200zm-40 37h25.7l-9 30H160z"
+          opacity=".5"/>
+  </g>
+</svg>

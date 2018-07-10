@@ -1,0 +1,28 @@
+<svg width="32" height="32" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>play-button</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-8347 -3462)">
+<g id="play-button">
+<g id="Exclude">
+<use xlink:href="#path0_fill" transform="translate(8347 3462)" fill="url(#paint0_linear)"/>
+<use xlink:href="#path0_fill" transform="translate(8347 3462)" fill="#FFFFFF"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="translate(8357.78 3470.32)" fill="url(#paint2_linear)"/>
+<use xlink:href="#path1_fill" transform="translate(8357.78 3470.32)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1.95943e-15 32 -32 1.95943e-15 32.3737 -2.8066e-08)">
+<stop offset="0" stop-color="#7C3475"/>
+<stop offset="1" stop-color="#454A5E"/>
+</linearGradient>
+<linearGradient id="paint2_linear" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(8.43087e-16 15.3649 -13.7686 9.40831e-16 13.9295 -1.3476e-08)">
+<stop offset="0" stop-color="#7C3475"/>
+<stop offset="1" stop-color="#454A5E"/>
+</linearGradient>
+<path id="path0_fill" fill-rule="evenodd" d="M 16 32C 24.8359 32 32 24.8367 32 16C 32 7.16333 24.8359 0 16 0C 7.16406 0 0 7.16333 0 16C 0 24.8367 7.16406 32 16 32ZM 16 30C 23.7324 30 30 23.7319 30 16C 30 8.26807 23.7324 2 16 2C 8.26758 2 2 8.26807 2 16C 2 23.7319 8.26758 30 16 30Z"/>
+<path id="path1_fill" d="M 12.8973 6.17313L 2.61438 0.236258C 2.06869 -0.0788047 1.41719 -0.0786801 0.871501 0.236195C 0.325813 0.551194 -1.83106e-07 1.11551 -1.83106e-07 1.74557L -1.83106e-07 13.6193C -1.83106e-07 14.2494 0.32575 14.8136 0.871501 15.1287C 1.14431 15.2862 1.4435 15.3649 1.74282 15.3649C 2.04219 15.3649 2.3415 15.2861 2.61432 15.1286L 12.8973 9.19181C 13.443 8.87669 13.7686 8.31244 13.7686 7.68238C 13.7686 7.05238 13.4429 6.48813 12.8973 6.17313ZM 12.0644 7.7495L 1.78144 13.6863C 1.76888 13.6936 1.74269 13.7087 1.70419 13.6863C 1.66556 13.664 1.66557 13.6339 1.66557 13.6194L 1.66557 1.74563C 1.66557 1.73113 1.66556 1.70101 1.70419 1.67869C 1.71931 1.66994 1.7325 1.66694 1.74375 1.66694C 1.76125 1.66694 1.77388 1.67426 1.78157 1.67869L 12.0645 7.61557C 12.077 7.62282 12.1031 7.63788 12.1031 7.6825C 12.1031 7.72713 12.0769 7.74225 12.0644 7.7495Z"/>
+</defs>
+</svg>

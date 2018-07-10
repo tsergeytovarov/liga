@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <link href="css/style.min.css" rel="stylesheet">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Главная страница</title>
+
+</head>
+
+<body>
+
+  <main class="site-main">
+    <header class="site-header">
+      <div class="container">
+        <a class="site-header__site-logo" href="index.html">
+        <img src="img/logo.png" alt="логотип " width="253" height="75">
+        </a>
+        <ul class="navigation">
+          <li><a class="navigation__link" href="main.html">home</a></li>
+          <li><a class="navigation__link" href="about.html">about</a></li>
+          <li><a class="navigation__link" href="investing.html">investing</a></li>
+          <li><a class="navigation__link navigation__link--center" href="faq.html">faq</a></li>
+          <li><a class="navigation__link" href="news.html">news</a></li>
+          <li><a class="navigation__link" href="#">contacts</a></li>
+        </ul>
+        <ul class="navigation navigation--login">
+          <li><a class="navigation__link navigation__link--login" href="registration.html">login</a></li>
+          <li><a class="navigation__link  navigation__link--avatar" href="registration.html">Аватар</a></li>
+        </ul>
+      </div>
+
+    </header>
+
+    <div id="fullpage">
+
+      <section class="contacts section login" id="section-contacts">
+        <div class="container container--custom">
+          <h2 class="contacts__title anim-block">Contacts</h2>
+          <div class="contacts__inner">
+            <form class="login__form login__form--custom" action="https://echo.htmlacademy.ru/ " method="get">
+              <ul class="login__list">
+                <li class="login__item login__item--1">
+                  <label class="login__label " for="contacts-name">Name:</label>
+                  <input class="login__input " type="text" name="contacts-name" id="contacts-name" placeholder="Jonh" required>
+                </li>
+
+                <li class="login__item login__item--textarea">
+                  <label class="login__label " for="contacts-message">Message:</label>
+                  <textarea class="login__textarea" name="contacts-message" id="contacts-message"></textarea>
+                </li>
+
+              </ul>
+
+              <div class="login__wrapper">
+                <button class="button-original login__btn" type="submit">sign up</button>
+              </div>
+            </form>
+            <ul class="contacts__list contacts__list--custom">
+              <li class="contacts__item contacts__item--1">
+                <span>Address:</span> England, London, Suonson St. 45
+              </li>
+
+              <li class="contacts__item contacts__item--2">
+                <span>Phone:</span> 8-800-800-80-80
+              </li>
+
+              <li class="contacts__item contacts__item--3">
+                <span>E-mail:</span> info@testhyip.com
+              </li>
+            </ul>
+          </div>
+
+          <footer class="site-footer">
+            <div class="container--footer container--custom">
+
+              <p class="site-footer__copyright">&#169; 2018. Test Hyip. All rights reserved.</p>
+
+              <ul class="site-footer__list">
+                <li class="site-footer__item">
+                  <a href="#"><img src="../img/partner_1.png" width="75" height="15" alt="partner-1"></a>
+                </li>
+                <li class="site-footer__item">
+                  <a href="#"><img src="../img/partner_2.png" width="115" height="15" alt="partner-2"></a>
+                </li>
+                <li class="site-footer__item">
+                  <a href="#"><img src="../img/partner_3.png" width="78" height="15" alt="partner-3"></a>
+                </li>
+                <li class="site-footer__item">
+                  <a href="#"><img src="../img/partner_4.png" width="83" height="15" alt="partner-4"></a>
+                </li>
+                <li class="site-footer__item">
+                  <a href="#"><img src="../img/partner_5.png" width="47" height="15" alt="partner-5"></a>
+                </li>
+              </ul>
+            </div>
+
+          </footer>
+        </div>
+      </section>
+    </div>
+    <section class="social">
+      <h2 class="visually-hidden">Социальные сети</h2>
+      <ul class="social__list">
+
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="#">Facebook</a>
+        </li>
+
+        <li class="social__item">
+          <a class="social__link social__link--twiter" href="#">Twiter</a>
+        </li>
+
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="#">Instagram</a>
+        </li>
+
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="#">Youtube</a>
+        </li>
+
+        <li class="social__item">
+          <a class="social__link social__link--google" href="#">google</a>
+        </li>
+
+      </ul>
+    </section>
+  </main>
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/jquery.viewportchecker.min.js"></script>
+  <script src="js/jquery.fullPage.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#fullpage').fullpage({
+        verticalCentered: false,
+        afterLoad: function(anchorLink, index) {
+          $('.anim-block').addClass('hidden').viewportChecker({
+            classToAdd: 'visible animated fadeInDown',
+            offset: 120
+          });
+          $('.contacts__item').addClass('hidden').viewportChecker({
+            classToAdd: 'visible  animated fadeInRight',
+            offset: 100
+          });
+        }
+      })
+    });
+  </script>
+
+</body>
+
+</html>

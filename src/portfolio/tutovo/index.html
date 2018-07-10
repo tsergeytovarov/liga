@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Тутово</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/clarity-ui.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <style>
+    body {
+      min-height: 100vh;
+      box-sizing: border-box;
+      border: 10px solid blue;
+      margin: 0;
+      padding: 40px;
+      font-family: 'plex', sans-serif;
+      font-size: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+  </style>
+
+  <div>
+    <h1>Список страниц</h1>
+    <ol>
+      <li>
+        <a href="html/main/main.html">Главная</a>
+      </li>
+      <li>
+        Меню
+        <ul>
+          <li><a href="html/menu/authorized.html">Меню авторизованное</a></li>
+          <li><a href="html/menu/guest.html">Меню гость</a></li>
+        </ul>
+      </li>
+      <li>
+        Каталог специалистов
+        <ul>
+          <li><a href="html/catalog_of_specialists/agency.html">Агентства</a></li>
+          <li><a href="html/catalog_of_specialists/builders.html">Застройщики</a></li>
+          <li><a href="html/catalog_of_specialists/info.html">Информация о застройщике</a></li>
+        </ul>
+      </li>
+      <li>
+        Личный кабинет пользователя
+        <ul>
+          <li>
+            Баланс
+            <ul>
+              <li><a href="html/personal-account/balance/balance.html">Баланс</a></li>
+              <li><a href="html/personal-account/balance/payment.html">Пополнение счета</a></li>
+            </ul>
+          </li>
+          <li>
+            Главная
+            <ul>
+              <li><a href="html/personal-account/main/main-v2.html">Главная лк v.2</a></li>
+              <li><a href="html/personal-account/main/main.html">Главная лк</a></li>
+            </ul>
+          </li>
+          <li>
+            Избранное
+            <ul>
+              <li><a href="html/personal-account/favorites/favorites-v2.html">Избранное v.2</a></li>
+              <li><a href="html/personal-account/favorites/favorites.html">Избранное</a></li>
+            </ul>
+          </li>
+          <li>
+            Меню
+            <ul>
+              <li><a href="html/personal-account/menu/menu-v2.html">Меню v.2</a></li>
+              <li><a href="html/personal-account/menu/menu.html">Меню</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="html/personal-account/promo.html">Мои объявления (пользователь)</a>
+          </li>
+          <li>
+            Настройки
+            <ul>
+              <li><a href="html/personal-account/settings/settings.html">Настройки</a></li>
+              <li><a href="html/personal-account/settings/confirm.html">Подтверждение телефона</a></li>
+            </ul>
+          </li>
+          <li>
+            Сообщения
+            <ul>
+              <li><a href="html/personal-account/messages/dialog-v2.html">Диалоги v.2</a></li>
+              <li><a href="html/personal-account/messages/dialog.html">Диалоги</a></li>
+              <li><a href="html/personal-account/messages/messages.html">Мои сообщения</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        Личный кабинет риелтора
+        <ul>
+          <li><a href="html/realtor-account/menu.html">Меню</a></li>
+          <li>
+            Мои объявления
+            <ul>
+              <li><a href="html/realtor-account/promo/popup.html">Popup</a></li>
+              <li><a href="html/realtor-account/promo/contact.html">Мои объявления риелтор Контакты</a></li>
+              <li><a href="html/realtor-account/promo/options.html">Мои объявления риелтор Параметры</a></li>
+            </ul>
+          </li>
+          <li><a href="html/realtor-account/settings.html">Настройки</a></li>
+        </ul>
+      </li>
+      <li><a href="html/404/404.html">404</a></li>
+      <li>
+        Новости
+        <ul>
+          <li><a href="html/news/news-details.html">Новости Details</a></li>
+          <li><a href="html/news/news-details2.html">Новости Details v.2</a></li>
+          <li><a href="html/news/news.html">Новости</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="html/search/search.html">Поиск</a>
+        <li>Расширенный поиск
+          <ul>
+            <li>
+              Дома, дачи
+              <ul>
+                <li><a href="html/search/houses-and-cottages/houses-and-cottages-advanced-search-rent.html">Дома, дачи - Расширенный поиск - Аренда</a></li>
+                <li><a href="html/search/houses-and-cottages/houses-and-cottages-advanced-search.html">Дома, дачи - Расширенный поиск</a></li>
+              </ul>
+            </li>
+            <li>
+              Земельные участки
+              <ul>
+                <li><a href="html/search/land/land-advanced-search-rent.html">Земельные участки - Расширенный поиск - Аренда</a></li>
+                <li><a href="html/search/land/land-advanced-search.html">Земельные участки - Расширенный поиск</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </li>
+      <li>
+        Регистрация
+        <ul>
+          <li><a href="html/registration/registration-payment.html">Оплата</a></li>
+          <li><a href="html/registration/registration-confirm.html">Подтверждение номера телефона</a></li>
+          <li><a href="html/registration/registration-agency.html">Регистрация агентства</a></li>
+          <li><a href="html/registration/registration-builder.html">Регистрация застройщика</a></li>
+          <li><a href="html/registration/registration.html">Регистрация</a></li>
+        </ul>
+      </li>
+      <li>
+        Список объявлений
+        <ul>
+          <li>Внутренние
+            <ul>
+              <li>
+                Дома, дачи
+                <ul>
+                  <li><a href="html/promo/inner/houses/houses-advert-page-rent.html">Дома, дачи аренда</a></li>
+                  <li><a href="html/promo/inner/houses/houses-advert-page.html">Дома, дачи</a></li>
+                </ul>
+              </li>
+              <li>
+                Новостройки
+                <ul>
+                  <li>
+                    Квартиры
+                    <ul>
+                      <li><a href="html/promo/inner/new-building/apartments/apartments-advert-page-rent.html">Квартира  в новостройке - аренда</a></li>
+                      <li><a href="html/promo/inner/new-building/apartments/apartments-advert-page-missing.html">Квартира - Новостройка отсутствующая в базе</a></li>
+                      <li><a href="html/promo/inner/new-building/apartments/apartments-advert-page.html">Квартира  в новостройке</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    Новостройки
+                    <ul>
+                      <li><a href="html/promo/inner/new-building/new-building/info.html">Информация о ЖК</a></li>
+                      <li><a href="html/promo/inner/new-building/new-building/promo.html">Объявления ЖК</a></li>
+                      <li>
+                        Планировки ЖК
+                        <ul>
+                          <li><a href="html/promo/inner/new-building/new-building/plan/apartments.html">Квартиры от застройщика</a></li>
+                          <li><a href="html/promo/inner/new-building/new-building/plan/plan.html">Планировки ЖК</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            Дома, дачи
+            <ul>
+              <li><a href="html/promo/houses/houses-advert-list-rent.html">Список объявлений Дома, дачи - аренда</a></li>
+              <li><a href="html/promo/houses/houses-advert-list.html">Список объявлений Дома, дачи</a></li>
+            </ul>
+          </li>
+              <li><a href="html/promo/new-building/new-building-list.html">Новостройки_список ЖК</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+
+      <li>
+        Формы подачи объявлений
+        <ul>
+          <li>
+            Дома, дачи
+            <ul>
+              <li>
+                Продам
+                <ul>
+                  <li><a href="html/promo-form/house/sale/step-1.html">Этап 1</a></li>
+                  <li><a href="html/promo-form/house/sale/step-2.html">Этап 2</a></li>
+                  <li><a href="html/promo-form/house/sale/step-3.html">Этап 3</a></li>
+                </ul>
+              </li>
+              <li>
+                Сдам
+                <ul>
+                  <li><a href="html/promo-form/house/rent/step-1.html">Этап 1</a></li>
+                  <li><a href="html/promo-form/house/rent/step-2.html">Этап 2</a></li>
+                  <li><a href="html/promo-form/house/rent/step-3.html">Этап 3</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            Завершение подачи объявления
+            <ul>
+              <li><a href="html/promo-form/final/failure.html">Неуспешно</a></li>
+              <li><a href="html/promo-form/final/success.html">Успешно</a></li>
+              <li><a href="html/promo-form/final/final.html">Завершение подачи</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+</body>
+
+</html>

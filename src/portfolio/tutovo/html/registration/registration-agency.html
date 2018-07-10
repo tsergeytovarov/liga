@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tutovo | Главная</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../css/clarity-icons.min.css">
+  <link rel="stylesheet" href="../../css/clarity-ui.min.css">
+  <link rel="stylesheet" href="../../css/style.min.css">
+  <script src="../../js/svg4everybody.js"></script>
+  <script>svg4everybody();</script>
+</head>
+
+<body class="page">
+<main class="page__main  page__main--form  registration">
+  <section class="registration__header  registration-header">
+    <h1 class="registration-header__title">Регистрация</h1>
+    <button class="registration-header__btn  registration-header__btn--close">
+      <span class="registration-header__btn-title">Закрыть</span>
+      <svg class="registration-header__svg  registration-header__svg--close" width="14" height="14">
+        <use xlink:href="../../img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <ul class="registration-header__list">
+      <li class="registration-header__item  registration-header__item--privat">
+        <a class="registration-header__link" href="registration.html">
+          Частное лицо
+        </a>
+      </li>
+      <li class="registration-header__item  registration-header__item--agency">
+        <a class="registration-header__link">
+          Агенство
+        </a>
+      </li>
+      <li class="registration-header__item  registration-header__item--builder">
+        <a class="registration-header__link" href="registration-builder.html">
+          Застройщик
+        </a>
+      </li>
+    </ul>
+  </section>
+  <form action="#" class="registration__form  registration__form--agency" method="post">
+    <p class="registration__input-wrap  registration__input-wrap--company  field  field--company">
+      <input id="company" type="text" class="field__input  field__input--company  field__input--valid"
+             value="Cheese Estate" required>
+      <label for="company" class="field__label  field__label--company">
+        Название компании
+      </label>
+      <span class="field__svg-wrapper">
+          <svg class="field__svg  field__svg--name" width="15" height="14">
+            <use xlink:href="../../img/sprite.svg#users"></use>
+          </svg>
+        </span>
+    </p>
+    <p class="registration__input-wrap  registration__input-wrap--name  field  field--name">
+      <input id="name" type="text" class="field__input  field__input--name" value="Дмитрий Иванович" required>
+      <label for="name" class="field__label  field__label--name">
+        Менеджер
+      </label>
+      <span class="field__svg-wrapper">
+          <svg class="field__svg  field__svg--name" width="12" height="13">
+            <use xlink:href="../../img/sprite.svg#user-reg"></use>
+          </svg>
+        </span>
+    </p>
+    <p class="registration__input-wrap  registration__input-wrap--email  field  field--email">
+      <input id="email" type="email" class="field__input  field__input--email" value="hello_ivan1@yan" required>
+      <label for="email" class="field__label  field__label--email">
+        Электронная почта
+      </label>
+      <span class="field__svg-wrapper">
+          <svg class="field__svg  field__svg--name" width="13" height="15">
+            <use xlink:href="../../img/sprite.svg#envelope"></use>
+          </svg>
+        </span>
+    </p>
+    <p class="registration__input-wrap  registration__input-wrap--phone  field  field--phone">
+      <input id="phone" type="tel" class="field__input  field__input--phone" value="+7 951 123 45 67" required>
+      <label for="phone" class="field__label  field__label--phone">
+        Телефон компании
+        <svg class="field__svg  field__svg--question" width="11" height="11">
+          <use xlink:href="../../img/sprite.svg#question"></use>
+        </svg>
+      </label>
+      <span class="field__svg-wrapper">
+          <svg class="field__svg  field__svg--name" width="12" height="12">
+            <use xlink:href="../../img/sprite.svg#phone"></use>
+          </svg>
+        </span>
+    </p>
+    <p class="registration__input-wrap  registration__input-wrap--password  field  field--password">
+      <input id="password" type="password" class="field__input  field__input--password    field__input--invalid"
+             required>
+      <label for="password" class="field__label  field__label--password">
+        Пароль
+      </label>
+      <span class="field__svg-wrapper">
+          <svg class="field__svg  field__svg--name" width="9" height="11">
+            <use xlink:href="../../img/sprite.svg#lock"></use>
+          </svg>
+        </span>
+    </p>
+    <p class="registration__input-wrap  registration__input-wrap--reload  field  field--reload">
+      <input id="reload" type="password" class="field__input  field__input--reload" required>
+      <label for="reload" class="field__label  field__label--reload">
+        Повторите пароль
+      </label>
+      <span class="field__svg-wrapper">
+          <svg class="field__svg  field__svg--name" width="13" height="12">
+            <use xlink:href="../../img/sprite.svg#reload"></use>
+          </svg>
+        </span>
+    </p>
+    <p class="registration__text">
+      Регистрируясь вы подтверждаете свое согласие
+      <a href="#" class="registration__link">пользовательского соглашения</a>
+    </p>
+    <table class="registration__table  registration__table--top">
+      <tr class="registration__row">
+        <td class="registration__col  registration__col--tariff">Топ</td>
+        <td class="registration__col  registration__col--tariff-price">450 руб. / месяц</td>
+      </tr>
+      <tr class="registration__row">
+        <td class="registration__col  registration__col--description  registration__col--top" colspan="2">Пакет на 500
+          размещений
+        </td>
+      </tr>
+    </table>
+    <table class="registration__table  registration__table--standard">
+      <tr class="registration__row">
+        <td class="registration__col  registration__col--tariff">Стандарт</td>
+        <td class="registration__col  registration__col--tariff-price">0 руб.</td>
+      </tr>
+      <tr class="registration__row">
+        <td class="registration__col  registration__col--description  registration__col--standard" colspan="2">30
+          бесплатных размещений
+        </td>
+      </tr>
+    </table>
+    <button class="registration__btn">Регистрация</button>
+  </form>
+  <section class="registration__footer  registration-footer">
+    <span class="registration-footer__span">или</span>
+    <p class="social">
+      <a href="#" class="social__link  social__link--vk">
+        Мы в Вконтакте
+        <svg class="social__svg" width="19" height="16">
+          <use xlink:href="../../img/sprite.svg#vk"></use>
+        </svg>
+      </a>
+      <a href="#" class="social__link  social__link--od">
+        Мы в Однокласcниках
+        <svg class="social__svg" width="10" height="17">
+          <use xlink:href="../../img/sprite.svg#od"></use>
+        </svg>
+      </a>
+      <a href="#" class="social__link  social__link--fb">
+        Мы в Facebook
+        <svg class="social__svg" width="8" height="16">
+          <use xlink:href="../../img/sprite.svg#fb"></use>
+        </svg>
+      </a>
+      <a href="#" class="social__link  social__link--g">
+        Мы в Google
+        <svg class="social__svg" width="22" height="18">
+          <use xlink:href="../../img/sprite.svg#g"></use>
+        </svg>
+      </a>
+    </p>
+  </section>
+</main>
+</body>
+</html>

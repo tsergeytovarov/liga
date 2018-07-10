@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tutovo | Поиск</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../css/clarity-icons.min.css">
+  <link rel="stylesheet" href="../../../css/clarity-ui.min.css">
+  <link rel="stylesheet" href="../../../css/style.min.css">
+  <script src="../../../js/svg4everybody.js"></script>
+  <script>svg4everybody();</script>
+</head>
+
+<body class="page">
+<main class="page__main  page__main--form  search">
+  <h1 class="search__title">Расширенный поиск</h1>
+  <section class="search__search-header  search-header">
+    <h2 class="search-header__title">Поиск</h2>
+    <form action="#" class="search-header__form">
+      <a class="search-header__link" href="#">Назад</a>
+      <div class="select  select--city">
+        <svg class="search-header__svg  search-header__svg--pointer" width="10" height="13">
+          <use xlink:href="../../../img/sprite.svg#pointer"></use>
+        </svg>
+        <select name="city" id="city">
+          <option value="city">Москва</option>
+        </select>
+      </div>
+      <div class="search-header__wrap">
+        <svg class="search-header__svg  search-header__svg--search" width="13" height="13">
+          <use xlink:href="../../../img/sprite.svg#search"></use>
+        </svg>
+        <input class="search-header__key-words" type="text" name="key-words" placeholder="По ключевым словам">
+      </div>
+      <input class="search-header__id" type="number" name="id" placeholder="ID объявления">
+    </form>
+  </section>
+  <section class="search__filter  filter">
+    <h2 class="filter__title">Параметры поиска</h2>
+    <form action="#" class="filter__form">
+      <div class="filter__wrap">
+        <label class="filter__label">Тип недвижимости</label>
+        <div class="select  filter__select">
+          <select name="property-type">
+            <option value="hauses-and-cattages">Дома, дачи</option>
+            <option value="land">Земельные участки</option>
+            <option value="apartments-and-rooms">Квартиры, комнаты</option>
+            <option value="uninhabited" selected>Нежилое</option>
+            <option value="new-building">Новостройка</option>
+          </select>
+        </div>
+        <label class="filter__label">Тип сделки</label>
+        <div class="select  filter__select">
+          <select name="type-of-transaction">
+            <option value="sell">Продам</option>
+            <option value="rent" selected>Сдам</option>
+          </select>
+        </div>
+        <label class="filter__label">Цена</label>
+        <div class="filter__wrap--price">
+          <input class="filter__price" type="text" placeholder="От">
+          <span class="filter__span">&#8211;</span>
+          <input class="filter__price" type="text" placeholder="До">
+        </div>
+        <input class="filter__input-check" type="checkbox" id="with-photo" checked>
+        <label class="filter__label-check" for="with-photo">Только с фото</label>
+        <button class="filter__btn  filter__btn--advanced-search" type="button">Расширенный поиск</button>
+      </div>
+      <div class="filter__wrapper  filter__wrapper--advanced-search">
+        <div class="select  filter__select  filter__select--advanced-search">
+          <select name="room-type">
+            <option>Тип помещения</option>
+          </select>
+        </div>
+        <div class="select  filter__select  filter__select--advanced-search">
+          <select name="area">
+            <option>Площадь м2</option>
+          </select>
+        </div>
+        <div class="select  filter__select  filter__select--advanced-search">
+          <select name="lease-term">
+            <option>Срок аренды</option>
+          </select>
+        </div>
+        <div class="select  filter__select  filter__select--advanced-search">
+          <select name="floor">
+            <option>Этаж</option>
+          </select>
+        </div>
+        <div class="select  filter__select  filter__select--advanced-search">
+          <select name="floors-in-the-building">
+            <option>Этажей в здании</option>
+          </select>
+        </div>
+        <div class="select  filter__select  filter__select--advanced-search">
+          <select name="pledge">
+            <option>Залог</option>
+          </select>
+        </div>
+        <div class="select  filter__select  filter__select--advanced-search">
+          <select name="repair">
+            <option>Ремонт</option>
+          </select>
+        </div>
+        <div class="filter__wrap-checkboxs">
+          <input class="filter__input-checkbox" type="checkbox" name="security" id="security" checked>
+          <label class="filter__label-checkbox" for="security">
+            <svg class="filter__svg  filter__svg--check" width="18" height="23">
+              <use xlink:href="../../../img/sprite.svg#security"></use>
+            </svg>
+          </label>
+          <input class="filter__input-checkbox" type="checkbox" name="wifi" id="wifi">
+          <label class="filter__label-checkbox" for="wifi">
+            <svg class="filter__svg  filter__svg--check" width="24" height="19">
+              <use xlink:href="../../../img/sprite.svg#wifi"></use>
+            </svg>
+          </label>
+          <input class="filter__input-checkbox" type="checkbox" name="fence" id="fence">
+          <label class="filter__label-checkbox" for="fence">
+            <svg class="filter__svg  filter__svg--check" width="24" height="23">
+              <use xlink:href="../../../img/sprite.svg#fence"></use>
+            </svg>
+          </label>
+          <input class="filter__input-checkbox" type="checkbox" name="water" id="water" checked>
+          <label class="filter__label-checkbox" for="water">
+            <svg class="filter__svg  filter__svg--check" width="19" height="23">
+              <use xlink:href="../../../img/sprite.svg#water"></use>
+            </svg>
+          </label>
+          <input class="filter__input-checkbox" type="checkbox" name="clean" id="clean">
+          <label class="filter__label-checkbox" for="clean">
+            <svg class="filter__svg  filter__svg--check" width="23" height="23">
+              <use xlink:href="../../../img/sprite.svg#clean"></use>
+            </svg>
+          </label>
+        </div>
+        <div class="filter__wrap-radios">
+          <input class="filter__input-radio" type="radio" name="type" id="all-type" checked>
+          <label class="filter__label-radio" for="all-type">Все</label>
+          <input class="filter__input-radio" type="radio" name="type" id="private-type">
+          <label class="filter__label-radio" for="private-type">Частные</label>
+          <input class="filter__input-radio" type="radio" name="type" id="agency-type">
+          <label class="filter__label-radio" for="agency-type">Агенства</label>
+          <input class="filter__input-radio" type="radio" name="type" id="builder-type">
+          <label class="filter__label-radio" for="builder-type">Застройщики</label>
+        </div>
+      </div>
+      <div class="filter__search-footer  search-footer">
+        <button class="search-footer__btn" type="submit">Показать объявления</button>
+        <a class="search-footer__btn  search-footer__btn--map" href="#">
+          <svg class="search-footer__svg" width="10" height="13">
+            <use xlink:href="../../../img/sprite.svg#pointer"></use>
+          </svg>
+          Поиск на карте
+        </a>
+      </div>
+    </form>
+  </section>
+</main>
+</body>
+</html>

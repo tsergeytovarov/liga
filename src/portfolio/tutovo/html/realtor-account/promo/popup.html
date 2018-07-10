@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tutovo | Главная</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../css/clarity-icons.min.css">
+  <link rel="stylesheet" href="../../../css/clarity-ui.min.css">
+  <link rel="stylesheet" href="../../../css/style.min.css">
+  <script src="../../../js/svg4everybody.js"></script>
+  <script>svg4everybody();</script>
+</head>
+
+<body class="page">
+<main class="page__main  page__main--form  forms">
+  <h1 class="forms__title  forms__title--filter-form">
+    Мои объявления / Фильтр
+  </h1>
+  <button class="forms__button-icon  forms__button-icon--filter-form  button-icon">
+    <span class="button-icon__title">Назад</span>
+    <svg class="button-icon__icon  button-icon__icon--back" width="8" height="16">
+      <use xlink:href="../../../img/sprite.svg#back"></use>
+    </svg>
+  </button>
+  <section class="forms__filter-form  filter-form">
+    <h2 class="filter-form__title">
+      Параметры поиска
+    </h2>
+    <form class="filter-form__form" method="post">
+      <div class="filter-form__fields-wrapper  filter-form__fields-wrapper--main">
+        <div class="filter-form__field-wrapper  filter-form__field-wrapper--main  field  field--column">
+          <label class="field__label" for="realty">
+            Тип недвижимости
+          </label>
+          <div class="field__select  select  select--promo">
+            <select name="type" id="realty">
+              <option value="Квартиры, комнаты" selected>Квартиры, комнаты</option>
+            </select>
+          </div>
+        </div>
+        <div class="filter-form__field-wrapper  filter-form__field-wrapper--main  field  field--column">
+          <label class="field__label" for="deal">
+            Тип сделки
+          </label>
+          <div class="field__select  select  select--promo">
+            <select name="deal" id="deal">
+              <option value="Продам" selected>Продам</option>
+            </select>
+          </div>
+        </div>
+        <p
+          class="filter-form__field-wrapper  filter-form__field-wrapper--main  filter-form__field-wrapper--price  filter-form__field-wrapper--min-price  field">
+          <input id="min-price" class="field__input  field__input--promo" type="number" name="min-price" placeholder="">
+          <label for="min-price" class="field__label">
+            Цена
+          </label>
+        </p>
+        <p
+          class="filter-form__field-wrapper  filter-form__field-wrapper--main  filter-form__field-wrapper--price  field">
+          <input id="max-price" class="field__input  field__input--promo" type="number" name="max-price" placeholder="">
+        </p>
+        <p class="filter-form__field-wrapper  filter-form__field-wrapper--main  field  field--row-center">
+          <input id="photo" class="field__input  field__input--checkbox  field__input--singel-check"
+                 type="checkbox" name="check-photo" checked>
+          <label for="photo" class="field__label  field__label--singel-check">
+            Только с фото
+          </label>
+        </p>
+        <button
+          class="filter-form__button  button  button--transparent  button--noborder  button--font-2  button--nospace  button--small-4"
+          type="button">
+          Расширенный фильтр
+          <svg class="button__icon  button__icon--up  button__icon--blue" width="10" height="10">
+            <use xlink:href="../../../img/sprite.svg#arrow"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="filter-form__fields-wrapper  filter-form__fields-wrapper--options">
+        <div class="filter-form__field-wrapper  filter-form__field-wrapper--options  field  field--column">
+          <div class="field__select  select  select--promo">
+            <select name="square">
+              <option value="Площадь м2" selected>Площадь м2</option>
+            </select>
+          </div>
+        </div>
+        <div class="filter-form__field-wrapper  filter-form__field-wrapper--options  field  field--column">
+          <div class="field__select  select  select--promo">
+            <select name="rooms">
+              <option value="Количество комнат" selected>Количество комнат</option>
+            </select>
+          </div>
+        </div>
+        <div class="filter-form__field-wrapper  filter-form__field-wrapper--options  field  field--column">
+          <div class="field__select  select  select--promo">
+            <select name="plan">
+              <option value="Планировка" selected>Планировка</option>
+            </select>
+          </div>
+        </div>
+        <div class="filter-form__field-wrapper  filter-form__field-wrapper--options  field  field--column">
+          <div class="field__select  select  select--promo">
+            <select name="floor">
+              <option value="Этаж" selected>Этаж</option>
+            </select>
+          </div>
+        </div>
+        <div class="filter-form__field-wrapper  filter-form__field-wrapper--options  field  field--column">
+          <div class="field__select  select  select--promo">
+            <select name="floor-count">
+              <option value="Этажей в доме" selected>Этажей в доме</option>
+            </select>
+          </div>
+        </div>
+        <div class="filter-form__field-wrapper  filter-form__field-wrapper--options  field  field--column">
+          <div class="field__select  select  select--promo">
+            <select name="type">
+              <option value="Тип дома" selected>Тип дома</option>
+            </select>
+          </div>
+        </div>
+        <div class="filter-form__field-wrapper  filter-form__field-wrapper--options  field  field--column">
+          <div class="field__select  select  select--promo">
+            <select name="type-bathroom">
+              <option value="Санузел" selected>Санузел</option>
+            </select>
+          </div>
+        </div>
+        <div class="filter-form__field-wrapper  filter-form__field-wrapper--options  field  field--column">
+          <div class="field__select  select  select--promo">
+            <select name="change">
+              <option value="Обмен" selected>Обмен</option>
+            </select>
+          </div>
+        </div>
+        <div class="filter-form__field-wrapper  filter-form__field-wrapper--options  field  field--column">
+          <div class="field__select  select  select--promo">
+            <select name="year">
+              <option value="Год постройки" selected>Год постройки</option>
+            </select>
+          </div>
+        </div>
+        <div class="filter-form__field-wrapper  filter-form__field-wrapper--options  field  field--column">
+          <div class="field__select  select  select--promo">
+            <select name="repairs">
+              <option value="Ремонт" selected>Ремонт</option>
+            </select>
+          </div>
+        </div>
+        <div class="filter-form__field-wrapper  filter-form__field-wrapper--options  field  field--column">
+          <div class="field__select  select  select--promo">
+            <select name="balcony">
+              <option value="Балкон" selected>Балкон</option>
+            </select>
+          </div>
+        </div>
+        <div class="filter-form__field-wrapper  filter-form__field-wrapper--options  field  field--column">
+          <div class="field__select  select  select--promo">
+            <select name="window">
+              <option value="Окна" selected>Окна</option>
+            </select>
+          </div>
+        </div>
+        <div class="filter-form__field-wrapper  filter-form__field-wrapper--options  field  field--column">
+          <ul class="field__list  field__list--extras">
+            <li class="field__item  field__item--extras">
+              <input id="extras-furniture" class="field__input  field__input--checkbox  field__input--extras"
+                     type="checkbox" name="extras-furniture" checked>
+              <label for="extras-furniture" class="field__label  field__label--extras  field__label--extras">
+                <span class="field__extras-title">Мебель</span>
+                <svg class="field__icon" width="21" height="21">
+                  <use xlink:href="../../../img/sprite.svg#furniture"></use>
+                </svg>
+              </label>
+            </li>
+            <li class="field__item  field__item--extras">
+              <input id="extras-appliances" class="field__input  field__input--checkbox  field__input--extras"
+                     type="checkbox" name="extras-appliances">
+              <label for="extras-appliances" class="field__label  field__label--extras  field__label--extras">
+                <span class="field__extras-title">Бытовая техника</span>
+                <svg class="field__icon" width="21" height="21">
+                  <use xlink:href="../../../img/sprite.svg#washer"></use>
+                </svg>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button class="filter-form__button  button  button--fill  button--radius-2  button--big" type="submit">
+        Применить фильтр
+      </button>
+    </form>
+  </section>
+</main>
+</body>
+</html>
+
+

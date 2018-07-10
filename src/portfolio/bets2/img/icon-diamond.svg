@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#fff" stroke-width="2px" viewBox="0 0 32 30">
+<polygon points="6 1 1 8 16 29 31 8 26 1 6 1"/>
+<line x1="31" y1="8" x2="1" y2="8"/>
+<polyline points="26 1 21 8 16 29 11 8 6 1"/>
+<polyline points="11 8 16 1 21 8"/>
+</svg>

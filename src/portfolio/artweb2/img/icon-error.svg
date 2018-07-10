@@ -1,0 +1,19 @@
+<svg id="Группа_30" data-name="Группа 30" xmlns="http://www.w3.org/2000/svg" width="24.063" height="24.3" viewBox="0 0 24.063 24.3">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e94d4d;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path id="Эллипс_1" data-name="Эллипс 1" class="cls-1" d="M861.028,10154.9a12.1,12.1,0,1,1-12.022,12.1A12.05,12.05,0,0,1,861.028,10154.9Z" transform="translate(-849 -10154.9)"/>
+  <path id="Прямоугольник_41_копия" data-name="Прямоугольник 41 копия" class="cls-2" d="M858.9,10163.5l5.667,5.7-1.417,1.4-5.667-5.7Zm5.667,1.4-5.667,5.7-1.417-1.4,5.667-5.7Z" transform="translate(-849 -10154.9)"/>
+</svg>

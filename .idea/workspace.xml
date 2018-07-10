@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db83d075-a542-4c59-926b-acd174f15fb0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/block/page-footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/block/page-footer.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -22,26 +20,17 @@
       <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scripts/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4541">
-              <caret line="239" selection-start-line="239" selection-end-line="239" />
+            <state relative-caret-position="118">
+              <caret line="139" selection-start-line="139" selection-end-line="139" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="706" column="18" selection-start-line="706" selection-start-column="18" selection-end-line="708" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page-footer.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="page-footer.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/styles/block/page-footer.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="212" column="19" selection-start-line="212" selection-start-column="19" selection-end-line="212" selection-end-column="19" />
+            <state relative-caret-position="436">
+              <caret line="438" column="2" selection-start-line="438" selection-start-column="2" selection-end-line="438" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -49,8 +38,8 @@
       <file leaf-file-name="our-team.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/styles/block/our-team.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="661">
-              <caret line="319" column="3" selection-start-line="319" selection-start-column="3" selection-end-line="319" selection-end-column="3" />
+            <state relative-caret-position="961">
+              <caret line="141" column="3" selection-start-line="141" selection-start-column="3" selection-end-line="141" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -58,17 +47,8 @@
       <file leaf-file-name="page-404.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/styles/block/page-404.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
+            <state relative-caret-position="374">
               <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="text-components.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/styles/text-components.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1938">
-              <caret line="104" column="18" selection-start-line="104" selection-start-column="18" selection-end-line="104" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -113,8 +93,8 @@
         <option value="$PROJECT_DIR$/src/styles/block/page-404.css" />
         <option value="$PROJECT_DIR$/src/main.html" />
         <option value="$PROJECT_DIR$/src/styles/block/our-team.css" />
-        <option value="$PROJECT_DIR$/src/styles/block/page-footer.css" />
         <option value="$PROJECT_DIR$/src/index.html" />
+        <option value="$PROJECT_DIR$/src/styles/block/page-footer.css" />
       </list>
     </option>
   </component>
@@ -149,6 +129,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -195,7 +176,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -244,31 +224,43 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49981000" />
+    <option name="totallyTimeSpent" value="49995000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="Gulp" order="2" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26875" />
+      <window_info anchor="bottom" id="TODO" order="4" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="npm" order="3" side_tool="true" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Gulp" order="7" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.2170706" />
-      <window_info anchor="bottom" id="TODO" order="13" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="16" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="15" />
-      <window_info anchor="bottom" id="Run" order="4" />
       <window_info id="npm" order="8" side_tool="true" />
-      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="17" />
-      <window_info id="Favorites" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.2170706" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="15" />
+      <window_info anchor="bottom" id="Run" order="4" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="16" side_tool="true" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="17" />
+      <window_info id="Favorites" order="9" side_tool="true" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -475,13 +467,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../liga — копия/src/main.html" />
-    <entry file="file://$PROJECT_DIR$/src/text-components.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1558">
-          <caret line="82" column="28" selection-start-line="82" selection-start-column="28" selection-end-line="82" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/text-components.html" />
     <entry file="file://$PROJECT_DIR$/.eslintrc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -505,30 +491,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4541">
-          <caret line="239" selection-start-line="239" selection-end-line="239" />
+        <state relative-caret-position="118">
+          <caret line="139" selection-start-line="139" selection-end-line="139" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.html" />
     <entry file="file://$PROJECT_DIR$/src/styles/block/our-team.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="661">
-          <caret line="319" column="3" selection-start-line="319" selection-start-column="3" selection-end-line="319" selection-end-column="3" />
+        <state relative-caret-position="961">
+          <caret line="141" column="3" selection-start-line="141" selection-start-column="3" selection-end-line="141" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/block/page-404.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
+        <state relative-caret-position="374">
           <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/block/page-footer.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="212" column="19" selection-start-line="212" selection-start-column="19" selection-end-line="212" selection-end-column="19" />
+        <state relative-caret-position="436">
+          <caret line="438" column="2" selection-start-line="438" selection-start-column="2" selection-end-line="438" selection-end-column="2" />
         </state>
       </provider>
     </entry>

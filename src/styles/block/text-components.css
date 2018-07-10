@@ -126,6 +126,16 @@
   text-align: right;
 }
 
+.text-components a {
+  color: var(--color-blue);
+  transition: all 0.3s ease;
+}
+
+.text-components a:hover {
+  color: var(--color-red);
+  text-decoration: underline;
+}
+
 @media (min-width: 1024px) {
   .text-components .text-components__outline {
     padding: 25px 0;

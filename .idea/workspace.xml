@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db83d075-a542-4c59-926b-acd174f15fb0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/block/page-footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/block/page-footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/block/our-team.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/block/our-team.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,20 +25,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page-footer.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="page-footer.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/styles/block/page-footer.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="438" column="2" selection-start-line="438" selection-start-column="2" selection-end-line="438" selection-end-column="2" />
+            <state relative-caret-position="17">
+              <caret line="171" column="1" selection-start-line="171" selection-start-column="1" selection-end-line="171" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="our-team.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="609">
+              <caret line="706" column="18" selection-start-line="706" selection-start-column="18" selection-end-line="708" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="our-team.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/styles/block/our-team.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="961">
-              <caret line="141" column="3" selection-start-line="141" selection-start-column="3" selection-end-line="141" selection-end-column="3" />
+            <state relative-caret-position="514">
+              <caret line="301" column="18" selection-start-line="301" selection-start-column="18" selection-end-line="301" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -92,9 +100,9 @@
         <option value="$PROJECT_DIR$/.htmlhintrc" />
         <option value="$PROJECT_DIR$/src/styles/block/page-404.css" />
         <option value="$PROJECT_DIR$/src/main.html" />
-        <option value="$PROJECT_DIR$/src/styles/block/our-team.css" />
         <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/styles/block/page-footer.css" />
+        <option value="$PROJECT_DIR$/src/styles/block/our-team.css" />
       </list>
     </option>
   </component>
@@ -224,7 +232,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49995000" />
+    <option name="totallyTimeSpent" value="50532000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -497,13 +505,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.html" />
-    <entry file="file://$PROJECT_DIR$/src/styles/block/our-team.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="961">
-          <caret line="141" column="3" selection-start-line="141" selection-start-column="3" selection-end-line="141" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/block/page-404.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -513,8 +514,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/block/page-footer.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="438" column="2" selection-start-line="438" selection-start-column="2" selection-end-line="438" selection-end-column="2" />
+        <state relative-caret-position="17">
+          <caret line="171" column="1" selection-start-line="171" selection-start-column="1" selection-end-line="171" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -522,6 +523,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="609">
           <caret line="706" column="18" selection-start-line="706" selection-start-column="18" selection-end-line="708" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/block/our-team.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="301" column="18" selection-start-line="301" selection-start-column="18" selection-end-line="301" selection-end-column="18" />
         </state>
       </provider>
     </entry>

@@ -29,6 +29,7 @@
 .our-team__avatar-block {
   position: relative;
   width: fit-content;
+  max-width: 78px;
 }
 
 .our-team__avatar-block::before {
@@ -184,6 +185,12 @@
     margin: 0;
   }
 
+  .our-team__avatar-block {
+    position: relative;
+    width: fit-content;
+    max-width: 100px;
+  }
+
   .our-team__list {
     display: flex;
     flex-direction: row;
@@ -289,6 +296,10 @@
 
   .our-team__list {
     flex-wrap: wrap;
+  }
+
+  .our-team__avatar-block {
+    max-width: 142px;
   }
 
   .our-team__avatar-block::before {

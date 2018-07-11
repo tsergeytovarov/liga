@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  font-family: "plex","Arial",sans-serif;
+}
+
+#amofroms_main_wrapper {
+  padding: 0;
+  margin: 0;
+  background-color: #000000;
+}
+
+.amoforms-footer-copyright {
+  display: none;
+}
+
+#amofroms_main_wrapper.amoforms__fields__editor-withoutborders {
+  width: 100%;
+  margin-left: 0;
+}
+
+.amoforms__field__control_birthday .text-input,
+.amoforms__field__control_date .text-input,
+.amoforms__field__control_multitext .text-input,
+.amoforms__field__control_numeric .text-input,
+.amoforms__field__control_smart_address_input .text-input,
+.amoforms__field__control_text .text-input,
+.amoforms__field__control_url .text-input,
+.amoforms__fields__container .amoforms__field__control_textarea .amoforms__textarea {
+  color: #fff;
+  width: 100%;
+  background: 0 0;
+  border: transparent;
+  border-bottom: 2px solid #2c39f2;
+  padding: 0 0 9px;
+  font-weight: 200;
+  outline: 0;
+  cursor: pointer;
+  resize: none;
+  border-radius: 0;
+  font-size: 18px;
+  height: 57px;
+  transition: all 0.3s ease;
+  font-family: "plex","Arial",sans-serif;
+}
+
+.amoforms__field__control_birthday .text-input:hover,
+.amoforms__field__control_birthday .text-input:focus,
+.amoforms__field__control_date .text-input:hover,
+.amoforms__field__control_date .text-input:focus,
+.amoforms__field__control_multitext .text-input:hover,
+.amoforms__field__control_multitext .text-input:focus,
+.amoforms__field__control_numeric .text-input:hover,
+.amoforms__field__control_numeric .text-input:focus,
+.amoforms__field__control_smart_address_input .text-input:hover,
+.amoforms__field__control_smart_address_input .text-input:focus,
+.amoforms__field__control_text .text-input:hover,
+.amoforms__field__control_text .text-input:focus,
+.amoforms__field__control_url .text-input:hover,
+.amoforms__field__control_url .text-input:focus,
+.amoforms__fields__container .amoforms__field__control_textarea .amoforms__textarea:hover,
+.amoforms__fields__container .amoforms__field__control_textarea .amoforms__textarea:focus {
+  border-bottom: 2px solid #ffffff;
+}
+
+.amoforms__field__control_birthday .text-input::-moz-placeholder,
+.amoforms__field__control_birthday .text-input::-webkit-input-placeholder,
+.amoforms__field__control_date .text-input::-moz-placeholder,
+.amoforms__field__control_date .text-input::-webkit-input-placeholder,
+.amoforms__field__control_multitext .text-input::-moz-placeholder,
+.amoforms__field__control_multitext .text-input::-webkit-input-placeholder,
+.amoforms__field__control_numeric .text-input::-moz-placeholder,
+.amoforms__field__control_numeric .text-input::-webkit-input-placeholder,
+.amoforms__field__control_smart_address_input .text-input::-moz-placeholder,
+.amoforms__field__control_smart_address_input .text-input::-webkit-input-placeholder,
+.amoforms__field__control_text .text-input::-moz-placeholder,
+.amoforms__field__control_text .text-input::-webkit-input-placeholder,
+.amoforms__field__control_url .text-input::-moz-placeholder,
+.amoforms__field__control_url .text-input::-webkit-input-placeholder,
+.amoforms__fields__container .amoforms__field__control_textarea .amoforms__textarea::-moz-placeholder,
+.amoforms__fields__container .amoforms__field__control_textarea .amoforms__textarea::-webkit-input-placeholder {
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  color: white;
+}
+
+.amoforms__fields__container__inner_above .amoforms__field__control,
+.amoforms__fields__container__inner_inside .amoforms__field__control,
+.amoforms__fields__container__inner .amoforms__field__control_terms {
+  min-height: auto;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: 0;
+}
+
+.amoforms__fields__submit .amoforms__submit-button {
+  font-family: "plex", "Arial", sans-serif !important;
+
+  font-size: 16px;
+  line-height: normal;
+  color: white !important;
+  background-color: #2c39f2 !important;
+  width: 100%;
+  border: transparent;
+  padding: 9px 60px 11px 59px;
+  cursor: pointer;
+  max-width: 320px;
+  outline: none;
+  margin-bottom: 5px;
+  border-radius: 0 !important;
+
+  transition: all 0.3s ease;
+}
+
+.amoforms__fields__submit .amoforms__submit-button:hover {
+  background-color: #ff1553 !important;
+}
+
+.amoforms-sended-message {
+  height: 430px !important;
+  top: 0;
+  left: 0;
+  right: 0;
+}

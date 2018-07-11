@@ -2,7 +2,7 @@
   position: fixed;
   left: 8px;
   bottom: 18px;
-  z-index: 100;
+  z-index: 15000;
   box-sizing: border-box;
 
   @media (--desktopMin) {
@@ -179,7 +179,7 @@
   max-height: 100%;
   bottom: 0;
   pointer-events: initial;
-  z-index: 10001;
+  z-index: 20001;
   overflow: hidden;
 }
 

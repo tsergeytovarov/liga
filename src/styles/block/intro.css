@@ -107,6 +107,16 @@
   }
 }
 
+.intro__slogan a {
+  color: var(--color-blue);
+  transition: all 0.3s ease;
+}
+
+.intro__slogan a:hover {
+  text-decoration: underline;
+  color: var(--color-red);
+}
+
 .intro__video {
   margin-right: 80px;
   margin-bottom: 56px;

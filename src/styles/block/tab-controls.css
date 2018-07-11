@@ -1,8 +1,9 @@
 .tab-controls {
   margin: 0;
-  box-sizing: border-box;
   padding: 0;
   padding-right: 100px;
+
+  box-sizing: border-box;
   list-style: none;
 
   @media (--tabletMax) {
@@ -12,12 +13,15 @@
 
 .tab-controls__item {
   position: relative;
-  font-weight: 600;
+
   font-size: 64px;
+  font-weight: 600;
   line-height: 68px;
   letter-spacing: -1px;
-  cursor: pointer;
+
   transition: text-shadow 0.3s ease, padding-left 0.3s ease;
+
+  cursor: pointer;
 
   @media (--desktopMin) {
     font-size: 60px;
@@ -43,6 +47,7 @@
 
 .tab-controls__item.active {
   padding-left: 45px;
+
   text-shadow: -6px 6px 0 var(--color-red);
 
   @media (--tabletMax) {
@@ -60,7 +65,9 @@
   top: 20px;
   bottom: 5px;
   left: 0;
+
   width: 15px;
+
   background-color: var(--color-red);
 
   @media (--mobileMax) {

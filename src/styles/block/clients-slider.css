@@ -1,5 +1,6 @@
 .clients-slider-wrapper {
   padding-bottom: 135px;
+
   overflow: hidden;
 
   @media (--desktopMin) {
@@ -8,8 +9,9 @@
 }
 
 .clients-slider.swiper-container {
-  margin: 0;
   width: 227px;
+  margin: 0;
+
   overflow: visible;
 
   @media (--desktopMin) {

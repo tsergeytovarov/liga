@@ -2,6 +2,7 @@
   display: flex;
   margin: 0;
   padding: 0;
+
   list-style: none;
 
   @media (--mobileMax) {
@@ -14,20 +15,22 @@
   flex: none;
   justify-content: center;
   align-items: flex-start;
-  margin-right: 15px;
-  box-sizing: border-box;
-  padding-top: 4px;
   width: 37px;
   height: 45px;
+  margin-right: 15px;
+  padding-top: 4px;
+
   background-image: url("../img/svg/icon-stack-big.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+
+  box-sizing: border-box;
 }
 
 .stack-list__icon {
-  flex: none;
   display: block;
+  flex: none;
   width: auto;
   height: auto;
   max-height: 75%;

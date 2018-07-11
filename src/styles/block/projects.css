@@ -1,6 +1,8 @@
 .projects {
   padding-bottom: 15px;
+
   color: var(--color-white);
+
   background-color: var(--color-blue);
 
   @media (--desktopMax) {
@@ -39,14 +41,16 @@
 .projects__title {
   margin: 0 0 78px;
   padding-top: 125px;
-  font-weight: 600;
+
   font-size: 54px;
+  font-weight: 600;
   line-height: 64px;
   letter-spacing: -1px;
 
   @media (--desktopMin) {
     margin-bottom: 53px;
     padding-top: 85px;
+
     font-size: 50px;
     line-height: 64px;
   }
@@ -54,6 +58,7 @@
   @media (--mobileMax) {
     margin-bottom: 36px;
     padding-top: 57px;
+
     font-size: 30px;
     line-height: 33px;
   }
@@ -66,15 +71,18 @@
 .projects__show-more {
   display: none;
   padding: 0;
+
   color: #ffffff;
+
   background-color: rgba(255, 255, 255, 0);
   border: none;
 
   @media (--mobileMax) {
     display: inline-block;
     vertical-align: top;
-    font-weight: 600;
+
     font-size: 20px;
+    font-weight: 600;
     line-height: 33px;
   }
 }
@@ -86,5 +94,6 @@
 .projects__show-more span {
   display: inline-block;
   vertical-align: top;
+
   border-bottom: 4px solid var(--color-red);
 }

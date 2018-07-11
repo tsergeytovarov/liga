@@ -5,6 +5,7 @@
 
 .text-components .text-components__outline {
   padding: 10px 0;
+
   border-bottom: 1px solid #ff00dc;
 }
 
@@ -71,6 +72,7 @@
   font-size: 18px;
   line-height: 24px;
   color: white;
+
   background-color: var(--color-blue);
 }
 
@@ -78,32 +80,37 @@
 .text-components ol,
 .text-components ul {
   padding: 0;
+
   list-style: none;
 }
 
 .text-components li {
+  margin-bottom: 15px;
+
   font-size: 15px;
   font-weight: 300;
   line-height: 19px;
   letter-spacing: -0.1px;
   color: black;
-  margin-bottom: 15px;
 }
 
 .text-components ul li,
 .text-components ol li {
   position: relative;
+
   padding-left: 28px;
 }
 
 .text-components ul li::before {
   position: absolute;
   content: "";
+  left: 0;
+
   width: 20px;
   height: 2px;
-  background-color: var(--color-blue);
   margin-top: 11px;
-  left: 0;
+
+  background-color: var(--color-blue);
 }
 
 .text-components ol {
@@ -113,13 +120,16 @@
 
 .text-components ol li::before {
   position: absolute;
-  width: 20px;
   left: 0;
-  font-family: "plex", "Arial", sans-serif;
+
+  width: 20px;
+
   font-weight: 300;
+  font-family: "plex", "Arial", sans-serif;
+  color: var(--color-blue);
+
   content: counter(num) ". ";
   counter-increment: num;
-  color: var(--color-blue);
 }
 
 .text-components .text-right {
@@ -128,17 +138,19 @@
 
 .text-components a {
   color: var(--color-blue);
+
   transition: all 0.3s ease;
 }
 
 .text-components a:hover {
-  color: var(--color-red);
   text-decoration: underline;
+  color: var(--color-red);
 }
 
 @media (min-width: 1024px) {
   .text-components .text-components__outline {
     padding: 25px 0;
+
     border-bottom: 1px solid #ff00dc;
   }
 

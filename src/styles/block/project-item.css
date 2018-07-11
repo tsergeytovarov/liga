@@ -7,6 +7,7 @@
 
   @media (--mobileMax) {
     position: relative;
+
     display: none;
     margin-bottom: 34px;
     padding-bottom: 96px;
@@ -40,14 +41,15 @@
 
   @media (--tabletMax) {
     flex-shrink: 1;
-    box-sizing: border-box;
-    padding-right: 20px;
     width: 55%;
+    padding-right: 20px;
+
+    box-sizing: border-box;
   }
 
   @media (--mobileMax) {
-    padding-right: 0;
     width: 100%;
+    padding-right: 0;
   }
 }
 
@@ -72,6 +74,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
+
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -79,13 +82,15 @@
 }
 
 .project-item__link {
-  margin-bottom: 15px;
   display: inline-block;
   vertical-align: top;
-  font-weight: 600;
+  margin-bottom: 15px;
+
   font-size: 30px;
+  font-weight: 600;
   line-height: 38px;
   color: var(--color-white);
+
   transition: text-shadow 0.3s ease;
 
   @media (--tabletMax) {
@@ -94,6 +99,7 @@
 
   @media (--mobileMax) {
     margin-bottom: 4px;
+
     font-size: 20px;
     line-height: 24px;
   }
@@ -104,10 +110,12 @@
 }
 
 .project-item__link-icon {
+  width: 24px;
   margin-left: 20px;
   margin-right: 20px;
-  width: 24px;
+
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+
   transition: text-shadow 0.3s ease;
 
   @media (--tabletMax) {
@@ -126,10 +134,11 @@
 }
 
 .project-item__descr {
-  margin: 0;
   max-width: 455px;
-  font-weight: 300;
+  margin: 0;
+
   font-size: 18px;
+  font-weight: 300;
   line-height: 28px;
   letter-spacing: 0.1px;
 
@@ -142,8 +151,9 @@
 .project-item__label {
   display: block;
   margin: 6px 0 0;
-  font-weight: 300;
+
   font-size: 18px;
+  font-weight: 300;
   line-height: 22px;
 
   @media (--desktopMin) {
@@ -155,14 +165,16 @@
   @media (--mobileMax) {
     order: 1;
     margin: 0 0 5px;
+
     font-size: 15px;
   }
 }
 
 .project-item__days {
   display: block;
-  font-weight: 600;
+
   font-size: 72px;
+  font-weight: 600;
   line-height: 64px;
 
   @media (--desktopMin) {

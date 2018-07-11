@@ -1,12 +1,13 @@
 .project-gallery {
   position: relative;
+
+  max-width: 884px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 884px;
 
   @media (--desktopMax) {
-    margin-left: 0;
     max-width: 100%;
+    margin-left: 0;
   }
 
   @media (--mobileMax) {
@@ -23,10 +24,12 @@
   content: "";
   position: absolute;
   top: 10px;
+  right: 22px;
   bottom: 10px;
   left: 22px;
-  right: 22px;
+
   border: 9px solid var(--color-black);
+
   pointer-events: none;
   cursor: pointer;
 
@@ -37,20 +40,25 @@
 
 .project-gallery__tablet {
   position: relative;
-  margin-left: 12px;
-  margin-right: 12px;
+
   min-height: 500px;
   max-height: 501px;
+  margin-right: 12px;
+  margin-left: 12px;
+
   border: 18px solid var(--color-blue);
   border-radius: 16px;
   box-shadow: 0 0 0 9px var(--color-black);
+
+  transition: border-color 0.3s ease;
+
   overflow-x: hidden;
   overflow-y: scroll;
-  transition: border-color 0.3s ease;
   cursor: pointer;
 
   @media (--mobileMax) {
     margin: 0;
+
     border-width: 10px;
     border-color: var(--color-black);
     border-radius: 8px;
@@ -95,6 +103,7 @@
   display: block;
   width: 100%;
   height: auto;
+
   cursor: pointer;
 }
 
@@ -102,6 +111,7 @@
   position: absolute;
   top: 150px;
   left: -45px;
+
   cursor: pointer;
 
   @media (--desktopMin) {
@@ -117,10 +127,11 @@
 .project-gallery__mobile::before {
   content: "";
   position: absolute;
+  top: -10px;
+  right: -10px;
   bottom: -28px;
   left: -10px;
-  right: -10px;
-  top: -10px;
+
   background-color: var(--color-black);
   border-radius: 16px;
 }
@@ -130,12 +141,15 @@
   position: absolute;
   left: 50%;
   bottom: -15px;
-  transform: translateX(-50%);
+
   width: 40px;
   height: 9px;
+
   background-color: var(--color-blue);
   border-radius: 5px;
+
   transition: background-color 0.3s ease;
+  transform: translateX(-50%);
 }
 
 .project-gallery__mobile:hover::after {
@@ -146,7 +160,9 @@
   position: relative;
   width: 261px;
   height: 437px;
+
   border-radius: 10px;
+
   overflow: hidden;
 }
 
@@ -158,21 +174,25 @@
 
 .project-gallery--alternative {
   left: -55px;
+
   margin-bottom: -40px;
 
   @media (--desktopMin) {
     left: 0;
+
     margin-bottom: 0;
   }
 }
 
 .project-gallery--alternative .project-gallery__mobile {
   left: auto;
+
   right: -45px;
 
   @media (--desktopMin) {
     right: auto;
     left: -40px;
+
     z-index: 5;
   }
 }

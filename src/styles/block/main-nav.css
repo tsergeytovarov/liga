@@ -1,16 +1,19 @@
 .main-nav {
   position: fixed;
-  left: 8px;
   bottom: 18px;
+  left: 8px;
   z-index: 15000;
+
   box-sizing: border-box;
 
   @media (--desktopMin) {
     position: absolute;
     top: 75px;
-    left: 0;
     right: 0;
+    left: 0;
+
     max-height: 0;
+
     overflow: hidden;
   }
 
@@ -30,9 +33,11 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    transform: translate(-100%);
     height: calc(100vh - 75px);
+
     background-color: var(--color-blue);
+
+    transform: translate(-100%);
   }
 
   @media (--mobileMax) {
@@ -43,6 +48,7 @@
 .main-nav__list {
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
@@ -52,12 +58,15 @@
 
 .main-nav__link {
   position: relative;
+
   display: inline-block;
   vertical-align: top;
   padding-left: 20px;
+
   font-size: 18px;
   line-height: 32px;
   color: var(--color-black);
+
   transition: color 0.3s ease;
 
   @media (--desktopMin) {
@@ -115,13 +124,16 @@
 .main-nav__link::before {
   content: "";
   position: absolute;
-  left: 0;
   top: 50%;
-  transform: translateY(-50%);
+  left: 0;
+
   width: 10px;
   height: 10px;
+
   background-color: var(--color-blue);
   opacity: 0;
+
+  transform: translateY(-50%);
   transition: opacity 0.3s ease;
 
   @media (--desktopMin) {
@@ -147,16 +159,19 @@
   vertical-align: top;
   margin-top: 20px;
   padding-left: 18px;
-  font-weight: 600;
+
   font-size: 18px;
+  font-weight: 600;
   line-height: 33px;
-  color: var(--color-black);
   letter-spacing: -0.5px;
+  color: var(--color-black);
 
   @media (--desktopMin) {
-    margin-bottom: 15px;
-    font-size: 24px;
     left: 33px;
+
+    margin-bottom: 15px;
+
+    font-size: 24px;
     color: var(--color-white);
   }
 
@@ -174,17 +189,21 @@
 
 .main-nav.opened {
   position: fixed;
+  bottom: 0;
+  z-index: 20001;
+
   display: flex;
   flex-direction: column;
   max-height: 100%;
-  bottom: 0;
+
   pointer-events: initial;
-  z-index: 20001;
   overflow: hidden;
 }
 
 .main-nav.opened .main-nav__wrapper {
-  transform: translateX(0);
   flex-grow: 1;
+
+  transform: translateX(0);
+
   overflow-y: scroll;
 }

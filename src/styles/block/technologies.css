@@ -1,12 +1,14 @@
 .technologies__title {
   margin: 0 0 30px;
-  font-weight: 600;
+
   font-size: 30px;
+  font-weight: 600;
   line-height: 33px;
   letter-spacing: -0.9px;
 
   @media (--mobileMax) {
     margin-bottom: 13px;
+
     font-size: 20px;
   }
 }
@@ -15,25 +17,29 @@
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+
   margin: 0 0 22px;
   padding: 0;
+
   list-style: none;
 
   @media (--mobileMax) {
-    margin-bottom: 8px;
     width: calc(100% + 24px);
+    margin-bottom: 8px;
   }
 }
 
 .technologies-list__item {
   position: relative;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 44px;
-  margin-bottom: 20px;
   width: 66px;
   height: 82px;
+  margin-right: 44px;
+  margin-bottom: 20px;
+
   background-image: url("../img/svg/icon-stack-big.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -43,29 +49,31 @@
   }
 
   @media (--mobileMax) {
-    margin-right: 24px;
-    margin-bottom: 18px;
     width: 47px;
     height: 60px;
+    margin-right: 24px;
+    margin-bottom: 18px;
   }
 }
 
 .technologies-list__item-icon {
   flex: none;
   display: block;
-  margin-bottom: 15px;
   max-width: 96%;
+  margin-bottom: 15px;
 
   @media (--mobileMax) {
     margin-bottom: 9px;
+
     transform: scale(0.7, 0.7);
   }
 }
 
 .technologies__label,
 .technologies__text {
-  margin: 0;
   max-width: 500px;
+  margin: 0;
+
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.1px;

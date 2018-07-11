@@ -14,10 +14,11 @@
 }
 
 .intro__wrapper {
-  margin: 0 auto;
-  box-sizing: border-box;
-  padding-left: 80px;
   width: 1013px;
+  margin: 0 auto;
+  padding-left: 80px;
+
+  box-sizing: border-box;
 
   @media (--desktopMin) {
     width: 100%;
@@ -65,34 +66,38 @@
 }
 
 .intro__title {
-  margin: 0 0 40px;
   max-width: 615px;
-  font-weight: 300;
+  margin: 0 0 40px;
+
   font-size: 54px;
+  font-weight: 300;
   line-height: 57px;
+  letter-spacing: 0.9px;
   text-transform: uppercase;
   color: var(--color-blue);
-  letter-spacing: 0.9px;
 
   @media (--desktopMin) {
-    margin-bottom: 60px;
     max-width: 590px;
+    margin-bottom: 60px;
+
     font-size: 50px;
     line-height: 52px;
   }
 
   @media (--mobileMax) {
     margin-bottom: 24px;
+
     font-size: 24px;
     line-height: 28px;
   }
 }
 
 .intro__slogan {
-  margin: 0 0 60px;
   max-width: 650px;
-  font-weight: 300;
+  margin: 0 0 60px;
+
   font-size: 24px;
+  font-weight: 300;
   line-height: 32px;
   letter-spacing: 0.05px;
 
@@ -102,6 +107,7 @@
 
   @media (--mobileMax) {
     margin-bottom: 35px;
+
     font-size: 18px;
     line-height: 24px;
   }
@@ -109,6 +115,7 @@
 
 .intro__slogan a {
   color: var(--color-blue);
+
   transition: all 0.3s ease;
 }
 
@@ -122,9 +129,9 @@
   margin-bottom: 56px;
 
   @media (--desktopMin) {
+    max-width: 100%;
     margin-right: 0;
     margin-bottom: 53px;
-    max-width: 100%;
   }
 
   @media (--mobileMax) {

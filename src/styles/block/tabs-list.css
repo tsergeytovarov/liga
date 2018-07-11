@@ -2,8 +2,10 @@
   position: relative;
   margin: 0;
   padding: 0;
-  list-style: none;
+
   background-color: var(--color-blue);
+
+  list-style: none;
 
   @media (--mobileMax) {
     padding-bottom: 44px;
@@ -14,22 +16,31 @@
   position: absolute;
   top: 0;
   left: 0;
+
   width: 100%;
   height: 100%;
+
   opacity: 0;
-  pointer-events: none;
+
   transition: opacity 0.3s ease;
+
+  pointer-events: none;
 
   @media (--mobileMax) {
     position: static;
+
     margin-bottom: 32px;
+
     opacity: 1;
+
     pointer-events: initial;
   }
 }
 
 .tabs-list__item.active {
   position: static;
+
   opacity: 1;
+
   pointer-events: initial;
 }

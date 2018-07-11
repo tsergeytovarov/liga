@@ -1,5 +1,6 @@
 .step {
   position: relative;
+
   border-bottom: 2px solid #f0f0f0;
 }
 
@@ -64,27 +65,32 @@
 }
 
 .step::after {
-  content: counter(li);
-  counter-increment: li;
   position: absolute;
   top: 80px;
   left: 50%;
-  margin-left: -387px;
+  z-index: 1;
+
   width: 33px;
   height: 43px;
-  text-align: center;
-  font-weight: 600;
+  margin-left: -387px;
+
   font-size: 14px;
+  font-weight: 600;
   line-height: 34px;
+  text-align: center;
   color: var(--color-white);
+
   background-image: url("../img/svg/icon-stack-small-b.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top center;
-  z-index: 1;
+
+  content: counter(li);
+  counter-increment: li;
 
   @media (--desktopMin) {
     left: 116px;
+
     margin-left: 0;
   }
 
@@ -94,29 +100,35 @@
 
   @media (--mobileMax) {
     left: 33px;
+
     width: 28px;
     height: 32px;
+
     line-height: 28px;
   }
 
   @media (--mobileMax) {
-    left: 36px;
     top: 60px;
+    left: 36px;
   }
 }
 
 .step__shield {
   content: "";
   position: absolute;
-  left: 50%;
   top: 60px;
-  margin-left: -370px;
-  transform: translateX(-50%);
+  left: 50%;
+
   width: 80px;
   height: 94px;
+  margin-left: -370px;
+
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+
+  transform: translateX(-50%);
+
   overflow: hidden;
 
   @media (--desktopMin) {
@@ -132,6 +144,7 @@
   @media (--mobileMax) {
     top: 32px;
     left: 10px;
+
     transform: scale(0.66, 0.66);
   }
 }
@@ -145,8 +158,10 @@
 
 .step__shield::before {
   right: calc(50% - 5px);
+
   width: 0;
   height: 0;
+
   border-style: solid;
   border-width: 93px 0 0 161px;
   border-color: transparent transparent transparent #ffffff;
@@ -154,8 +169,10 @@
 
 .step__shield::after {
   left: calc(50% - 5px);
+
   width: 0;
   height: 0;
+
   border-style: solid;
   border-width: 0 0 93px 161px;
   border-color: transparent transparent #ffffff transparent;
@@ -168,12 +185,14 @@
 
 .step.current .step__shield {
   top: 70px;
+
   transform: translateX(-50%) scale(1.4, 1.4);
 
   @media (--desktopMin) {
-    transform: scale(1.4, 1.4);
     top: 66px;
     left: 92px;
+
+    transform: scale(1.4, 1.4);
   }
 
   @media (--tabletMax) {
@@ -183,6 +202,7 @@
   @media (--mobileMax) {
     left: 10px;
     top: 21px;
+
     transform: scale(0.66, 0.66);
   }
 }
@@ -205,32 +225,33 @@
 
 .step__wrapper {
   @media (--desktopMin) {
-    padding-left: 130px;
     padding-right: 57px;
+    padding-left: 130px;
   }
 
   @media (--tabletMax) {
-    padding-left: 100px;
     padding-right: 40px;
+    padding-left: 100px;
   }
 
   @media (--mobileMax) {
-    padding-left: 48px;
     padding-right: 23px;
+    padding-left: 48px;
   }
 }
 
 .step__content {
   position: relative;
-  box-sizing: border-box;
-  padding-left: 113px;
   padding-top: 80px;
   padding-bottom: 77px;
+  padding-left: 113px;
+
+  box-sizing: border-box;
 
   @media (--desktopMin) {
-    padding-left: 115px;
-    padding-bottom: 80px;
     padding-top: 75px;
+    padding-bottom: 80px;
+    padding-left: 115px;
   }
 
   @media (--tabletMax) {
@@ -238,9 +259,9 @@
   }
 
   @media (--mobileMax) {
+    padding-top: 42px;
     padding-bottom: 42px;
     padding-left: 45px;
-    padding-top: 42px;
   }
 }
 
@@ -248,9 +269,11 @@
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
   bottom: -2px;
+  left: 0;
+
   width: 3px;
+
   background-color: var(--color-blue);
 
   @media (--desktopMin) {
@@ -264,12 +287,12 @@
 
 .step__body {
   display: flex;
-  margin-bottom: 60px;
   min-height: 133px;
+  margin-bottom: 60px;
 
   @media (--desktopMin) {
-    margin-bottom: 33px;
     min-height: 161px;
+    margin-bottom: 33px;
   }
 
   @media (--mobileMax) {
@@ -286,21 +309,23 @@
   }
 
   @media (--mobileMax) {
-    margin-bottom: 16px;
     width: 100%;
     max-width: 240px;
+    margin-bottom: 16px;
   }
 }
 
 .step__headline {
   margin: 0 0 8px;
-  font-weight: 600;
+
   font-size: 30px;
+  font-weight: 600;
   line-height: 33px;
   letter-spacing: -0.7px;
 
   @media (--mobileMax) {
     margin-bottom: 5px;
+
     font-size: 20px;
     line-height: 24px;
   }
@@ -314,8 +339,9 @@
 .step__text,
 .step__result {
   margin: 0;
-  font-weight: 300;
+
   font-size: 18px;
+  font-weight: 300;
   line-height: 26px;
 
   @media (--mobileMax) {
@@ -330,6 +356,7 @@
 
 .step__result {
   max-width: 400px;
+
   font-weight: 600;
   color: var(--color-blue);
 

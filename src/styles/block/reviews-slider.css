@@ -1,6 +1,6 @@
 .reviews-slider.swiper-container {
-  margin: 0;
   width: 797px;
+  margin: 0;
 
   @media (--desktopMin) {
     width: 100%;

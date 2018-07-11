@@ -3,17 +3,18 @@
 }
 
 .page-footer__wrapper {
-  padding: 57px 23px 22px 21px;
   margin: 0 auto;
+  padding: 57px 23px 22px 21px;
 }
 
 .page-footer__title {
+  margin: 0 0 27px;
+
   font-size: 30px;
+  font-weight: 600;
   line-height: 33px;
-  font-weight: 200;
   letter-spacing: -0.4px;
   color: #ffffff;
-  margin: 0 0 27px;
 }
 
 .page-footer__form-field {
@@ -32,33 +33,38 @@
 }
 
 .page-footer__input {
-  color: white;
   width: 100%;
+  padding: 0;
+  padding-bottom: 9px;
+
+  font-weight: 200;
+  color: white;
+
   background: transparent;
   border: transparent;
   border-bottom: 2px solid var(--color-blue);
-  padding: 0;
-  padding-bottom: 9px;
-  font-weight: 200;
-  outline: none;
-  cursor: pointer;
-  resize: none;
   border-radius: 0;
+  outline: none;
 
   transition: all 0.3s ease;
+
+  cursor: pointer;
+  resize: none;
 }
 
 .page-footer__label {
+  margin-top: 9px;
+  margin-bottom: 0;
+
   font-size: 15px;
   line-height: 21px;
-  color: #777777;
-  margin-bottom: 0;
-  margin-top: 9px;
   letter-spacing: 0.3px;
+  color: #777777;
 }
 
 .page-footer__label--third {
   margin-top: 5px;
+
   letter-spacing: 0.7px;
 }
 
@@ -73,6 +79,7 @@
 .page-footer__input:focus,
 .page-footer__input:hover {
   border-bottom: 2px solid var(--color-white);
+
   transition: all 0.3s;
 }
 
@@ -93,19 +100,22 @@
 }
 
 .page-footer__button {
+  width: 100%;
+  max-width: 320px;
+  margin-bottom: 5px;
+  padding: 9px 60px 11px 59px;
+
   font-size: 16px;
   line-height: normal;
   color: white;
+
   background-color: var(--color-blue);
-  width: 100%;
   border: transparent;
-  padding: 9px 60px 11px 59px;
-  cursor: pointer;
-  max-width: 320px;
   outline: none;
-  margin-bottom: 5px;
 
   transition: all 0.3s ease;
+
+  cursor: pointer;
 }
 
 .page-footer__button:hover {
@@ -117,10 +127,11 @@
 }
 
 .page-footer__link-block {
-  font-size: 15px;
-  line-height: 21px;
   margin-bottom: 0;
   margin-top: 0;
+
+  font-size: 15px;
+  line-height: 21px;
   letter-spacing: 0.1px;
 }
 
@@ -129,8 +140,8 @@
 }
 
 .page-footer__main {
-  margin-top: 32px;
   width: 60%;
+  margin-top: 32px;
 }
 
 .page-footer__form {
@@ -143,11 +154,12 @@
 }
 
 .page-footer__info-text {
-  color: #777777;
   margin: 0;
+
   font-size: 15px;
   line-height: 21px;
   letter-spacing: 0.3px;
+  color: #777777;
 }
 
 .page-footer__info-text--legal {
@@ -156,9 +168,9 @@
 }
 
 .page-footer__link {
-  color: white;
   font-size: 15px;
   line-height: 21px;
+  color: white;
 }
 
 .page-footer__link--second {
@@ -167,6 +179,7 @@
 
 .page-footer__link:hover {
   color: var(--color-red);
+
   transition: all 0.3s;
 }
 
@@ -174,9 +187,9 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0;
-  margin: 0;
   max-width: 140px;
+  margin: 0;
+  padding: 0;
 }
 
 .page-footer__social {
@@ -189,13 +202,15 @@
 }
 
 .page-footer__item {
-  vertical-align: middle;
   display: inline-block;
+  vertical-align: middle;
+  width: 36px;
+  height: 44px;
+
   background-image: url("../img/svg/icon-shield.svg");
   background-repeat: no-repeat;
   background-position: center;
-  width: 36px;
-  height: 44px;
+
   cursor: pointer;
 }
 
@@ -204,10 +219,10 @@
 }
 
 .page-footer__social-link {
-  width: 100%;
-  height: 100%;
   display: block;
   vertical-align: middle;
+  width: 100%;
+  height: 100%;
 }
 
 .page-footer__link--policy {
@@ -216,16 +231,17 @@
 }
 
 .page-footer__icon {
-  fill: white;
   width: 36px;
   height: 44px;
+
+  fill: white;
 }
 
 .page-footer__icon--twitter {
   display: flex;
-  margin: 0 9px;
   width: 18px;
   height: 85%;
+  margin: 0 9px;
 }
 
 .page-footer__item:hover .page-footer__icon {
@@ -234,6 +250,7 @@
 
 .page-footer__designed {
   margin-top: 40px;
+
   letter-spacing: 0.7px;
 }
 
@@ -251,6 +268,7 @@
 
 .error-message {
   display: none;
+
   color: red;
 }
 
@@ -259,27 +277,31 @@
 }
 
 .error-message--server {
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: normal;
   margin: 0;
   margin-bottom: 16px;
   margin-top: -9px;
-}
 
-.page-footer__success-message {
   font-size: 18px;
   line-height: 24px;
   letter-spacing: normal;
-  font-weight: 200;
+}
+
+.page-footer__success-message {
   margin: 0;
   margin-bottom: 35px;
+
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 24px;
+  letter-spacing: normal;
   color: white;
 }
 
 .page-footer__amo {
   position: relative;
+
   width: 100%;
+
   overflow-x: scroll;
 }
 
@@ -307,20 +329,20 @@
   }
 
   .page-footer__wrapper {
-    padding: 57px 23px 22px 21px;
     max-width: 855px;
+    padding: 57px 23px 22px 21px;
   }
 
   .page-footer__title {
     font-size: 54px;
-    letter-spacing: -2.1px;
     line-height: 58px;
+    letter-spacing: -2.1px;
   }
 
   .page-footer__main {
+    width: 60%;
     margin: 0;
     margin-top: 11px;
-    width: 60%;
   }
 
   .page-footer__form-field:nth-of-type(1) {
@@ -361,9 +383,9 @@
   }
 
   .page-footer__button {
-    margin: 0;
     max-width: 200px;
     max-height: 45px;
+    margin: 0;
     margin-top: 10px;
   }
 
@@ -373,9 +395,10 @@
   }
 
   .page-footer__success-message {
+    margin-bottom: 14px;
+
     font-size: 24px;
     line-height: 32px;
-    margin-bottom: 14px;
   }
 
   .page-footer__button--success {
@@ -385,9 +408,10 @@
 
   .page-footer__label--fourth {
     margin: 0;
-    letter-spacing: 0.1px;
-    line-height: 17px;
     margin-top: 10px;
+
+    line-height: 17px;
+    letter-spacing: 0.1px;
   }
 
   .page-footer__link--policy {
@@ -455,11 +479,14 @@
   }
 
   .page-footer__designed {
-    margin-top: 0;
-    letter-spacing: -0.1px;
     position: absolute;
     right: -22px;
     bottom: 90px;
+
+    margin-top: 0;
+
+    letter-spacing: -0.1px;
+
     transform: rotate(-90deg);
   }
 }
@@ -486,8 +513,8 @@
   }
 
   .page-footer__wrapper {
-    padding: 88px 79px 20px 74px;
     max-width: 970px;
+    padding: 88px 79px 20px 74px;
   }
 
   .page-footer__form,
@@ -518,10 +545,11 @@
 
   .page-footer__label--fourth-desktop {
     display: block;
-    font-size: 14px;
     margin-top: 17px;
-    letter-spacing: 0.52px;
     margin-right: 47px;
+
+    font-size: 14px;
+    letter-spacing: 0.52px;
   }
 
   .page-footer__button {

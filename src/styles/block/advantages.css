@@ -1,5 +1,6 @@
 .advantages {
   color: var(--color-white);
+
   background-color: var(--color-blue);
   background-image: linear-gradient(to right, var(--color-blue) 0%, var(--color-blue) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
   background-repeat: no-repeat;
@@ -55,13 +56,15 @@
   width: calc(50% + 200px);
   padding-top: 85px;
   padding-bottom: 140px;
+
   background-color: var(--color-blue);
 
   @media (--desktopMin) {
-    box-sizing: border-box;
+    width: calc(50% + 80px);
     padding-top: 58px;
     padding-bottom: 133px;
-    width: calc(50% + 80px);
+
+    box-sizing: border-box;
   }
 
   @media (--tabletMax) {
@@ -92,8 +95,9 @@
 .advantages__label {
   margin: 0;
   margin-bottom: 4px;
-  font-weight: 300;
+
   font-size: 30px;
+  font-weight: 300;
   line-height: 32px;
 
   @media (--desktopMin) {
@@ -102,6 +106,7 @@
 
   @media (--mobileMax) {
     margin-bottom: 2px;
+
     font-size: 20px;
     line-height: 24px;
   }

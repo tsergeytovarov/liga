@@ -17,26 +17,32 @@
 
 .reviews-slider-wrapper .swiper-button-prev,
 .reviews-slider-wrapper .swiper-button-next {
-  left: 0;
   top: 0;
-  margin: 0;
-  padding: 0;
+  left: 0;
+
   width: 56px;
   height: 56px;
+  margin: 0;
+  padding: 0;
+
   background-image: none;
   background-color: var(--color-red);
   border: none;
+
   transition: background-color 0.3s ease, opacity 0.3s ease;
+
   pointer-events: initial;
 
   @media (--desktopMin) {
     left: 11px;
+
     width: 45px;
     height: 45px;
   }
 
   @media (--mobileMax) {
     left: 0;
+
     width: 36px;
     height: 36px;
   }
@@ -58,6 +64,7 @@
 .reviews-slider-wrapper .swiper-button-prev.swiper-button-disabled,
 .reviews-slider-wrapper .swiper-button-next.swiper-button-disabled {
   opacity: 0;
+
   pointer-events: none;
 }
 
@@ -71,6 +78,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
+
   transform: translate(-50%, -50%);
 
   @media (--mobileMax) {

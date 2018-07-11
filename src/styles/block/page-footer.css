@@ -301,8 +301,6 @@
   position: relative;
 
   width: 100%;
-
-  overflow-x: scroll;
 }
 
 .page-footer__amo iframe {

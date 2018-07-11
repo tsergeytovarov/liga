@@ -279,11 +279,12 @@
 
 .page-footer__amo {
   position: relative;
+  width: 100%;
+  overflow-x: scroll;
 }
 
 .page-footer__amo iframe {
   height: 430px !important;
-  width: auto !important;
   margin: 0 !important;
 }
 

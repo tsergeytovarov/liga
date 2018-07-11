@@ -90,7 +90,7 @@ gulp.task('webp', function () {
 
 gulp.task('images', function () {
   return gulp
-    .src('src/img/**/*.{png,jpg,gif}')
+    .src('src/img/**/*.{png,jpg,gif,svg}')
     .pipe(
       imagemin([
         imagemin.optipng({
@@ -109,7 +109,7 @@ gulp.task('images', function () {
 gulp.task('copy', () => {
   return gulp.src([
       'src/fonts/*',
-      'src/img/**/*.{jpg,png}',
+      'src/img/**/*.{jpg,png,svg}',
       'src/img/svg/*.svg',
       '!src/styles/*',
       '!src/scripts/*',

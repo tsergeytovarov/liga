@@ -15,6 +15,7 @@
     "document": true,
     "svg4everybody": true,
     "Swiper": true,
-    "autosize": true
+    "autosize": true,
+    "scrollLock": true
   }
 }

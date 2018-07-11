@@ -282,7 +282,8 @@
 }
 
 .page-footer__amo iframe {
-  height: 380px !important;
+  height: 430px !important;
+  width: auto !important;
   margin: 0 !important;
 }
 

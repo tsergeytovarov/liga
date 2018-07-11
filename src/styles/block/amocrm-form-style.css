@@ -24,7 +24,8 @@ body {
 .amoforms__field__control_numeric .text-input,
 .amoforms__field__control_smart_address_input .text-input,
 .amoforms__field__control_text .text-input,
-.amoforms__field__control_url .text-input {
+.amoforms__field__control_url .text-input,
+.amoforms__fields__container .amoforms__field__control_textarea .amoforms__textarea {
   color: #fff;
   width: 100%;
   background: 0 0;
@@ -55,7 +56,9 @@ body {
 .amoforms__field__control_text .text-input:hover,
 .amoforms__field__control_text .text-input:focus,
 .amoforms__field__control_url .text-input:hover,
-.amoforms__field__control_url .text-input:focus {
+.amoforms__field__control_url .text-input:focus,
+.amoforms__fields__container .amoforms__field__control_textarea .amoforms__textarea:hover,
+.amoforms__fields__container .amoforms__field__control_textarea .amoforms__textarea:focus {
   border-bottom: 2px solid #ffffff;
 }
 
@@ -72,7 +75,9 @@ body {
 .amoforms__field__control_text .text-input::-moz-placeholder,
 .amoforms__field__control_text .text-input::-webkit-input-placeholder,
 .amoforms__field__control_url .text-input::-moz-placeholder,
-.amoforms__field__control_url .text-input::-webkit-input-placeholder {
+.amoforms__field__control_url .text-input::-webkit-input-placeholder,
+.amoforms__fields__container .amoforms__field__control_textarea .amoforms__textarea::-moz-placeholder,
+.amoforms__fields__container .amoforms__field__control_textarea .amoforms__textarea::-webkit-input-placeholder {
   font-size: 18px;
   font-weight: 200;
   line-height: 24px;
@@ -114,7 +119,7 @@ body {
 }
 
 .amoforms-sended-message {
-  height: 380px !important;
+  height: 430px !important;
   top: 0;
   left: 0;
   right: 0;

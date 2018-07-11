@@ -72,15 +72,16 @@ window.script = ((document) => {
 
     let windowHeight;
     let colorizableItems = [];
+    let inBetweenUpdateConfig = [];
 
     let onResize = debounce(30, function () {
 
       windowHeight = window.innerHeight;
 
-      colorizableItems = [].slice.call(document.querySelectorAll(`.main-nav .main-nav__item a`)).concat(document.querySelector(`.main-nav__telephone`)).concat(document.querySelector(`.header`)).concat(document.querySelector(`.js-nav-toggler`)).map(function (el) {
+      colorizableItems = [].slice.call(document.querySelectorAll(`.main-nav .main-nav__item a`)).concat(document.querySelector(`.main-nav__telephone`)).concat(document.querySelector(`.header`)).concat(document.querySelector(`.js-nav-toggler`)).map(function (el, i) {
         const rect = el.getClientRects()[0];
 
-        return {
+        const cfg = {
           el,
           offset: windowHeight - rect.bottom + rect.height / 2,
           currentStyle: `none`,
@@ -88,6 +89,15 @@ window.script = ((document) => {
           isActive: false,
           lastActive: false
         };
+        if(inBetweenUpdateConfig.length > i){
+          let oldConfig = inBetweenUpdateConfig[i];
+          cfg.currentStyle = oldConfig.currentStyle;
+          cfg.setStyle = oldConfig.setStyle;
+          cfg.isActive = oldConfig.isActive;
+          cfg.lastActive = oldConfig.lastActive;
+        }
+        inBetweenUpdateConfig[i] = cfg;
+        return cfg;
       });
       updateSections();
       highlightMenu();
@@ -191,7 +201,7 @@ window.script = ((document) => {
 
   if (document.querySelector(`.js-reviews-slider`)) {
     const reviewsSlider = new Swiper(`.js-reviews-slider`, {
-      speed: 1000,
+      speed: 500,
       navigation: {
         nextEl: `.reviews-slider-wrapper .swiper-button-next`,
         prevEl: `.reviews-slider-wrapper .swiper-button-prev`,
@@ -199,16 +209,17 @@ window.script = ((document) => {
       on: {
         slideChange() {
           let slideIndex = reviewsSlider.activeIndex;
-          clientsSlider.slideTo(slideIndex, 1000);
+          clientsSlider.slideTo(slideIndex, 500);
         }
       }
     });
 
     const clientsSlider = new Swiper(`.js-clients-slider`, {
+      speed: 500,
       on: {
         slideChange() {
           let n = clientsSlider.activeIndex;
-          reviewsSlider.slideTo(n, 1000);
+          reviewsSlider.slideTo(n, 500);
         }
       }
     });
@@ -217,7 +228,7 @@ window.script = ((document) => {
 
     for (let i = 0; i < clientsSlide.length; i++) {
       clientsSlide[i].addEventListener(`click`, function () {
-        reviewsSlider.slideTo(i, 1000);
+        reviewsSlider.slideTo(i, 500);
         clientsSlider.slideToClickedSlide();
       });
     }

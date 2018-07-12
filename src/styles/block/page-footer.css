@@ -500,6 +500,10 @@
   .page-footer__top-wrapper {
     display: block;
   }
+
+  .page-footer__amo {
+    overflow-x: scroll;
+  }
 }
 
 @media (max-width: 640px) {

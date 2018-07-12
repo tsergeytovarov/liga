@@ -301,16 +301,19 @@
   position: relative;
 
   width: 100%;
+  min-height: 430px;
 }
 
 .page-footer__amo iframe {
   height: 430px !important;
+  width: 100% !important;
   margin: 0 !important;
 }
 
 @media (min-width: 768px) {
   .page-footer {
     position: relative;
+    z-index: 1;
   }
 
   .page-footer__top-wrapper {

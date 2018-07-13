@@ -116,6 +116,8 @@ gulp.task('copy', () => {
       'src/scripts/libs/*',
       '!src/**/*.html',
       'src/portfolio/**/*',
+      'src/*.txt',
+      'src/*.{jpg,png,svg}',
     ], {
       base: 'src'
     })

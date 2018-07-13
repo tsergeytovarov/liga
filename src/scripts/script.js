@@ -157,11 +157,11 @@ window.script = ((document) => {
               item.isActive = false;
               if (i === j && item) {
                 for (let k = 0; k < j; k++) {
-                  if(colorizableItems[k].isActive === true){
+                  if (colorizableItems[k].isActive === true) {
                     somethingActive = true;
                   }
                 }
-                if(!somethingActive){
+                if (!somethingActive) {
                   item.isActive = true;
                 }
               }

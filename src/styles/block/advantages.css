@@ -1,4 +1,7 @@
 .advantages {
+  margin-left: -8px;
+  box-sizing: border-box;
+  width: calc(100% + 16px);
   color: var(--color-white);
 
   background-color: var(--color-blue);
@@ -8,9 +11,34 @@
   background-position: left top;
 
   @media (--mobileMax) {
+    margin-left: -7px;
+    width: calc(100% + 14px);
     background-color: var(--color-blue);
     background-image: none;
   }
+}
+
+.advantages::before,
+.advantages::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  width: 8px;
+  background-color: var(--color-white);
+
+  @media (--mobileMax) {
+    width: 7px;
+  }
+}
+
+.advantages::before {
+  left: 0;
+}
+
+.advantages::after {
+  right: 0;
 }
 
 .advantages__wrapper {

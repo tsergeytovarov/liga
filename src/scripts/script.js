@@ -78,7 +78,7 @@ window.script = ((document) => {
 
       windowHeight = window.innerHeight;
 
-      colorizableItems = [].slice.call(document.querySelectorAll(`.main-nav .main-nav__item a`)).concat(document.querySelector(`.main-nav__telephone`)).concat(document.querySelector(`.header`)).concat(document.querySelector(`.js-nav-toggler`)).map(function (el, i) {
+      colorizableItems = [].slice.call(document.querySelectorAll(`.main-nav .main-nav__item a`)).concat(document.querySelector(`.main-nav__telephone`)).concat(document.querySelector(`.header`)).concat(document.querySelector(`.js-nav-toggler`)).concat(document.querySelector(`body`)).map(function (el, i) {
         const rect = el.getClientRects()[0];
 
         const cfg = {
@@ -147,13 +147,23 @@ window.script = ((document) => {
           break;
         } else {
 
+
           for (j = 0, _j = colorizableItems.length; j < _j; j++) {
+            let somethingActive = false;
             item = colorizableItems[j];
             if (item.offset < sectionOffsetTop && item.offset >= sectionOffsetBottom) {
               item.setStyle = sections[i].dataName;
               // console.log(j,item.setStyle);
+              item.isActive = false;
               if (i === j && item) {
-                item.isActive = true;
+                for (let k = 0; k < j; k++) {
+                  if(colorizableItems[k].isActive === true){
+                    somethingActive = true;
+                  }
+                }
+                if(!somethingActive){
+                  item.isActive = true;
+                }
               }
             }
           }
@@ -173,6 +183,7 @@ window.script = ((document) => {
         if (item.isActive !== item.lastActive) {
 
           if (item.isActive) {
+            onlyActive = item;
             item.el.classList.add(`active`);
           } else {
             item.el.classList.remove(`active`);
@@ -181,8 +192,18 @@ window.script = ((document) => {
           item.lastActive = item.isActive;
         }
       }
-    };
+      // for (j = 0, _j = colorizableItems.length; j < _j; j++) {
+      //   item = colorizableItems[j];
 
+      //   if(onlyActive !== item && item.lastActive){
+      //     item.lastActive = false;
+      //     item.isActive = false;
+      //     item.el.classList.remove(`active`);
+
+      //   }
+      // }
+    };
+    let onlyActive;
     document.addEventListener(`scroll`, function () {
       highlightMenu();
       let scrollTop = window.pageYOffset || document.documentElement.scrollTop;

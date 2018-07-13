@@ -43,6 +43,10 @@
 .tab-controls__item:hover,
 .tab-controls__item:focus {
   text-shadow: -6px 6px 0 var(--color-red);
+
+  @media (--mobileMax) {
+    text-shadow: none;
+  }
 }
 
 .tab-controls__item.active {
@@ -56,6 +60,7 @@
 
   @media (--mobileMax) {
     padding-left: 0;
+    text-shadow: none;
   }
 }
 

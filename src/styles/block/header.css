@@ -97,11 +97,17 @@
   fill: var(--color-pink);
 }
 
+.header.link-color-projects,
+.header.link-color-advantages {
+  border-color: var(--color-white);
+}
+
 .header.link-color-projects .header__logo,
 .header.link-color-advantages .header__logo,
 .header.link-color-team .header__logo,
 .header.link-color-reviews .header__logo,
-.header.link-color-contacts .header__logo {
+.header.link-color-contacts .header__logo,
+.header--inner .header__logo {
   opacity: 1;
 
   pointer-events: initial;

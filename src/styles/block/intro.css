@@ -1,6 +1,11 @@
 .intro {
+  display: flex;
+  justify-content: center;
   padding-top: 110px;
   padding-bottom: 135px;
+
+  box-sizing: border-box;
+  min-height: 100vh;
 
   @media (--desktopMin) {
     padding-top: 127px;
@@ -14,6 +19,7 @@
 }
 
 .intro__wrapper {
+  justify-content: center;
   width: 1013px;
   margin: 0 auto;
   padding-left: 80px;

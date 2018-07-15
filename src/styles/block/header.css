@@ -102,6 +102,20 @@
   border-color: var(--color-white);
 }
 
+.header.link-color-projects.menu-opened,
+.header.link-color-advantages.menu-opened {
+  left: 0;
+  right: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-color: var(--color-blue);
+
+  @media (--mobileMax) {
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+}
+
 .header.link-color-projects .header__logo,
 .header.link-color-advantages .header__logo,
 .header.link-color-team .header__logo,

@@ -1,8 +1,37 @@
 .reviews-slider.swiper-container {
   width: 797px;
   margin: 0;
+  padding-bottom: 44px;
+  background-clip: content-box;
 
   @media (--desktopMin) {
     width: 100%;
+  }
+
+  @media (--mobileMax) {
+    padding-bottom: 25px;
+  }
+}
+
+.reviews-slider {
+    background-color: var(--color-blue);
+}
+
+.reviews-slider::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 0;
+  height: 0;
+
+  border-style: solid;
+  border-width: 44px 44px 0 0;
+  border-color: var(--color-blue) rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
+
+  @media (--mobileMax) {
+
+    border-width: 25px 34px 0 0;
   }
 }

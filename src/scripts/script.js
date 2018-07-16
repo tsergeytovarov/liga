@@ -222,7 +222,7 @@ window.script = ((document) => {
 
   if (document.querySelector(`.js-reviews-slider`)) {
     const reviewsSlider = new Swiper(`.js-reviews-slider`, {
-      speed: 500,
+      speed: 0,
       navigation: {
         nextEl: `.reviews-slider-wrapper .swiper-button-next`,
         prevEl: `.reviews-slider-wrapper .swiper-button-prev`,
@@ -313,6 +313,14 @@ window.script = ((document) => {
     const nav = document.querySelector(`.js-nav`);
     const header = document.querySelector(`.header`);
 
+    var closeMenu = function() {
+      header.classList.remove(`menu-opened`);
+      nav.classList.remove(`opened`);
+      navToggler.classList.remove(`active`);
+      document.querySelector(`body`).classList.remove(`overflow`);
+      scrollLock.show(document.querySelector(`body`));
+    }
+
     navToggler.addEventListener(`click`, function () {
       header.classList.toggle(`menu-opened`);
       nav.classList.toggle(`opened`);
@@ -324,14 +332,16 @@ window.script = ((document) => {
     let scrollLink = document.querySelectorAll(`.js-scroll-link`);
     for (let i = 0; i < scrollLink.length; i++) {
       scrollLink[i].addEventListener(`click`, function () {
-        header.classList.remove(`menu-opened`);
-        nav.classList.remove(`opened`);
-        navToggler.classList.remove(`active`);
-        document.querySelector(`body`).classList.remove(`overflow`);
-        scrollLock.show(document.querySelector(`body`));
+        closeMenu();
       });
     }
-  }
+
+    window.addEventListener(`resize`, function() {
+      if (nav.classList.contains('opened') & document.documentElement.clientWidth > 1365) {
+        closeMenu();
+      }
+    });
+  };
 
   if (document.querySelector(`.js-show-projects`)) {
     let showProjects = document.querySelector(`.js-show-projects`);

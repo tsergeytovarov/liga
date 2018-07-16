@@ -131,6 +131,7 @@
   display: block;
   width: 100%;
   height: auto;
+  -moz-user-select: none;
 }
 
 .project-item__descr {

@@ -105,6 +105,7 @@
   height: auto;
 
   cursor: pointer;
+  -moz-user-select: none;
 }
 
 .project-gallery__mobile {
@@ -170,6 +171,7 @@
   display: block;
   width: 100%;
   height: auto;
+  -moz-user-select: none;
 }
 
 .project-gallery--alternative {

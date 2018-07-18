@@ -204,7 +204,24 @@ window.script = ((document) => {
       // }
     };
     let onlyActive;
+
+    if (document.querySelector('.step')) {
+      let steps = document.querySelectorAll('.step');
+      document.addEventListener('scroll', function() {
+        for (let i = 0; i < steps.length; i++) {
+          //console.log(i, '-', steps[i].getBoundingClientRect().top);
+          if (steps[i].getBoundingClientRect().top < document.documentElement.clientHeight / 2) {
+            for (let j = 0; j < steps.length; j++) {
+              steps[j].classList.remove('current');
+            }
+            steps[i].classList.add('current');
+          }
+        }
+      })
+    }
+
     document.addEventListener(`scroll`, function () {
+
       highlightMenu();
       let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
       if (scrollTop > 1) {

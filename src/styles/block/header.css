@@ -104,15 +104,9 @@
 
 .header.link-color-projects.menu-opened,
 .header.link-color-advantages.menu-opened {
-  left: 0;
-  right: 0;
-  padding-left: 16px;
-  padding-right: 16px;
-  border-color: var(--color-blue);
 
-  @media (--mobileMax) {
-    padding-left: 13px;
-    padding-right: 13px;
+  @media (--desktopMin) {
+    border-color: var(--color-blue);
   }
 }
 
@@ -222,11 +216,23 @@
 
 .header.menu-opened {
   position: fixed;
+  left: 0;
+  right: 0;
   min-height: 100vh;
 
   background-color: var(--color-blue);
 
   overflow: hidden;
+}
+
+.header.menu-opened .header__wrapper {
+  padding-left: 76px;
+  padding-right: 19px;
+
+  @media (--mobileMax) {
+    padding-right: 14px;
+    padding-left: 56px;
+  }
 }
 
 .header.menu-opened .header__btn {

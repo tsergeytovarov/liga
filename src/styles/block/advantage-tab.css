@@ -1,12 +1,10 @@
 .advantage-tab {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
 
   background-color: var(--color-red);
-  background-repeat: repeat-x;
-  background-size: cover;
-  background-position: top left;
 
   @media (--tabletMax) {
     min-height: 400px;
@@ -18,47 +16,126 @@
   }
 }
 
-.advantage-tab:nth-child(1) {
-  background-image: url("../img/pattern1.png");
+.advantage-tab__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 
-  @media (--retinadpi), (--retinadppx) {
-    background-image: url("../img/pattern1@2x.png");
+  @media (--mobileMax) {
+    display: none;
   }
 }
 
-.advantage-tab:nth-child(2) {
-  background-image: url("../img/pattern2.png");
+.advantage-tab__bg::before,
+.advantage-tab__bg::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0;
+  transition: height 0.6s ease;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.advantage-tab__bg::before {
+  top: 0;
+}
+
+.advantage-tab__bg::after {
+  top: 50%;
+}
+
+.advantage-tab.active .advantage-tab__bg::before,
+.advantage-tab.active .advantage-tab__bg::after {
+  height: 50%;
+}
+
+.advantage-tab:nth-child(1) .advantage-tab__bg::before {
+  background-image: url("../img/pattern1_top.png");
 
   @media (--retinadpi), (--retinadppx) {
-    background-image: url("../img/pattern2@2x.png");
+    background-image: url("../img/pattern1_top@2x.png");
   }
 }
 
-.advantage-tab:nth-child(3) {
-  background-image: url("../img/pattern3.png");
+.advantage-tab:nth-child(1) .advantage-tab__bg::after {
+  background-image: url("../img/pattern1_bottom.png");
 
   @media (--retinadpi), (--retinadppx) {
-    background-image: url("../img/pattern3@2x.png");
+    background-image: url("../img/pattern1_bottom@2x.png");
   }
 }
 
-.advantage-tab:nth-child(4) {
-  background-image: url("../img/pattern4.png");
+.advantage-tab:nth-child(2) .advantage-tab__bg::before {
+  background-image: url("../img/pattern2_top.png");
 
   @media (--retinadpi), (--retinadppx) {
-    background-image: url("../img/pattern4@2x.png");
+    background-image: url("../img/pattern2_top@2x.png");
   }
 }
 
-.advantage-tab:nth-child(5) {
-  background-image: url("../img/pattern5.png");
+.advantage-tab:nth-child(2) .advantage-tab__bg::after {
+  background-image: url("../img/pattern2_bottom.png");
 
   @media (--retinadpi), (--retinadppx) {
-    background-image: url("../img/pattern5@2x.png");
+    background-image: url("../img/pattern2_bottom@2x.png");
+  }
+}
+
+.advantage-tab:nth-child(3) .advantage-tab__bg::before {
+  background-image: url("../img/pattern3_top.png");
+
+  @media (--retinadpi), (--retinadppx) {
+    background-image: url("../img/pattern3_top@2x.png");
+  }
+}
+
+.advantage-tab:nth-child(3) .advantage-tab__bg::after {
+  background-image: url("../img/pattern3_bottom.png");
+
+  @media (--retinadpi), (--retinadppx) {
+    background-image: url("../img/pattern3_bottom@2x.png");
+  }
+}
+
+.advantage-tab:nth-child(4) .advantage-tab__bg::before {
+  background-image: url("../img/pattern4_top.png");
+
+  @media (--retinadpi), (--retinadppx) {
+    background-image: url("../img/pattern4_top@2x.png");
+  }
+}
+
+.advantage-tab:nth-child(4) .advantage-tab__bg::after {
+  background-image: url("../img/pattern4_bottom.png");
+
+  @media (--retinadpi), (--retinadppx) {
+    background-image: url("../img/pattern4_bottom@2x.png");
+  }
+}
+
+.advantage-tab:nth-child(5) .advantage-tab__bg::before {
+  background-image: url("../img/pattern5_top.png");
+
+  @media (--retinadpi), (--retinadppx) {
+    background-image: url("../img/pattern5_top@2x.png");
+  }
+}
+
+.advantage-tab:nth-child(5) .advantage-tab__bg::after {
+  background-image: url("../img/pattern5_bottom.png");
+
+  @media (--retinadpi), (--retinadppx) {
+    background-image: url("../img/pattern5_bottom@2x.png");
   }
 }
 
 .advantage-tab__inner {
+  position: relative;
   width: 100%;
   max-width: 370px;
   min-height: 454px;

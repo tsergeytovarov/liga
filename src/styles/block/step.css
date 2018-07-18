@@ -183,6 +183,10 @@
   width: 100%;
 }
 
+.step .step__shield {
+  transition: transform 0.3s ease;
+}
+
 .step.current .step__shield {
   top: 70px;
 

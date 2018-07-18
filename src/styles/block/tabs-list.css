@@ -3,12 +3,13 @@
   margin: 0;
   padding: 0;
 
-  background-color: var(--color-blue);
+  background-color: var(--color-red);
 
   list-style: none;
 
   @media (--mobileMax) {
     padding-bottom: 44px;
+    background-color: var(--color-blue);
   }
 }
 

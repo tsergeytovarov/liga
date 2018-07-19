@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="18px" height="17px" viewBox="0 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_close</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Дизайн" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="styleguide_text-copy" transform="translate(-224.000000, -345.000000)" fill="#2C39F2" fill-rule="nonzero">
+            <g id="icon_close" transform="translate(224.000000, 345.000000)">
+                <polygon id="Line-2" transform="translate(9.000000, 8.300000) rotate(-45.000000) translate(-9.000000, -8.300000) " points="-0.7 10.3 -0.7 6.3 18.7 6.3 18.7 10.3"></polygon>
+                <polygon id="Line-2" transform="translate(9.000000, 8.300000) scale(-1, 1) rotate(-45.000000) translate(-9.000000, -8.300000) " points="-0.7 10.3 -0.7 6.3 18.7 6.3 18.7 10.3"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

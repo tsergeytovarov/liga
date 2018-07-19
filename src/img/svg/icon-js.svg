@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="66px" height="82px" viewBox="0 0 66 82" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icn_js</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Стайлгайд" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2" transform="translate(-531.000000, -625.000000)">
+            <g id="Group-3" transform="translate(256.000000, -614.000000)">
+                <g id="Group-12" transform="translate(57.000000, 1239.000000)">
+                    <g id="icn_js" transform="translate(218.000000, 0.000000)">
+                        <polygon id="Page-1-Copy-8" fill="#FF1553" points="0.297297297 0 0.297297297 61.1647303 0.300179815 61.1647303 32.9850452 82 65.6727932 61.1647303 65.6756757 61.1647303 65.6756757 0"></polygon>
+                        <rect id="Rectangle-3" fill="#FFFFFF" x="13" y="14" width="40" height="40"></rect>
+                        <text id="JS" font-family="Arial-BoldMT, Arial" font-size="22" font-weight="bold" fill="#FF1553">
+                            <tspan x="24" y="50">JS</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

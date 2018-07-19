@@ -36,8 +36,8 @@
   width: 100%;
   height: 0;
   transition: height 0.6s ease;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat;
+  background-size: auto;
   overflow: hidden;
 }
 
@@ -56,6 +56,7 @@
 
 .advantage-tab:nth-child(1) .advantage-tab__bg::before {
   background-image: url("../img/pattern1_top.png");
+  background-size: 204px auto;
 
   @media (--retinadpi), (--retinadppx) {
     background-image: url("../img/pattern1_top@2x.png");
@@ -64,6 +65,7 @@
 
 .advantage-tab:nth-child(1) .advantage-tab__bg::after {
   background-image: url("../img/pattern1_bottom.png");
+  background-size: 190px auto;
 
   @media (--retinadpi), (--retinadppx) {
     background-image: url("../img/pattern1_bottom@2x.png");
@@ -72,6 +74,7 @@
 
 .advantage-tab:nth-child(2) .advantage-tab__bg::before {
   background-image: url("../img/pattern2_top.png");
+  background-size: 204px auto;
 
   @media (--retinadpi), (--retinadppx) {
     background-image: url("../img/pattern2_top@2x.png");
@@ -80,6 +83,7 @@
 
 .advantage-tab:nth-child(2) .advantage-tab__bg::after {
   background-image: url("../img/pattern2_bottom.png");
+  background-size: 190px auto;
 
   @media (--retinadpi), (--retinadppx) {
     background-image: url("../img/pattern2_bottom@2x.png");
@@ -88,6 +92,7 @@
 
 .advantage-tab:nth-child(3) .advantage-tab__bg::before {
   background-image: url("../img/pattern3_top.png");
+  background-size: 190px auto;
 
   @media (--retinadpi), (--retinadppx) {
     background-image: url("../img/pattern3_top@2x.png");
@@ -96,6 +101,7 @@
 
 .advantage-tab:nth-child(3) .advantage-tab__bg::after {
   background-image: url("../img/pattern3_bottom.png");
+  background-size: 204px auto;
 
   @media (--retinadpi), (--retinadppx) {
     background-image: url("../img/pattern3_bottom@2x.png");
@@ -104,6 +110,7 @@
 
 .advantage-tab:nth-child(4) .advantage-tab__bg::before {
   background-image: url("../img/pattern4_top.png");
+  background-size: 190px auto;
 
   @media (--retinadpi), (--retinadppx) {
     background-image: url("../img/pattern4_top@2x.png");
@@ -112,6 +119,7 @@
 
 .advantage-tab:nth-child(4) .advantage-tab__bg::after {
   background-image: url("../img/pattern4_bottom.png");
+  background-size: 190px auto;
 
   @media (--retinadpi), (--retinadppx) {
     background-image: url("../img/pattern4_bottom@2x.png");
@@ -120,6 +128,7 @@
 
 .advantage-tab:nth-child(5) .advantage-tab__bg::before {
   background-image: url("../img/pattern5_top.png");
+  background-size: 190px auto;
 
   @media (--retinadpi), (--retinadppx) {
     background-image: url("../img/pattern5_top@2x.png");
@@ -128,6 +137,7 @@
 
 .advantage-tab:nth-child(5) .advantage-tab__bg::after {
   background-image: url("../img/pattern5_bottom.png");
+  background-size: 204px auto;
 
   @media (--retinadpi), (--retinadppx) {
     background-image: url("../img/pattern5_bottom@2x.png");

@@ -56,6 +56,14 @@
   }
 }
 
+.technologies-list__item--nobg {
+  background-image: none;
+}
+
+.technologies-list__item--nobg .technologies-list__item-icon {
+  margin-bottom: 0;
+}
+
 .technologies-list__item-icon {
   flex: none;
   display: block;

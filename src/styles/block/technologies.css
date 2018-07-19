@@ -62,6 +62,10 @@
 
 .technologies-list__item--nobg .technologies-list__item-icon {
   margin-bottom: 0;
+
+  @media (--mobileMax) {
+    transform: scale(1.05);
+  }
 }
 
 .technologies-list__item-icon {

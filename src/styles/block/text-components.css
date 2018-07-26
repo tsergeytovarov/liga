@@ -43,21 +43,28 @@
   margin: 0;
 }
 
+.text-components img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 10px;
+}
+
 /* Paragraphs */
 .text-components p {
   font-weight: 300;
   text-align: justify;
 }
 
-.text-components .paragraph--large {
-  font-size: 18px;
-  line-height: 24px;
+.text-components p {
+  font-size: 16px;
+  line-height: 21px;
   color: black;
 }
 
-.text-components .paragraph--regular {
-  font-size: 15px;
-  line-height: 21px;
+.text-components .paragraph--large {
+  font-size: 20px;
+  line-height: 24px;
   color: black;
 }
 
@@ -91,6 +98,7 @@
   font-weight: 300;
   line-height: 19px;
   letter-spacing: -0.1px;
+  text-align: justify;
   color: black;
 }
 
@@ -195,15 +203,15 @@
     font-weight: 300;
   }
 
-  .text-components .paragraph--large {
-    font-size: 24px;
-    line-height: 32px;
-  }
-
-  .text-components .paragraph--regular {
+  .text-components p {
     font-size: 18px;
     letter-spacing: -0.1px;
     line-height: 26px;
+  }
+
+  .text-components .paragraph--large {
+    font-size: 24px;
+    line-height: 32px;
   }
 
   .text-components .paragraph--small {
@@ -218,7 +226,6 @@
     line-height: 36px;
     letter-spacing: 0;
   }
-
 
   .text-components li {
     font-size: 18px;
